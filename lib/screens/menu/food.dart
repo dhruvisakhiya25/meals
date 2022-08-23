@@ -1,7 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:meals/utils/color.dart';
+import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/responsive.dart';
+import 'package:meals/utils/strings.dart';
 
 class Foods extends StatefulWidget {
   const Foods({Key? key}) : super(key: key);
@@ -25,87 +28,83 @@ class _FoodsState extends State<Foods> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          leading: IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: const Icon(
-              Icons.chevron_left,
-              color: Colors.black,
-            ),
-          ),
-          title: const Text(
-            'Food',
-            style: TextStyle(color: Colors.black, fontSize: 30),
-          ),
-          actions: const [
-            Icon(
-              Icons.local_grocery_store,
-              color: Colors.black,
-            ),
-          ],
-          centerTitle: false,
-          backgroundColor: Colors.white,
-        ),
-        body:  StreamBuilder<QuerySnapshot>(
-          stream: _streams,
-          builder: (BuildContext context, AsyncSnapshot snapshot) {
-            if (snapshot.hasError) {
-              return Center(child: Text(snapshot.error.toString()));
-            }
-            if (snapshot.connectionState == ConnectionState.waiting) {
-              return const Center(child: CircularProgressIndicator());
-            }
-            QuerySnapshot querySnapshot = snapshot.data;
-            List<QueryDocumentSnapshot> document = querySnapshot.docs;
-            return SafeArea(
-              child: ListView.builder(
-                itemCount: document.length,
-                shrinkWrap: true,
-                itemBuilder: (context, index) {
-                  QueryDocumentSnapshot documents = document[index];
-                  return GestureDetector(
-                    onTap: () {
-                      if (index == 1) {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const Item(),
-                            ));
-                      }
-                    },
-                    child: Container(
-                      height: 300,
-                      width: 100,
-                      decoration: BoxDecoration(
-                        // color: Colors.red,
-                        image: DecorationImage(
-                            image: NetworkImage(documents['image']),
-                            fit: BoxFit.cover),
-                      ),
-                      alignment: Alignment.bottomLeft,
-                      child: ListTile(
-                        title: Text(documents['txt']),
-                        subtitle: Row(
-                          children: [
-                            const Icon(
-                              Icons.star,
-                              color: Colors.orange,
-                            ),
-                            Text(
-                              documents['rate'].toString(),
-                              style: const TextStyle(color: Colors.orange),
-                            ),
-                          ],
+        body:  SafeArea(
+          child: Column(
+            children: [
+          Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          foods,
+                          style: const TextStyle(color: black, fontSize: 30),
                         ),
-                      ),
+                        const Icon(
+                          icCart,
+                          color: black,
+                        ),
+                      ],
                     ),
+                  ),
+              StreamBuilder<QuerySnapshot>(
+                stream: _streams,
+                builder: (BuildContext context, AsyncSnapshot snapshot) {
+                  if (snapshot.hasError) {
+                    return Center(child: Text(snapshot.error.toString()));
+                  }
+                  if (snapshot.connectionState == ConnectionState.waiting) {
+                    return const Center(child: CircularProgressIndicator());
+                  }
+                  QuerySnapshot querySnapshot = snapshot.data;
+                  List<QueryDocumentSnapshot> document = querySnapshot.docs;
+                  return ListView.builder(
+                    itemCount: document.length,
+                    shrinkWrap: true,
+                    itemBuilder: (context, index) {
+                      QueryDocumentSnapshot documents = document[index];
+                      return GestureDetector(
+                        onTap: () {
+                          if (index == 1) {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const Item(),
+                                ));
+                          }
+                        },
+                        child: Container(
+                          height: 300,
+                          width: 100,
+                          decoration: BoxDecoration(
+                            // color: Colors.red,
+                            image: DecorationImage(
+                                image: NetworkImage(documents['image']),
+                                fit: BoxFit.cover),
+                          ),
+                          alignment: Alignment.bottomLeft,
+                          child: ListTile(
+                            title: Text(documents['txt']),
+                            subtitle: Row(
+                              children: [
+                                const Icon(
+                                  Icons.star,
+                                  color: Colors.orange,
+                                ),
+                                Text(
+                                  documents['rate'].toString(),
+                                  style: const TextStyle(color: Colors.orange),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      );
+                    },
                   );
                 },
               ),
-            );
-          },
+            ],
+          ),
         )
 
     );

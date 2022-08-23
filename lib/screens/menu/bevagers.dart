@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:meals/utils/color.dart';
@@ -13,81 +14,169 @@ class Bevagers extends StatefulWidget {
 }
 
 class _BevagersState extends State<Bevagers> {
+  final CollectionReference _products =
+  FirebaseFirestore.instance.collection('bevagers');
+  late Stream<QuerySnapshot> _streams;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _streams = _products.snapshots();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(15.0),
-                child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      bevagers,
-                      style: const TextStyle(color: black, fontSize: 30),
-                    ),
-                    const Icon(
-                      icCart,
-                      color: black,
-                    ),
-                  ],
-                ),
-              ),
-              ListView.separated(
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                itemCount: menuList.length,
-                itemBuilder: (context, index) {
-                  return GestureDetector(
-                    onTap: () {
-                      if (index == 1) {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const Item(),
-                            ));
-                      }
-                    },
-                    child: Container(
-                      height: 300,
-                      width: 100,
-                      decoration: BoxDecoration(
-                        // color: Colors.red,
-                        image: DecorationImage(
-                            image: NetworkImage(menuList[index]['img']),
-                            fit: BoxFit.cover),
+        child: Column(
+          children: [
+        Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        bevagers,
+                        style: const TextStyle(color: black, fontSize: 30),
                       ),
-                      alignment: Alignment.bottomLeft,
-                      child: ListTile(
-                        title: Text(menuList[index]['itemName'],style: const TextStyle(color: white),),
-                        subtitle: Row(
-                          children: [
-                            const Icon(
-                              icStar,
-                              color: orange,
-                            ),
-                            Text(
-                              menuList[index]['rate'],
-                              style: const TextStyle(color: orange),
-                            ),
-                          ],
+                      const Icon(
+                        icCart,
+                        color: black,
+                      ),
+                    ],
+                  ),
+                ),
+            StreamBuilder<QuerySnapshot>(
+              stream: _streams,
+              builder: (BuildContext context, AsyncSnapshot snapshot) {
+                if (snapshot.hasError) {
+                  return Center(child: Text(snapshot.error.toString()));
+                }
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return const Center(child: CircularProgressIndicator());
+                }
+                QuerySnapshot querySnapshot = snapshot.data;
+                List<QueryDocumentSnapshot> document = querySnapshot.docs;
+                return ListView.builder(
+                  itemCount: document.length,
+                  shrinkWrap: true,
+                  itemBuilder: (context, index) {
+                    QueryDocumentSnapshot documents = document[index];
+                    return GestureDetector(
+                      onTap: () {
+                        if (index == 1) {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const Item(),
+                              ));
+                        }
+                      },
+                      child: Container(
+                        height: 300,
+                        width: 100,
+                        decoration: BoxDecoration(
+                          // color: Colors.red,
+                          image: DecorationImage(
+                              image: NetworkImage(documents['image']),
+                              fit: BoxFit.cover),
+                        ),
+                        alignment: Alignment.bottomLeft,
+                        child: ListTile(
+                          title: Text(documents['txt']),
+                          subtitle: Row(
+                            children: [
+                              const Icon(
+                                Icons.star,
+                                color: Colors.orange,
+                              ),
+                              Text(
+                                documents['rate'].toString(),
+                                style: const TextStyle(color: Colors.orange),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
-                    ),
-                  );
-                },
-                separatorBuilder: (BuildContext context, int index) {
-                  return const SizedBox(
-                    height: 5,
-                  );
-                },
-              ),
-            ],
-          ),
+                    );
+                  },
+                );
+              },
+            ),
+          ],
         ),
-      ),
+      )
+      // SafeArea(
+      //   child: SingleChildScrollView(
+      //     child: Column(
+      //       children: [
+      //         Padding(
+      //           padding: const EdgeInsets.all(15.0),
+      //           child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      //             children: [
+      //               Text(
+      //                 bevagers,
+      //                 style: const TextStyle(color: black, fontSize: 30),
+      //               ),
+      //               const Icon(
+      //                 icCart,
+      //                 color: black,
+      //               ),
+      //             ],
+      //           ),
+      //         ),
+      //         ListView.separated(
+      //           shrinkWrap: true,
+      //           physics: const NeverScrollableScrollPhysics(),
+      //           itemCount: menuList.length,
+      //           itemBuilder: (context, index) {
+      //             return GestureDetector(
+      //               onTap: () {
+      //                 if (index == 1) {
+      //                   Navigator.push(
+      //                       context,
+      //                       MaterialPageRoute(
+      //                         builder: (context) => const Item(),
+      //                       ));
+      //                 }
+      //               },
+      //               child: Container(
+      //                 height: 300,
+      //                 width: 100,
+      //                 decoration: BoxDecoration(
+      //                   // color: Colors.red,
+      //                   image: DecorationImage(
+      //                       image: NetworkImage(menuList[index]['img']),
+      //                       fit: BoxFit.cover),
+      //                 ),
+      //                 alignment: Alignment.bottomLeft,
+      //                 child: ListTile(
+      //                   title: Text(menuList[index]['itemName'],style: const TextStyle(color: white),),
+      //                   subtitle: Row(
+      //                     children: [
+      //                       const Icon(
+      //                         icStar,
+      //                         color: orange,
+      //                       ),
+      //                       Text(
+      //                         menuList[index]['rate'],
+      //                         style: const TextStyle(color: orange),
+      //                       ),
+      //                     ],
+      //                   ),
+      //                 ),
+      //               ),
+      //             );
+      //           },
+      //           separatorBuilder: (BuildContext context, int index) {
+      //             return const SizedBox(
+      //               height: 5,
+      //             );
+      //           },
+      //         ),
+      //       ],
+      //     ),
+      //   ),
+      // ),
     );
   }
 }

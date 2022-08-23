@@ -14,23 +14,23 @@ class _NotificationPageState extends State<NotificationPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-
       body: SingleChildScrollView(
         child: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(30.0),
             child: Column(
               children: [
-                Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children:  [    Text(
-                    notification,
-                    style: const TextStyle(
-                        color: black, fontSize: 25, fontWeight: FontWeight.bold),
-                  ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      notification,
+                      style: const TextStyle(
+                          color: black,
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold),
+                    ),
                     const Icon(icCart),
-
-
                   ],
                 ),
                 ListView.builder(
@@ -45,12 +45,12 @@ class _NotificationPageState extends State<NotificationPage> {
                           width: 10,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(30),
-                              color: orange ),
+                              color: orange),
                         ),
                         title: Text(
                           notifications[index]['title'],
                           style: const TextStyle(
-                              color:  black, fontWeight: FontWeight.w400),
+                              color: black, fontWeight: FontWeight.w400),
                         ),
                         subtitle: Text(
                           notifications[index]['subTitle'],
