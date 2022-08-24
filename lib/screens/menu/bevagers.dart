@@ -166,6 +166,7 @@ class _ItemState extends State<Item> {
                       child: _star(context),
                     ),
                     Text(starRating),
+
                     Text(description),
                     Text(loremIpsum),
                     const Divider(thickness: 2),
