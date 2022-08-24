@@ -38,7 +38,7 @@ class _PromotionsState extends State<Promotions> {
               child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    bevagers,
+                    promotion,
                     style: const TextStyle(color: black, fontSize: 30),
                   ),
                   const Icon(
