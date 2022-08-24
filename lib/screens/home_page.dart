@@ -1,5 +1,6 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:meals/screens/food.dart';
+import 'package:meals/screens/homefood.dart';
 import 'package:meals/screens/most_popular.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
@@ -15,6 +16,16 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final CollectionReference _products =
+  FirebaseFirestore.instance.collection('popularRestaurant');
+  late Stream<QuerySnapshot> _streams;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _streams = _products.snapshots();
+  }
   TextEditingController txtSearch = TextEditingController();
 
   @override
@@ -91,10 +102,9 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-                const SizedBox(
-                  height: 180,
-                  child: Food(),
-                ),
+                 Container(
+                     height:180,
+                     child: const Food()),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children:  [
