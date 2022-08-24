@@ -9,7 +9,6 @@ class AboutUsPage extends StatefulWidget {
   @override
   State<AboutUsPage> createState() => _AboutUsPageState();
 }
-///
 
 class _AboutUsPageState extends State<AboutUsPage> {
   @override
@@ -55,3 +54,5 @@ class _AboutUsPageState extends State<AboutUsPage> {
     );
   }
 }
+
+
