@@ -116,33 +116,6 @@ class _PromotionsState extends State<Promotions> {
   }
 }
 
-List<Map> menuList = [
-  {
-    'img':
-        'https://images.unsplash.com/photo-1619213538819-7628fe20dacf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGFwcGxlJTIwcGllfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60',
-    'itemName': 'Apple pie',
-    'rate': '4.7',
-  },
-  {
-    'img':
-        'https://images.unsplash.com/photo-1484300681262-5cca666b0954?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGRhcmslMjBjaG9jb2xhdGUlMjBjYWtlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-    'itemName': 'Dark chocolate cake',
-    'rate': '4.9',
-  },
-  {
-    'img':
-        'https://images.unsplash.com/photo-1578905896074-d2f0ecde5aed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3RyZWV0JTIwc2hha2V8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60',
-    'itemName': 'Street Shake',
-    'rate': '4.9',
-  },
-  {
-    'img':
-        'https://images.unsplash.com/photo-1607920591413-4ec007e70023?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZnVkZ3klMjBicm93bmllc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60',
-    'itemName': 'Fudgy Brownies',
-    'rate': '4.9',
-  },
-];
-
 class Item extends StatefulWidget {
   const Item({Key? key}) : super(key: key);
 
