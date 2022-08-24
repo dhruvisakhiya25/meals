@@ -213,7 +213,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     margin: const EdgeInsets.all(10),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
 
                         Text(
