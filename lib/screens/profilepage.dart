@@ -215,7 +215,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Text('Name'),
+
                         Text(
                           userData!['name'],
                           style: const TextStyle(fontSize: 20),
@@ -254,7 +254,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text('Email'),
+
                         Text(
                           userData!['email'],
                           style: const TextStyle(fontSize: 20),
