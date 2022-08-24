@@ -1,8 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:meals/utils/color.dart';
-import 'package:meals/utils/icon.dart';
-import 'package:meals/utils/strings.dart';
 
 class Food extends StatefulWidget {
   const Food({Key? key}) : super(key: key);
@@ -29,7 +26,7 @@ class _FoodState extends State<Food> {
       body: Column(
 
         children: [
-          SizedBox(height: 30,),
+          const SizedBox(height: 30,),
           StreamBuilder<QuerySnapshot>(
             stream: _streams,
             builder: (BuildContext context, AsyncSnapshot snapshot) {
@@ -67,7 +64,7 @@ class _FoodState extends State<Food> {
                           ),
                           // alignment: Alignment.bottomLeft,
                         ),
-                        Text(documents['food name'],style: TextStyle(fontWeight: FontWeight.w500),)
+                        Text(documents['food name'],style: const TextStyle(fontWeight: FontWeight.w500),)
                       ],
                     );
                   },

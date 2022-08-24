@@ -2,7 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
-import 'package:meals/utils/strings.dart';
 
 class MostPopular extends StatefulWidget {
   const MostPopular({Key? key}) : super(key: key);
@@ -53,7 +52,7 @@ class _MostPopularState extends State<MostPopular> {
                     return Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SizedBox(height: 20,),
+                        const SizedBox(height: 20,),
                         Container(
                           height: 130,
                           width: 220,
@@ -79,9 +78,9 @@ class _MostPopularState extends State<MostPopular> {
                             ),
                             Row(
                               children:  [
-                                Icon(icStar,color: orange,),
+                                const Icon(icStar,color: orange,),
                                 Text(documents['most rate'].toString(),style: const TextStyle(color: orange),),
-                               SizedBox(width: 3,),
+                               const SizedBox(width: 3,),
                                 Text(
                                  documents['most type'],
 

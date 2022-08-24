@@ -105,7 +105,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-                Container(height: 180, child: const Food()),
+                SizedBox(height: 180, child: const Food()),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -172,7 +172,7 @@ class _HomePageState extends State<HomePage> {
                                 ),
                                 Text(documents['popular rate'].toString(),
                                     style: const TextStyle(color: orange)),
-                                SizedBox(
+                                const SizedBox(
                                   width: 3,
                                 ),
                                 Text(
