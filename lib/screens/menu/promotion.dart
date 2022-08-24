@@ -31,81 +31,85 @@ class _PromotionsState extends State<Promotions> {
 
 
       body:  SafeArea(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(15.0),
-              child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    bevagers,
-                    style: const TextStyle(color: black, fontSize: 30),
-                  ),
-                  const Icon(
-                    icCart,
-                    color: black,
-                  ),
-                ],
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      bevagers,
+                      style: const TextStyle(color: black, fontSize: 30),
+                    ),
+                    const Icon(
+                      icCart,
+                      color: black,
+                    ),
+                  ],
+                ),
               ),
-            ),
-            StreamBuilder<QuerySnapshot>(
-              stream: _streams,
-              builder: (BuildContext context, AsyncSnapshot snapshot) {
-                if (snapshot.hasError) {
-                  return Center(child: Text(snapshot.error.toString()));
-                }
-                if (snapshot.connectionState == ConnectionState.waiting) {
-                  return const Center(child: CircularProgressIndicator());
-                }
-                QuerySnapshot querySnapshot = snapshot.data;
-                List<QueryDocumentSnapshot> document = querySnapshot.docs;
-                return ListView.builder(
-                  itemCount: document.length,
-                  shrinkWrap: true,
-                  itemBuilder: (context, index) {
-                    QueryDocumentSnapshot documents = document[index];
-                    return GestureDetector(
-                      onTap: () {
-                        if (index == 1) {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const Item(),
-                              ));
-                        }
-                      },
-                      child: Container(
-                        height: 300,
-                        width: 100,
-                        decoration: BoxDecoration(
-                          // color: Colors.red,
-                          image: DecorationImage(
-                              image: NetworkImage(documents['image']),
-                              fit: BoxFit.cover),
-                        ),
-                        alignment: Alignment.bottomLeft,
-                        child: ListTile(
-                          title: Text(documents['txt']),
-                          subtitle: Row(
-                            children: [
-                              const Icon(
-                                Icons.star,
-                                color: Colors.orange,
-                              ),
-                              Text(
-                                documents['rate'].toString(),
-                                style: const TextStyle(color: Colors.orange),
-                              ),
-                            ],
+              StreamBuilder<QuerySnapshot>(
+                stream: _streams,
+                builder: (BuildContext context, AsyncSnapshot snapshot) {
+                  if (snapshot.hasError) {
+                    return Center(child: Text(snapshot.error.toString()));
+                  }
+                  if (snapshot.connectionState == ConnectionState.waiting) {
+                    return const Center(child: CircularProgressIndicator());
+                  }
+                  QuerySnapshot querySnapshot = snapshot.data;
+                  List<QueryDocumentSnapshot> document = querySnapshot.docs;
+                  return ListView.separated(
+                    separatorBuilder: (context, index) => Divider(height: 3),
+                    itemCount: document.length,
+                    shrinkWrap: true,
+                    physics: NeverScrollableScrollPhysics(),
+                    itemBuilder: (context, index) {
+                      QueryDocumentSnapshot documents = document[index];
+                      return GestureDetector(
+                        onTap: () {
+                          if (index == 1) {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const Item(),
+                                ));
+                          }
+                        },
+                        child: Container(
+                          height: 300,
+                          width: 100,
+                          decoration: BoxDecoration(
+                            // color: Colors.red,
+                            image: DecorationImage(
+                                image: NetworkImage(documents['image']),
+                                fit: BoxFit.cover),
+                          ),
+                          alignment: Alignment.bottomLeft,
+                          child: ListTile(
+                            title: Text(documents['txt'],style: TextStyle(color: white),),
+                            subtitle: Row(
+                              children: [
+                                const Icon(
+                                  Icons.star,
+                                  color: Colors.orange,
+                                ),
+                                Text(
+                                  documents['rate'].toString(),
+                                  style: const TextStyle(color: Colors.orange),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                    );
-                  },
-                );
-              },
-            ),
-          ],
+                      );
+                    },
+                  );
+                },
+              ),
+            ],
+          ),
         ),
       )
     );
