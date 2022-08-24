@@ -138,7 +138,7 @@ class _LoginPageState extends State<LoginPage> {
                           txtPassword.text.isNotEmpty) {
                         servise.loginUser(
                             txtEmail.text, txtPassword.text, context);
-                        Navigator.push(
+                        Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
                               builder: (context) => const MainPage(),
@@ -179,7 +179,7 @@ class _LoginPageState extends State<LoginPage> {
                   FacebookAuthButton(
                     onPressed: () async {
                       await fbLogin();
-                      Navigator.push(context, MaterialPageRoute(
+                      Navigator.pushReplacement(context, MaterialPageRoute(
                         builder: (context) {
                           return const MainPage();
                         },
@@ -198,7 +198,7 @@ class _LoginPageState extends State<LoginPage> {
                   GoogleAuthButton(
                     onPressed: () async {
                       await signInWithGoogle();
-                      Navigator.push(
+                      Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
                             builder: (context) => const MainPage(),
@@ -220,7 +220,7 @@ class _LoginPageState extends State<LoginPage> {
                       Text(dontHaveAccount),
                       TextButton(
                           onPressed: () {
-                            Navigator.push(
+                            Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => const SignUpPage(),
