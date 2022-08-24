@@ -18,15 +18,21 @@ class MenuScreen extends StatelessWidget {
           SafeArea(
             child: SingleChildScrollView(
               child: Column(
-                children: [const SizedBox(height: 10,),
+                children: [
+                  const SizedBox(
+                    height: 10,
+                  ),
                   Padding(
                     padding: const EdgeInsets.all(10.0),
-                    child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
                           menu,
-                          style: const TextStyle(color: black,fontWeight: FontWeight.w500,fontSize: 25),
+                          style: const TextStyle(
+                              color: black,
+                              fontWeight: FontWeight.w500,
+                              fontSize: 25),
                         ),
                         const Icon(
                           icCart,
@@ -99,7 +105,8 @@ class MenuScreen extends StatelessWidget {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => const Bevagers(),
+                                          builder: (context) =>
+                                              const Bevagers(),
                                         ));
                                   },
                                   child: MenuCard(
@@ -154,7 +161,8 @@ class MenuScreen extends StatelessWidget {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => const Promotions(),
+                                          builder: (context) =>
+                                              const Promotions(),
                                         ));
                                   },
                                   child: MenuCard(
@@ -182,13 +190,6 @@ class MenuScreen extends StatelessWidget {
               ),
             ),
           ),
-          // Positioned(
-          //   bottom: 0,
-          //   left: 0,
-          //   child: CustomNavBar(
-          //     menu: true,
-          //   ),
-          // )
         ],
       ),
     );

@@ -84,7 +84,7 @@ class _MealMonkeyState extends State<MealMonkey> {
                           borderSide:
                                 const BorderSide(color: orange)),
                       onPressed: () {
-                        Navigator.push(
+                        Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
                               builder: (context) => const LoginPage(),
@@ -107,7 +107,7 @@ class _MealMonkeyState extends State<MealMonkey> {
                           borderSide:
                                const BorderSide(color: orange)),
                       onPressed: () {
-                        Navigator.push(
+                        Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
                               builder: (context) => const SignUpPage(),

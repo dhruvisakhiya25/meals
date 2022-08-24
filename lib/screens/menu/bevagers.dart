@@ -59,8 +59,8 @@ class _BevagersState extends State<Bevagers> {
                   QuerySnapshot querySnapshot = snapshot.data;
                   List<QueryDocumentSnapshot> document = querySnapshot.docs;
                   return ListView.separated(
-                    separatorBuilder: (context, index) => Divider(height: 3,),
-                    physics: NeverScrollableScrollPhysics(),
+                    separatorBuilder: (context, index) => const Divider(height: 3,),
+                    physics: const NeverScrollableScrollPhysics(),
                     itemCount: document.length,
                     shrinkWrap: true,
                     itemBuilder: (context, index) {
@@ -86,7 +86,7 @@ class _BevagersState extends State<Bevagers> {
                           ),
                           alignment: Alignment.bottomLeft,
                           child: ListTile(
-                            title: Text(documents['txt'],style: TextStyle(color: white),),
+                            title: Text(documents['txt'],style: const TextStyle(color: white),),
                             subtitle: Row(
                               children: [
                                 const Icon(
@@ -110,108 +110,9 @@ class _BevagersState extends State<Bevagers> {
           ),
         ),
       )
-      // SafeArea(
-      //   child: SingleChildScrollView(
-      //     child: Column(
-      //       children: [
-      //         Padding(
-      //           padding: const EdgeInsets.all(15.0),
-      //           child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      //             children: [
-      //               Text(
-      //                 bevagers,
-      //                 style: const TextStyle(color: black, fontSize: 30),
-      //               ),
-      //               const Icon(
-      //                 icCart,
-      //                 color: black,
-      //               ),
-      //             ],
-      //           ),
-      //         ),
-      //         ListView.separated(
-      //           shrinkWrap: true,
-      //           physics: const NeverScrollableScrollPhysics(),
-      //           itemCount: menuList.length,
-      //           itemBuilder: (context, index) {
-      //             return GestureDetector(
-      //               onTap: () {
-      //                 if (index == 1) {
-      //                   Navigator.push(
-      //                       context,
-      //                       MaterialPageRoute(
-      //                         builder: (context) => const Item(),
-      //                       ));
-      //                 }
-      //               },
-      //               child: Container(
-      //                 height: 300,
-      //                 width: 100,
-      //                 decoration: BoxDecoration(
-      //                   // color: Colors.red,
-      //                   image: DecorationImage(
-      //                       image: NetworkImage(menuList[index]['img']),
-      //                       fit: BoxFit.cover),
-      //                 ),
-      //                 alignment: Alignment.bottomLeft,
-      //                 child: ListTile(
-      //                   title: Text(menuList[index]['itemName'],style: const TextStyle(color: white),),
-      //                   subtitle: Row(
-      //                     children: [
-      //                       const Icon(
-      //                         icStar,
-      //                         color: orange,
-      //                       ),
-      //                       Text(
-      //                         menuList[index]['rate'],
-      //                         style: const TextStyle(color: orange),
-      //                       ),
-      //                     ],
-      //                   ),
-      //                 ),
-      //               ),
-      //             );
-      //           },
-      //           separatorBuilder: (BuildContext context, int index) {
-      //             return const SizedBox(
-      //               height: 5,
-      //             );
-      //           },
-      //         ),
-      //       ],
-      //     ),
-      //   ),
-      // ),
     );
   }
 }
-
-List<Map> menuList = [
-  {
-    'img':
-        'https://images.unsplash.com/photo-1619213538819-7628fe20dacf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGFwcGxlJTIwcGllfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60',
-    'itemName': 'Apple pie',
-    'rate': '4.7',
-  },
-  {
-    'img':
-        'https://images.unsplash.com/photo-1484300681262-5cca666b0954?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGRhcmslMjBjaG9jb2xhdGUlMjBjYWtlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-    'itemName': 'Dark chocolate cake',
-    'rate': '4.9',
-  },
-  {
-    'img':
-        'https://images.unsplash.com/photo-1578905896074-d2f0ecde5aed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3RyZWV0JTIwc2hha2V8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60',
-    'itemName': 'Street Shake',
-    'rate': '4.9',
-  },
-  {
-    'img':
-        'https://images.unsplash.com/photo-1607920591413-4ec007e70023?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZnVkZ3klMjBicm93bmllc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60',
-    'itemName': 'Fudgy Brownies',
-    'rate': '4.9',
-  },
-];
 
 class Item extends StatefulWidget {
   const Item({Key? key}) : super(key: key);
