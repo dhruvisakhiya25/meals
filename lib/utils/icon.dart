@@ -15,6 +15,7 @@ const IconData icNotification = Icons.notifications;
 const IconData icMail = Icons.mail;
 const IconData icAbout = Icons.info;
 const IconData icRightArrow = Icons.arrow_forward_ios_outlined;
+const IconData icLogOut = Icons.logout;
 
 ///profile page
 const IconData icCamera = Icons.camera_alt;

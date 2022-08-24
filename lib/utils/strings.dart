@@ -81,7 +81,7 @@ String mostPopularg=  'Most Popular';
 String resentItem='Recent Items';
 String cafeWesternFood='Cafe Western Food';
 String rating='(124 rating)';
-
+String logOut='Log Out';
 ///inbox page
 
 String mealMonkeyPromotion= 'MealMonkey Promotions';

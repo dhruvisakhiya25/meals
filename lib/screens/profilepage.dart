@@ -92,9 +92,10 @@ class _ProfilePageState extends State<ProfilePage> {
 
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(40.0),
+          padding: const EdgeInsets.all(20.0),
           child: Column(
-            children: [Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [  Text(
                 profile,
                 style: const TextStyle(
@@ -106,6 +107,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   color: Colors.black,
                 )],
             ),
+              const SizedBox(height: 90,),
 
               if (userData != null)
                 Center(

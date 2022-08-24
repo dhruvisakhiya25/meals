@@ -1,11 +1,13 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, use_build_context_synchronously
 
 import 'package:flutter/material.dart';
 import 'package:meals/screens/about_us.dart';
 import 'package:meals/screens/inbox.dart';
+import 'package:meals/screens/login.dart';
 import 'package:meals/screens/my_order.dart';
 import 'package:meals/screens/notification.dart';
 import 'package:meals/screens/payment_details.dart';
+import 'package:meals/screens/profilepage.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/strings.dart';
@@ -54,7 +56,7 @@ class _MorePageState extends State<MorePage> {
                   color: white,
                   margin: const EdgeInsets.all(5),
                   child: ListTile(
-                    onTap: () {
+                    onTap: () async {
                       if (index == 0) {
                         Navigator.push(
                           context,
@@ -91,6 +93,15 @@ class _MorePageState extends State<MorePage> {
                             context,
                             MaterialPageRoute(
                               builder: (context) => const AboutUsPage(),
+                            ));
+                      } if (index == 5) {
+                        await fbLogout();
+                        await googleLogOut();
+                        setState(() {});
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const LoginPage(),
                             ));
                       }
                     },
@@ -137,4 +148,9 @@ List more = [
     'circleAvatar':icAbout,
     'title':aboutUs,
   },
+
+  {
+    'circleAvatar':icLogOut,
+    'title':logOut
+  }
 ];
