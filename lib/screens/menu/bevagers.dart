@@ -86,7 +86,7 @@ class _BevagersState extends State<Bevagers> {
                           ),
                           alignment: Alignment.bottomLeft,
                           child: ListTile(
-                            title: Text(documents['txt']),
+                            title: Text(documents['txt'],style: TextStyle(color: white),),
                             subtitle: Row(
                               children: [
                                 const Icon(
