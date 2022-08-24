@@ -286,7 +286,7 @@ class _SignUpPageState extends State<SignUpPage> {
   }
 }
 
-class Service {
+class  Service {
   final auth = FirebaseAuth.instance;
 
   createUser(email, password, context) async {
