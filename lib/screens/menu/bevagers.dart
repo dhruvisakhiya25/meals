@@ -27,7 +27,8 @@ class _BevagersState extends State<Bevagers> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
+      body:
+      SafeArea(
         child: Column(
           children: [
         Padding(
