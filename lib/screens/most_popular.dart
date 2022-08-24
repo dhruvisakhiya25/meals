@@ -101,26 +101,3 @@ class _MostPopularState extends State<MostPopular> {
     );
   }
 }
-
-List mostPopular = [
-  {
-    'image':
-        'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Zm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
-    'text': ''
-  },
-  {
-    'image':
-        'https://media.istockphoto.com/photos/closeup-of-a-veggie-burger-with-copy-space-picture-id1331109186?b=1&k=20&m=1331109186&s=170667a&w=0&h=CWqc2DNV-frmE_aqiQu4Q-SfCUmqJIp362drb4cSMZU=',
-    'text': 'Burger by Bambaa'
-  },
-  {
-    'image':
-        'https://images.unsplash.com/photo-1547558840-8ad6c8e662a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZCUyMGl0ZW1zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-    'text': 'Barista'
-  },
-  {
-    'image':
-        'https://images.unsplash.com/photo-1576521529275-f0f0d02a93b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Zm9vZCUyMGl0ZW1zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-    'text': 'Cafe De Noires'
-  },
-];

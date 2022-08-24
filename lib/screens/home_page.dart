@@ -320,39 +320,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-List populard = [
-  {
-    'image':
-        'https://images.unsplash.com/photo-1593246049226-ded77bf90326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHBpenphfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-    'title': 'Minute by tuk tuk'
-  },
-  {
-    'image':
-        'https://images.unsplash.com/photo-1576866209830-589e1bfbaa4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGZvb2QlMjBkZWxpdmVyeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
-    'title': 'Cafe de noir'
-  },
-  {
-    'image':
-        'https://images.unsplash.com/photo-1560643123-9157226100d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJha2VyeSUyMHByb2R1Y3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-    'title': 'Bakes by Tella'
-  }
-];
-
-List populars = [
-  {
-    'image':
-        'https://media.istockphoto.com/photos/pepperoni-pizza-with-a-slice-taken-out-with-cheese-pull-picture-id1349560406?b=1&k=20&m=1349560406&s=170667a&w=0&h=LGCnsf_hSzZaIU6CXHuB5N7FB0n5uYibXiUN6DqgK-E=',
-    'title': 'Mulberry Pizza by josh',
-  },
-  {
-    'image':
-        'https://images.unsplash.com/photo-1512568400610-62da28bc8a13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29mZmVlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-    'title': 'Barita',
-  },
-  {
-    'image':
-        'https://images.unsplash.com/photo-1571066811602-716837d681de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
-    'title': 'Pizza Rush Hour',
-  },
-];

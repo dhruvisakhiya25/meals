@@ -211,16 +211,9 @@ class _ProfilePageState extends State<ProfilePage> {
                         borderRadius: BorderRadius.circular(30)),
                     padding: const EdgeInsets.only(left: 20),
                     margin: const EdgeInsets.all(10),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-
-                        Text(
-                          userData!['name'],
-                          style: const TextStyle(fontSize: 20),
-                        ),
-                      ],
+                    child: Text(
+                      userData!['name'],
+                      style: const TextStyle(fontSize: 20),
                     ))
               else
                 Container(
@@ -231,16 +224,9 @@ class _ProfilePageState extends State<ProfilePage> {
                         borderRadius: BorderRadius.circular(30)),
                     padding: const EdgeInsets.only(left: 20),
                     margin: const EdgeInsets.all(10),
-                    child: Column(mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      // ignore: prefer_const_literals_to_create_immutables
-                      children: [
-
-                        Text(
-                          userName!,
-                          style: const TextStyle(fontSize: 20),
-                        ),
-                      ],
+                    child: Text(
+                      userName!,
+                      style: const TextStyle(fontSize: 20),
                     )),
               if (userData != null)
                 Container(
@@ -251,15 +237,9 @@ class _ProfilePageState extends State<ProfilePage> {
                         borderRadius: BorderRadius.circular(30)),
                     padding: const EdgeInsets.only(left: 20),
                     margin: const EdgeInsets.all(10),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-
-                        Text(
-                          userData!['email'],
-                          style: const TextStyle(fontSize: 20),
-                        ),
-                      ],
+                    child: Text(
+                      userData!['email'],
+                      style: const TextStyle(fontSize: 20),
                     ))
               else
                 Container(
@@ -270,14 +250,9 @@ class _ProfilePageState extends State<ProfilePage> {
                         borderRadius: BorderRadius.circular(30)),
                     padding: const EdgeInsets.only(left: 20),
                     margin: const EdgeInsets.all(10),
-                    child: Column(mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          userEmail,
-                          style: const TextStyle(fontSize: 20),
-                        ),
-                      ],
+                    child: Text(
+                      userEmail,
+                      style: const TextStyle(fontSize: 20),
                     )),
             ],
           ),
