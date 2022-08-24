@@ -92,7 +92,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.all(40.0),
           child: Column(
             children: [Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [  Text(
