@@ -59,8 +59,8 @@ class _FoodsState extends State<Foods> {
                     QuerySnapshot querySnapshot = snapshot.data;
                     List<QueryDocumentSnapshot> document = querySnapshot.docs;
                     return ListView.separated(
-                      separatorBuilder: (context, index) => Divider(height: 3,),
-                      physics: NeverScrollableScrollPhysics(),
+                      separatorBuilder: (context, index) => const Divider(height: 3,),
+                      physics: const NeverScrollableScrollPhysics(),
                       itemCount: document.length,
                       shrinkWrap: true,
                       itemBuilder: (context, index) {
@@ -86,7 +86,7 @@ class _FoodsState extends State<Foods> {
                             ),
                             alignment: Alignment.bottomLeft,
                             child: ListTile(
-                              title: Text(documents['txt'],style: TextStyle(color: white),),
+                              title: Text(documents['txt'],style: const TextStyle(color: white),),
                               subtitle: Row(
                                 children: [
                                   const Icon(
