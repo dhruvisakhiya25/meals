@@ -182,7 +182,7 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               if (userData != null)
                 Text(
-                  hiThere + userData!['name'],
+                 userData!['name'],
                   style: const TextStyle(fontWeight: FontWeight.bold),
                 )
               else
