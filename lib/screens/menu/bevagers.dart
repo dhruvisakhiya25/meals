@@ -54,7 +54,9 @@ class _BevagersState extends State<Bevagers> {
                     return Center(child: Text(snapshot.error.toString()));
                   }
                   if (snapshot.connectionState == ConnectionState.waiting) {
-                    return const Center(child: CircularProgressIndicator());
+                    return const Center(child: CircularProgressIndicator(
+
+                    ));
                   }
                   QuerySnapshot querySnapshot = snapshot.data;
                   List<QueryDocumentSnapshot> document = querySnapshot.docs;
