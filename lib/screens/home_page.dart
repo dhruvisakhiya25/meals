@@ -246,13 +246,10 @@ class _HomePageState extends State<HomePage> {
                       physics: const NeverScrollableScrollPhysics(),
                       itemCount: document.length,
                       shrinkWrap: true,
-                      // scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         QueryDocumentSnapshot documents = document[index];
                         return SizedBox(
                           height: 100,
-
-                          // color: Colors.green,
                           child: Row(
                             children: [
                               Container(
