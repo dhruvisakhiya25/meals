@@ -31,10 +31,16 @@ class _MostPopularState extends State<MostPopular> {
             stream: _streams,
             builder: (BuildContext context, AsyncSnapshot snapshot) {
               if (snapshot.hasError) {
-                return Center(child: Text(snapshot.error.toString()));
+                return Center(
+                  child: Text(
+                    snapshot.error.toString(),
+                  ),
+                );
               }
               if (snapshot.connectionState == ConnectionState.waiting) {
-                return const Center(child: CircularProgressIndicator());
+                return const Center(
+                  child: CircularProgressIndicator(),
+                );
               }
               QuerySnapshot querySnapshot = snapshot.data;
               List<QueryDocumentSnapshot> document = querySnapshot.docs;
@@ -43,7 +49,6 @@ class _MostPopularState extends State<MostPopular> {
                   separatorBuilder: (context, index) => const Divider(
                     height: 3,
                   ),
-                  // physics: const NeverScrollableScrollPhysics(),
                   itemCount: document.length,
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
@@ -63,10 +68,11 @@ class _MostPopularState extends State<MostPopular> {
                             // color: Colors.red,
                             borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
-                                image: NetworkImage(documents['most image']),
+                                image: NetworkImage(
+                                  documents['most image'],
+                                ),
                                 fit: BoxFit.cover),
                           ),
-                          // alignment: Alignment.bottomLeft,
                         ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,

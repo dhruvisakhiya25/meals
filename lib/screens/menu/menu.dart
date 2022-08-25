@@ -49,143 +49,144 @@ class MenuScreen extends StatelessWidget {
                     height: 20,
                   ),
                   SizedBox(
-                      height: Helper.getScreenHeight(context) * 0.6,
-                      width: Helper.getScreenWidth(context),
-                      child: Stack(
-                        children: [
-                          Container(
-                            height: double.infinity,
-                            width: 100,
-                            decoration: const ShapeDecoration(
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.only(
-                                    topRight: Radius.circular(30),
-                                    bottomRight: Radius.circular(30),
-                                  ),
+                    height: Helper.getScreenHeight(context) * 0.6,
+                    width: Helper.getScreenWidth(context),
+                    child: Stack(
+                      children: [
+                        Container(
+                          height: double.infinity,
+                          width: 100,
+                          decoration: const ShapeDecoration(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.only(
+                                  topRight: Radius.circular(30),
+                                  bottomRight: Radius.circular(30),
                                 ),
-                                color: orange),
-                          ),
-                          Padding(
-                            padding:
-                                const EdgeInsets.symmetric(horizontal: 20.0),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                GestureDetector(
-                                  onTap: () {
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) => const Foods(),
-                                        ));
-                                  },
-                                  child: MenuCard(
-                                    imageShape: ClipOval(
-                                      child: Container(
-                                        height: 60,
-                                        width: 60,
-                                        decoration: const BoxDecoration(
-                                            image: DecorationImage(
+                              ),
+                              color: orange),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              GestureDetector(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => const Foods(),
+                                    ),
+                                  );
+                                },
+                                child: MenuCard(
+                                  imageShape: ClipOval(
+                                    child: Container(
+                                      height: 60,
+                                      width: 60,
+                                      decoration: const BoxDecoration(
+                                        image: DecorationImage(
                                           image: AssetImage(
                                             'assets/image/western2.jpg',
                                           ),
                                           fit: BoxFit.cover,
-                                        )),
-                                      ),
-                                    ),
-                                    name: foods,
-                                    count: countDown,
-                                  ),
-                                ),
-                                const SizedBox(
-                                  height: 20,
-                                ),
-                                GestureDetector(
-                                  onTap: () {
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) =>
-                                              const Bevagers(),
-                                        ));
-                                  },
-                                  child: MenuCard(
-                                    imageShape: ClipRRect(
-                                      borderRadius: BorderRadius.circular(10),
-                                      child: SizedBox(
-                                        height: 60,
-                                        width: 60,
-                                        child: Image.asset(
-                                          'assets/image/coffee2.jpg',
-                                          fit: BoxFit.cover,
                                         ),
                                       ),
                                     ),
-                                    name: bevagers,
-                                    count: counts,
                                   ),
+                                  name: foods,
+                                  count: countDown,
                                 ),
-                                const SizedBox(
-                                  height: 20,
-                                ),
-                                GestureDetector(
-                                  onTap: () {
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) =>
-                                              const Desserts(),
-                                        ));
-                                  },
-                                  child: MenuCard(
-                                    imageShape: ClipPath(
-                                      clipper: CustomTriangle(),
-                                      child: SizedBox(
-                                        height: 70,
-                                        width: 70,
-                                        child: Image.asset(
-                                          'assets/image/dessert.jpg',
-                                          fit: BoxFit.cover,
-                                        ),
+                              ),
+                              const SizedBox(
+                                height: 20,
+                              ),
+                              GestureDetector(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => const Bevagers(),
+                                    ),
+                                  );
+                                },
+                                child: MenuCard(
+                                  imageShape: ClipRRect(
+                                    borderRadius: BorderRadius.circular(10),
+                                    child: SizedBox(
+                                      height: 60,
+                                      width: 60,
+                                      child: Image.asset(
+                                        'assets/image/coffee2.jpg',
+                                        fit: BoxFit.cover,
                                       ),
                                     ),
-                                    name: desserts,
-                                    count: nums,
                                   ),
+                                  name: bevagers,
+                                  count: counts,
                                 ),
-                                const SizedBox(
-                                  height: 20,
-                                ),
-                                GestureDetector(
-                                  onTap: () {
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) =>
-                                              const Promotions(),
-                                        ));
-                                  },
-                                  child: MenuCard(
-                                    imageShape: ClipPath(
-                                      clipper: CustomDiamond(),
-                                      child: SizedBox(
-                                        height: 80,
-                                        width: 80,
-                                        child: Image.asset(
-                                          'assets/image/hamburger3.jpg',
-                                          fit: BoxFit.cover,
-                                        ),
+                              ),
+                              const SizedBox(
+                                height: 20,
+                              ),
+                              GestureDetector(
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => const Desserts(),
+                                      ));
+                                },
+                                child: MenuCard(
+                                  imageShape: ClipPath(
+                                    clipper: CustomTriangle(),
+                                    child: SizedBox(
+                                      height: 70,
+                                      width: 70,
+                                      child: Image.asset(
+                                        'assets/image/dessert.jpg',
+                                        fit: BoxFit.cover,
                                       ),
                                     ),
-                                    name: promotion,
-                                    count: count,
                                   ),
+                                  name: desserts,
+                                  count: nums,
                                 ),
-                              ],
-                            ),
-                          )
-                        ],
-                      ))
+                              ),
+                              const SizedBox(
+                                height: 20,
+                              ),
+                              GestureDetector(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => const Promotions(),
+                                    ),
+                                  );
+                                },
+                                child: MenuCard(
+                                  imageShape: ClipPath(
+                                    clipper: CustomDiamond(),
+                                    child: SizedBox(
+                                      height: 80,
+                                      width: 80,
+                                      child: Image.asset(
+                                        'assets/image/hamburger3.jpg',
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  name: promotion,
+                                  count: count,
+                                ),
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
@@ -264,19 +265,21 @@ class MenuCard extends StatelessWidget {
           child: Align(
             alignment: Alignment.centerRight,
             child: Container(
-                height: 40,
-                width: 40,
-                decoration: const ShapeDecoration(
-                    shape: CircleBorder(),
-                    color: white,
-                    shadows: [
-                      BoxShadow(
-                        color: placeholder,
-                        offset: Offset(0, 2),
-                        blurRadius: 5,
-                      )
-                    ]),
-                child: const Icon(icRightArrow)),
+              height: 40,
+              width: 40,
+              decoration: const ShapeDecoration(
+                shape: CircleBorder(),
+                color: white,
+                shadows: [
+                  BoxShadow(
+                    color: placeholder,
+                    offset: Offset(0, 2),
+                    blurRadius: 5,
+                  )
+                ],
+              ),
+              child: const Icon(icRightArrow),
+            ),
           ),
         ),
       ],

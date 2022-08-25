@@ -8,6 +8,7 @@ import 'package:meals/screens/my_order.dart';
 import 'package:meals/screens/notification.dart';
 import 'package:meals/screens/payment_details.dart';
 import 'package:meals/screens/profilepage.dart';
+import 'package:meals/screens/shared_pref.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/strings.dart';
@@ -89,14 +90,14 @@ class _MorePageState extends State<MorePage> {
                             context,
                             MaterialPageRoute(
                               builder: (context) => const InBoxPage(),
-                            ));
+                            ),);
                       }
                       if (index == 4) {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
                               builder: (context) => const AboutUsPage(),
-                            ));
+                            ),);
                       }
                       if (index == 5) {
                         await fbLogout();
@@ -107,6 +108,9 @@ class _MorePageState extends State<MorePage> {
                             MaterialPageRoute(
                               builder: (context) => const LoginPage(),
                             ));
+                        SharedPref.setFbLoginName = '';
+                        SharedPref.setFbLoginEmail = '';
+                        SharedPref.setProfileImage = '';
                       }
                     },
                     leading: CircleAvatar(
@@ -116,7 +120,7 @@ class _MorePageState extends State<MorePage> {
                         color: white,
                       ),
                     ),
-                    title: Text(more[index]['title']),
+                    title: Text(more[index]['title'],),
                     trailing: const Icon(
                       icRightArrow,
                     ),

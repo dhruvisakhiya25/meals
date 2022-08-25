@@ -79,14 +79,16 @@ class _MealMonkeyState extends State<MealMonkey> {
                       minWidth: 250,
                       color: orange,
                       shape: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(25),
-                          borderSide: const BorderSide(color: orange)),
+                        borderRadius: BorderRadius.circular(25),
+                        borderSide: const BorderSide(color: orange),
+                      ),
                       onPressed: () {
                         Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const LoginPage(),
-                            ));
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const LoginPage(),
+                          ),
+                        );
                         setState(() {});
                       },
                       child: Text(
@@ -101,15 +103,18 @@ class _MealMonkeyState extends State<MealMonkey> {
                       height: 44,
                       minWidth: 250,
                       shape: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(25),
-                          borderSide: const BorderSide(color: orange)),
+                        borderRadius: BorderRadius.circular(25),
+                        borderSide: const BorderSide(color: orange),
+                      ),
                       onPressed: () {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
                               builder: (context) => const SignUpPage(),
                             ));
-                        setState(() {});
+                        setState(
+                          () {},
+                        );
                       },
                       child: Text(
                         createAccount,

@@ -110,9 +110,10 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                               width: 30,
                               // color: Colors.red,
                               decoration: const BoxDecoration(
-                                  image: DecorationImage(
-                                      image:
-                                          AssetImage('assets/image/visa.jpg'))),
+                                image: DecorationImage(
+                                  image: AssetImage('assets/image/visa.jpg'),
+                                ),
+                              ),
                             ),
                             Text(
                               numbers,
@@ -125,8 +126,9 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                             MaterialButton(
                               height: 35,
                               shape: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(20),
-                                  borderSide: const BorderSide(color: orange)),
+                                borderRadius: BorderRadius.circular(20),
+                                borderSide: const BorderSide(color: orange),
+                              ),
                               onPressed: () {},
                               child: Text(
                                 debitCard,
@@ -166,14 +168,16 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                   color: orange,
                   height: 45,
                   shape: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(25),
-                      borderSide: const BorderSide(color: orange)),
+                    borderRadius: BorderRadius.circular(25),
+                    borderSide: const BorderSide(color: orange),
+                  ),
                   onPressed: () {
                     showModalBottomSheet(
                       shape: const OutlineInputBorder(
                         borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(20),
-                            topLeft: Radius.circular(20)),
+                          topRight: Radius.circular(20),
+                          topLeft: Radius.circular(20),
+                        ),
                         borderSide: BorderSide(color: white),
                       ),
                       isScrollControlled: true,
@@ -187,10 +191,11 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                             Align(
                               alignment: Alignment.topRight,
                               child: IconButton(
-                                  onPressed: () {
-                                    Navigator.pop(context);
-                                  },
-                                  icon: const Icon(icClose)),
+                                onPressed: () {
+                                  Navigator.pop(context);
+                                },
+                                icon: const Icon(icClose),
+                              ),
                             ),
                             Text(
                               addCreditDebitCard,
@@ -211,22 +216,22 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                                 keyboardType: TextInputType.phone,
                                 textInputAction: TextInputAction.next,
                                 decoration: InputDecoration(
-                                    focusedBorder: OutlineInputBorder(
-                                        borderSide: const BorderSide(
-                                          color: grey,
-                                        ),
-                                        borderRadius:
-                                            BorderRadius.circular(25)),
-                                    focusColor: grey,
-                                    hintText: cardNumber,
-                                    enabledBorder: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(25),
-                                      borderSide: const BorderSide(color: grey),
-                                    ),
-                                    border: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(25),
-                                        borderSide:
-                                            const BorderSide(color: grey))),
+                                  focusedBorder: OutlineInputBorder(
+                                      borderSide: const BorderSide(
+                                        color: grey,
+                                      ),
+                                      borderRadius: BorderRadius.circular(25)),
+                                  focusColor: grey,
+                                  hintText: cardNumber,
+                                  enabledBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(25),
+                                    borderSide: const BorderSide(color: grey),
+                                  ),
+                                  border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(25),
+                                    borderSide: const BorderSide(color: grey),
+                                  ),
+                                ),
                               ),
                             ),
                             Row(
@@ -247,10 +252,11 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                                     controller: txtMM,
                                     textInputAction: TextInputAction.next,
                                     decoration: InputDecoration(
-                                        hintText: mM,
-                                        border: OutlineInputBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(30))),
+                                      hintText: mM,
+                                      border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(30),
+                                      ),
+                                    ),
                                   ),
                                 ),
                                 const SizedBox(
@@ -262,10 +268,11 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                                     textInputAction: TextInputAction.next,
                                     controller: txtYY,
                                     decoration: InputDecoration(
-                                        hintText: yY,
-                                        border: OutlineInputBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(30))),
+                                      hintText: yY,
+                                      border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(30),
+                                      ),
+                                    ),
                                   ),
                                 ),
                               ],
@@ -276,22 +283,23 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                                 textInputAction: TextInputAction.next,
                                 controller: txtSecurityCode,
                                 decoration: InputDecoration(
-                                    focusedBorder: OutlineInputBorder(
-                                        borderSide: const BorderSide(
-                                          color: grey,
-                                        ),
-                                        borderRadius:
-                                            BorderRadius.circular(25)),
-                                    focusColor: grey,
-                                    hintText: securityCode,
-                                    enabledBorder: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(25),
-                                      borderSide: const BorderSide(color: grey),
+                                  focusedBorder: OutlineInputBorder(
+                                    borderSide: const BorderSide(
+                                      color: grey,
                                     ),
-                                    border: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(25),
-                                        borderSide:
-                                            const BorderSide(color: grey))),
+                                    borderRadius: BorderRadius.circular(25),
+                                  ),
+                                  focusColor: grey,
+                                  hintText: securityCode,
+                                  enabledBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(25),
+                                    borderSide: const BorderSide(color: grey),
+                                  ),
+                                  border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(25),
+                                    borderSide: const BorderSide(color: grey),
+                                  ),
+                                ),
                               ),
                             ),
                             Padding(
@@ -300,22 +308,23 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                                 textInputAction: TextInputAction.next,
                                 controller: txtFirstName,
                                 decoration: InputDecoration(
-                                    focusedBorder: OutlineInputBorder(
-                                        borderSide: const BorderSide(
-                                          color: grey,
-                                        ),
-                                        borderRadius:
-                                            BorderRadius.circular(25)),
-                                    focusColor: grey,
-                                    hintText: firstName,
-                                    enabledBorder: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(25),
-                                      borderSide: const BorderSide(color: grey),
+                                  focusedBorder: OutlineInputBorder(
+                                    borderSide: const BorderSide(
+                                      color: grey,
                                     ),
-                                    border: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(25),
-                                        borderSide:
-                                            const BorderSide(color: grey))),
+                                    borderRadius: BorderRadius.circular(25),
+                                  ),
+                                  focusColor: grey,
+                                  hintText: firstName,
+                                  enabledBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(25),
+                                    borderSide: const BorderSide(color: grey),
+                                  ),
+                                  border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(25),
+                                    borderSide: const BorderSide(color: grey),
+                                  ),
+                                ),
                               ),
                             ),
                             Padding(
@@ -324,22 +333,23 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                                 textInputAction: TextInputAction.done,
                                 controller: txtLastName,
                                 decoration: InputDecoration(
-                                    focusedBorder: OutlineInputBorder(
-                                        borderSide: const BorderSide(
-                                          color: grey,
-                                        ),
-                                        borderRadius:
-                                            BorderRadius.circular(25)),
-                                    focusColor: grey,
-                                    hintText: lastName,
-                                    enabledBorder: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(25),
-                                      borderSide: const BorderSide(color: grey),
+                                  focusedBorder: OutlineInputBorder(
+                                    borderSide: const BorderSide(
+                                      color: grey,
                                     ),
-                                    border: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(25),
-                                        borderSide:
-                                            const BorderSide(color: grey))),
+                                    borderRadius: BorderRadius.circular(25),
+                                  ),
+                                  focusColor: grey,
+                                  hintText: lastName,
+                                  enabledBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(25),
+                                    borderSide: const BorderSide(color: grey),
+                                  ),
+                                  border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(25),
+                                    borderSide: const BorderSide(color: grey),
+                                  ),
+                                ),
                               ),
                             ),
                             Row(
@@ -376,9 +386,9 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                                 height: 50,
                                 color: orange,
                                 shape: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(25),
-                                    borderSide:
-                                        const BorderSide(color: orange)),
+                                  borderRadius: BorderRadius.circular(25),
+                                  borderSide: const BorderSide(color: orange),
+                                ),
                                 onPressed: () {},
                                 child: Text(
                                   addCards,

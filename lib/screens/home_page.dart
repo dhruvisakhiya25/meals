@@ -97,8 +97,9 @@ class _HomePageState extends State<HomePage> {
                     hintText: search,
                     hintStyle: const TextStyle(color: grey),
                     focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(30),
-                        borderSide: const BorderSide(color: grey)),
+                      borderRadius: BorderRadius.circular(30),
+                      borderSide: const BorderSide(color: grey),
+                    ),
                     border: OutlineInputBorder(
                       borderSide: const BorderSide(color: grey),
                       borderRadius: BorderRadius.circular(30),
@@ -127,10 +128,16 @@ class _HomePageState extends State<HomePage> {
                   stream: _streams,
                   builder: (BuildContext context, AsyncSnapshot snapshot) {
                     if (snapshot.hasError) {
-                      return Center(child: Text(snapshot.error.toString()));
+                      return Center(
+                        child: Text(
+                          snapshot.error.toString(),
+                        ),
+                      );
                     }
                     if (snapshot.connectionState == ConnectionState.waiting) {
-                      return const Center(child: CircularProgressIndicator());
+                      return const Center(
+                        child: CircularProgressIndicator(),
+                      );
                     }
                     QuerySnapshot querySnapshot = snapshot.data;
                     List<QueryDocumentSnapshot> document = querySnapshot.docs;
@@ -141,7 +148,6 @@ class _HomePageState extends State<HomePage> {
                       physics: const NeverScrollableScrollPhysics(),
                       itemCount: document.length,
                       shrinkWrap: true,
-                      // scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         QueryDocumentSnapshot documents = document[index];
                         return Column(
@@ -151,12 +157,13 @@ class _HomePageState extends State<HomePage> {
                               height: 250,
                               width: 400,
                               decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                image: NetworkImage(
-                                  documents['popular image'],
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                    documents['popular image'],
+                                  ),
+                                  fit: BoxFit.fitWidth,
                                 ),
-                                fit: BoxFit.fitWidth,
-                              )),
+                              ),
                             ),
                             Text(
                               documents['popular name'],
@@ -170,8 +177,10 @@ class _HomePageState extends State<HomePage> {
                                   color: orange,
                                   size: 18,
                                 ),
-                                Text(documents['popular rate'].toString(),
-                                    style: const TextStyle(color: orange)),
+                                Text(
+                                  documents['popular rate'].toString(),
+                                  style: const TextStyle(color: orange),
+                                ),
                                 const SizedBox(
                                   width: 3,
                                 ),
@@ -232,10 +241,16 @@ class _HomePageState extends State<HomePage> {
                   stream: _stream,
                   builder: (BuildContext context, AsyncSnapshot snapshot) {
                     if (snapshot.hasError) {
-                      return Center(child: Text(snapshot.error.toString()));
+                      return Center(
+                        child: Text(
+                          snapshot.error.toString(),
+                        ),
+                      );
                     }
                     if (snapshot.connectionState == ConnectionState.waiting) {
-                      return const Center(child: CircularProgressIndicator());
+                      return const Center(
+                        child: CircularProgressIndicator(),
+                      );
                     }
                     QuerySnapshot querySnapshot = snapshot.data;
                     List<QueryDocumentSnapshot> document = querySnapshot.docs;
@@ -258,7 +273,8 @@ class _HomePageState extends State<HomePage> {
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image: NetworkImage(
-                                          documents['recent image']),
+                                        documents['recent image'],
+                                      ),
                                       fit: BoxFit.fill),
                                   borderRadius: BorderRadius.circular(15),
                                 ),
@@ -278,7 +294,9 @@ class _HomePageState extends State<HomePage> {
                                     const SizedBox(
                                       height: 5,
                                     ),
-                                    Text(documents['recent type']),
+                                    Text(
+                                      documents['recent type'],
+                                    ),
                                     const SizedBox(
                                       height: 5,
                                     ),
@@ -294,7 +312,6 @@ class _HomePageState extends State<HomePage> {
                                           style: const TextStyle(
                                               color: orange, fontSize: 15),
                                         ),
-                                        // Text(rating)
                                       ],
                                     ),
                                     const SizedBox(

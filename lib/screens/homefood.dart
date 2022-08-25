@@ -32,10 +32,16 @@ class _FoodState extends State<Food> {
             stream: _streams,
             builder: (BuildContext context, AsyncSnapshot snapshot) {
               if (snapshot.hasError) {
-                return Center(child: Text(snapshot.error.toString()));
+                return Center(
+                  child: Text(
+                    snapshot.error.toString(),
+                  ),
+                );
               }
               if (snapshot.connectionState == ConnectionState.waiting) {
-                return const Center(child: CircularProgressIndicator());
+                return const Center(
+                  child: CircularProgressIndicator(),
+                );
               }
               QuerySnapshot querySnapshot = snapshot.data;
               List<QueryDocumentSnapshot> document = querySnapshot.docs;
@@ -44,7 +50,6 @@ class _FoodState extends State<Food> {
                   separatorBuilder: (context, index) => const Divider(
                     height: 3,
                   ),
-                  // physics: const NeverScrollableScrollPhysics(),
                   itemCount: document.length,
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
@@ -57,10 +62,11 @@ class _FoodState extends State<Food> {
                           width: 100,
                           margin: const EdgeInsets.all(5),
                           decoration: BoxDecoration(
-                            // color: Colors.red,
                             borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
-                                image: NetworkImage(documents['food image']),
+                                image: NetworkImage(
+                                  documents['food image'],
+                                ),
                                 fit: BoxFit.cover),
                           ),
                           // alignment: Alignment.bottomLeft,

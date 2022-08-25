@@ -50,10 +50,16 @@ class _InBoxPageState extends State<InBoxPage> {
                 stream: _streams,
                 builder: (BuildContext context, AsyncSnapshot snapshot) {
                   if (snapshot.hasError) {
-                    return Center(child: Text(snapshot.error.toString()));
+                    return Center(
+                      child: Text(
+                        snapshot.error.toString(),
+                      ),
+                    );
                   }
                   if (snapshot.connectionState == ConnectionState.waiting) {
-                    return const Center(child: CircularProgressIndicator());
+                    return const Center(
+                      child: CircularProgressIndicator(),
+                    );
                   }
                   QuerySnapshot querySnapshot = snapshot.data;
                   List<QueryDocumentSnapshot> document = querySnapshot.docs;
@@ -81,14 +87,20 @@ class _InBoxPageState extends State<InBoxPage> {
                         subtitle: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(documents['inbox lorem']),
-                            Text(documents['inbox consectetur'])
+                            Text(
+                              documents['inbox lorem'],
+                            ),
+                            Text(
+                              documents['inbox consectetur'],
+                            )
                           ],
                         ),
                         trailing: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(documents['inbox time']),
+                            Text(
+                              documents['inbox time'],
+                            ),
                             const Icon(
                               icStar,
                               color: orange,

@@ -105,7 +105,7 @@ class _MyOrderPageState extends State<MyOrderPage> {
                   itemBuilder: (context, index) => Column(
                     children: [
                       ListTile(
-                        title: Text(order[index]['title']),
+                        title: Text(order[index]['title'],),
                         trailing: Text(
                           order[index]['price'],
                           style: const TextStyle(

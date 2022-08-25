@@ -82,7 +82,7 @@ class _FoodLovePageState extends State<FoodLovePage> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => const FastDeliveryPage(),
-                    ));
+                    ),);
                 setState(
                   () {},
                 );

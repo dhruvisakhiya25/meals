@@ -43,7 +43,6 @@ class _LoginPageState extends State<LoginPage> {
     getName = SharedPref.getFbLoginName.toString();
     getEmail = SharedPref.getFbLoginEmail.toString();
     getPhoto = SharedPref.getFbLoginPhoto.toString();
-    // checkLogin();
   }
 
   bool passwords = true;
@@ -104,14 +103,17 @@ class _LoginPageState extends State<LoginPage> {
                     obscureText: passwords,
                     decoration: InputDecoration(
                       suffixIcon: IconButton(
-                          onPressed: () {
-                            passwords = !passwords;
-                            setState(() {});
-                          },
-                          icon: Icon(
-                            passwords ? icVisibilityOff : icVisibility,
-                            color: grey,
-                          )),
+                        onPressed: () {
+                          passwords = !passwords;
+                          setState(
+                            () {},
+                          );
+                        },
+                        icon: Icon(
+                          passwords ? icVisibilityOff : icVisibility,
+                          color: grey,
+                        ),
+                      ),
                       prefixIconColor: orange,
                       hintText: password,
                       focusedBorder: OutlineInputBorder(
@@ -152,10 +154,11 @@ class _LoginPageState extends State<LoginPage> {
                         servise.loginUser(
                             txtEmail.text, txtPassword.text, context);
                         Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const MainPage(),
-                            ));
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const MainPage(),
+                          ),
+                        );
                       }
                       setState(
                         () {},
@@ -169,10 +172,11 @@ class _LoginPageState extends State<LoginPage> {
                   TextButton(
                     onPressed: () {
                       Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const ResetPasswordPage(),
-                          ));
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ResetPasswordPage(),
+                        ),
+                      );
                     },
                     child: Text(
                       forgetYourPassword,
@@ -193,11 +197,14 @@ class _LoginPageState extends State<LoginPage> {
                     onPressed: () async {
                       await fbLogin();
 
-                      Navigator.pushReplacement(context, MaterialPageRoute(
-                        builder: (context) {
-                          return const MainPage();
-                        },
-                      ));
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const MainPage();
+                          },
+                        ),
+                      );
                       SharedPref.setFbLoginName = userData!['name'];
                       SharedPref.setFbLoginEmail = userData!['email'];
                       SharedPref.setFbLoginPhoto =
@@ -218,10 +225,11 @@ class _LoginPageState extends State<LoginPage> {
                     onPressed: () async {
                       await signInWithGoogle();
                       Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const MainPage(),
-                          ));
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const MainPage(),
+                        ),
+                      );
                     },
                     themeMode: themeMode,
                     isLoading: isLoading,
@@ -238,18 +246,20 @@ class _LoginPageState extends State<LoginPage> {
                     children: [
                       Text(dontHaveAccount),
                       TextButton(
-                          onPressed: () {
-                            Navigator.pushReplacement(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const SignUpPage(),
-                                ));
-                          },
-                          child: Text(
-                            signUp,
-                            style: const TextStyle(
-                                color: orange, fontWeight: FontWeight.bold),
-                          ))
+                        onPressed: () {
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const SignUpPage(),
+                            ),
+                          );
+                        },
+                        child: Text(
+                          signUp,
+                          style: const TextStyle(
+                              color: orange, fontWeight: FontWeight.bold),
+                        ),
+                      )
                     ],
                   )
                 ],
