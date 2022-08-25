@@ -73,17 +73,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   TextFormField(
                     autovalidateMode: AutovalidateMode.onUserInteraction,
-                    validator: (value) {
-                      if (value!.isEmpty) {
-                        return ("Please Enter Your Email");
-                      }
-                      // Reg Expression for Email Validation
-                      if (!RegExp("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+.[a-z]")
-                          .hasMatch(value)) {
-                        return ("Please Enter Your Valid Email");
-                      }
-                      return null;
-                    },
+                   validator: (value) => validateEmail(value),
                     controller: txtEmail,
                     decoration: InputDecoration(
                       hintText: yourEmail,
@@ -285,4 +275,20 @@ fbLogin() async {
   await FacebookAuth.instance.login();
   final user = await FacebookAuth.instance.getUserData();
   userData = user;
+}
+String? validateEmail(String? value) {
+  String pattern =
+      r"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]"
+      r"{0,253}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]"
+      r"{0,253}[a-zA-Z0-9])?)*$";
+  RegExp regex = RegExp(pattern);
+  if (value!.isEmpty) {
+    return 'Email cannot be Empty';
+  }
+  if (!regex.hasMatch(value)) {
+    return 'Enter a valid email address';
+  }
+  else {
+    return null;
+  }
 }
