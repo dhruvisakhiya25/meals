@@ -246,6 +246,8 @@ class _ProfilePageState extends State<ProfilePage> {
                         ));
                     FacebookLoginShared.setFbLoginName = '';
                     FacebookLoginShared.setFbLoginEmail = '';
+                    FacebookLoginShared.setImage = '';
+
                   },
                   child: const Text(
                     'Sign Out',
