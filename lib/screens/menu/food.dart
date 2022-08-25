@@ -143,7 +143,7 @@ class _ItemState extends State<Item> {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          physics: NeverScrollableScrollPhysics(),
+          physics: const NeverScrollableScrollPhysics(),
           child: Column(
             children: [
               StreamBuilder<QuerySnapshot>(
@@ -201,7 +201,7 @@ class _ItemState extends State<Item> {
                                         fontWeight: FontWeight.bold,
                                         fontSize: 30),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 30,
                                   ),
                                   Text(documents['items rate']),

@@ -29,7 +29,7 @@ class _PaymentDetailsState extends State<PaymentDetails> {
             crossAxisAlignment: CrossAxisAlignment.start,
             // ignore: prefer_const_constructors
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Row(
