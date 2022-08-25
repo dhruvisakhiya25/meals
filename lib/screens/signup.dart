@@ -1,5 +1,8 @@
+import 'dart:ffi';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:meals/screens/home_page.dart';
 import 'package:meals/screens/login.dart';
 import 'package:meals/screens/mainPage.dart';
 import 'package:meals/utils/color.dart';
@@ -53,9 +56,12 @@ class _SignUpPageState extends State<SignUpPage> {
                     height: 25,
                   ),
                   TextFormField(
+                    autovalidateMode: AutovalidateMode.onUserInteraction,
                     controller: txtName,
                     textInputAction: TextInputAction.next,
-                    decoration: InputDecoration(
+                    decoration: InputDecoration(errorBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(30),
+                        borderSide: BorderSide(color: Colors.red)),
                         hintText: name,
                         focusedBorder: OutlineInputBorder(
                           borderSide: const BorderSide(color: grey),
@@ -80,9 +86,12 @@ class _SignUpPageState extends State<SignUpPage> {
                     height: 20,
                   ),
                   TextFormField(
+                    autovalidateMode: AutovalidateMode.onUserInteraction,
                     controller: txtEmail,
                     textInputAction: TextInputAction.next,
-                    decoration: InputDecoration(
+                    decoration: InputDecoration(errorBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(30),
+                        borderSide: BorderSide(color: Colors.red)),
                         hintText: email,
                         focusedBorder: OutlineInputBorder(
                           borderSide: const BorderSide(color: grey),
@@ -107,11 +116,14 @@ class _SignUpPageState extends State<SignUpPage> {
                   const SizedBox(
                     height: 20,
                   ),
-                  TextFormField(
+                  TextFormField(keyboardType: TextInputType.phone,
+                    autovalidateMode: AutovalidateMode.onUserInteraction,
                     controller: txtMobile,
                     textInputAction: TextInputAction.next,
                     maxLength: 10,
-                    decoration: InputDecoration(
+                    decoration: InputDecoration(errorBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(30),
+                        borderSide: BorderSide(color: Colors.red)),
                         hintText: mobile,
                         focusedBorder: OutlineInputBorder(
                           borderSide: const BorderSide(color: grey),
@@ -133,9 +145,13 @@ class _SignUpPageState extends State<SignUpPage> {
                     },
                   ),
                   TextFormField(
+                    autovalidateMode: AutovalidateMode.onUserInteraction,
                     controller: txtAddress,
                     textInputAction: TextInputAction.next,
                     decoration: InputDecoration(
+                        errorBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30),
+                            borderSide: BorderSide(color: Colors.red)),
                         hintText: address,
                         focusedBorder: OutlineInputBorder(
                           borderSide: const BorderSide(color: grey),
@@ -175,6 +191,9 @@ class _SignUpPageState extends State<SignUpPage> {
                             color: grey,
                           )),
                       prefixIconColor: orange,
+                      errorBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30),
+                          borderSide: BorderSide(color: Colors.red)),
                       hintText: password,
                       focusedBorder: OutlineInputBorder(
                         borderSide: const BorderSide(color: grey),
@@ -195,15 +214,20 @@ class _SignUpPageState extends State<SignUpPage> {
                       }
                       return null;
                     },
+                    onSaved:(value){ txtPassword.text=value!;},
                   ),
                   const SizedBox(
                     height: 20,
                   ),
                   TextFormField(
+                    autovalidateMode: AutovalidateMode.onUserInteraction,
                     controller: txtConfirmPassword,
                     textInputAction: TextInputAction.done,
                     obscureText: passwords,
                     decoration: InputDecoration(
+                      errorBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30),
+                          borderSide: BorderSide(color: Colors.red)),
                       suffixIcon: IconButton(
                           onPressed: () {
                             passwords = !passwords;
@@ -229,7 +253,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         return (passwordNoMatch);
                       }
                       return null;
-                    },
+                    },onSaved: (value){txtConfirmPassword.text=value!;},
                   ),
                   const SizedBox(
                     height: 20,
@@ -244,13 +268,16 @@ class _SignUpPageState extends State<SignUpPage> {
                         borderSide: const BorderSide(color: orange),
                       ),
                       onPressed: () async {
-                        if (txtEmail.text.isNotEmpty &&
-                            txtConfirmPassword.text.isNotEmpty &&
-                            _formKey.currentState!.validate()) {
+                        if (_formKey.currentState!.validate())
+                        {
                           servise.createUser(
                               txtEmail.text, txtConfirmPassword.text, context);
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => MainPage(),));
                         }
+
+
                         setState(() {});
+
                       },
                       child: Text(
                         signUp,

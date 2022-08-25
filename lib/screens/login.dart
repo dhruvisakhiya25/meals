@@ -90,19 +90,10 @@ class _LoginPageState extends State<LoginPage> {
                   const SizedBox(
                     height: 30,
                   ),
-                  TextFormField(
-                    autovalidateMode: AutovalidateMode.onUserInteraction,
-                    validator: (value) {
-                      RegExp regex = RegExp(r'^.{6,}$');
-                      if (value!.isEmpty) {
-                        return ("Please Enter Your Password");
-                      }
-                      if (!regex.hasMatch(value)) {
-                        return ("Please Valid Password(Min. 6 Character)");
-                      }
-                      return null;
-                    },
+                  TextFormField( autovalidateMode: AutovalidateMode.onUserInteraction,
                     controller: txtPassword,
+                    textInputAction: TextInputAction.next,
+                    obscureText: passwords,
                     decoration: InputDecoration(
                       suffixIcon: IconButton(
                           onPressed: () {
@@ -113,15 +104,27 @@ class _LoginPageState extends State<LoginPage> {
                             passwords ? icVisibilityOff : icVisibility,
                             color: grey,
                           )),
+                      prefixIconColor: orange,
                       hintText: password,
                       focusedBorder: OutlineInputBorder(
                         borderSide: const BorderSide(color: grey),
                         borderRadius: BorderRadius.circular(30),
                       ),
                       border: OutlineInputBorder(
-                          borderSide: const BorderSide(color: grey),
-                          borderRadius: BorderRadius.circular(30)),
+                        borderSide: const BorderSide(color: grey),
+                        borderRadius: BorderRadius.circular(30),
+                      ),
                     ),
+                    validator: (value) {
+                      RegExp regex = RegExp(r'^.{6,}$');
+                      if (value!.isEmpty) {
+                        return (pleaseEnterYourPassword);
+                      }
+                      if (!regex.hasMatch(value)) {
+                        return (pleaseValidPassword);
+                      }
+                      return null;
+                    },
                   ),
                   const SizedBox(
                     height: 30,
