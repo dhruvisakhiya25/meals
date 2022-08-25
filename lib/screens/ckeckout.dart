@@ -132,7 +132,9 @@ class _CheckOutPageState extends State<CheckOutPage> {
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
                   itemBuilder: (context, index) => ListTile(
-                    title: Text(check[index]['text']),
+                    title: Text(
+                      check[index]['text'],
+                    ),
                     trailing: Text(
                       check[index]['price'],
                       style: const TextStyle(
@@ -147,14 +149,16 @@ class _CheckOutPageState extends State<CheckOutPage> {
                   color: orange,
                   height: 45,
                   shape: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(25),
-                      borderSide: const BorderSide(color: orange)),
+                    borderRadius: BorderRadius.circular(25),
+                    borderSide: const BorderSide(color: orange),
+                  ),
                   onPressed: () {
                     showModalBottomSheet(
                       shape: const OutlineInputBorder(
                         borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(20),
-                            topLeft: Radius.circular(20)),
+                          topRight: Radius.circular(20),
+                          topLeft: Radius.circular(20),
+                        ),
                         borderSide: BorderSide(color: white),
                       ),
                       isScrollControlled: true,
@@ -168,10 +172,11 @@ class _CheckOutPageState extends State<CheckOutPage> {
                             Align(
                               alignment: Alignment.topRight,
                               child: IconButton(
-                                  onPressed: () {
-                                    Navigator.pop(context);
-                                  },
-                                  icon: const Icon(icClose)),
+                                onPressed: () {
+                                  Navigator.pop(context);
+                                },
+                                icon: const Icon(icClose),
+                              ),
                             ),
                             Text(
                               addCreditCard,
@@ -192,22 +197,23 @@ class _CheckOutPageState extends State<CheckOutPage> {
                                 textInputAction: TextInputAction.next,
                                 controller: txtCardNumber,
                                 decoration: InputDecoration(
-                                    focusedBorder: OutlineInputBorder(
-                                        borderSide: const BorderSide(
-                                          color: grey,
-                                        ),
-                                        borderRadius:
-                                            BorderRadius.circular(25)),
-                                    focusColor: grey,
-                                    hintText: cardNumber,
-                                    enabledBorder: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(25),
-                                      borderSide: const BorderSide(color: grey),
+                                  focusedBorder: OutlineInputBorder(
+                                    borderSide: const BorderSide(
+                                      color: grey,
                                     ),
-                                    border: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(25),
-                                        borderSide:
-                                            const BorderSide(color: grey))),
+                                    borderRadius: BorderRadius.circular(25),
+                                  ),
+                                  focusColor: grey,
+                                  hintText: cardNumber,
+                                  enabledBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(25),
+                                    borderSide: const BorderSide(color: grey),
+                                  ),
+                                  border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(25),
+                                    borderSide: const BorderSide(color: grey),
+                                  ),
+                                ),
                               ),
                             ),
                             Row(
@@ -228,10 +234,11 @@ class _CheckOutPageState extends State<CheckOutPage> {
                                     textInputAction: TextInputAction.next,
                                     controller: txtMM,
                                     decoration: InputDecoration(
-                                        hintText: mM,
-                                        border: OutlineInputBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(30))),
+                                      hintText: mM,
+                                      border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(30),
+                                      ),
+                                    ),
                                   ),
                                 ),
                                 const SizedBox(
@@ -243,10 +250,11 @@ class _CheckOutPageState extends State<CheckOutPage> {
                                     textInputAction: TextInputAction.next,
                                     controller: txtYY,
                                     decoration: InputDecoration(
-                                        hintText: yY,
-                                        border: OutlineInputBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(30))),
+                                      hintText: yY,
+                                      border: OutlineInputBorder(
+                                        borderRadius: BorderRadius.circular(30),
+                                      ),
+                                    ),
                                   ),
                                 ),
                               ],
@@ -257,22 +265,23 @@ class _CheckOutPageState extends State<CheckOutPage> {
                                 textInputAction: TextInputAction.next,
                                 controller: txtSecurityCode,
                                 decoration: InputDecoration(
-                                    focusedBorder: OutlineInputBorder(
-                                        borderSide: const BorderSide(
-                                          color: grey,
-                                        ),
-                                        borderRadius:
-                                            BorderRadius.circular(25)),
-                                    focusColor: grey,
-                                    hintText: securityCode,
-                                    enabledBorder: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(25),
-                                      borderSide: const BorderSide(color: grey),
+                                  focusedBorder: OutlineInputBorder(
+                                    borderSide: const BorderSide(
+                                      color: grey,
                                     ),
-                                    border: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(25),
-                                        borderSide:
-                                            const BorderSide(color: grey))),
+                                    borderRadius: BorderRadius.circular(25),
+                                  ),
+                                  focusColor: grey,
+                                  hintText: securityCode,
+                                  enabledBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(25),
+                                    borderSide: const BorderSide(color: grey),
+                                  ),
+                                  border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(25),
+                                    borderSide: const BorderSide(color: grey),
+                                  ),
+                                ),
                               ),
                             ),
                             Padding(
@@ -281,22 +290,22 @@ class _CheckOutPageState extends State<CheckOutPage> {
                                 textInputAction: TextInputAction.next,
                                 controller: txtFirstName,
                                 decoration: InputDecoration(
-                                    focusedBorder: OutlineInputBorder(
-                                        borderSide: const BorderSide(
-                                          color: grey,
-                                        ),
-                                        borderRadius:
-                                            BorderRadius.circular(25)),
-                                    focusColor: grey,
-                                    hintText: firstName,
-                                    enabledBorder: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(25),
-                                      borderSide: const BorderSide(color: grey),
-                                    ),
-                                    border: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(25),
-                                        borderSide:
-                                            const BorderSide(color: grey))),
+                                  focusedBorder: OutlineInputBorder(
+                                      borderSide: const BorderSide(
+                                        color: grey,
+                                      ),
+                                      borderRadius: BorderRadius.circular(25)),
+                                  focusColor: grey,
+                                  hintText: firstName,
+                                  enabledBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(25),
+                                    borderSide: const BorderSide(color: grey),
+                                  ),
+                                  border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(25),
+                                    borderSide: const BorderSide(color: grey),
+                                  ),
+                                ),
                               ),
                             ),
                             Padding(
@@ -305,22 +314,23 @@ class _CheckOutPageState extends State<CheckOutPage> {
                                 textInputAction: TextInputAction.next,
                                 controller: txtLastName,
                                 decoration: InputDecoration(
-                                    focusedBorder: OutlineInputBorder(
-                                        borderSide: const BorderSide(
-                                          color: grey,
-                                        ),
-                                        borderRadius:
-                                            BorderRadius.circular(25)),
-                                    focusColor: grey,
-                                    hintText: lastName,
-                                    enabledBorder: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(25),
-                                      borderSide: const BorderSide(color: grey),
+                                  focusedBorder: OutlineInputBorder(
+                                    borderSide: const BorderSide(
+                                      color: grey,
                                     ),
-                                    border: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(25),
-                                        borderSide:
-                                            const BorderSide(color: grey))),
+                                    borderRadius: BorderRadius.circular(25),
+                                  ),
+                                  focusColor: grey,
+                                  hintText: lastName,
+                                  enabledBorder: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(25),
+                                    borderSide: const BorderSide(color: grey),
+                                  ),
+                                  border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(25),
+                                    borderSide: const BorderSide(color: grey),
+                                  ),
+                                ),
                               ),
                             ),
                             Row(
@@ -357,9 +367,9 @@ class _CheckOutPageState extends State<CheckOutPage> {
                                 height: 50,
                                 color: orange,
                                 shape: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(25),
-                                    borderSide:
-                                        const BorderSide(color: orange)),
+                                  borderRadius: BorderRadius.circular(25),
+                                  borderSide: const BorderSide(color: orange),
+                                ),
                                 onPressed: () {},
                                 child: Text(
                                   addCards,

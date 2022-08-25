@@ -28,94 +28,104 @@ class _PromotionsState extends State<Promotions> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SafeArea(
-      child: SingleChildScrollView(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(15.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    promotion,
-                    style: const TextStyle(color: black, fontSize: 30),
-                  ),
-                  const Icon(
-                    icCart,
-                    color: black,
-                  ),
-                ],
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      promotion,
+                      style: const TextStyle(color: black, fontSize: 30),
+                    ),
+                    const Icon(
+                      icCart,
+                      color: black,
+                    ),
+                  ],
+                ),
               ),
-            ),
-            StreamBuilder<QuerySnapshot>(
-              stream: _streams,
-              builder: (BuildContext context, AsyncSnapshot snapshot) {
-                if (snapshot.hasError) {
-                  return Center(child: Text(snapshot.error.toString()));
-                }
-                if (snapshot.connectionState == ConnectionState.waiting) {
-                  return const Center(child: CircularProgressIndicator());
-                }
-                QuerySnapshot querySnapshot = snapshot.data;
-                List<QueryDocumentSnapshot> document = querySnapshot.docs;
-                return ListView.separated(
-                  separatorBuilder: (context, index) => const Divider(
-                    height: 3,
-                  ),
-                  physics: const NeverScrollableScrollPhysics(),
-                  itemCount: document.length,
-                  shrinkWrap: true,
-                  itemBuilder: (context, index) {
-                    QueryDocumentSnapshot documents = document[index];
-                    return GestureDetector(
-                      onTap: () {
-                        if (index == 1) {
-                          Navigator.push(
+              StreamBuilder<QuerySnapshot>(
+                stream: _streams,
+                builder: (BuildContext context, AsyncSnapshot snapshot) {
+                  if (snapshot.hasError) {
+                    return Center(
+                      child: Text(
+                        snapshot.error.toString(),
+                      ),
+                    );
+                  }
+                  if (snapshot.connectionState == ConnectionState.waiting) {
+                    return const Center(
+                      child: CircularProgressIndicator(),
+                    );
+                  }
+                  QuerySnapshot querySnapshot = snapshot.data;
+                  List<QueryDocumentSnapshot> document = querySnapshot.docs;
+                  return ListView.separated(
+                    separatorBuilder: (context, index) => const Divider(
+                      height: 3,
+                    ),
+                    physics: const NeverScrollableScrollPhysics(),
+                    itemCount: document.length,
+                    shrinkWrap: true,
+                    itemBuilder: (context, index) {
+                      QueryDocumentSnapshot documents = document[index];
+                      return GestureDetector(
+                        onTap: () {
+                          if (index == 1) {
+                            Navigator.push(
                               context,
                               MaterialPageRoute(
                                 builder: (context) => const Item(),
-                              ));
-                        }
-                      },
-                      child: Container(
-                        height: 300,
-                        width: 100,
-                        decoration: BoxDecoration(
-                          // color: Colors.red,
-                          image: DecorationImage(
-                              image: NetworkImage(documents['image']),
-                              fit: BoxFit.cover),
-                        ),
-                        alignment: Alignment.bottomLeft,
-                        child: ListTile(
-                          title: Text(
-                            documents['txt'],
-                            style: const TextStyle(color: white),
-                          ),
-                          subtitle: Row(
-                            children: [
-                              const Icon(
-                                icStar,
-                                color: orange,
                               ),
-                              Text(
-                                documents['rate'].toString(),
-                                style: const TextStyle(color: orange),
-                              ),
-                            ],
+                            );
+                          }
+                        },
+                        child: Container(
+                          height: 300,
+                          width: 100,
+                          decoration: BoxDecoration(
+                            // color: Colors.red,
+                            image: DecorationImage(
+                                image: NetworkImage(
+                                  documents['image'],
+                                ),
+                                fit: BoxFit.cover),
+                          ),
+                          alignment: Alignment.bottomLeft,
+                          child: ListTile(
+                            title: Text(
+                              documents['txt'],
+                              style: const TextStyle(color: white),
+                            ),
+                            subtitle: Row(
+                              children: [
+                                const Icon(
+                                  icStar,
+                                  color: orange,
+                                ),
+                                Text(
+                                  documents['rate'].toString(),
+                                  style: const TextStyle(color: orange),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                    );
-                  },
-                );
-              },
-            ),
-          ],
+                      );
+                    },
+                  );
+                },
+              ),
+            ],
+          ),
         ),
       ),
-    ));
+    );
   }
 }
 
@@ -150,10 +160,16 @@ class _ItemState extends State<Item> {
                 stream: _streams,
                 builder: (BuildContext context, AsyncSnapshot snapshot) {
                   if (snapshot.hasError) {
-                    return Center(child: Text(snapshot.error.toString()));
+                    return Center(
+                      child: Text(
+                        snapshot.error.toString(),
+                      ),
+                    );
                   }
                   if (snapshot.connectionState == ConnectionState.waiting) {
-                    return const Center(child: CircularProgressIndicator());
+                    return const Center(
+                      child: CircularProgressIndicator(),
+                    );
                   }
                   QuerySnapshot querySnapshot = snapshot.data;
                   List<QueryDocumentSnapshot> document = querySnapshot.docs;
@@ -172,11 +188,12 @@ class _ItemState extends State<Item> {
                             height: Screens.height(context) * 0.5,
                             width: Screens.width(context),
                             decoration: BoxDecoration(
-                                image: DecorationImage(
-                                    image: NetworkImage(
-                                      documents['foods image'],
-                                    ),
-                                    fit: BoxFit.cover)),
+                              image: DecorationImage(
+                                  image: NetworkImage(
+                                    documents['foods image'],
+                                  ),
+                                  fit: BoxFit.cover),
+                            ),
                           ),
                           Container(
                             height: Screens.height(context) * 0.7,
@@ -201,12 +218,15 @@ class _ItemState extends State<Item> {
                                         fontWeight: FontWeight.bold,
                                         fontSize: 30),
                                   ),
-
                                   const SizedBox(
                                     height: 30,
                                   ),
-                                  Text(documents['foods rate']),
-                                  Text(documents['foods decription']),
+                                  Text(
+                                    documents['foods rate'],
+                                  ),
+                                  Text(
+                                    documents['foods decription'],
+                                  ),
                                   const Divider(thickness: 2),
                                   Row(
                                     children: [
@@ -257,8 +277,9 @@ class _ItemState extends State<Item> {
                                         decoration: const BoxDecoration(
                                           color: white,
                                           borderRadius: BorderRadius.only(
-                                              topLeft: Radius.circular(20),
-                                              bottomLeft: Radius.circular(20)),
+                                            topLeft: Radius.circular(20),
+                                            bottomLeft: Radius.circular(20),
+                                          ),
                                         ),
                                         child: Row(
                                           mainAxisAlignment:

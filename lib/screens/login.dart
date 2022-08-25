@@ -13,7 +13,6 @@ import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/strings.dart';
 
-
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -42,9 +41,8 @@ class _LoginPageState extends State<LoginPage> {
     // TODO: implement initState
     super.initState();
     getName = SharedPref.getFbLoginName.toString();
-    getEmail =SharedPref.getFbLoginEmail.toString();
-    getPhoto =SharedPref.getFbLoginPhoto.toString();
-    // checkLogin();
+    getEmail = SharedPref.getFbLoginEmail.toString();
+    getPhoto = SharedPref.getFbLoginPhoto.toString();
   }
 
   bool passwords = true;
@@ -81,7 +79,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   TextFormField(
                     autovalidateMode: AutovalidateMode.onUserInteraction,
-                   validator: (value) => validateEmail(value),
+                    validator: (value) => validateEmail(value),
                     controller: txtEmail,
                     decoration: InputDecoration(
                       hintText: yourEmail,
@@ -98,20 +96,24 @@ class _LoginPageState extends State<LoginPage> {
                   const SizedBox(
                     height: 30,
                   ),
-                  TextFormField( autovalidateMode: AutovalidateMode.onUserInteraction,
+                  TextFormField(
+                    autovalidateMode: AutovalidateMode.onUserInteraction,
                     controller: txtPassword,
                     textInputAction: TextInputAction.next,
                     obscureText: passwords,
                     decoration: InputDecoration(
                       suffixIcon: IconButton(
-                          onPressed: () {
-                            passwords = !passwords;
-                            setState(() {});
-                          },
-                          icon: Icon(
-                            passwords ? icVisibilityOff : icVisibility,
-                            color: grey,
-                          )),
+                        onPressed: () {
+                          passwords = !passwords;
+                          setState(
+                            () {},
+                          );
+                        },
+                        icon: Icon(
+                          passwords ? icVisibilityOff : icVisibility,
+                          color: grey,
+                        ),
+                      ),
                       prefixIconColor: orange,
                       hintText: password,
                       focusedBorder: OutlineInputBorder(
@@ -152,10 +154,11 @@ class _LoginPageState extends State<LoginPage> {
                         servise.loginUser(
                             txtEmail.text, txtPassword.text, context);
                         Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const MainPage(),
-                            ));
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const MainPage(),
+                          ),
+                        );
                       }
                       setState(
                         () {},
@@ -169,10 +172,11 @@ class _LoginPageState extends State<LoginPage> {
                   TextButton(
                     onPressed: () {
                       Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const ResetPasswordPage(),
-                          ));
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const ResetPasswordPage(),
+                        ),
+                      );
                     },
                     child: Text(
                       forgetYourPassword,
@@ -193,11 +197,14 @@ class _LoginPageState extends State<LoginPage> {
                     onPressed: () async {
                       await fbLogin();
 
-                      Navigator.pushReplacement(context, MaterialPageRoute(
-                        builder: (context) {
-                          return const MainPage();
-                        },
-                      ));
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const MainPage();
+                          },
+                        ),
+                      );
                       SharedPref.setFbLoginName = userData!['name'];
                       SharedPref.setFbLoginEmail = userData!['email'];
                       SharedPref.setFbLoginPhoto =
@@ -218,10 +225,11 @@ class _LoginPageState extends State<LoginPage> {
                     onPressed: () async {
                       await signInWithGoogle();
                       Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const MainPage(),
-                          ));
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const MainPage(),
+                        ),
+                      );
                     },
                     themeMode: themeMode,
                     isLoading: isLoading,
@@ -238,18 +246,20 @@ class _LoginPageState extends State<LoginPage> {
                     children: [
                       Text(dontHaveAccount),
                       TextButton(
-                          onPressed: () {
-                            Navigator.pushReplacement(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const SignUpPage(),
-                                ));
-                          },
-                          child: Text(
-                            signUp,
-                            style: const TextStyle(
-                                color: orange, fontWeight: FontWeight.bold),
-                          ))
+                        onPressed: () {
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const SignUpPage(),
+                            ),
+                          );
+                        },
+                        child: Text(
+                          signUp,
+                          style: const TextStyle(
+                              color: orange, fontWeight: FontWeight.bold),
+                        ),
+                      )
                     ],
                   )
                 ],
@@ -261,7 +271,6 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
-
 
 Future<UserCredential> signInWithGoogle() async {
   final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
@@ -294,6 +303,7 @@ fbLogin() async {
   final user = await FacebookAuth.instance.getUserData();
   userData = user;
 }
+
 String? validateEmail(String? value) {
   String pattern =
       r"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]"
@@ -305,8 +315,7 @@ String? validateEmail(String? value) {
   }
   if (!regex.hasMatch(value)) {
     return 'Enter a valid email address';
-  }
-  else {
+  } else {
     return null;
   }
 }

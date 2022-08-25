@@ -81,7 +81,7 @@ class _FastDeliveryPageState extends State<FastDeliveryPage> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => const LiveTrackingPage(),
-                    ));
+                    ),);
                 setState(
                   () {},
                 );

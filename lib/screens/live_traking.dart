@@ -78,10 +78,11 @@ class _LiveTrackingPageState extends State<LiveTrackingPage> {
               ),
               onPressed: () {
                 Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const MainPage(),
-                    ));
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const MainPage(),
+                  ),
+                );
                 setState(
                   () {},
                 );

@@ -1,4 +1,3 @@
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:meals/screens/login.dart';
@@ -57,18 +56,21 @@ class _SignUpPageState extends State<SignUpPage> {
                     autovalidateMode: AutovalidateMode.onUserInteraction,
                     controller: txtName,
                     textInputAction: TextInputAction.next,
-                    decoration: InputDecoration(errorBorder: OutlineInputBorder(
+                    decoration: InputDecoration(
+                      errorBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
-                        borderSide: const BorderSide(color: Colors.red)),
-                        hintText: name,
-                        focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(color: grey),
-                          borderRadius: BorderRadius.circular(30),
-                        ),
-                        border: OutlineInputBorder(
-                          borderSide: const BorderSide(color: grey),
-                          borderRadius: BorderRadius.circular(30),
-                        )),
+                        borderSide: const BorderSide(color: Colors.red),
+                      ),
+                      hintText: name,
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(color: grey),
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      border: OutlineInputBorder(
+                        borderSide: const BorderSide(color: grey),
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                    ),
                     validator: (value) {
                       RegExp regex = RegExp('[a-zA-Z]');
                       if (value!.isEmpty) {
@@ -87,9 +89,11 @@ class _SignUpPageState extends State<SignUpPage> {
                     autovalidateMode: AutovalidateMode.onUserInteraction,
                     controller: txtEmail,
                     textInputAction: TextInputAction.next,
-                    decoration: InputDecoration(errorBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(30),
-                        borderSide: const BorderSide(color: Colors.red)),
+                    decoration: InputDecoration(
+                        errorBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30),
+                          borderSide: const BorderSide(color: Colors.red),
+                        ),
                         hintText: email,
                         focusedBorder: OutlineInputBorder(
                           borderSide: const BorderSide(color: grey),
@@ -114,14 +118,17 @@ class _SignUpPageState extends State<SignUpPage> {
                   const SizedBox(
                     height: 20,
                   ),
-                  TextFormField(keyboardType: TextInputType.phone,
+                  TextFormField(
+                    keyboardType: TextInputType.phone,
                     autovalidateMode: AutovalidateMode.onUserInteraction,
                     controller: txtMobile,
                     textInputAction: TextInputAction.next,
                     maxLength: 10,
-                    decoration: InputDecoration(errorBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(30),
-                        borderSide: const BorderSide(color: Colors.red)),
+                    decoration: InputDecoration(
+                        errorBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30),
+                          borderSide: const BorderSide(color: Colors.red),
+                        ),
                         hintText: mobile,
                         focusedBorder: OutlineInputBorder(
                           borderSide: const BorderSide(color: grey),
@@ -148,8 +155,9 @@ class _SignUpPageState extends State<SignUpPage> {
                     textInputAction: TextInputAction.next,
                     decoration: InputDecoration(
                         errorBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(30),
-                            borderSide: const BorderSide(color: Colors.red)),
+                          borderRadius: BorderRadius.circular(30),
+                          borderSide: const BorderSide(color: Colors.red),
+                        ),
                         hintText: address,
                         focusedBorder: OutlineInputBorder(
                           borderSide: const BorderSide(color: grey),
@@ -180,18 +188,22 @@ class _SignUpPageState extends State<SignUpPage> {
                     obscureText: passwords,
                     decoration: InputDecoration(
                       suffixIcon: IconButton(
-                          onPressed: () {
-                            passwords = !passwords;
-                            setState(() {});
-                          },
-                          icon: Icon(
-                            passwords ? icVisibilityOff : icVisibility,
-                            color: grey,
-                          )),
+                        onPressed: () {
+                          passwords = !passwords;
+                          setState(
+                            () {},
+                          );
+                        },
+                        icon: Icon(
+                          passwords ? icVisibilityOff : icVisibility,
+                          color: grey,
+                        ),
+                      ),
                       prefixIconColor: orange,
                       errorBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(30),
-                          borderSide: const BorderSide(color: Colors.red)),
+                        borderRadius: BorderRadius.circular(30),
+                        borderSide: const BorderSide(color: Colors.red),
+                      ),
                       hintText: password,
                       focusedBorder: OutlineInputBorder(
                         borderSide: const BorderSide(color: grey),
@@ -212,7 +224,9 @@ class _SignUpPageState extends State<SignUpPage> {
                       }
                       return null;
                     },
-                    onSaved:(value){ txtPassword.text=value!;},
+                    onSaved: (value) {
+                      txtPassword.text = value!;
+                    },
                   ),
                   const SizedBox(
                     height: 20,
@@ -224,17 +238,21 @@ class _SignUpPageState extends State<SignUpPage> {
                     obscureText: passwords,
                     decoration: InputDecoration(
                       errorBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(30),
-                          borderSide: const BorderSide(color: Colors.red)),
+                        borderRadius: BorderRadius.circular(30),
+                        borderSide: const BorderSide(color: Colors.red),
+                      ),
                       suffixIcon: IconButton(
-                          onPressed: () {
-                            passwords = !passwords;
-                            setState(() {});
-                          },
-                          icon: Icon(
-                            passwords ? icVisibilityOff : icVisibility,
-                            color: grey,
-                          )),
+                        onPressed: () {
+                          passwords = !passwords;
+                          setState(
+                            () {},
+                          );
+                        },
+                        icon: Icon(
+                          passwords ? icVisibilityOff : icVisibility,
+                          color: grey,
+                        ),
+                      ),
                       prefixIconColor: orange,
                       hintText: confirmPassword,
                       focusedBorder: OutlineInputBorder(
@@ -251,7 +269,10 @@ class _SignUpPageState extends State<SignUpPage> {
                         return (passwordNoMatch);
                       }
                       return null;
-                    },onSaved: (value){txtConfirmPassword.text=value!;},
+                    },
+                    onSaved: (value) {
+                      txtConfirmPassword.text = value!;
+                    },
                   ),
                   const SizedBox(
                     height: 20,
@@ -266,16 +287,20 @@ class _SignUpPageState extends State<SignUpPage> {
                         borderSide: const BorderSide(color: orange),
                       ),
                       onPressed: () async {
-                        if (_formKey.currentState!.validate())
-                        {
+                        if (_formKey.currentState!.validate()) {
                           servise.createUser(
                               txtEmail.text, txtConfirmPassword.text, context);
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => const MainPage(),));
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const MainPage(),
+                            ),
+                          );
                         }
 
-
-                        setState(() {});
-
+                        setState(
+                          () {},
+                        );
                       },
                       child: Text(
                         signUp,
@@ -291,18 +316,20 @@ class _SignUpPageState extends State<SignUpPage> {
                     children: [
                       Text(alreadyAnHaveAccount),
                       TextButton(
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => const LoginPage(),
-                                ));
-                          },
-                          child: Text(
-                            login,
-                            style: const TextStyle(
-                                color: orange, fontWeight: FontWeight.bold),
-                          ))
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const LoginPage(),
+                            ),
+                          );
+                        },
+                        child: Text(
+                          login,
+                          style: const TextStyle(
+                              color: orange, fontWeight: FontWeight.bold),
+                        ),
+                      )
                     ],
                   )
                 ],
@@ -321,24 +348,30 @@ class Service {
   createUser(email, password, context) async {
     await auth
         .createUserWithEmailAndPassword(email: email, password: password)
-        .then((value) {
-      Navigator.pushReplacement(
+        .then(
+      (value) {
+        Navigator.pushReplacement(
           context,
           MaterialPageRoute(
             builder: (context) => const MainPage(),
-          ));
-    });
+          ),
+        );
+      },
+    );
   }
 
   loginUser(email, password, context) async {
     await auth
         .signInWithEmailAndPassword(email: email, password: password)
-        .then((value) {
-      Navigator.push(
+        .then(
+      (value) {
+        Navigator.push(
           context,
           MaterialPageRoute(
             builder: (context) => const MainPage(),
-          ));
-    });
+          ),
+        );
+      },
+    );
   }
 }
