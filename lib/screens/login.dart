@@ -268,6 +268,8 @@ class FacebookLoginShared {
   static String logInKeyPhoto = 'login Photo';
   static String imgKey = 'userName';
 
+
+
   static init() async => pref = await SharedPreferences.getInstance();
 
   static set setFbLoginName(value) => pref!.setString(logInKeyName, value);
