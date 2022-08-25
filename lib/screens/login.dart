@@ -9,6 +9,7 @@ import 'package:meals/screens/mainPage.dart';
 import 'package:meals/screens/reset_password.dart';
 import 'package:meals/screens/signup.dart';
 import 'package:meals/utils/color.dart';
+import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/strings.dart';
 
 class LoginPage extends StatefulWidget {
@@ -37,6 +38,8 @@ class _LoginPageState extends State<LoginPage> {
     super.initState();
     // checkLogin();
   }
+
+  bool passwords = true;
 
   @override
   Widget build(BuildContext context) {
@@ -69,6 +72,7 @@ class _LoginPageState extends State<LoginPage> {
                     height: 20,
                   ),
                   TextFormField(
+                    autovalidateMode: AutovalidateMode.onUserInteraction,
                     validator: (value) {
                       if (value!.isEmpty) {
                         return ("Please Enter Your Email");
@@ -97,6 +101,7 @@ class _LoginPageState extends State<LoginPage> {
                     height: 30,
                   ),
                   TextFormField(
+                    autovalidateMode: AutovalidateMode.onUserInteraction,
                     validator: (value) {
                       RegExp regex = RegExp(r'^.{6,}$');
                       if (value!.isEmpty) {
@@ -109,6 +114,15 @@ class _LoginPageState extends State<LoginPage> {
                     },
                     controller: txtPassword,
                     decoration: InputDecoration(
+                      suffixIcon: IconButton(
+                          onPressed: () {
+                            passwords = !passwords;
+                            setState(() {});
+                          },
+                          icon: Icon(
+                            passwords ? icVisibilityOff : icVisibility,
+                            color: grey,
+                          )),
                       hintText: password,
                       focusedBorder: OutlineInputBorder(
                         borderSide: const BorderSide(color: grey),
