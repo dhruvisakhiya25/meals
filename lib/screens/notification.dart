@@ -87,10 +87,6 @@ class _NotificationPageState extends State<NotificationPage> {
                                 style: const TextStyle(color: grey),
                               ),
                             ),
-                            const Divider(
-                              color: grey,
-                              thickness: 0.3,
-                            )
                           ],
                         );
                       },
