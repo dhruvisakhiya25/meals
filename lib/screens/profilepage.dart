@@ -9,7 +9,6 @@ import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:meals/screens/login.dart';
-import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/responsive.dart';
 import 'package:meals/utils/strings.dart';
@@ -25,8 +24,7 @@ class ProfilePage extends StatefulWidget {
 class _ProfilePageState extends State<ProfilePage> {
   late List<Widget> subEntries;
   File? file;
-
-  File? fileMultiImage;
+  String? getData;
 
   pickImage() async {
     ImagePicker pickImg = ImagePicker();
@@ -46,6 +44,7 @@ class _ProfilePageState extends State<ProfilePage> {
   void initState() {
     super.initState();
     subEntries = subMenuEntries();
+    getData = FacebookLoginShared.getImage.toString();
 
     // entries = menuEntries();
   }
@@ -73,17 +72,20 @@ class _ProfilePageState extends State<ProfilePage> {
           width: 150,
           height: 50,
           decoration: BoxDecoration(
-              color: white, borderRadius: BorderRadius.circular(20)),
+              color: Colors.white, borderRadius: BorderRadius.circular(20)),
           child: ListTile(
-            leading: const Icon(icImage),
+            leading: const Icon(Icons.image),
             title: const Text('Gallery'),
             onTap: () async {
               await pickImage();
+              FacebookLoginShared.setImage = file!.path.toString();
+
               setState(() {});
             },
           )),
     ];
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -98,98 +100,140 @@ class _ProfilePageState extends State<ProfilePage> {
                   Text(
                     profile,
                     style: const TextStyle(
-                        color: black,
+                        color: Colors.black,
                         fontWeight: FontWeight.bold,
                         fontSize: 30),
                   ),
                   const Icon(
                     icCart,
-                    color: black,
+                    color: Colors.black,
                   )
                 ],
               ),
               const SizedBox(
                 height: 90,
               ),
-              if (userData != null)
-                Center(
-                  child: Badge(
-                    position: BadgePosition.bottomEnd(),
-                    badgeContent: StarMenu(
-                      params: const StarMenuParameters(
-                        linearShapeParams:
-                            LinearShapeParams(alignment: LinearAlignment.right),
-                        shape: MenuShape.linear,
-                        openDurationMs: 1200,
-                      ),
-                      items: subEntries,
-                      child: const Icon(icEdit),
+              // if (userData != null)
+              //   Center(
+              //     child: Badge(
+              //       position: BadgePosition.bottomEnd(),
+              //       badgeContent: StarMenu(
+              //         params: const StarMenuParameters(
+              //           linearShapeParams:
+              //               LinearShapeParams(alignment: LinearAlignment.right),
+              //           shape: MenuShape.linear,
+              //           openDurationMs: 1200,
+              //         ),
+              //         items: subEntries,
+              //         child: const Icon(Icons.edit),
+              //       ),
+              //       badgeColor: Colors.white,
+              //       child: CircleAvatar(
+              //         radius: 53,
+              //         backgroundColor: Colors.black,
+              //         child: Container(
+              //           height: 100,
+              //           width: 100,
+              //           decoration: BoxDecoration(
+              //               image: DecorationImage(
+              //                   image: file == null
+              //                       ? NetworkImage(
+              //                           userData!['picture']['data']['url'])
+              //                       : FileImage(File(file!.path))
+              //                           as ImageProvider,
+              //                   fit: BoxFit.fill),
+              //               shape: BoxShape.circle),
+              //         ),
+              //       ),
+              //     ),
+              //   )
+              // else if (userPhoto != null)
+              //   // Center(
+              //   child: Badge(
+              //     position: BadgePosition.bottomEnd(),
+              //     badgeContent: StarMenu(
+              //       params: const StarMenuParameters(
+              //         linearShapeParams:
+              //             LinearShapeParams(alignment: LinearAlignment.right),
+              //         shape: MenuShape.linear,
+              //         openDurationMs: 1200,
+              //       ),
+              //       items: subEntries,
+              //       child: const Icon(Icons.edit),
+              //     ),
+              //     badgeColor: Colors.white,
+              //     child: CircleAvatar(
+              //       radius: 53,
+              //       backgroundColor: Colors.black,
+              //       child: Container(
+              //         height: 100,
+              //         width: 100,
+              //         decoration: BoxDecoration(
+              //             image: DecorationImage(
+              //                 image: file == null
+              //                     ? NetworkImage(userPhoto!)
+              //                     : FileImage(File(file!.path))
+              //                         as ImageProvider,
+              //                 fit: BoxFit.fill
+              //                 // image: NetworkImage(userPhoto!),
+              //                 ),
+              //             shape: BoxShape.circle),
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              // const SizedBox(
+              //   height: 20,
+              // ),
+              // if (userData != null)
+              //   Text(
+              //     userData!['name'],
+              //     style: const TextStyle(fontWeight: FontWeight.bold),
+              //   )
+              // else
+              //   Text(userEmail),
+              Center(
+                child: Badge(
+                  position: BadgePosition.bottomEnd(),
+                  badgeContent: StarMenu(
+                    params: const StarMenuParameters(
+                      linearShapeParams:
+                          LinearShapeParams(alignment: LinearAlignment.right),
+                      shape: MenuShape.linear,
+                      openDurationMs: 1200,
                     ),
-                    badgeColor: white,
-                    child: CircleAvatar(
-                      radius: 53,
-                      backgroundColor: black,
-                      child: Container(
-                        height: 100,
-                        width: 100,
-                        decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: file == null
-                                    ? NetworkImage(
-                                        userData!['picture']['data']['url'])
-                                    : FileImage(File(file!.path))
-                                        as ImageProvider,
-                                fit: BoxFit.fill),
-                            shape: BoxShape.circle),
-                      ),
-                    ),
+                    items: subEntries,
+                    child: const Icon(Icons.edit),
                   ),
-                )
-              else if (userPhoto != null)
-                Center(
-                  child: Badge(
-                    position: BadgePosition.bottomEnd(),
-                    badgeContent: StarMenu(
-                      params: const StarMenuParameters(
-                        linearShapeParams:
-                            LinearShapeParams(alignment: LinearAlignment.right),
-                        shape: MenuShape.linear,
-                        openDurationMs: 1200,
-                      ),
-                      items: subEntries,
-                      child: const Icon(icEdit),
-                    ),
-                    badgeColor: white,
-                    child: CircleAvatar(
-                      radius: 53,
-                      backgroundColor: black,
-                      child: Container(
-                        height: 100,
-                        width: 100,
-                        decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: file == null
-                                    ? NetworkImage(userPhoto!)
-                                    : FileImage(File(file!.path))
-                                        as ImageProvider,
-                                fit: BoxFit.fill
-                                // image: NetworkImage(userPhoto!),
-                                ),
-                            shape: BoxShape.circle),
-                      ),
+                  badgeColor: Colors.white,
+                  child: CircleAvatar(
+                    radius: 53,
+                    backgroundColor: Colors.black,
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: FacebookLoginShared.getImage==null
+                                  ? NetworkImage(FacebookLoginShared
+                                      .getFbLoginPhoto
+                                      .toString())
+                                  : FileImage(File(FacebookLoginShared.getImage.toString()))
+                                      as ImageProvider,
+                              fit: BoxFit.fill
+                              // image: NetworkImage(userPhoto!),
+                              ),
+                          shape: BoxShape.circle),
                     ),
                   ),
                 ),
-              const SizedBox(
-                height: 20,
               ),
-              if (userData != null)
-                Text(
-                  userData!['name'],
-                  style: const TextStyle(fontWeight: FontWeight.bold),
-                )
-              else
-                Text(userEmail),
+              Text(FacebookLoginShared.getFbLoginName.toString()),
+              Text(FacebookLoginShared.getFbLoginEmail.toString()),
+              // CircleAvatar(
+              //   backgroundImage:
+              //       NetworkImage(FacebookLoginShared.getFbLoginPhoto.toString()),
+              // ),
               TextButton(
                   onPressed: () async {
                     await fbLogout();
@@ -200,10 +244,12 @@ class _ProfilePageState extends State<ProfilePage> {
                         MaterialPageRoute(
                           builder: (context) => const LoginPage(),
                         ));
+                    FacebookLoginShared.setFbLoginName = '';
+                    FacebookLoginShared.setFbLoginEmail = '';
                   },
                   child: const Text(
                     'Sign Out',
-                    style: TextStyle(color: grey),
+                    style: TextStyle(color: Colors.grey),
                   )),
               if (userData != null)
                 Container(
