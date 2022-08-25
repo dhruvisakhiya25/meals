@@ -46,7 +46,8 @@ dependencies:
   star_menu:
   images_picker:
   cloud_firestore:
-  shared_preferences: ^2.0.15
+  shared_preferences:
+
 
 
 dev_dependencies:
