@@ -1,8 +1,6 @@
-import 'dart:ffi';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:meals/screens/home_page.dart';
 import 'package:meals/screens/login.dart';
 import 'package:meals/screens/mainPage.dart';
 import 'package:meals/utils/color.dart';
@@ -61,7 +59,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     textInputAction: TextInputAction.next,
                     decoration: InputDecoration(errorBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
-                        borderSide: BorderSide(color: Colors.red)),
+                        borderSide: const BorderSide(color: Colors.red)),
                         hintText: name,
                         focusedBorder: OutlineInputBorder(
                           borderSide: const BorderSide(color: grey),
@@ -91,7 +89,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     textInputAction: TextInputAction.next,
                     decoration: InputDecoration(errorBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
-                        borderSide: BorderSide(color: Colors.red)),
+                        borderSide: const BorderSide(color: Colors.red)),
                         hintText: email,
                         focusedBorder: OutlineInputBorder(
                           borderSide: const BorderSide(color: grey),
@@ -123,7 +121,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     maxLength: 10,
                     decoration: InputDecoration(errorBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
-                        borderSide: BorderSide(color: Colors.red)),
+                        borderSide: const BorderSide(color: Colors.red)),
                         hintText: mobile,
                         focusedBorder: OutlineInputBorder(
                           borderSide: const BorderSide(color: grey),
@@ -151,7 +149,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     decoration: InputDecoration(
                         errorBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(30),
-                            borderSide: BorderSide(color: Colors.red)),
+                            borderSide: const BorderSide(color: Colors.red)),
                         hintText: address,
                         focusedBorder: OutlineInputBorder(
                           borderSide: const BorderSide(color: grey),
@@ -193,7 +191,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       prefixIconColor: orange,
                       errorBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(30),
-                          borderSide: BorderSide(color: Colors.red)),
+                          borderSide: const BorderSide(color: Colors.red)),
                       hintText: password,
                       focusedBorder: OutlineInputBorder(
                         borderSide: const BorderSide(color: grey),
@@ -227,7 +225,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     decoration: InputDecoration(
                       errorBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(30),
-                          borderSide: BorderSide(color: Colors.red)),
+                          borderSide: const BorderSide(color: Colors.red)),
                       suffixIcon: IconButton(
                           onPressed: () {
                             passwords = !passwords;
@@ -272,7 +270,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         {
                           servise.createUser(
                               txtEmail.text, txtConfirmPassword.text, context);
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => MainPage(),));
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => const MainPage(),));
                         }
 
 

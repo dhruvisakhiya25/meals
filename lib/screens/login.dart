@@ -1,4 +1,4 @@
-// ignore_for_file: use_build_context_synchronously
+// ignore_for_file: use_build_context_synchronously, avoid_print
 
 import 'package:auth_buttons/auth_buttons.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -7,11 +7,11 @@ import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:meals/screens/mainPage.dart';
 import 'package:meals/screens/reset_password.dart';
+import 'package:meals/screens/shared_pref.dart';
 import 'package:meals/screens/signup.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/strings.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 
 class LoginPage extends StatefulWidget {
@@ -41,9 +41,9 @@ class _LoginPageState extends State<LoginPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    getName = FacebookLoginShared.getFbLoginName.toString();
-    getEmail = FacebookLoginShared.getFbLoginEmail.toString();
-    getPhoto = FacebookLoginShared.getFbLoginPhoto.toString();
+    getName = SharedPref.getFbLoginName.toString();
+    getEmail =SharedPref.getFbLoginEmail.toString();
+    getPhoto =SharedPref.getFbLoginPhoto.toString();
     // checkLogin();
   }
 
@@ -198,9 +198,9 @@ class _LoginPageState extends State<LoginPage> {
                           return const MainPage();
                         },
                       ));
-                      FacebookLoginShared.setFbLoginName = userData!['name'];
-                      FacebookLoginShared.setFbLoginEmail = userData!['email'];
-                      FacebookLoginShared.setFbLoginPhoto =
+                      SharedPref.setFbLoginName = userData!['name'];
+                      SharedPref.setFbLoginEmail = userData!['email'];
+                      SharedPref.setFbLoginPhoto =
                           userData!['picture']['data']['url'];
                       print('111111111111111111111${userData!}');
                     },
@@ -262,33 +262,6 @@ class _LoginPageState extends State<LoginPage> {
   }
 }
 
-class FacebookLoginShared {
-  static SharedPreferences? pref;
-  static String logInKeyName = 'login Name';
-  static String logInKeyEmail = 'login Email';
-  static String logInKeyPhoto = 'login Photo';
-  static String imgKey = 'userName';
-
-
-
-  static init() async => pref = await SharedPreferences.getInstance();
-
-  static set setFbLoginName(value) => pref!.setString(logInKeyName, value);
-
-  static String? get getFbLoginName => pref!.getString(logInKeyName);
-
-  static set setFbLoginEmail(value) => pref!.setString(logInKeyEmail, value);
-
-  static String? get getFbLoginEmail => pref!.getString(logInKeyEmail);
-
-  static set setFbLoginPhoto(value) => pref!.setString(logInKeyPhoto, value);
-
-  static String? get getFbLoginPhoto => pref!.getString(logInKeyPhoto);
-
-  static set setImage(value) => pref!.setString(imgKey, value);
-
-  static String? get getImage => pref!.getString(imgKey);
-}
 
 Future<UserCredential> signInWithGoogle() async {
   final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();

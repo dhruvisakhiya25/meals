@@ -9,6 +9,7 @@ import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:meals/screens/login.dart';
+import 'package:meals/screens/shared_pref.dart';
 import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/responsive.dart';
 import 'package:meals/utils/strings.dart';
@@ -44,7 +45,7 @@ class _ProfilePageState extends State<ProfilePage> {
   void initState() {
     super.initState();
     subEntries = subMenuEntries();
-    getData = FacebookLoginShared.getImage.toString();
+    getData = SharedPref.getProfileImage.toString();
 
     // entries = menuEntries();
   }
@@ -78,7 +79,7 @@ class _ProfilePageState extends State<ProfilePage> {
             title: const Text('Gallery'),
             onTap: () async {
               await pickImage();
-              FacebookLoginShared.setImage = file!.path.toString();
+              SharedPref.setProfileImage = file!.path.toString();
 
               setState(() {});
             },
@@ -214,11 +215,11 @@ class _ProfilePageState extends State<ProfilePage> {
                       width: 100,
                       decoration: BoxDecoration(
                           image: DecorationImage(
-                              image: FacebookLoginShared.getImage==null
-                                  ? NetworkImage(FacebookLoginShared
+                              image: SharedPref.getProfileImage==null
+                                  ? NetworkImage(SharedPref
                                       .getFbLoginPhoto
                                       .toString())
-                                  : FileImage(File(FacebookLoginShared.getImage.toString()))
+                                  : FileImage(File(SharedPref.getProfileImage.toString()))
                                       as ImageProvider,
                               fit: BoxFit.fill
                               // image: NetworkImage(userPhoto!),
@@ -228,8 +229,8 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                 ),
               ),
-              Text(FacebookLoginShared.getFbLoginName.toString()),
-              Text(FacebookLoginShared.getFbLoginEmail.toString()),
+              Text(SharedPref.getFbLoginName.toString()),
+              Text(SharedPref.getFbLoginEmail.toString()),
               // CircleAvatar(
               //   backgroundImage:
               //       NetworkImage(FacebookLoginShared.getFbLoginPhoto.toString()),
@@ -244,9 +245,9 @@ class _ProfilePageState extends State<ProfilePage> {
                         MaterialPageRoute(
                           builder: (context) => const LoginPage(),
                         ));
-                    FacebookLoginShared.setFbLoginName = '';
-                    FacebookLoginShared.setFbLoginEmail = '';
-                    FacebookLoginShared.setImage = '';
+                    SharedPref.setFbLoginName = '';
+                    SharedPref.setFbLoginEmail = '';
+                    SharedPref.setProfileImage = '';
 
                   },
                   child: const Text(
