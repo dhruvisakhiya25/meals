@@ -87,7 +87,6 @@ class _NotificationPageState extends State<NotificationPage> {
                                 style: const TextStyle(color: grey),
                               ),
                             ),
-
                           ],
                         );
                       },
