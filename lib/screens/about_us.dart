@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
@@ -11,49 +12,77 @@ class AboutUsPage extends StatefulWidget {
 }
 
 class _AboutUsPageState extends State<AboutUsPage> {
+  final CollectionReference _products =
+  FirebaseFirestore.instance.collection('inbox');
+  late Stream<QuerySnapshot> _streams;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _streams = _products.snapshots();
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
+      body:SafeArea(
         child: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Column(
-              children: [
-                Row(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      aboutUs,
-                      style: const TextStyle(
-                          color: black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 25),
+                      inbox,
+                      style: const TextStyle(color: black, fontSize: 30),
                     ),
-                    const Icon(icCart)
+                    const Icon(
+                      icCart,
+                      color: black,
+                    ),
                   ],
                 ),
-                ListView.builder(
-                  physics: const NeverScrollableScrollPhysics(),
-                  itemCount: 3,
-                  shrinkWrap: true,
-                  itemBuilder: (context, index) => RichText(
-                    text: TextSpan(
-                        text: '.',
-                        style: const TextStyle(color: orange, fontSize: 50),
-                        children: [
-                          TextSpan(
-                              text: lorem,
-                              style:
-                                  const TextStyle(color: black, fontSize: 17)),
-                        ]),
-                  ),
-                )
-              ],
-            ),
+              ),
+              StreamBuilder<QuerySnapshot>(
+                stream: _streams,
+                builder: (BuildContext context, AsyncSnapshot snapshot) {
+                  if (snapshot.hasError) {
+                    return Center(child: Text(snapshot.error.toString()));
+                  }
+                  if (snapshot.connectionState == ConnectionState.waiting) {
+                    return const Center(child: CircularProgressIndicator());
+                  }
+                  QuerySnapshot querySnapshot = snapshot.data;
+                  List<QueryDocumentSnapshot> document = querySnapshot.docs;
+                  return  ListView.builder(
+                    physics: const NeverScrollableScrollPhysics(),
+                    itemCount: 3,
+                    shrinkWrap: true,
+                    itemBuilder: (context, index)
+                    {
+                      QueryDocumentSnapshot documents = document[index];
+                           return RichText(
+                              text: TextSpan(
+                                  text: '.',
+                                  style: const TextStyle(
+                                      color: orange, fontSize: 50),
+                                  children: [
+                                    TextSpan(
+                                        text: documents['about lorem'],
+                                        style: const TextStyle(
+                                            color: black, fontSize: 17)),
+                                  ]),
+                            );
+                          });
+                },
+              ),
+            ],
           ),
         ),
       ),
+
     );
   }
 }
