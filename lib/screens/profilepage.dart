@@ -9,6 +9,7 @@ import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:meals/screens/login.dart';
+import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/responsive.dart';
 import 'package:meals/utils/strings.dart';
@@ -73,9 +74,9 @@ class _ProfilePageState extends State<ProfilePage> {
           width: 150,
           height: 50,
           decoration: BoxDecoration(
-              color: Colors.white, borderRadius: BorderRadius.circular(20)),
+              color:white, borderRadius: BorderRadius.circular(20)),
           child: ListTile(
-            leading: const Icon(Icons.image),
+            leading: const Icon(icImage),
             title: const Text('Gallery'),
             onTap: () async {
               await pickImage();
@@ -99,12 +100,12 @@ class _ProfilePageState extends State<ProfilePage> {
               children: [  Text(
                 profile,
                 style: const TextStyle(
-                    color: Colors.black, fontWeight: FontWeight.bold, fontSize: 30),
+                    color: black, fontWeight: FontWeight.bold, fontSize: 30),
               ),
 
                 const Icon(
                   icCart,
-                  color: Colors.black,
+                  color: black,
                 )],
             ),
               const SizedBox(height: 90,),
@@ -121,12 +122,12 @@ class _ProfilePageState extends State<ProfilePage> {
                         openDurationMs: 1200,
                       ),
                       items: subEntries,
-                      child: const Icon(Icons.edit),
+                      child: const Icon(icEdit),
                     ),
-                    badgeColor: Colors.white,
+                    badgeColor: white,
                     child: CircleAvatar(
                       radius: 53,
-                      backgroundColor: Colors.black,
+                      backgroundColor:black,
                       child: Container(
                         height: 100,
                         width: 100,
@@ -155,12 +156,12 @@ class _ProfilePageState extends State<ProfilePage> {
                         openDurationMs: 1200,
                       ),
                       items: subEntries,
-                      child: const Icon(Icons.edit),
+                      child: const Icon(icEdit),
                     ),
-                    badgeColor: Colors.white,
+                    badgeColor: white,
                     child: CircleAvatar(
                       radius: 53,
-                      backgroundColor: Colors.black,
+                      backgroundColor: black,
                       child: Container(
                         height: 100,
                         width: 100,
@@ -202,7 +203,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   },
                   child: const Text(
                     'Sign Out',
-                    style: TextStyle(color: Colors.grey),
+                    style: TextStyle(color: grey),
                   )),
               if (userData != null)
                 Container(

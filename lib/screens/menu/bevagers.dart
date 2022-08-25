@@ -92,12 +92,12 @@ class _BevagersState extends State<Bevagers> {
                             subtitle: Row(
                               children: [
                                 const Icon(
-                                  Icons.star,
-                                  color: Colors.orange,
+                                  icStar,
+                                  color: orange,
                                 ),
                                 Text(
                                   documents['rate'].toString(),
-                                  style: const TextStyle(color: Colors.orange),
+                                  style: const TextStyle(color: orange),
                                 ),
                               ],
                             ),
