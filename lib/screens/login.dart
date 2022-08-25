@@ -281,10 +281,6 @@ String? userPhoto = '';
 
 Map<String, dynamic>? userData;
 
-checkLogin() async {
-  await FacebookAuth.instance.accessToken;
-}
-
 fbLogin() async {
   await FacebookAuth.instance.login();
   final user = await FacebookAuth.instance.getUserData();
