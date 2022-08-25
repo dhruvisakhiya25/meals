@@ -12,7 +12,7 @@ class MostPopular extends StatefulWidget {
 
 class _MostPopularState extends State<MostPopular> {
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('most');
+      FirebaseFirestore.instance.collection('most');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -21,11 +21,11 @@ class _MostPopularState extends State<MostPopular> {
     super.initState();
     _streams = _products.snapshots();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-
         children: [
           StreamBuilder<QuerySnapshot>(
             stream: _streams,
@@ -52,7 +52,9 @@ class _MostPopularState extends State<MostPopular> {
                     return Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const SizedBox(height: 20,),
+                        const SizedBox(
+                          height: 20,
+                        ),
                         Container(
                           height: 130,
                           width: 220,
@@ -77,13 +79,20 @@ class _MostPopularState extends State<MostPopular> {
                                   fontSize: 20),
                             ),
                             Row(
-                              children:  [
-                                const Icon(icStar,color: orange,),
-                                Text(documents['most rate'].toString(),style: const TextStyle(color: orange),),
-                               const SizedBox(width: 3,),
+                              children: [
+                                const Icon(
+                                  icStar,
+                                  color: orange,
+                                ),
                                 Text(
-                                 documents['most type'],
-
+                                  documents['most rate'].toString(),
+                                  style: const TextStyle(color: orange),
+                                ),
+                                const SizedBox(
+                                  width: 3,
+                                ),
+                                Text(
+                                  documents['most type'],
                                 )
                               ],
                             )

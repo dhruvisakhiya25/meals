@@ -4,8 +4,6 @@ import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/strings.dart';
 
-
-
 class MyOrderPage extends StatefulWidget {
   const MyOrderPage({Key? key}) : super(key: key);
 
@@ -17,19 +15,23 @@ class _MyOrderPageState extends State<MyOrderPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-
       body: SingleChildScrollView(
         child: SafeArea(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
             child: Column(
-              children: [const SizedBox(height: 20,),
+              children: [
+                const SizedBox(
+                  height: 20,
+                ),
                 Text(
                   myOrder,
                   style: const TextStyle(
                       color: black, fontSize: 25, fontWeight: FontWeight.bold),
-                ),const SizedBox(height: 20,),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
                 Row(
                   children: [
                     Container(
@@ -48,7 +50,7 @@ class _MyOrderPageState extends State<MyOrderPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                           Text(
+                          Text(
                             kingBurger,
                             style: const TextStyle(
                                 color: black,
@@ -56,15 +58,14 @@ class _MyOrderPageState extends State<MyOrderPage> {
                                 fontSize: 23),
                           ),
                           Row(
-                            children:  [
+                            children: [
                               const Icon(
                                 icStar,
                                 color: orange,
                               ),
                               Text(
                                 rate,
-                                style:
-                                    const TextStyle(color: orange),
+                                style: const TextStyle(color: orange),
                               ),
                               Text(
                                 rating,
@@ -72,12 +73,12 @@ class _MyOrderPageState extends State<MyOrderPage> {
                               )
                             ],
                           ),
-                           Text(
-                           burgerWesternFood,
+                          Text(
+                            burgerWesternFood,
                             style: const TextStyle(color: grey),
                           ),
                           Row(
-                            children:  [
+                            children: [
                               const Icon(
                                 icLocation,
                                 color: orange,
@@ -119,40 +120,37 @@ class _MyOrderPageState extends State<MyOrderPage> {
                     ],
                   ),
                 ),
-                 ListTile(
+                ListTile(
                   title: Text(deliveryInstruction),
                   trailing: Text(
-                   addNotes,
-                    style:
-                        const TextStyle(color:orange, fontSize: 20),
+                    addNotes,
+                    style: const TextStyle(color: orange, fontSize: 20),
                   ),
                 ),
                 const Divider(
                   color: grey,
                 ),
-                 ListTile(
+                ListTile(
                   title: Text(subTotal),
                   trailing: Text(
                     sixtyEight,
-                    style:
-                        const TextStyle(color: orange, fontSize: 20),
+                    style: const TextStyle(color: orange, fontSize: 20),
                   ),
                 ),
-                 ListTile(
+                ListTile(
                   title: Text(deliveryCost),
                   trailing: Text(
                     tow,
-                    style:
-                        const TextStyle(color: orange, fontSize: 20),
+                    style: const TextStyle(color: orange, fontSize: 20),
                   ),
                 ),
                 const Divider(
                   color: grey,
                 ),
-                 ListTile(
+                ListTile(
                   title: Text(total),
                   trailing: Text(
-                   seventy,
+                    seventy,
                     style: const TextStyle(
                         color: orange,
                         fontWeight: FontWeight.bold,
@@ -172,8 +170,8 @@ class _MyOrderPageState extends State<MyOrderPage> {
                           builder: (context) => const CheckOutPage(),
                         ));
                   },
-                  color:orange,
-                  child:  Text(
+                  color: orange,
+                  child: Text(
                     checkOut,
                     style: const TextStyle(color: white, fontSize: 20),
                   ),

@@ -28,8 +28,12 @@ class _PaymentDetailsState extends State<PaymentDetails> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             // ignore: prefer_const_constructors
-            children: [SizedBox(height: 20,),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              SizedBox(
+                height: 20,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
                     paymentDetails,
@@ -43,7 +47,10 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                     color: black,
                   )
                 ],
-              ),const SizedBox(height: 15,),
+              ),
+              const SizedBox(
+                height: 15,
+              ),
               Text(
                 customPaymentMethod,
                 style: const TextStyle(
@@ -109,13 +116,13 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                             ),
                             Text(
                               numbers,
-                              style: const TextStyle(color: black, fontSize: 18),
+                              style:
+                                  const TextStyle(color: black, fontSize: 18),
                             ),
                             const SizedBox(
                               width: 10,
                             ),
                             MaterialButton(
-
                               height: 35,
                               shape: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(20),
@@ -187,7 +194,8 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                             ),
                             Text(
                               addCreditDebitCard,
-                              style: const TextStyle(color: black, fontSize: 20),
+                              style:
+                                  const TextStyle(color: black, fontSize: 20),
                             ),
                             const SizedBox(
                               height: 10,

@@ -15,7 +15,6 @@ import 'package:meals/utils/responsive.dart';
 import 'package:meals/utils/strings.dart';
 import 'package:star_menu/star_menu.dart';
 
-
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
 
@@ -74,7 +73,7 @@ class _ProfilePageState extends State<ProfilePage> {
           width: 150,
           height: 50,
           decoration: BoxDecoration(
-              color:white, borderRadius: BorderRadius.circular(20)),
+              color: white, borderRadius: BorderRadius.circular(20)),
           child: ListTile(
             leading: const Icon(icImage),
             title: const Text('Gallery'),
@@ -89,27 +88,30 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(
             children: [
-              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [  Text(
-                profile,
-                style: const TextStyle(
-                    color: black, fontWeight: FontWeight.bold, fontSize: 30),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    profile,
+                    style: const TextStyle(
+                        color: black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 30),
+                  ),
+                  const Icon(
+                    icCart,
+                    color: black,
+                  )
+                ],
               ),
-
-                const Icon(
-                  icCart,
-                  color: black,
-                )],
-            ),
-              const SizedBox(height: 90,),
-
+              const SizedBox(
+                height: 90,
+              ),
               if (userData != null)
                 Center(
                   child: Badge(
@@ -117,41 +119,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     badgeContent: StarMenu(
                       params: const StarMenuParameters(
                         linearShapeParams:
-                        LinearShapeParams(alignment: LinearAlignment.right),
-                        shape: MenuShape.linear,
-                        openDurationMs: 1200,
-                      ),
-                      items: subEntries,
-                      child: const Icon(icEdit),
-                    ),
-                    badgeColor: white,
-                    child: CircleAvatar(
-                      radius: 53,
-                      backgroundColor:black,
-                      child: Container(
-                        height: 100,
-                        width: 100,
-                        decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: file == null
-                                    ? NetworkImage(
-                                    userData!['picture']['data']['url'])
-                                    : FileImage(File(file!.path))
-                                as ImageProvider,
-                                fit: BoxFit.fill),
-                            shape: BoxShape.circle),
-                      ),
-                    ),
-                  ),
-                )
-              else if (userPhoto != null)
-                Center(
-                  child: Badge(
-                    position: BadgePosition.bottomEnd(),
-                    badgeContent: StarMenu(
-                      params: const StarMenuParameters(
-                        linearShapeParams:
-                        LinearShapeParams(alignment: LinearAlignment.right),
+                            LinearShapeParams(alignment: LinearAlignment.right),
                         shape: MenuShape.linear,
                         openDurationMs: 1200,
                       ),
@@ -169,12 +137,45 @@ class _ProfilePageState extends State<ProfilePage> {
                             image: DecorationImage(
                                 image: file == null
                                     ? NetworkImage(
-                                    userPhoto!)
+                                        userData!['picture']['data']['url'])
                                     : FileImage(File(file!.path))
-                                as ImageProvider,
+                                        as ImageProvider,
+                                fit: BoxFit.fill),
+                            shape: BoxShape.circle),
+                      ),
+                    ),
+                  ),
+                )
+              else if (userPhoto != null)
+                Center(
+                  child: Badge(
+                    position: BadgePosition.bottomEnd(),
+                    badgeContent: StarMenu(
+                      params: const StarMenuParameters(
+                        linearShapeParams:
+                            LinearShapeParams(alignment: LinearAlignment.right),
+                        shape: MenuShape.linear,
+                        openDurationMs: 1200,
+                      ),
+                      items: subEntries,
+                      child: const Icon(icEdit),
+                    ),
+                    badgeColor: white,
+                    child: CircleAvatar(
+                      radius: 53,
+                      backgroundColor: black,
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: file == null
+                                    ? NetworkImage(userPhoto!)
+                                    : FileImage(File(file!.path))
+                                        as ImageProvider,
                                 fit: BoxFit.fill
-                              // image: NetworkImage(userPhoto!),
-                            ),
+                                // image: NetworkImage(userPhoto!),
+                                ),
                             shape: BoxShape.circle),
                       ),
                     ),
@@ -185,7 +186,7 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               if (userData != null)
                 Text(
-                 userData!['name'],
+                  userData!['name'],
                   style: const TextStyle(fontWeight: FontWeight.bold),
                 )
               else
@@ -218,7 +219,6 @@ class _ProfilePageState extends State<ProfilePage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-
                         Text(
                           userData!['name'],
                           style: const TextStyle(fontSize: 20),
@@ -234,11 +234,11 @@ class _ProfilePageState extends State<ProfilePage> {
                         borderRadius: BorderRadius.circular(30)),
                     padding: const EdgeInsets.only(left: 20),
                     margin: const EdgeInsets.all(10),
-                    child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       // ignore: prefer_const_literals_to_create_immutables
                       children: [
-
                         Text(
                           userName!,
                           style: const TextStyle(fontSize: 20),
@@ -258,7 +258,6 @@ class _ProfilePageState extends State<ProfilePage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-
                         Text(
                           userData!['email'],
                           style: const TextStyle(fontSize: 20),
@@ -274,7 +273,8 @@ class _ProfilePageState extends State<ProfilePage> {
                         borderRadius: BorderRadius.circular(30)),
                     padding: const EdgeInsets.only(left: 20),
                     margin: const EdgeInsets.all(10),
-                    child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
@@ -303,5 +303,3 @@ googleLogOut() async {
   userName = '';
   await GoogleSignIn().signOut();
 }
-
-

@@ -5,7 +5,6 @@ import 'package:meals/utils/color.dart';
 import 'package:meals/utils/responsive.dart';
 import 'package:meals/utils/strings.dart';
 
-
 class MealMonkey extends StatefulWidget {
   const MealMonkey({Key? key}) : super(key: key);
 
@@ -68,9 +67,9 @@ class _MealMonkeyState extends State<MealMonkey> {
                 padding: const EdgeInsets.symmetric(horizontal: 40),
                 child: Column(
                   children: [
-                     Flexible(
+                    Flexible(
                       child: Text(
-                       discoverBest,
+                        discoverBest,
                         textAlign: TextAlign.center,
                       ),
                     ),
@@ -81,8 +80,7 @@ class _MealMonkeyState extends State<MealMonkey> {
                       color: orange,
                       shape: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(25),
-                          borderSide:
-                                const BorderSide(color: orange)),
+                          borderSide: const BorderSide(color: orange)),
                       onPressed: () {
                         Navigator.pushReplacement(
                             context,
@@ -91,7 +89,7 @@ class _MealMonkeyState extends State<MealMonkey> {
                             ));
                         setState(() {});
                       },
-                      child:  Text(
+                      child: Text(
                         login,
                         style: const TextStyle(color: white, fontSize: 20),
                       ),
@@ -104,8 +102,7 @@ class _MealMonkeyState extends State<MealMonkey> {
                       minWidth: 250,
                       shape: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(25),
-                          borderSide:
-                               const BorderSide(color: orange)),
+                          borderSide: const BorderSide(color: orange)),
                       onPressed: () {
                         Navigator.pushReplacement(
                             context,
@@ -114,10 +111,9 @@ class _MealMonkeyState extends State<MealMonkey> {
                             ));
                         setState(() {});
                       },
-                      child:  Text(
+                      child: Text(
                         createAccount,
-                        style: const TextStyle(
-                            color: orange, fontSize: 20),
+                        style: const TextStyle(color: orange, fontSize: 20),
                       ),
                     ),
                     const Spacer(),

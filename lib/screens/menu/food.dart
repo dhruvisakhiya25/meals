@@ -14,9 +14,8 @@ class Foods extends StatefulWidget {
 }
 
 class _FoodsState extends State<Foods> {
-
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('food');
+      FirebaseFirestore.instance.collection('food');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -25,97 +24,100 @@ class _FoodsState extends State<Foods> {
     super.initState();
     _streams = _products.snapshots();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body:  SafeArea(
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
+        body: SafeArea(
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
             Padding(
-                      padding: const EdgeInsets.all(15.0),
-                      child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            foods,
-                            style: const TextStyle(color: black, fontSize: 30),
-                          ),
-                          const Icon(
-                            icCart,
-                            color: black,
-                          ),
-                        ],
-                      ),
-                    ),
-                StreamBuilder<QuerySnapshot>(
-                  stream: _streams,
-                  builder: (BuildContext context, AsyncSnapshot snapshot) {
-                    if (snapshot.hasError) {
-                      return Center(child: Text(snapshot.error.toString()));
-                    }
-                    if (snapshot.connectionState == ConnectionState.waiting) {
-                      return const Center(child: CircularProgressIndicator());
-                    }
-                    QuerySnapshot querySnapshot = snapshot.data;
-                    List<QueryDocumentSnapshot> document = querySnapshot.docs;
-                    return ListView.separated(
-                      separatorBuilder: (context, index) => const Divider(height: 3,),
-                      physics: const NeverScrollableScrollPhysics(),
-                      itemCount: document.length,
-                      shrinkWrap: true,
-                      itemBuilder: (context, index) {
-                        QueryDocumentSnapshot documents = document[index];
-                        return GestureDetector(
-                          onTap: () {
-                            if (index == 1) {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder: (context) => const Item(),
-                                  ));
-                            }
-                          },
-                          child: Container(
-                            height: 300,
-                            width: 100,
-                            decoration: BoxDecoration(
-                              // color: Colors.red,
-                              image: DecorationImage(
-                                  image: NetworkImage(documents['image']),
-                                  fit: BoxFit.cover),
-                            ),
-                            alignment: Alignment.bottomLeft,
-                            child: ListTile(
-                              title: Text(documents['txt'],style: const TextStyle(color: white),),
-                              subtitle: Row(
-                                children: [
-                                  const Icon(
-                                    icStar,
-                                    color: orange,
-                                  ),
-                                  Text(
-                                    documents['rate'].toString(),
-                                    style: const TextStyle(color: orange),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        );
+              padding: const EdgeInsets.all(15.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    foods,
+                    style: const TextStyle(color: black, fontSize: 30),
+                  ),
+                  const Icon(
+                    icCart,
+                    color: black,
+                  ),
+                ],
+              ),
+            ),
+            StreamBuilder<QuerySnapshot>(
+              stream: _streams,
+              builder: (BuildContext context, AsyncSnapshot snapshot) {
+                if (snapshot.hasError) {
+                  return Center(child: Text(snapshot.error.toString()));
+                }
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return const Center(child: CircularProgressIndicator());
+                }
+                QuerySnapshot querySnapshot = snapshot.data;
+                List<QueryDocumentSnapshot> document = querySnapshot.docs;
+                return ListView.separated(
+                  separatorBuilder: (context, index) => const Divider(
+                    height: 3,
+                  ),
+                  physics: const NeverScrollableScrollPhysics(),
+                  itemCount: document.length,
+                  shrinkWrap: true,
+                  itemBuilder: (context, index) {
+                    QueryDocumentSnapshot documents = document[index];
+                    return GestureDetector(
+                      onTap: () {
+                        if (index == 1) {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const Item(),
+                              ));
+                        }
                       },
+                      child: Container(
+                        height: 300,
+                        width: 100,
+                        decoration: BoxDecoration(
+                          // color: Colors.red,
+                          image: DecorationImage(
+                              image: NetworkImage(documents['image']),
+                              fit: BoxFit.cover),
+                        ),
+                        alignment: Alignment.bottomLeft,
+                        child: ListTile(
+                          title: Text(
+                            documents['txt'],
+                            style: const TextStyle(color: white),
+                          ),
+                          subtitle: Row(
+                            children: [
+                              const Icon(
+                                icStar,
+                                color: orange,
+                              ),
+                              Text(
+                                documents['rate'].toString(),
+                                style: const TextStyle(color: orange),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
                     );
                   },
-                ),
-              ],
+                );
+              },
             ),
-          ),
-        )
-
-    );
+          ],
+        ),
+      ),
+    ));
   }
 }
-
-
 
 class Item extends StatefulWidget {
   const Item({Key? key}) : super(key: key);
@@ -124,9 +126,9 @@ class Item extends StatefulWidget {
   State<Item> createState() => _ItemState();
 }
 
-class _ItemState extends State<Item>  {
+class _ItemState extends State<Item> {
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('items');
+      FirebaseFirestore.instance.collection('items');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -135,15 +137,15 @@ class _ItemState extends State<Item>  {
     super.initState();
     _streams = _products.snapshots();
   }
+
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
-      body:  SafeArea(
-        child: SingleChildScrollView(physics: NeverScrollableScrollPhysics(),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          physics: NeverScrollableScrollPhysics(),
           child: Column(
             children: [
-
               StreamBuilder<QuerySnapshot>(
                 stream: _streams,
                 builder: (BuildContext context, AsyncSnapshot snapshot) {
@@ -151,14 +153,14 @@ class _ItemState extends State<Item>  {
                     return Center(child: Text(snapshot.error.toString()));
                   }
                   if (snapshot.connectionState == ConnectionState.waiting) {
-                    return const Center(child: CircularProgressIndicator(
-
-                    ));
+                    return const Center(child: CircularProgressIndicator());
                   }
                   QuerySnapshot querySnapshot = snapshot.data;
                   List<QueryDocumentSnapshot> document = querySnapshot.docs;
                   return ListView.separated(
-                    separatorBuilder: (context, index) => const Divider(height: 3,),
+                    separatorBuilder: (context, index) => const Divider(
+                      height: 3,
+                    ),
                     physics: const NeverScrollableScrollPhysics(),
                     itemCount: document.length,
                     shrinkWrap: true,
@@ -169,7 +171,7 @@ class _ItemState extends State<Item>  {
                           Container(
                             height: Screens.height(context) * 0.5,
                             width: Screens.width(context),
-                            decoration:  BoxDecoration(
+                            decoration: BoxDecoration(
                                 image: DecorationImage(
                                     image: NetworkImage(
                                       documents['items image'],
@@ -179,7 +181,8 @@ class _ItemState extends State<Item>  {
                           Container(
                             height: Screens.height(context) * 0.7,
                             width: Screens.width(context),
-                            margin: EdgeInsets.only(top: Screens.height(context) * 0.43),
+                            margin: EdgeInsets.only(
+                                top: Screens.height(context) * 0.43),
                             decoration: const BoxDecoration(
                               color: white,
                               borderRadius: BorderRadius.only(
@@ -194,15 +197,14 @@ class _ItemState extends State<Item>  {
                                 children: [
                                   Text(
                                     documents['items name'],
-                                    style:
-                                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+                                    style: const TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 30),
                                   ),
                                   SizedBox(
                                     height: 30,
                                   ),
                                   Text(documents['items rate']),
-
-
                                   Text(documents['items decription']),
                                   const Divider(thickness: 2),
                                   Row(
@@ -214,7 +216,8 @@ class _ItemState extends State<Item>  {
                                       CupertinoButton(
                                         borderRadius: BorderRadius.circular(30),
                                         color: orange,
-                                        padding: const EdgeInsets.symmetric(horizontal: 20),
+                                        padding: const EdgeInsets.symmetric(
+                                            horizontal: 20),
                                         onPressed: () {},
                                         child: const Icon(icRemove),
                                       ),
@@ -225,7 +228,8 @@ class _ItemState extends State<Item>  {
                                       CupertinoButton(
                                         borderRadius: BorderRadius.circular(30),
                                         color: orange,
-                                        padding: const EdgeInsets.symmetric(horizontal: 20),
+                                        padding: const EdgeInsets.symmetric(
+                                            horizontal: 20),
                                         onPressed: () {},
                                         child: const Icon(icAdd),
                                       ),
@@ -247,7 +251,8 @@ class _ItemState extends State<Item>  {
                                       Container(
                                         height: 80,
                                         width: 200,
-                                        margin: const EdgeInsets.only(top: 40, left: 50),
+                                        margin: const EdgeInsets.only(
+                                            top: 40, left: 50),
                                         decoration: const BoxDecoration(
                                           color: white,
                                           borderRadius: BorderRadius.only(
@@ -255,7 +260,8 @@ class _ItemState extends State<Item>  {
                                               bottomLeft: Radius.circular(20)),
                                         ),
                                         child: Row(
-                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
                                           children: [
                                             const SizedBox(
                                               width: 0,
@@ -268,12 +274,16 @@ class _ItemState extends State<Item>  {
                                                   onPressed: () {},
                                                   color: orange,
                                                   shape: OutlineInputBorder(
-                                                      borderRadius: BorderRadius.circular(20),
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              20),
                                                       borderSide:
-                                                      const BorderSide(color: orange)),
+                                                          const BorderSide(
+                                                              color: orange)),
                                                   child: Text(
                                                     addToCart,
-                                                    style: const TextStyle(color: white),
+                                                    style: const TextStyle(
+                                                        color: white),
                                                   ),
                                                 ),
                                               ],
@@ -298,8 +308,6 @@ class _ItemState extends State<Item>  {
           ),
         ),
       ),
-
     );
   }
 }
-

@@ -20,7 +20,8 @@ class _AboutUsPageState extends State<AboutUsPage> {
             padding: const EdgeInsets.all(20.0),
             child: Column(
               children: [
-                Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
                       aboutUs,
@@ -28,7 +29,8 @@ class _AboutUsPageState extends State<AboutUsPage> {
                           color: black,
                           fontWeight: FontWeight.bold,
                           fontSize: 25),
-                    ),const Icon(icCart)
+                    ),
+                    const Icon(icCart)
                   ],
                 ),
                 ListView.builder(
@@ -42,7 +44,8 @@ class _AboutUsPageState extends State<AboutUsPage> {
                         children: [
                           TextSpan(
                               text: lorem,
-                              style: const TextStyle(color: black, fontSize: 17)),
+                              style:
+                                  const TextStyle(color: black, fontSize: 17)),
                         ]),
                   ),
                 )
@@ -54,5 +57,3 @@ class _AboutUsPageState extends State<AboutUsPage> {
     );
   }
 }
-
-

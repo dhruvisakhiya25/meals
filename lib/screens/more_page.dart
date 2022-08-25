@@ -12,7 +12,6 @@ import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/strings.dart';
 
-
 class MorePage extends StatefulWidget {
   const MorePage({Key? key}) : super(key: key);
 
@@ -24,8 +23,6 @@ class _MorePageState extends State<MorePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(25.0),
@@ -33,19 +30,25 @@ class _MorePageState extends State<MorePage> {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children:  [Center(
-                  child: Text(
-                    mores,
-                    style: TextStyle(
-                        color: black, fontWeight: FontWeight.bold, fontSize: 25),
+                children: [
+                  Center(
+                    child: Text(
+                      mores,
+                      style: TextStyle(
+                          color: black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 25),
+                    ),
                   ),
-                ),
-
                   Icon(
                     icCart,
                     color: black,
-                  ),],
-              ),SizedBox(height: 20,),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 20,
+              ),
               ListView.builder(
                 itemCount: more.length,
                 shrinkWrap: true,
@@ -94,7 +97,8 @@ class _MorePageState extends State<MorePage> {
                             MaterialPageRoute(
                               builder: (context) => const AboutUsPage(),
                             ));
-                      } if (index == 5) {
+                      }
+                      if (index == 5) {
                         await fbLogout();
                         await googleLogOut();
                         setState(() {});
@@ -130,27 +134,23 @@ class _MorePageState extends State<MorePage> {
 List more = [
   {
     'circleAvatar': icPaid,
-    'title':paymentDetails,
+    'title': paymentDetails,
   },
   {
     'circleAvatar': icWork,
-    'title':myOrder,
+    'title': myOrder,
   },
   {
     'circleAvatar': icNotification,
-    'title':notification,
+    'title': notification,
   },
   {
-    'circleAvatar':icMail,
+    'circleAvatar': icMail,
     'title': inbox,
   },
   {
-    'circleAvatar':icAbout,
-    'title':aboutUs,
+    'circleAvatar': icAbout,
+    'title': aboutUs,
   },
-
-  {
-    'circleAvatar':icLogOut,
-    'title':logOut
-  }
+  {'circleAvatar': icLogOut, 'title': logOut}
 ];

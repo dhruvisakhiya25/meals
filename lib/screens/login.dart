@@ -131,9 +131,7 @@ class _LoginPageState extends State<LoginPage> {
                       borderSide: const BorderSide(color: orange),
                     ),
                     onPressed: () {
-                      if (_formKey.currentState!.validate()) {
-
-                      }
+                      if (_formKey.currentState!.validate()) {}
                       if (txtEmail.text.isNotEmpty &&
                           txtPassword.text.isNotEmpty) {
                         servise.loginUser(

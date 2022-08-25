@@ -257,7 +257,8 @@ class _HomePageState extends State<HomePage> {
                                 width: 100,
                                 decoration: BoxDecoration(
                                   image: DecorationImage(
-                                      image: NetworkImage(documents['recent image']),
+                                      image: NetworkImage(
+                                          documents['recent image']),
                                       fit: BoxFit.fill),
                                   borderRadius: BorderRadius.circular(15),
                                 ),
@@ -268,7 +269,7 @@ class _HomePageState extends State<HomePage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                     documents['recent name'],
+                                      documents['recent name'],
                                       style: const TextStyle(
                                           color: black,
                                           fontSize: 20,
@@ -277,12 +278,12 @@ class _HomePageState extends State<HomePage> {
                                     const SizedBox(
                                       height: 5,
                                     ),
-                                   Text(documents['recent type']),
+                                    Text(documents['recent type']),
                                     const SizedBox(
                                       height: 5,
                                     ),
                                     Row(
-                                      children:  [
+                                      children: [
                                         const Icon(
                                           icStar,
                                           color: orange,
