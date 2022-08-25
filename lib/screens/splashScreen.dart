@@ -1,11 +1,12 @@
 // ignore_for_file: use_build_context_synchronously, file_names
 
+import 'package:meals/screens/login.dart';
+import 'package:meals/screens/mainPage.dart';
 import 'package:meals/screens/meal_monkey.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/responsive.dart';
 
 import 'package:flutter/material.dart';
-
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -23,12 +24,17 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   Future<void> splashScreen() async {
-    await Future.delayed(const Duration(seconds: 5));
-    Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (context) => const  MealMonkey(),
-        ));
+    await Future.delayed(const Duration(seconds: 3));
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+      if (FacebookLoginShared.getFbLoginName != '' &&
+          FacebookLoginShared.getFbLoginName != null &&
+          FacebookLoginShared.getFbLoginEmail != '' &&
+          FacebookLoginShared.getFbLoginEmail != null) {
+        return const MainPage();
+      } else {
+        return const MealMonkey();
+      }
+    }));
   }
 
   @override
