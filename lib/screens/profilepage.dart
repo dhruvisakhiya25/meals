@@ -215,12 +215,11 @@ class _ProfilePageState extends State<ProfilePage> {
                       width: 100,
                       decoration: BoxDecoration(
                           image: DecorationImage(
-                              image: SharedPref.getProfileImage==null
-                                  ? NetworkImage(SharedPref
-                                      .getFbLoginPhoto
-                                      .toString())
-                                  : FileImage(File(SharedPref.getProfileImage.toString()))
-                                      as ImageProvider,
+                              image: SharedPref.getProfileImage == null
+                                  ? NetworkImage(
+                                      SharedPref.getFbLoginPhoto.toString())
+                                  : FileImage(File(SharedPref.getProfileImage
+                                      .toString())) as ImageProvider,
                               fit: BoxFit.fill
                               // image: NetworkImage(userPhoto!),
                               ),
@@ -248,7 +247,6 @@ class _ProfilePageState extends State<ProfilePage> {
                     SharedPref.setFbLoginName = '';
                     SharedPref.setFbLoginEmail = '';
                     SharedPref.setProfileImage = '';
-
                   },
                   child: const Text(
                     'Sign Out',

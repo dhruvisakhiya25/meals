@@ -60,30 +60,38 @@ class _AboutUsPageState extends State<AboutUsPage> {
                   return Padding(
                     padding: const EdgeInsets.all(20.0),
                     child: ListView.separated(
-                        physics: const NeverScrollableScrollPhysics(),
-                        itemCount: 3,
-                        shrinkWrap: true,
-                        itemBuilder: (context, index) {
-                          QueryDocumentSnapshot documents = document[index];
-                          return Stack(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.only(right: 10.0,top: 10),
-                                child: CircleAvatar(
-                                  radius: 3,
-                                  backgroundColor: orange,
-                                ),
+                      physics: const NeverScrollableScrollPhysics(),
+                      itemCount: 3,
+                      shrinkWrap: true,
+                      itemBuilder: (context, index) {
+                        QueryDocumentSnapshot documents = document[index];
+                        return Stack(
+                          children: [
+                            Padding(
+                              padding:
+                                  const EdgeInsets.only(right: 10.0, top: 10),
+                              child: CircleAvatar(
+                                radius: 3,
+                                backgroundColor: orange,
                               ),
-                              Padding(
-                                padding: const EdgeInsets.only(left: 15.0),
-                                child: Text(
-                                  documents['about lorem'],
-                                  style: TextStyle(color: black, fontSize: 17),
-                                ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 15.0),
+                              child: Text(
+                                documents['about lorem'],
+                                style: TextStyle(color: black, fontSize: 17),
                               ),
-                            ],
-                          );
-                        }, separatorBuilder: (BuildContext context, int index) { return Divider(thickness: 0,color:white,); },),
+                            ),
+                          ],
+                        );
+                      },
+                      separatorBuilder: (BuildContext context, int index) {
+                        return Divider(
+                          thickness: 0,
+                          color: white,
+                        );
+                      },
+                    ),
                   );
                 },
               ),

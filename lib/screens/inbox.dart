@@ -80,7 +80,10 @@ class _InBoxPageState extends State<InBoxPage> {
                         ),
                         subtitle: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [Text(documents['inbox lorem']), Text(documents['inbox consectetur'])],
+                          children: [
+                            Text(documents['inbox lorem']),
+                            Text(documents['inbox consectetur'])
+                          ],
                         ),
                         trailing: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,

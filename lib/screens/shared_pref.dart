@@ -7,8 +7,6 @@ class SharedPref {
   static String fbLoginPhoto = 'login Photo';
   static String imgKey = 'userName';
 
-
-
   static init() async => pref = await SharedPreferences.getInstance();
 
   static set setFbLoginName(value) => pref!.setString(fbLoginName, value);

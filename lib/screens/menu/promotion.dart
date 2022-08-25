@@ -201,7 +201,6 @@ class _ItemState extends State<Item> {
                                         fontWeight: FontWeight.bold,
                                         fontSize: 30),
                                   ),
-
                                   const SizedBox(
                                     height: 30,
                                   ),

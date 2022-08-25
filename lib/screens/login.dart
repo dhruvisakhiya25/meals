@@ -13,7 +13,6 @@ import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/strings.dart';
 
-
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -42,8 +41,8 @@ class _LoginPageState extends State<LoginPage> {
     // TODO: implement initState
     super.initState();
     getName = SharedPref.getFbLoginName.toString();
-    getEmail =SharedPref.getFbLoginEmail.toString();
-    getPhoto =SharedPref.getFbLoginPhoto.toString();
+    getEmail = SharedPref.getFbLoginEmail.toString();
+    getPhoto = SharedPref.getFbLoginPhoto.toString();
     // checkLogin();
   }
 
@@ -81,7 +80,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   TextFormField(
                     autovalidateMode: AutovalidateMode.onUserInteraction,
-                   validator: (value) => validateEmail(value),
+                    validator: (value) => validateEmail(value),
                     controller: txtEmail,
                     decoration: InputDecoration(
                       hintText: yourEmail,
@@ -98,7 +97,8 @@ class _LoginPageState extends State<LoginPage> {
                   const SizedBox(
                     height: 30,
                   ),
-                  TextFormField( autovalidateMode: AutovalidateMode.onUserInteraction,
+                  TextFormField(
+                    autovalidateMode: AutovalidateMode.onUserInteraction,
                     controller: txtPassword,
                     textInputAction: TextInputAction.next,
                     obscureText: passwords,
@@ -262,7 +262,6 @@ class _LoginPageState extends State<LoginPage> {
   }
 }
 
-
 Future<UserCredential> signInWithGoogle() async {
   final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
 
@@ -294,6 +293,7 @@ fbLogin() async {
   final user = await FacebookAuth.instance.getUserData();
   userData = user;
 }
+
 String? validateEmail(String? value) {
   String pattern =
       r"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]"
@@ -305,8 +305,7 @@ String? validateEmail(String? value) {
   }
   if (!regex.hasMatch(value)) {
     return 'Enter a valid email address';
-  }
-  else {
+  } else {
     return null;
   }
 }
