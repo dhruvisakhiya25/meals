@@ -3,7 +3,6 @@ import 'package:meals/screens/live_traking.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/strings.dart';
 
-
 class FastDeliveryPage extends StatefulWidget {
   const FastDeliveryPage({Key? key}) : super(key: key);
 
@@ -37,7 +36,7 @@ class _FastDeliveryPageState extends State<FastDeliveryPage> {
                   width: 10,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(4),
-                    color:orange,
+                    color: orange,
                   ),
                 ),
                 const SizedBox(
@@ -56,18 +55,16 @@ class _FastDeliveryPageState extends State<FastDeliveryPage> {
             const SizedBox(
               height: 20,
             ),
-             Text(
-             fastDelivery ,
+            Text(
+              fastDelivery,
               style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 35,
-                  color: black),
+                  fontWeight: FontWeight.bold, fontSize: 35, color: black),
             ),
             const SizedBox(
               height: 20,
             ),
-             Text(fastFood),
-             Text(whereEverYou),
+            Text(fastFood),
+            Text(whereEverYou),
             const SizedBox(
               height: 60,
             ),
@@ -77,7 +74,7 @@ class _FastDeliveryPageState extends State<FastDeliveryPage> {
               color: orange,
               shape: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(30),
-                borderSide:  const BorderSide(color: orange),
+                borderSide: const BorderSide(color: orange),
               ),
               onPressed: () {
                 Navigator.push(
@@ -89,8 +86,8 @@ class _FastDeliveryPageState extends State<FastDeliveryPage> {
                   () {},
                 );
               },
-              child:  Text(
-               next,
+              child: Text(
+                next,
                 style: const TextStyle(color: white, fontSize: 20),
               ),
             ),

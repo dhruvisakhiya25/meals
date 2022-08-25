@@ -9,6 +9,7 @@ import 'package:meals/screens/mainPage.dart';
 import 'package:meals/screens/reset_password.dart';
 import 'package:meals/screens/signup.dart';
 import 'package:meals/utils/color.dart';
+import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/strings.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -45,6 +46,8 @@ class _LoginPageState extends State<LoginPage> {
     // checkLogin();
   }
 
+  bool passwords = true;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -76,17 +79,8 @@ class _LoginPageState extends State<LoginPage> {
                     height: 20,
                   ),
                   TextFormField(
-                    validator: (value) {
-                      if (value!.isEmpty) {
-                        return ("Please Enter Your Email");
-                      }
-                      // Reg Expression for Email Validation
-                      if (!RegExp("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+.[a-z]")
-                          .hasMatch(value)) {
-                        return ("Please Enter Your Valid Email");
-                      }
-                      return null;
-                    },
+                    autovalidateMode: AutovalidateMode.onUserInteraction,
+                   validator: (value) => validateEmail(value),
                     controller: txtEmail,
                     decoration: InputDecoration(
                       hintText: yourEmail,
@@ -103,28 +97,41 @@ class _LoginPageState extends State<LoginPage> {
                   const SizedBox(
                     height: 30,
                   ),
-                  TextFormField(
-                    validator: (value) {
-                      RegExp regex = RegExp(r'^.{6,}$');
-                      if (value!.isEmpty) {
-                        return ("Please Enter Your Password");
-                      }
-                      if (!regex.hasMatch(value)) {
-                        return ("Please Valid Password(Min. 6 Character)");
-                      }
-                      return null;
-                    },
+                  TextFormField( autovalidateMode: AutovalidateMode.onUserInteraction,
                     controller: txtPassword,
+                    textInputAction: TextInputAction.next,
+                    obscureText: passwords,
                     decoration: InputDecoration(
+                      suffixIcon: IconButton(
+                          onPressed: () {
+                            passwords = !passwords;
+                            setState(() {});
+                          },
+                          icon: Icon(
+                            passwords ? icVisibilityOff : icVisibility,
+                            color: grey,
+                          )),
+                      prefixIconColor: orange,
                       hintText: password,
                       focusedBorder: OutlineInputBorder(
                         borderSide: const BorderSide(color: grey),
                         borderRadius: BorderRadius.circular(30),
                       ),
                       border: OutlineInputBorder(
-                          borderSide: const BorderSide(color: grey),
-                          borderRadius: BorderRadius.circular(30)),
+                        borderSide: const BorderSide(color: grey),
+                        borderRadius: BorderRadius.circular(30),
+                      ),
                     ),
+                    validator: (value) {
+                      RegExp regex = RegExp(r'^.{6,}$');
+                      if (value!.isEmpty) {
+                        return (pleaseEnterYourPassword);
+                      }
+                      if (!regex.hasMatch(value)) {
+                        return (pleaseValidPassword);
+                      }
+                      return null;
+                    },
                   ),
                   const SizedBox(
                     height: 30,
@@ -306,12 +313,24 @@ String? userPhoto = '';
 
 Map<String, dynamic>? userData;
 
-checkLogin() async {
-  await FacebookAuth.instance.accessToken;
-}
-
 fbLogin() async {
   await FacebookAuth.instance.login();
   final user = await FacebookAuth.instance.getUserData();
   userData = user;
+}
+String? validateEmail(String? value) {
+  String pattern =
+      r"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]"
+      r"{0,253}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]"
+      r"{0,253}[a-zA-Z0-9])?)*$";
+  RegExp regex = RegExp(pattern);
+  if (value!.isEmpty) {
+    return 'Email cannot be Empty';
+  }
+  if (!regex.hasMatch(value)) {
+    return 'Enter a valid email address';
+  }
+  else {
+    return null;
+  }
 }

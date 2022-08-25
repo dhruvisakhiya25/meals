@@ -12,7 +12,6 @@ import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/strings.dart';
 
-
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
 
@@ -90,7 +89,7 @@ List<TabData> getTabsData() {
     TabData(
       icon: icHome,
       iconSize: 25,
-      title:home,
+      title: home,
       fontSize: 12,
       fontWeight: FontWeight.bold,
     ),

@@ -25,7 +25,7 @@ class _CheckOutPageState extends State<CheckOutPage> {
     List radio = [
       cashOnDelivery,
       visa,
-     emailId,
+      emailId,
     ];
     return Scaffold(
       appBar: AppBar(
@@ -40,10 +40,10 @@ class _CheckOutPageState extends State<CheckOutPage> {
             color: black,
           ),
         ),
-        title:  Text(
+        title: Text(
           checkOut,
           style: const TextStyle(
-              color:black, fontSize: 25, fontWeight: FontWeight.bold),
+              color: black, fontSize: 25, fontWeight: FontWeight.bold),
         ),
       ),
       body: SafeArea(
@@ -52,8 +52,8 @@ class _CheckOutPageState extends State<CheckOutPage> {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                 Text(
-                 deliveryAddress,
+                Text(
+                  deliveryAddress,
                   style: const TextStyle(color: grey),
                 ),
                 const SizedBox(
@@ -63,7 +63,7 @@ class _CheckOutPageState extends State<CheckOutPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Column(
-                      children:  [
+                      children: [
                         Text(
                           nostrand,
                           style: const TextStyle(
@@ -80,10 +80,9 @@ class _CheckOutPageState extends State<CheckOutPage> {
                         )
                       ],
                     ),
-                     Text(
-                     change ,
-                      style: const TextStyle(
-                          color: orange, fontSize: 20),
+                    Text(
+                      change,
+                      style: const TextStyle(color: orange, fontSize: 20),
                     ),
                   ],
                 ),
@@ -92,15 +91,14 @@ class _CheckOutPageState extends State<CheckOutPage> {
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children:  [
+                  children: [
                     Text(
-                     paymentMethod,
+                      paymentMethod,
                     ),
                     Text(
-                     addCards,
+                      addCards,
                       style: const TextStyle(
-                          color:orange,
-                          fontWeight: FontWeight.w500),
+                          color: orange, fontWeight: FontWeight.w500),
                     )
                   ],
                 ),
@@ -146,11 +144,11 @@ class _CheckOutPageState extends State<CheckOutPage> {
                 ),
                 MaterialButton(
                   minWidth: 350,
-                  color:orange,
+                  color: orange,
                   height: 45,
                   shape: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(25),
-                      borderSide: const BorderSide(color:orange)),
+                      borderSide: const BorderSide(color: orange)),
                   onPressed: () {
                     showModalBottomSheet(
                       shape: const OutlineInputBorder(
@@ -173,9 +171,9 @@ class _CheckOutPageState extends State<CheckOutPage> {
                                   onPressed: () {
                                     Navigator.pop(context);
                                   },
-                                  icon:  const Icon(icClose)),
+                                  icon: const Icon(icClose)),
                             ),
-                             Text(
+                            Text(
                               addCreditCard,
                               style:
                                   const TextStyle(color: black, fontSize: 20),
@@ -189,7 +187,9 @@ class _CheckOutPageState extends State<CheckOutPage> {
                             ),
                             Padding(
                               padding: const EdgeInsets.all(10.0),
-                              child: TextField(keyboardType: TextInputType.phone,textInputAction: TextInputAction.next,
+                              child: TextField(
+                                keyboardType: TextInputType.phone,
+                                textInputAction: TextInputAction.next,
                                 controller: txtCardNumber,
                                 decoration: InputDecoration(
                                     focusedBorder: OutlineInputBorder(
@@ -202,19 +202,18 @@ class _CheckOutPageState extends State<CheckOutPage> {
                                     hintText: cardNumber,
                                     enabledBorder: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(25),
-                                      borderSide:
-                                          const BorderSide(color: grey),
+                                      borderSide: const BorderSide(color: grey),
                                     ),
                                     border: OutlineInputBorder(
                                         borderRadius: BorderRadius.circular(25),
-                                        borderSide: const BorderSide(
-                                            color: grey))),
+                                        borderSide:
+                                            const BorderSide(color: grey))),
                               ),
                             ),
                             Row(
                               children: [
-                                 Text(
-                                 expiry,
+                                Text(
+                                  expiry,
                                   style: const TextStyle(
                                       color: black,
                                       fontSize: 20,
@@ -224,7 +223,9 @@ class _CheckOutPageState extends State<CheckOutPage> {
                                   width: 30,
                                 ),
                                 Expanded(
-                                  child: TextField(keyboardType: TextInputType.phone,textInputAction: TextInputAction.next,
+                                  child: TextField(
+                                    keyboardType: TextInputType.phone,
+                                    textInputAction: TextInputAction.next,
                                     controller: txtMM,
                                     decoration: InputDecoration(
                                         hintText: mM,
@@ -237,7 +238,9 @@ class _CheckOutPageState extends State<CheckOutPage> {
                                   width: 50,
                                 ),
                                 Expanded(
-                                  child: TextField(keyboardType: TextInputType.phone,textInputAction: TextInputAction.next,
+                                  child: TextField(
+                                    keyboardType: TextInputType.phone,
+                                    textInputAction: TextInputAction.next,
                                     controller: txtYY,
                                     decoration: InputDecoration(
                                         hintText: yY,
@@ -250,7 +253,8 @@ class _CheckOutPageState extends State<CheckOutPage> {
                             ),
                             Padding(
                               padding: const EdgeInsets.all(10.0),
-                              child: TextField(textInputAction: TextInputAction.next,
+                              child: TextField(
+                                textInputAction: TextInputAction.next,
                                 controller: txtSecurityCode,
                                 decoration: InputDecoration(
                                     focusedBorder: OutlineInputBorder(
@@ -263,18 +267,18 @@ class _CheckOutPageState extends State<CheckOutPage> {
                                     hintText: securityCode,
                                     enabledBorder: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(25),
-                                      borderSide:
-                                          const BorderSide(color: grey),
+                                      borderSide: const BorderSide(color: grey),
                                     ),
                                     border: OutlineInputBorder(
                                         borderRadius: BorderRadius.circular(25),
-                                        borderSide: const BorderSide(
-                                            color: grey))),
+                                        borderSide:
+                                            const BorderSide(color: grey))),
                               ),
                             ),
                             Padding(
                               padding: const EdgeInsets.all(10.0),
-                              child: TextField(textInputAction: TextInputAction.next,
+                              child: TextField(
+                                textInputAction: TextInputAction.next,
                                 controller: txtFirstName,
                                 decoration: InputDecoration(
                                     focusedBorder: OutlineInputBorder(
@@ -287,18 +291,18 @@ class _CheckOutPageState extends State<CheckOutPage> {
                                     hintText: firstName,
                                     enabledBorder: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(25),
-                                      borderSide:
-                                          const BorderSide(color: grey),
+                                      borderSide: const BorderSide(color: grey),
                                     ),
                                     border: OutlineInputBorder(
                                         borderRadius: BorderRadius.circular(25),
-                                        borderSide: const BorderSide(
-                                            color: grey))),
+                                        borderSide:
+                                            const BorderSide(color: grey))),
                               ),
                             ),
                             Padding(
                               padding: const EdgeInsets.all(10.0),
-                              child: TextField(textInputAction: TextInputAction.next,
+                              child: TextField(
+                                textInputAction: TextInputAction.next,
                                 controller: txtLastName,
                                 decoration: InputDecoration(
                                     focusedBorder: OutlineInputBorder(
@@ -311,13 +315,12 @@ class _CheckOutPageState extends State<CheckOutPage> {
                                     hintText: lastName,
                                     enabledBorder: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(25),
-                                      borderSide:
-                                          const BorderSide(color: grey),
+                                      borderSide: const BorderSide(color: grey),
                                     ),
                                     border: OutlineInputBorder(
                                         borderRadius: BorderRadius.circular(25),
-                                        borderSide: const BorderSide(
-                                            color: grey))),
+                                        borderSide:
+                                            const BorderSide(color: grey))),
                               ),
                             ),
                             Row(
@@ -325,7 +328,7 @@ class _CheckOutPageState extends State<CheckOutPage> {
                               children: [
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  children:  [
+                                  children: [
                                     Text(youCanRemoveCard),
                                     Text(atAnyTime)
                                   ],
@@ -355,11 +358,11 @@ class _CheckOutPageState extends State<CheckOutPage> {
                                 color: orange,
                                 shape: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(25),
-                                    borderSide: const BorderSide(
-                                        color:orange)),
+                                    borderSide:
+                                        const BorderSide(color: orange)),
                                 onPressed: () {},
-                                child:  Text(
-                                 addCards,
+                                child: Text(
+                                  addCards,
                                   style: const TextStyle(
                                       color: white,
                                       fontWeight: FontWeight.w500,
@@ -372,7 +375,7 @@ class _CheckOutPageState extends State<CheckOutPage> {
                       ),
                     );
                   },
-                  child:  Text(
+                  child: Text(
                     sendOrder,
                     style: const TextStyle(
                         color: white,

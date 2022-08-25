@@ -10,24 +10,29 @@ class ResetPasswordPage extends StatefulWidget {
 }
 
 class _ResetPasswordPageState extends State<ResetPasswordPage> {
-  TextEditingController txtEmail=TextEditingController();
+  TextEditingController txtEmail = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Column(
           children: [
-             Center(
+            Center(
               child: Text(
                 resetPassword,
                 style: const TextStyle(
-                    color: black,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 35),
+                    color: black, fontWeight: FontWeight.bold, fontSize: 35),
               ),
-            ),const SizedBox(height: 10,),
-             Text(pleaseEnterYourEmail),
-             Text(linkTo),const SizedBox(height: 30,),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Text(pleaseEnterYourEmail),
+            Text(linkTo),
+            const SizedBox(
+              height: 30,
+            ),
             Padding(
               padding: const EdgeInsets.only(right: 39, left: 30),
               child: TextFormField(
@@ -44,7 +49,11 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
                   ),
                 ),
               ),
-            ),  const SizedBox(height: 50,),MaterialButton(
+            ),
+            const SizedBox(
+              height: 50,
+            ),
+            MaterialButton(
               height: 55,
               minWidth: 300,
               color: orange,
@@ -54,10 +63,10 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
               ),
               onPressed: () {
                 setState(
-                      () {},
+                  () {},
                 );
               },
-              child:  Text(
+              child: Text(
                 send,
                 style: const TextStyle(color: white, fontSize: 20),
               ),

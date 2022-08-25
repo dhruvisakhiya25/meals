@@ -24,9 +24,10 @@ class _FoodState extends State<Food> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-
         children: [
-          const SizedBox(height: 30,),
+          const SizedBox(
+            height: 30,
+          ),
           StreamBuilder<QuerySnapshot>(
             stream: _streams,
             builder: (BuildContext context, AsyncSnapshot snapshot) {
@@ -64,7 +65,10 @@ class _FoodState extends State<Food> {
                           ),
                           // alignment: Alignment.bottomLeft,
                         ),
-                        Text(documents['food name'],style: const TextStyle(fontWeight: FontWeight.w500),)
+                        Text(
+                          documents['food name'],
+                          style: const TextStyle(fontWeight: FontWeight.w500),
+                        )
                       ],
                     );
                   },
