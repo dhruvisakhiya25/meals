@@ -1,4 +1,6 @@
-// ignore_for_file: must_be_immutable, avoid_print
+// import 'dart:io';
+
+import 'dart:io';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -7,7 +9,16 @@ import 'package:meals/screens/splashScreen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  if (Platform.isIOS) {
+    await Firebase.initializeApp(
+        options: const FirebaseOptions(
+            apiKey: "AIzaSyBhFUxeDB6O5ki3R3IoAPDPEcZWjCsGR78",
+            appId: "1:358514215620:ios:fd45c3c61c94a0fa629791",
+            messagingSenderId: "358514215620",
+            projectId: "meals-f852f"));
+  } else {
+    await Firebase.initializeApp();
+  }
   await SharedPref.init();
   runApp(const MyApp());
 }
