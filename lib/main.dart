@@ -22,6 +22,7 @@ Future<void> main() async {
   await SharedPref.init();
   runApp(const MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
