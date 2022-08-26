@@ -164,7 +164,6 @@ class _ProfilePageState extends State<ProfilePage> {
                   onPressed: () async {
                     await fbLogout();
                     await googleLogOut();
-                    setState(() {});
                     Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -174,6 +173,11 @@ class _ProfilePageState extends State<ProfilePage> {
                     SharedPref.setFbLoginName = '';
                     SharedPref.setFbLoginEmail = '';
                     SharedPref.setProfileImage = '';
+                    SharedPref.setGoogleName='';
+                    SharedPref.setGoogleEmail='';
+                    SharedPref.setGooglePhoto='';
+                    setState(() {});
+
                   },
                   child: const Text(
                     'Sign Out',
