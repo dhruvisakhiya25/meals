@@ -26,6 +26,7 @@ class _SplashScreenState extends State<SplashScreen> {
     await Future.delayed(
       const Duration(seconds: 3),
     );
+
     Navigator.pushReplacement(
       context,
       MaterialPageRoute(
@@ -34,6 +35,9 @@ class _SplashScreenState extends State<SplashScreen> {
               SharedPref.getFbLoginName != null &&
               SharedPref.getFbLoginEmail != '' &&
               SharedPref.getFbLoginEmail != null) {
+            return const MainPage();
+          } else if (SharedPref.getGoogleName != '' &&
+              SharedPref.getGoogleName != null) {
             return const MainPage();
           } else {
             return const MealMonkey();
