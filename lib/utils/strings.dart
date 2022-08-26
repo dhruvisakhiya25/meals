@@ -93,7 +93,7 @@ String discoverBest =
 
 ///more page
 String menu = 'Menu';
-String paymentDetails = 'Payment Details';
+String paymentDetails = 'Payment Details ';
 String myOrder = 'My Order';
 String notification = 'Notification';
 String inbox = 'Inbox';

@@ -88,6 +88,7 @@ class _LoginPageState extends State<LoginPage> {
                     validator: (value) => validateEmail(value),
                     controller: txtEmail,
                     decoration: InputDecoration(
+
                       hintText: yourEmail,
                       focusedBorder: OutlineInputBorder(
                         borderSide: const BorderSide(color: grey),
