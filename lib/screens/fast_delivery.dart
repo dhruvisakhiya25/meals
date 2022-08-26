@@ -78,10 +78,11 @@ class _FastDeliveryPageState extends State<FastDeliveryPage> {
               ),
               onPressed: () {
                 Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const LiveTrackingPage(),
-                    ),);
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const LiveTrackingPage(),
+                  ),
+                );
                 setState(
                   () {},
                 );

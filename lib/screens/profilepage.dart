@@ -374,83 +374,82 @@ class _ProState extends State<Pro> {
               Text('Email Login${SharedPref.getEmail.toString()}'),
             if (SharedPref.getFbLoginPhoto != '' &&
                 SharedPref.getFbLoginPhoto != null)
-            Center(
-              child: Badge(
-                position: BadgePosition.bottomEnd(),
-                badgeContent: StarMenu(
-                  params: const StarMenuParameters(
-                    linearShapeParams:
-                        LinearShapeParams(alignment: LinearAlignment.right),
-                    shape: MenuShape.linear,
-                    openDurationMs: 1200,
+              Center(
+                child: Badge(
+                  position: BadgePosition.bottomEnd(),
+                  badgeContent: StarMenu(
+                    params: const StarMenuParameters(
+                      linearShapeParams:
+                          LinearShapeParams(alignment: LinearAlignment.right),
+                      shape: MenuShape.linear,
+                      openDurationMs: 1200,
+                    ),
+                    items: subEntries,
+                    child: const Icon(icEdit),
                   ),
-                  items: subEntries,
-                  child: const Icon(icEdit),
-                ),
-                badgeColor: white,
-                child: CircleAvatar(
-                  radius: 53,
-                  backgroundColor: black,
-                  child: Container(
-                    height: 100,
-                    width: 100,
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: SharedPref.getProfileImage == null
-                                ? NetworkImage(
-                                    SharedPref.getFbLoginPhoto.toString(),
-                                  )
-                                : FileImage(
-                                    File(
-                                      SharedPref.getProfileImage.toString(),
-                                    ),
-                                  ) as ImageProvider,
-                            fit: BoxFit.fill),
-                        shape: BoxShape.circle),
+                  badgeColor: white,
+                  child: CircleAvatar(
+                    radius: 53,
+                    backgroundColor: black,
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: SharedPref.getProfileImage == null
+                                  ? NetworkImage(
+                                      SharedPref.getFbLoginPhoto.toString(),
+                                    )
+                                  : FileImage(
+                                      File(
+                                        SharedPref.getProfileImage.toString(),
+                                      ),
+                                    ) as ImageProvider,
+                              fit: BoxFit.fill),
+                          shape: BoxShape.circle),
+                    ),
                   ),
                 ),
-              ),
-            )
+              )
             else if (SharedPref.getGooglePhoto != '' &&
                 SharedPref.getGooglePhoto != null)
               Center(
-              child: Badge(
-                position: BadgePosition.bottomEnd(),
-                badgeContent: StarMenu(
-                  params: const StarMenuParameters(
-                    linearShapeParams:
-                    LinearShapeParams(alignment: LinearAlignment.right),
-                    shape: MenuShape.linear,
-                    openDurationMs: 1200,
+                child: Badge(
+                  position: BadgePosition.bottomEnd(),
+                  badgeContent: StarMenu(
+                    params: const StarMenuParameters(
+                      linearShapeParams:
+                          LinearShapeParams(alignment: LinearAlignment.right),
+                      shape: MenuShape.linear,
+                      openDurationMs: 1200,
+                    ),
+                    items: subEntries,
+                    child: const Icon(icEdit),
                   ),
-                  items: subEntries,
-                  child: const Icon(icEdit),
-                ),
-                badgeColor: white,
-                child: CircleAvatar(
-                  radius: 53,
-                  backgroundColor: black,
-                  child:
-                  Container(
-                    height: 100,
-                    width: 100,
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: SharedPref.getProfileImage == null
-                                ? NetworkImage(
-                              SharedPref.getGooglePhoto.toString(),
-                            )
-                                : FileImage(
-                              File(
-                                SharedPref.getProfileImage.toString(),
-                              ),
-                            ) as ImageProvider,
-                            fit: BoxFit.fill),
-                        shape: BoxShape.circle),
+                  badgeColor: white,
+                  child: CircleAvatar(
+                    radius: 53,
+                    backgroundColor: black,
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: SharedPref.getProfileImage == null
+                                  ? NetworkImage(
+                                      SharedPref.getGooglePhoto.toString(),
+                                    )
+                                  : FileImage(
+                                      File(
+                                        SharedPref.getProfileImage.toString(),
+                                      ),
+                                    ) as ImageProvider,
+                              fit: BoxFit.fill),
+                          shape: BoxShape.circle),
+                    ),
                   ),
                 ),
               ),
-            ),
             TextButton(
                 onPressed: () async {
                   await fbLogout();

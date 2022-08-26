@@ -126,7 +126,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     decoration: InputDecoration(
                         errorBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(30),
-                          borderSide:  const BorderSide(color:red ),
+                          borderSide: const BorderSide(color: red),
                         ),
                         hintText: mobile,
                         focusedBorder: OutlineInputBorder(

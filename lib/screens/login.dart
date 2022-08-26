@@ -35,11 +35,11 @@ class _LoginPageState extends State<LoginPage> {
   String getName = '';
   String getEmail = '';
   String getPhoto = '';
-  String getGoogleName='';
-  String getGoogleEmail='';
-  String getGooglePhoto='';
-  String getEmails='';
-  String getPas='';
+  String getGoogleName = '';
+  String getGoogleEmail = '';
+  String getGooglePhoto = '';
+  String getEmails = '';
+  String getPas = '';
 
   @override
   void initState() {
@@ -48,11 +48,10 @@ class _LoginPageState extends State<LoginPage> {
     getName = SharedPref.getFbLoginName.toString();
     getEmail = SharedPref.getFbLoginEmail.toString();
     getPhoto = SharedPref.getFbLoginPhoto.toString();
-    getGoogleName=SharedPref.getGoogleName.toString();
-    getGoogleEmail=SharedPref.getGoogleEmail.toString();
-    getGooglePhoto=SharedPref.getGooglePhoto.toString();
-    getEmails=SharedPref.getEmail.toString();
-
+    getGoogleName = SharedPref.getGoogleName.toString();
+    getGoogleEmail = SharedPref.getGoogleEmail.toString();
+    getGooglePhoto = SharedPref.getGooglePhoto.toString();
+    getEmails = SharedPref.getEmail.toString();
   }
 
   bool passwords = true;
@@ -92,7 +91,6 @@ class _LoginPageState extends State<LoginPage> {
                     validator: (value) => validateEmail(value),
                     controller: txtEmail,
                     decoration: InputDecoration(
-
                       hintText: yourEmail,
                       focusedBorder: OutlineInputBorder(
                         borderSide: const BorderSide(color: grey),
@@ -170,7 +168,7 @@ class _LoginPageState extends State<LoginPage> {
                             builder: (context) => const MainPage(),
                           ),
                         );
-                        SharedPref.setEmail=txtEmail.text;
+                        SharedPref.setEmail = txtEmail.text;
                       }
                       setState(
                         () {},
@@ -240,11 +238,10 @@ class _LoginPageState extends State<LoginPage> {
                         MaterialPageRoute(
                           builder: (context) => const MainPage(),
                         ),
-
                       );
-                      SharedPref.setGoogleName=userName!;
-                      SharedPref.setGoogleEmail=userEmail;
-                      SharedPref.setGooglePhoto=userPhoto!;
+                      SharedPref.setGoogleName = userName!;
+                      SharedPref.setGoogleEmail = userEmail;
+                      SharedPref.setGooglePhoto = userPhoto!;
                     },
                     themeMode: themeMode,
                     isLoading: isLoading,

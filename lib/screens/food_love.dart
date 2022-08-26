@@ -79,10 +79,11 @@ class _FoodLovePageState extends State<FoodLovePage> {
               ),
               onPressed: () {
                 Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const FastDeliveryPage(),
-                    ),);
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const FastDeliveryPage(),
+                  ),
+                );
                 setState(
                   () {},
                 );

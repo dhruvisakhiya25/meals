@@ -4,7 +4,6 @@ import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/strings.dart';
 import 'package:pay/pay.dart';
 
-
 class PaymentDetails extends StatefulWidget {
   const PaymentDetails({Key? key}) : super(key: key);
 
@@ -20,9 +19,11 @@ class _PaymentDetailsState extends State<PaymentDetails> {
       status: PaymentItemStatus.final_price,
     )
   ];
+
   void onGooglePayResult(paymentResult) {
     // Send the resulting Google Pay token to your server / PSP
   }
+
   TextEditingController txtCardNumber = TextEditingController();
   TextEditingController txtMM = TextEditingController();
   TextEditingController txtYY = TextEditingController();
@@ -79,7 +80,8 @@ class _PaymentDetailsState extends State<PaymentDetails> {
               ),
               Center(
                 child: GooglePayButton(
-                  height: 40,width: 300,
+                  height: 40,
+                  width: 300,
                   paymentConfigurationAsset: 'gpay.json',
                   paymentItems: _paymentItems,
                   style: GooglePayButtonStyle.white,

@@ -87,17 +87,19 @@ class _MorePageState extends State<MorePage> {
                       }
                       if (index == 3) {
                         Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const InBoxPage(),
-                            ),);
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const InBoxPage(),
+                          ),
+                        );
                       }
                       if (index == 4) {
                         Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const AboutUsPage(),
-                            ),);
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const AboutUsPage(),
+                          ),
+                        );
                       }
                       if (index == 5) {
                         await fbLogout();
@@ -120,7 +122,9 @@ class _MorePageState extends State<MorePage> {
                         color: white,
                       ),
                     ),
-                    title: Text(more[index]['title'],),
+                    title: Text(
+                      more[index]['title'],
+                    ),
                     trailing: const Icon(
                       icRightArrow,
                     ),

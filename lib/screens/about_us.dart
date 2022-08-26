@@ -74,8 +74,7 @@ class _AboutUsPageState extends State<AboutUsPage> {
                         return Stack(
                           children: [
                             const Padding(
-                              padding:
-                                  EdgeInsets.only(right: 10.0, top: 10),
+                              padding: EdgeInsets.only(right: 10.0, top: 10),
                               child: CircleAvatar(
                                 radius: 3,
                                 backgroundColor: orange,
@@ -85,7 +84,8 @@ class _AboutUsPageState extends State<AboutUsPage> {
                               padding: const EdgeInsets.only(left: 15.0),
                               child: Text(
                                 documents['about lorem'],
-                                style: const TextStyle(color: black, fontSize: 17),
+                                style:
+                                    const TextStyle(color: black, fontSize: 17),
                               ),
                             ),
                           ],
