@@ -21,6 +21,7 @@ Future<void> main() async {
   }
   await SharedPref.init();
   runApp(const MyApp());
+
 }
 
 class MyApp extends StatelessWidget {
