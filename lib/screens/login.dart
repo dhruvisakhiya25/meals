@@ -38,6 +38,8 @@ class _LoginPageState extends State<LoginPage> {
   String getGoogleName='';
   String getGoogleEmail='';
   String getGooglePhoto='';
+  String getEmails='';
+  String getPas='';
 
   @override
   void initState() {
@@ -49,6 +51,8 @@ class _LoginPageState extends State<LoginPage> {
     getGoogleName=SharedPref.getGoogleName.toString();
     getGoogleEmail=SharedPref.getGoogleEmail.toString();
     getGooglePhoto=SharedPref.getGooglePhoto.toString();
+    getEmails=SharedPref.getEmail.toString();
+
   }
 
   bool passwords = true;
@@ -154,7 +158,7 @@ class _LoginPageState extends State<LoginPage> {
                       borderSide: const BorderSide(color: orange),
                     ),
                     onPressed: () {
-                      if (_formKey.currentState!.validate()) {}
+                      // if (_formKey.currentState!.validate()) {}
                       if (txtEmail.text.isNotEmpty &&
                           txtPassword.text.isNotEmpty) {
                         servise.loginUser(
@@ -165,6 +169,7 @@ class _LoginPageState extends State<LoginPage> {
                             builder: (context) => const MainPage(),
                           ),
                         );
+                        SharedPref.setEmail=txtEmail.text;
                       }
                       setState(
                         () {},

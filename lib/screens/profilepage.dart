@@ -147,8 +147,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                         SharedPref.getProfileImage.toString(),
                                       ),
                                     ) as ImageProvider,
-                              fit: BoxFit.fill
-                              ),
+                              fit: BoxFit.fill),
                           shape: BoxShape.circle),
                     ),
                   ),
@@ -173,11 +172,10 @@ class _ProfilePageState extends State<ProfilePage> {
                     SharedPref.setFbLoginName = '';
                     SharedPref.setFbLoginEmail = '';
                     SharedPref.setProfileImage = '';
-                    SharedPref.setGoogleName='';
-                    SharedPref.setGoogleEmail='';
-                    SharedPref.setGooglePhoto='';
+                    SharedPref.setGoogleName = '';
+                    SharedPref.setGoogleEmail = '';
+                    SharedPref.setGooglePhoto = '';
                     setState(() {});
-
                   },
                   child: const Text(
                     'Sign Out',
@@ -284,4 +282,200 @@ googleLogOut() async {
   userPhoto = '';
   userName = '';
   await GoogleSignIn().signOut();
+}
+
+class Pro extends StatefulWidget {
+  const Pro({Key? key}) : super(key: key);
+
+  @override
+  State<Pro> createState() => _ProState();
+}
+
+class _ProState extends State<Pro> {
+  late List<Widget> subEntries;
+  File? file;
+  String? getData;
+
+  pickImage() async {
+    ImagePicker pickImg = ImagePicker();
+    XFile? image = await pickImg.pickImage(source: ImageSource.gallery);
+    file = File(image!.path);
+  }
+
+  pickCamera() async {
+    ImagePicker pickImg = ImagePicker();
+    XFile? image = await pickImg.pickImage(source: ImageSource.camera);
+    file = File(image!.path);
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    subEntries = subMenuEntries();
+    getData = SharedPref.getProfileImage.toString();
+  }
+
+  List<Widget> subMenuEntries() {
+    return [
+      Container(
+        width: 150,
+        height: 50,
+        decoration: BoxDecoration(
+          color: white,
+          borderRadius: BorderRadius.circular(20),
+        ),
+        child: ListTile(
+          leading: const Icon(icCamera),
+          title: const Text('Camera'),
+          onTap: () async {
+            await pickCamera();
+            setState(
+              () {},
+            );
+          },
+        ),
+      ),
+      const SizedBox(
+        height: 10,
+      ),
+      Container(
+        width: 150,
+        height: 50,
+        decoration: BoxDecoration(
+            color: white, borderRadius: BorderRadius.circular(20)),
+        child: ListTile(
+          leading: const Icon(icImage),
+          title: const Text('Gallery'),
+          onTap: () async {
+            await pickImage();
+            SharedPref.setProfileImage = file!.path.toString();
+
+            setState(() {});
+          },
+        ),
+      ),
+    ];
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            if (SharedPref.getFbLoginName != '' &&
+                SharedPref.getFbLoginName != null)
+              Text('Facebook Login${SharedPref.getFbLoginName.toString()}')
+            else if (SharedPref.getGoogleName != '' &&
+                SharedPref.getGoogleName != null)
+              Text('Google Login${SharedPref.getGoogleName.toString()}')
+            else if (SharedPref.getEmail != '' &&
+                SharedPref.getGoogleName != null)
+              Text('Email Login${SharedPref.getEmail.toString()}'),
+            if (SharedPref.getFbLoginPhoto != '' &&
+                SharedPref.getFbLoginPhoto != null)
+            Center(
+              child: Badge(
+                position: BadgePosition.bottomEnd(),
+                badgeContent: StarMenu(
+                  params: const StarMenuParameters(
+                    linearShapeParams:
+                        LinearShapeParams(alignment: LinearAlignment.right),
+                    shape: MenuShape.linear,
+                    openDurationMs: 1200,
+                  ),
+                  items: subEntries,
+                  child: const Icon(icEdit),
+                ),
+                badgeColor: white,
+                child: CircleAvatar(
+                  radius: 53,
+                  backgroundColor: black,
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: SharedPref.getProfileImage == null
+                                ? NetworkImage(
+                                    SharedPref.getFbLoginPhoto.toString(),
+                                  )
+                                : FileImage(
+                                    File(
+                                      SharedPref.getProfileImage.toString(),
+                                    ),
+                                  ) as ImageProvider,
+                            fit: BoxFit.fill),
+                        shape: BoxShape.circle),
+                  ),
+                ),
+              ),
+            )
+            else if (SharedPref.getGooglePhoto != '' &&
+                SharedPref.getGooglePhoto != null)
+              Center(
+              child: Badge(
+                position: BadgePosition.bottomEnd(),
+                badgeContent: StarMenu(
+                  params: const StarMenuParameters(
+                    linearShapeParams:
+                    LinearShapeParams(alignment: LinearAlignment.right),
+                    shape: MenuShape.linear,
+                    openDurationMs: 1200,
+                  ),
+                  items: subEntries,
+                  child: const Icon(icEdit),
+                ),
+                badgeColor: white,
+                child: CircleAvatar(
+                  radius: 53,
+                  backgroundColor: black,
+                  child:
+                  Container(
+                    height: 100,
+                    width: 100,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: SharedPref.getProfileImage == null
+                                ? NetworkImage(
+                              SharedPref.getGooglePhoto.toString(),
+                            )
+                                : FileImage(
+                              File(
+                                SharedPref.getProfileImage.toString(),
+                              ),
+                            ) as ImageProvider,
+                            fit: BoxFit.fill),
+                        shape: BoxShape.circle),
+                  ),
+                ),
+              ),
+            ),
+            TextButton(
+                onPressed: () async {
+                  await fbLogout();
+                  await googleLogOut();
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const LoginPage(),
+                    ),
+                  );
+                  SharedPref.setFbLoginName = '';
+                  SharedPref.setFbLoginEmail = '';
+                  SharedPref.setProfileImage = '';
+                  SharedPref.setGoogleName = '';
+                  SharedPref.setGoogleEmail = '';
+                  SharedPref.setGooglePhoto = '';
+                  setState(() {});
+                },
+                child: const Text(
+                  'Sign Out',
+                  style: TextStyle(color: Colors.grey),
+                )),
+          ],
+        ),
+      ),
+    );
+  }
 }
