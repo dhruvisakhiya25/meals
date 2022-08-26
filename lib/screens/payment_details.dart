@@ -27,7 +27,6 @@ class _PaymentDetailsState extends State<PaymentDetails> {
           padding: const EdgeInsets.all(15.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            // ignore: prefer_const_constructors
             children: [
               const SizedBox(
                 height: 20,

@@ -65,7 +65,6 @@ class _MostPopularState extends State<MostPopular> {
                           width: 220,
                           margin: const EdgeInsets.all(5),
                           decoration: BoxDecoration(
-                            // color: Colors.red,
                             borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                                 image: NetworkImage(
