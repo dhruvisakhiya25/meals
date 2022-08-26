@@ -460,6 +460,7 @@ class _ProState extends State<Pro> {
                       builder: (context) => const LoginPage(),
                     ),
                   );
+
                   SharedPref.setFbLoginName = '';
                   SharedPref.setFbLoginEmail = '';
                   SharedPref.setProfileImage = '';
