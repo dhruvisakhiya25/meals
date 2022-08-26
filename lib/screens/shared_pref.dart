@@ -6,6 +6,9 @@ class SharedPref {
   static String fbLoginEmail = 'login Email';
   static String fbLoginPhoto = 'login Photo';
   static String imgKey = 'userName';
+  static String googleLoginName = 'google name';
+  static String googleLoginEmail = 'google email';
+  static String googleLoginPhoto = 'google photo';
 
   static init() async => pref = await SharedPreferences.getInstance();
 
@@ -24,4 +27,16 @@ class SharedPref {
   static set setProfileImage(value) => pref!.setString(imgKey, value);
 
   static String? get getProfileImage => pref!.getString(imgKey);
+
+  static set setGoogleName(value) => pref!.setString(googleLoginName, value);
+
+  static String? get getGoogleName => pref!.getString(googleLoginName);
+
+  static set setGoogleEmail(value) => pref!.setString(googleLoginEmail, value);
+
+  static String? get getGoogleEmail => pref!.getString(googleLoginEmail);
+
+  static set setGooglePhoto(value) => pref!.setString(googleLoginPhoto, value);
+
+  static String? get getGooglePhoto => pref!.getString(googleLoginPhoto);
 }

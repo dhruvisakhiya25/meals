@@ -36,6 +36,9 @@ class _SplashScreenState extends State<SplashScreen> {
               SharedPref.getFbLoginEmail != '' &&
               SharedPref.getFbLoginEmail != null) {
             return const MainPage();
+          } else if (SharedPref.getGoogleName != '' &&
+              SharedPref.getGoogleName != null) {
+            return const MainPage();
           } else {
             return const MealMonkey();
           }

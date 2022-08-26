@@ -167,15 +167,17 @@ class _ProfilePageState extends State<ProfilePage> {
               Text(
                 SharedPref.getFbLoginEmail.toString(),
               ),
-              // CircleAvatar(
-              //   backgroundImage:
-              //       NetworkImage(FacebookLoginShared.getFbLoginPhoto.toString()),
-              // ),
+              Text('Name${SharedPref.getGoogleName.toString()}'),
+              Text('Email${SharedPref.getGoogleEmail.toString()}'),
+              CircleAvatar(
+                backgroundImage: NetworkImage(
+                  SharedPref.getGooglePhoto.toString()
+                ),
+              ),
               TextButton(
                   onPressed: () async {
                     await fbLogout();
                     await googleLogOut();
-                    setState(() {});
                     Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -185,6 +187,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     SharedPref.setFbLoginName = '';
                     SharedPref.setFbLoginEmail = '';
                     SharedPref.setProfileImage = '';
+                    setState(() {});
                   },
                   child: const Text(
                     'Sign Out',

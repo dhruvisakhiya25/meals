@@ -35,6 +35,9 @@ class _LoginPageState extends State<LoginPage> {
   String getName = '';
   String getEmail = '';
   String getPhoto = '';
+  String getGoogleName='';
+  String getGoogleEmail='';
+  String getGooglePhoto='';
 
   @override
   void initState() {
@@ -43,6 +46,9 @@ class _LoginPageState extends State<LoginPage> {
     getName = SharedPref.getFbLoginName.toString();
     getEmail = SharedPref.getFbLoginEmail.toString();
     getPhoto = SharedPref.getFbLoginPhoto.toString();
+    getGoogleName=SharedPref.getGoogleName.toString();
+    getGoogleEmail=SharedPref.getGoogleEmail.toString();
+    getGooglePhoto=SharedPref.getGooglePhoto.toString();
   }
 
   bool passwords = true;
@@ -229,7 +235,11 @@ class _LoginPageState extends State<LoginPage> {
                         MaterialPageRoute(
                           builder: (context) => const MainPage(),
                         ),
+
                       );
+                      SharedPref.setGoogleName=userName!;
+                      SharedPref.setGoogleEmail=userEmail;
+                      SharedPref.setGooglePhoto=userPhoto!;
                     },
                     themeMode: themeMode,
                     isLoading: isLoading,
