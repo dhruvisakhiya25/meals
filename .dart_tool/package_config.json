@@ -218,6 +218,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "flutter_localizations",
+      "rootUri": "file:///Users/imac/Documents/devalopment/flutter/packages/flutter_localizations",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "flutter_plugin_android_lifecycle",
       "rootUri": "file:///Users/imac/Documents/devalopment/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-2.0.7",
       "packageUri": "lib/",
@@ -434,6 +440,30 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "pay",
+      "rootUri": "file:///Users/imac/Documents/devalopment/flutter/.pub-cache/hosted/pub.dartlang.org/pay-1.0.10",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "pay_android",
+      "rootUri": "file:///Users/imac/Documents/devalopment/flutter/.pub-cache/hosted/pub.dartlang.org/pay_android-1.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "pay_ios",
+      "rootUri": "file:///Users/imac/Documents/devalopment/flutter/.pub-cache/hosted/pub.dartlang.org/pay_ios-1.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "pay_platform_interface",
+      "rootUri": "file:///Users/imac/Documents/devalopment/flutter/.pub-cache/hosted/pub.dartlang.org/pay_platform_interface-1.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "pedantic",
       "rootUri": "file:///Users/imac/Documents/devalopment/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.11.1",
       "packageUri": "lib/",
@@ -620,7 +650,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2022-08-26T05:51:25.638994Z",
+  "generated": "2022-08-26T09:37:16.957699Z",
   "generator": "pub",
   "generatorVersion": "2.17.6"
 }
