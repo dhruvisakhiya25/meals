@@ -5,7 +5,6 @@ import 'package:meals/screens/meal_monkey.dart';
 import 'package:meals/screens/shared_pref.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/responsive.dart';
-
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {

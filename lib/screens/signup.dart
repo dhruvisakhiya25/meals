@@ -107,7 +107,6 @@ class _SignUpPageState extends State<SignUpPage> {
                       if (value!.isEmpty) {
                         return (pleaseEnterYourEmail);
                       }
-                      // Reg Expression for Email Validation
                       if (!RegExp("^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+.[a-z]")
                           .hasMatch(value)) {
                         return (pleaseValidEmail);
@@ -127,7 +126,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     decoration: InputDecoration(
                         errorBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(30),
-                          borderSide: const BorderSide(color: Colors.red),
+                          borderSide:  const BorderSide(color:red ),
                         ),
                         hintText: mobile,
                         focusedBorder: OutlineInputBorder(
@@ -156,7 +155,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     decoration: InputDecoration(
                         errorBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(30),
-                          borderSide: const BorderSide(color: Colors.red),
+                          borderSide: const BorderSide(color: red),
                         ),
                         hintText: address,
                         focusedBorder: OutlineInputBorder(
@@ -202,7 +201,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       prefixIconColor: orange,
                       errorBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
-                        borderSide: const BorderSide(color: Colors.red),
+                        borderSide: const BorderSide(color: red),
                       ),
                       hintText: password,
                       focusedBorder: OutlineInputBorder(
@@ -239,7 +238,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     decoration: InputDecoration(
                       errorBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
-                        borderSide: const BorderSide(color: Colors.red),
+                        borderSide: const BorderSide(color: red),
                       ),
                       suffixIcon: IconButton(
                         onPressed: () {

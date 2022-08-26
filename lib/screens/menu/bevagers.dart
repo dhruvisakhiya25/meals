@@ -181,11 +181,12 @@ class _ItemState extends State<Item> {
                             height: Screens.height(context) * 0.5,
                             width: Screens.width(context),
                             decoration: BoxDecoration(
-                                image: DecorationImage(
-                                    image: NetworkImage(
-                                      documents['juices image'],
-                                    ),
-                                    fit: BoxFit.cover)),
+                              image: DecorationImage(
+                                  image: NetworkImage(
+                                    documents['juices image'],
+                                  ),
+                                  fit: BoxFit.cover),
+                            ),
                           ),
                           Container(
                             height: Screens.height(context) * 0.7,
@@ -213,8 +214,12 @@ class _ItemState extends State<Item> {
                                   const SizedBox(
                                     height: 30,
                                   ),
-                                  Text(documents['juices rate']),
-                                  Text(documents['juices decription']),
+                                  Text(
+                                    documents['juices rate'],
+                                  ),
+                                  Text(
+                                    documents['juices decription'],
+                                  ),
                                   const Divider(thickness: 2),
                                   Row(
                                     children: [

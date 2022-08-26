@@ -73,9 +73,9 @@ class _AboutUsPageState extends State<AboutUsPage> {
                         QueryDocumentSnapshot documents = document[index];
                         return Stack(
                           children: [
-                            Padding(
+                            const Padding(
                               padding:
-                                  const EdgeInsets.only(right: 10.0, top: 10),
+                                  EdgeInsets.only(right: 10.0, top: 10),
                               child: CircleAvatar(
                                 radius: 3,
                                 backgroundColor: orange,
@@ -85,14 +85,14 @@ class _AboutUsPageState extends State<AboutUsPage> {
                               padding: const EdgeInsets.only(left: 15.0),
                               child: Text(
                                 documents['about lorem'],
-                                style: TextStyle(color: black, fontSize: 17),
+                                style: const TextStyle(color: black, fontSize: 17),
                               ),
                             ),
                           ],
                         );
                       },
                       separatorBuilder: (BuildContext context, int index) {
-                        return Divider(
+                        return const Divider(
                           thickness: 0,
                           color: white,
                         );

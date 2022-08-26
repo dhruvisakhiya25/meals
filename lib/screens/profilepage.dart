@@ -1,7 +1,6 @@
 // ignore_for_file: use_build_context_synchronously, avoid_print
 
 import 'dart:io';
-
 import 'package:badges/badges.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -32,14 +31,12 @@ class _ProfilePageState extends State<ProfilePage> {
     ImagePicker pickImg = ImagePicker();
     XFile? image = await pickImg.pickImage(source: ImageSource.gallery);
     file = File(image!.path);
-    print('------------------- $file');
   }
 
   pickCamera() async {
     ImagePicker pickImg = ImagePicker();
     XFile? image = await pickImg.pickImage(source: ImageSource.camera);
     file = File(image!.path);
-    print('------------------- $file');
   }
 
   @override
@@ -47,8 +44,6 @@ class _ProfilePageState extends State<ProfilePage> {
     super.initState();
     subEntries = subMenuEntries();
     getData = SharedPref.getProfileImage.toString();
-
-    // entries = menuEntries();
   }
 
   List<Widget> subMenuEntries() {
@@ -68,7 +63,6 @@ class _ProfilePageState extends State<ProfilePage> {
             setState(
               () {},
             );
-            // Navigator.pop(context);
           },
         ),
       ),
@@ -133,12 +127,12 @@ class _ProfilePageState extends State<ProfilePage> {
                       openDurationMs: 1200,
                     ),
                     items: subEntries,
-                    child: const Icon(Icons.edit),
+                    child: const Icon(icEdit),
                   ),
-                  badgeColor: Colors.white,
+                  badgeColor: white,
                   child: CircleAvatar(
                     radius: 53,
-                    backgroundColor: Colors.black,
+                    backgroundColor: black,
                     child: Container(
                       height: 100,
                       width: 100,
@@ -154,7 +148,6 @@ class _ProfilePageState extends State<ProfilePage> {
                                       ),
                                     ) as ImageProvider,
                               fit: BoxFit.fill
-                              // image: NetworkImage(userPhoto!),
                               ),
                           shape: BoxShape.circle),
                     ),
@@ -167,10 +160,6 @@ class _ProfilePageState extends State<ProfilePage> {
               Text(
                 SharedPref.getFbLoginEmail.toString(),
               ),
-              // CircleAvatar(
-              //   backgroundImage:
-              //       NetworkImage(FacebookLoginShared.getFbLoginPhoto.toString()),
-              // ),
               TextButton(
                   onPressed: () async {
                     await fbLogout();
@@ -224,7 +213,6 @@ class _ProfilePageState extends State<ProfilePage> {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      // ignore: prefer_const_literals_to_create_immutables
                       children: [
                         Text(
                           userName!,

@@ -1,11 +1,6 @@
 /// bevagers page
 String bevagers = 'Bevagers';
-String darkChocolateCake = 'Dark Chocolate Cake';
-String starRating = '4.5 Star Ratings';
-String description = 'Description';
-String loremIpsum = 'Lorem ipsum dolor sit amet,consectetur adipiscing elit.'
-    'Ornare leo non mollies id curses.Eu euismod faucibus in'
-    'leo malesuada';
+
 String numberOfPortion = 'Number of Portions';
 String totalPrice = 'Total Price';
 String lkr = 'LKR 1500';
@@ -13,7 +8,6 @@ String addToCart = 'Add To Cart';
 
 ///desserts page
 String desserts = 'Desserts';
-String num = '3';
 
 ///menu page
 String count = "25";
@@ -25,16 +19,6 @@ String searchFood = "Search Food";
 
 ///food page
 String foods = 'Food';
-String lorem = 'Lorem ipsum dolor sit amet,consectetur'
-    ' adipiscing elit,sed do eiusmod tempor'
-    'incididunt ut labore et dolore magna aliqua.Ut'
-    ' enim ad minim veniam,quis nostrud'
-    ' exercitation ullamco laboris nisi ut aliquip ex ea'
-    'commodo consequat.Duis aute irure dolor in'
-    ' eprehenderit in voluptate velit esse cillum'
-    'dolore eu fugiat nulla pariatur.Excepteur sint'
-    ' occaecat cupidatat non proident,sunt in culpa'
-    'qui officia deserunt mollit anim id est laborum.';
 
 ///check out
 String cashOnDelivery = 'Cash on Delivery';
@@ -77,19 +61,11 @@ String search = 'Search';
 String popularRestaurants = 'Popular Restaurants';
 String viewAll = 'view all';
 String rate = '4.9';
-String ratingCafe = '124 rating cafe  .  western food';
 String mostPopularg = 'Most Popular';
 String resentItem = 'Recent Items';
-String cafeWesternFood = 'Cafe Western Food';
+
 String rating = '(124 rating)';
 String logOut = 'Log Out';
-
-///inbox page
-
-String mealMonkeyPromotion = 'MealMonkey Promotions';
-String dolor = 'Lorem ipsum dolor sit amet';
-String consectetur = 'consectetur adipiscing elit,sed do';
-String jul = '6 th ,jul';
 
 ///liveTraking
 String liveTraking = 'live Traking';
@@ -155,12 +131,9 @@ String addAnotherCreditCard = '+ Add Another Credit/Debit Card';
 ///profile page
 
 String profile = 'Profile';
-String edit = 'Edit Profile';
-String hiThere = 'Hi There';
-String signOut = 'Sign Out';
+
 String name = 'Name';
 String email = 'Email';
-String mobileno = 'Mobile No';
 
 ///reset password page
 String send = 'Send';
