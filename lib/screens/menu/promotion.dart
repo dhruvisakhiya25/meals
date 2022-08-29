@@ -138,7 +138,7 @@ class Item extends StatefulWidget {
 
 class _ItemState extends State<Item> {
   final CollectionReference _products =
-      FirebaseFirestore.instance.collection('foods');
+      FirebaseFirestore.instance.collection('promot');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -190,7 +190,7 @@ class _ItemState extends State<Item> {
                             decoration: BoxDecoration(
                               image: DecorationImage(
                                   image: NetworkImage(
-                                    documents['foods image'],
+                                    documents['promot image'],
                                   ),
                                   fit: BoxFit.cover),
                             ),
@@ -213,7 +213,7 @@ class _ItemState extends State<Item> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    documents['foods name'],
+                                    documents['promot name'],
                                     style: const TextStyle(
                                         fontWeight: FontWeight.bold,
                                         fontSize: 30),
@@ -222,10 +222,10 @@ class _ItemState extends State<Item> {
                                     height: 30,
                                   ),
                                   Text(
-                                    documents['foods rate'],
+                                    documents['promot rate'],
                                   ),
                                   Text(
-                                    documents['foods decription'],
+                                    documents['promot decription'],
                                   ),
                                   const Divider(thickness: 2),
                                   Row(
@@ -256,6 +256,9 @@ class _ItemState extends State<Item> {
                                       ),
                                     ],
                                   ),
+                                  const SizedBox(
+                                    height: 10,
+                                  ),
                                   Stack(
                                     children: [
                                       Container(
@@ -269,50 +272,80 @@ class _ItemState extends State<Item> {
                                           ),
                                         ),
                                       ),
-                                      Container(
-                                        height: 80,
-                                        width: 200,
-                                        margin: const EdgeInsets.only(
-                                            top: 40, left: 50),
-                                        decoration: const BoxDecoration(
-                                          color: white,
-                                          borderRadius: BorderRadius.only(
-                                            topLeft: Radius.circular(20),
-                                            bottomLeft: Radius.circular(20),
-                                          ),
-                                        ),
-                                        child: Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            const SizedBox(
-                                              width: 0,
+                                      Stack(
+                                        children: [
+                                          Container(
+                                            height: 80,
+                                            width: 200,
+                                            margin: const EdgeInsets.only(
+                                                top: 40, left: 50),
+                                            decoration: const BoxDecoration(
+                                              color: white,
+                                              boxShadow: [
+                                                BoxShadow(
+                                                    color: Colors.grey,
+                                                    blurRadius: 10)
+                                              ],
+                                              borderRadius: BorderRadius.only(
+                                                  topLeft: Radius.circular(20),
+                                                  bottomLeft:
+                                                      Radius.circular(20),
+                                                  topRight: Radius.circular(7),
+                                                  bottomRight:
+                                                      Radius.circular(7)),
                                             ),
-                                            Column(
+                                            child: Row(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
                                               children: [
-                                                Text(totalPrice),
-                                                Text(lkr),
-                                                MaterialButton(
-                                                  onPressed: () {},
-                                                  color: orange,
-                                                  shape: OutlineInputBorder(
+                                                const SizedBox(
+                                                  width: 0,
+                                                ),
+                                                Column(
+                                                  children: [
+                                                    Text(totalPrice),
+                                                    Text(lkr),
+                                                    MaterialButton(
+                                                      onPressed: () {},
+                                                      color: orange,
+                                                      shape: OutlineInputBorder(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(20),
+                                                          borderSide:
+                                                              const BorderSide(
+                                                                  color:
+                                                                      orange)),
+                                                      child: Text(
+                                                        addToCart,
+                                                        style: const TextStyle(
+                                                            color: white),
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                                Card(
+                                                    elevation: 10,
+                                                    shape: OutlineInputBorder(
+                                                      borderSide: BorderSide(
+                                                          color: orange),
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               20),
-                                                      borderSide:
-                                                          const BorderSide(
-                                                              color: orange)),
-                                                  child: Text(
-                                                    addToCart,
-                                                    style: const TextStyle(
-                                                        color: white),
-                                                  ),
-                                                ),
+                                                    ),
+                                                    child: const CircleAvatar(
+                                                      radius: 20,
+                                                      backgroundColor: orange,
+                                                      child: Icon(
+                                                        icCart,
+                                                        color: white,
+                                                      ),
+                                                    ))
                                               ],
                                             ),
-                                            const Icon(icCart)
-                                          ],
-                                        ),
+                                          ),
+                                        ],
                                       )
                                     ],
                                   )

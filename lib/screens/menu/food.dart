@@ -76,7 +76,31 @@ class _FoodsState extends State<Foods> {
                       QueryDocumentSnapshot documents = document[index];
                       return GestureDetector(
                         onTap: () {
+                          if (index == 0) {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const Item(),
+                              ),
+                            );
+                          }
                           if (index == 1) {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const Item(),
+                              ),
+                            );
+                          }
+                          if (index == 2) {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const Item(),
+                              ),
+                            );
+                          }
+                          if (index == 3) {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
@@ -89,7 +113,6 @@ class _FoodsState extends State<Foods> {
                           height: 300,
                           width: 100,
                           decoration: BoxDecoration(
-                            // color: Colors.red,
                             image: DecorationImage(
                                 image: NetworkImage(
                                   documents['image'],
@@ -190,7 +213,7 @@ class _ItemState extends State<Item> {
                             decoration: BoxDecoration(
                               image: DecorationImage(
                                   image: NetworkImage(
-                                    documents['items image'],
+                                    documents['items image1'],
                                   ),
                                   fit: BoxFit.cover),
                             ),
@@ -276,9 +299,16 @@ class _ItemState extends State<Item> {
                                             top: 40, left: 50),
                                         decoration: const BoxDecoration(
                                           color: white,
+                                          boxShadow: [
+                                            BoxShadow(
+                                                color: Colors.grey,
+                                                blurRadius: 10)
+                                          ],
                                           borderRadius: BorderRadius.only(
-                                            topLeft: Radius.circular(20),
-                                            bottomLeft: Radius.circular(20),
+                                            topLeft: Radius.circular(30),
+                                            topRight: Radius.circular(7),
+                                            bottomLeft: Radius.circular(30),
+                                            bottomRight: Radius.circular(7)
                                           ),
                                         ),
                                         child: Row(
@@ -311,7 +341,23 @@ class _ItemState extends State<Item> {
                                                 ),
                                               ],
                                             ),
-                                            const Icon(icCart)
+                                            Card(
+                                                elevation: 10,
+                                                shape: OutlineInputBorder(
+                                                  borderSide: BorderSide(
+                                                      color: orange),
+                                                  borderRadius:
+                                                  BorderRadius.circular(
+                                                      20),
+                                                ),
+                                                child: const CircleAvatar(
+                                                  radius: 20,
+                                                  backgroundColor: orange,
+                                                  child: Icon(
+                                                    icCart,
+                                                    color: white,
+                                                  ),
+                                                ))
                                           ],
                                         ),
                                       )

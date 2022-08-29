@@ -269,9 +269,16 @@ class _ItemState extends State<Item> {
                                             top: 40, left: 50),
                                         decoration: const BoxDecoration(
                                           color: white,
+                                          boxShadow: [
+                                            BoxShadow(
+                                                color: Colors.grey,
+                                                blurRadius: 10)
+                                          ],
                                           borderRadius: BorderRadius.only(
-                                              topLeft: Radius.circular(20),
-                                              bottomLeft: Radius.circular(20)),
+                                              topLeft: Radius.circular(30),
+                                              bottomRight: Radius.circular(7),
+                                              topRight: Radius.circular(7),
+                                              bottomLeft: Radius.circular(30)),
                                         ),
                                         child: Row(
                                           mainAxisAlignment:
@@ -302,7 +309,23 @@ class _ItemState extends State<Item> {
                                                 ),
                                               ],
                                             ),
-                                            const Icon(icCart)
+                                            Card(
+                                                elevation: 10,
+                                                shape: OutlineInputBorder(
+                                                  borderSide: BorderSide(
+                                                      color: orange),
+                                                  borderRadius:
+                                                  BorderRadius.circular(
+                                                      20),
+                                                ),
+                                                child: const CircleAvatar(
+                                                  radius: 20,
+                                                  backgroundColor: orange,
+                                                  child: Icon(
+                                                    icCart,
+                                                    color: white,
+                                                  ),
+                                                ))
                                           ],
                                         ),
                                       )
