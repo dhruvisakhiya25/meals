@@ -44,6 +44,7 @@ class _ProfilePageState extends State<ProfilePage> {
     super.initState();
     subEntries = subMenuEntries();
     getData = SharedPref.getProfileImage.toString();
+    
   }
 
   List<Widget> subMenuEntries() {
@@ -162,6 +163,9 @@ class _ProfilePageState extends State<ProfilePage> {
               TextButton(
                   onPressed: () async {
                     await fbLogout();
+                    SharedPref.setFbLoginName = '';
+                    SharedPref.setFbLoginEmail = '';
+                    SharedPref.setFbLoginPhoto = '';
                     await googleLogOut();
                     Navigator.push(
                       context,
@@ -169,12 +173,12 @@ class _ProfilePageState extends State<ProfilePage> {
                         builder: (context) => const LoginPage(),
                       ),
                     );
-                    SharedPref.setFbLoginName = '';
-                    SharedPref.setFbLoginEmail = '';
+
                     SharedPref.setProfileImage = '';
                     SharedPref.setGoogleName = '';
                     SharedPref.setGoogleEmail = '';
                     SharedPref.setGooglePhoto = '';
+
                     setState(() {});
                   },
                   child: const Text(
@@ -372,84 +376,78 @@ class _ProState extends State<Pro> {
             else if (SharedPref.getEmail != '' &&
                 SharedPref.getGoogleName != null)
               Text('Email Login${SharedPref.getEmail.toString()}'),
-            if (SharedPref.getFbLoginPhoto != '' &&
-                SharedPref.getFbLoginPhoto != null)
-              Center(
-                child: Badge(
-                  position: BadgePosition.bottomEnd(),
-                  badgeContent: StarMenu(
-                    params: const StarMenuParameters(
-                      linearShapeParams:
-                          LinearShapeParams(alignment: LinearAlignment.right),
-                      shape: MenuShape.linear,
-                      openDurationMs: 1200,
-                    ),
-                    items: subEntries,
-                    child: const Icon(icEdit),
+            // if (SharedPref.getFbLoginPhoto != '' &&
+            //     SharedPref.getFbLoginPhoto != null)
+            Center(
+              child: Badge(
+                position: BadgePosition.bottomEnd(),
+                badgeContent: StarMenu(
+                  params: const StarMenuParameters(
+                    linearShapeParams:
+                        LinearShapeParams(alignment: LinearAlignment.right),
+                    shape: MenuShape.linear,
+                    openDurationMs: 1200,
                   ),
-                  badgeColor: white,
-                  child: CircleAvatar(
-                    radius: 53,
-                    backgroundColor: black,
-                    child: Container(
-                      height: 100,
-                      width: 100,
-                      decoration: BoxDecoration(
-                          image: DecorationImage(
-                              image: SharedPref.getProfileImage == null
-                                  ? NetworkImage(
-                                      SharedPref.getFbLoginPhoto.toString(),
-                                    )
-                                  : FileImage(
-                                      File(
-                                        SharedPref.getProfileImage.toString(),
-                                      ),
-                                    ) as ImageProvider,
-                              fit: BoxFit.fill),
-                          shape: BoxShape.circle),
-                    ),
-                  ),
+                  items: subEntries,
+                  child: const Icon(icEdit),
                 ),
-              )
-            else if (SharedPref.getGooglePhoto != '' &&
-                SharedPref.getGooglePhoto != null)
-              Center(
-                child: Badge(
-                  position: BadgePosition.bottomEnd(),
-                  badgeContent: StarMenu(
-                    params: const StarMenuParameters(
-                      linearShapeParams:
-                          LinearShapeParams(alignment: LinearAlignment.right),
-                      shape: MenuShape.linear,
-                      openDurationMs: 1200,
-                    ),
-                    items: subEntries,
-                    child: const Icon(icEdit),
-                  ),
-                  badgeColor: white,
-                  child: CircleAvatar(
-                    radius: 53,
-                    backgroundColor: black,
-                    child: Container(
-                      height: 100,
-                      width: 100,
-                      decoration: BoxDecoration(
-                          image: DecorationImage(
-                              image: SharedPref.getProfileImage == null
-                                  ? NetworkImage(
-                                      SharedPref.getGooglePhoto.toString(),
-                                    )
-                                  : FileImage(
-                                      File(
-                                        SharedPref.getProfileImage.toString(),
-                                      ),
-                                    ) as ImageProvider,
-                              fit: BoxFit.fill),
-                          shape: BoxShape.circle),
-                    ),
+                badgeColor: white,
+                child: CircleAvatar(
+                  radius: 53,
+                  backgroundColor: black,
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: SharedPref.getProfileImage == null
+                                ? NetworkImage(
+                                    SharedPref.getFbLoginPhoto.toString(),
+                                  )
+                                : FileImage(
+                                    File(
+                                      SharedPref.getProfileImage.toString(),
+                                    ),
+                                  ) as ImageProvider,
+                            fit: BoxFit.fill),
+                        shape: BoxShape.circle),
                   ),
                 ),
               ),
+            ),
+            // else if (SharedPref.getGooglePhoto != '' &&
+            //     SharedPref.getGooglePhoto != null)
+            Center(
+              child: Badge(
+                position: BadgePosition.bottomEnd(),
+                badgeContent: StarMenu(
+                  params: const StarMenuParameters(
+                    linearShapeParams:
+                        LinearShapeParams(alignment: LinearAlignment.right),
+                    shape: MenuShape.linear,
+                    openDurationMs: 1200,
+                  ),
+                  items: subEntries,
+                  child: const Icon(icEdit),
+                ),
+                badgeColor: white,
+                child: CircleAvatar(
+                  radius: 53,
+                  backgroundColor: black,
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: NetworkImage(
+                              SharedPref.getGooglePhoto.toString(),
+                            ),
+                            fit: BoxFit.fill),
+                        shape: BoxShape.circle),
+                  ),
+                ),
+              ),
+            ),
             TextButton(
                 onPressed: () async {
                   await fbLogout();
@@ -460,9 +458,9 @@ class _ProState extends State<Pro> {
                       builder: (context) => const LoginPage(),
                     ),
                   );
-
                   SharedPref.setFbLoginName = '';
                   SharedPref.setFbLoginEmail = '';
+                  SharedPref.setFbLoginPhoto = '';
                   SharedPref.setProfileImage = '';
                   SharedPref.setGoogleName = '';
                   SharedPref.setGoogleEmail = '';
