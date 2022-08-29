@@ -194,10 +194,10 @@ class _ItemState extends State<Item> {
                                     fit: BoxFit.cover)),
                           ),
                           Container(
-                            height: Screens.height(context) * 0.7,
+                            height: Screens.height(context) * 0.6,
                             width: Screens.width(context),
                             margin: EdgeInsets.only(
-                                top: Screens.height(context) * 0.43),
+                                top: Screens.height(context) * 0.36),
                             decoration: const BoxDecoration(
                               color: white,
                               borderRadius: BorderRadius.only(
@@ -256,8 +256,7 @@ class _ItemState extends State<Item> {
                                   ),
                                   const SizedBox(
                                     height: 10,
-                                  ),
-                                  Stack(
+                                  ), Stack(
                                     children: [
                                       Container(
                                         height: 175,
@@ -281,7 +280,7 @@ class _ItemState extends State<Item> {
                                               color: white,
                                               boxShadow: [
                                                 BoxShadow(
-                                                    color: Colors.grey,
+                                                    color: grey,
                                                     blurRadius: 10)
                                               ],
                                               borderRadius: BorderRadius.only(
@@ -311,16 +310,16 @@ class _ItemState extends State<Item> {
                                                     children: [
                                                       Text(
                                                         totalPrice,
-                                                        style: TextStyle(
+                                                        style: const TextStyle(
                                                             fontSize: 15),
                                                       ),
                                                       Text(lkr,
-                                                          style: TextStyle(
+                                                          style: const TextStyle(
                                                               fontSize: 27,
                                                               fontWeight:
                                                               FontWeight
                                                                   .bold)),
-                                                      SizedBox(
+                                                      const SizedBox(
                                                         height: 5,
                                                       ),
                                                       Padding(
@@ -346,12 +345,11 @@ class _ItemState extends State<Item> {
                                                           ),
                                                           child: Row(
                                                             children: [
-                                                              Icon(
-                                                                Icons
-                                                                    .add_shopping_cart_sharp,
+                                                              const Icon(
+                                                                icCarts,
                                                                 color: white,
                                                                 size: 19,
-                                                              ),SizedBox(width: 15,),
+                                                              ),const SizedBox(width: 15,),
                                                               Text(
                                                                 addToCart,
                                                                 style: const TextStyle(fontSize: 19,
@@ -365,24 +363,25 @@ class _ItemState extends State<Item> {
                                                     ],
                                                   ),
                                                 ),
-                                                Card(
-                                                  elevation: 10,
-                                                  shape: OutlineInputBorder(
-                                                    borderSide: BorderSide(
-                                                        color: orange),
-                                                    borderRadius:
-                                                    BorderRadius.circular(
-                                                        20),
-                                                  ),
-                                                  child: const CircleAvatar(
-                                                    radius: 20,
-                                                    backgroundColor: orange,
-                                                    child: Icon(
-                                                      icCart,
+                                                SizedBox(
+                                                  height: 80,
+                                                  child: Container(margin: EdgeInsets.only(right: 5),
+                                                    height: 40,
+                                                    width: 40,
+                                                    decoration: const ShapeDecoration(
+                                                      shape: CircleBorder(),
                                                       color: white,
+                                                      shadows: [
+                                                        BoxShadow(
+                                                          color: placeholder,
+                                                          offset: Offset(0, 2),
+                                                          blurRadius: 15,
+                                                        )
+                                                      ],
                                                     ),
+                                                    child: const Icon(icCart,color: orange,),
                                                   ),
-                                                )
+                                                ),
                                               ],
                                             ),
                                           ),

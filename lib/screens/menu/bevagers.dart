@@ -265,123 +265,120 @@ class _ItemState extends State<Item> {
                                           ),
                                         ),
                                       ),
-                                      Stack(
-                                        children: [
-                                          Container(
-                                            height: 120,
-                                            width: 300,
-                                            margin: const EdgeInsets.only(
-                                                top: 30, left: 40),
-                                            decoration: const BoxDecoration(
-                                              color: white,
-                                              boxShadow: [
-                                                BoxShadow(
-                                                    color: Colors.grey,
-                                                    blurRadius: 10)
-                                              ],
-                                              borderRadius: BorderRadius.only(
-                                                topLeft: Radius.circular(45),
-                                                bottomLeft:
-                                                Radius.circular(45),
-                                                topRight: Radius.circular(10),
-                                                bottomRight:
-                                                Radius.circular(10),),
-                                            ),
-                                            child: Row(
-                                              mainAxisAlignment:
-                                              MainAxisAlignment
-                                                  .spaceBetween,
-                                              children: [
-                                                Padding(
-                                                  padding:
-                                                  const EdgeInsets.only(
-                                                      left: 10),
-                                                  child: Column(
-                                                    crossAxisAlignment:
-                                                    CrossAxisAlignment
-                                                        .center,
-                                                    mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .center,
-                                                    children: [
-                                                      Text(
-                                                        totalPrice,
-                                                        style: TextStyle(
-                                                            fontSize: 15),
+                                      Container(
+                                        height: 120,
+                                        width: 300,
+                                        margin: const EdgeInsets.only(
+                                            top: 30, left: 40),
+                                        decoration: const BoxDecoration(
+                                          color: white,
+                                          boxShadow: [
+                                            BoxShadow(
+                                                color: Colors.grey,
+                                                blurRadius: 10)
+                                          ],
+                                          borderRadius: BorderRadius.only(
+                                            topLeft: Radius.circular(45),
+                                            bottomLeft:
+                                            Radius.circular(45),
+                                            topRight: Radius.circular(10),
+                                            bottomRight:
+                                            Radius.circular(10),),
+                                        ),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                          MainAxisAlignment
+                                              .spaceBetween,
+                                          children: [
+                                            Padding(
+                                              padding:
+                                              const EdgeInsets.only(
+                                                  left: 10),
+                                              child: Column(
+                                                crossAxisAlignment:
+                                                CrossAxisAlignment
+                                                    .center,
+                                                mainAxisAlignment:
+                                                MainAxisAlignment
+                                                    .center,
+                                                children: [
+                                                  Text(
+                                                    totalPrice,
+                                                    style: const TextStyle(
+                                                        fontSize: 15),
+                                                  ),
+                                                  Text(lkr,
+                                                      style: const TextStyle(
+                                                          fontSize: 27,
+                                                          fontWeight:
+                                                          FontWeight
+                                                              .bold)),
+                                                  const SizedBox(
+                                                    height: 5,
+                                                  ),
+                                                  Padding(
+                                                    padding:
+                                                    const EdgeInsets
+                                                        .only(
+                                                        left: 20,
+                                                        top: 3),
+                                                    child: MaterialButton(
+                                                      minWidth: 200,
+                                                      onPressed: () {},
+                                                      color: orange,
+                                                      shape:
+                                                      OutlineInputBorder(
+                                                        borderRadius:
+                                                        BorderRadius
+                                                            .circular(
+                                                            20),
+                                                        borderSide:
+                                                        const BorderSide(
+                                                            color:
+                                                            orange),
                                                       ),
-                                                      Text(lkr,
-                                                          style: TextStyle(
-                                                              fontSize: 27,
-                                                              fontWeight:
-                                                              FontWeight
-                                                                  .bold)),
-                                                      SizedBox(
-                                                        height: 5,
-                                                      ),
-                                                      Padding(
-                                                        padding:
-                                                        const EdgeInsets
-                                                            .only(
-                                                            left: 20,
-                                                            top: 3),
-                                                        child: MaterialButton(
-                                                          minWidth: 200,
-                                                          onPressed: () {},
-                                                          color: orange,
-                                                          shape:
-                                                          OutlineInputBorder(
-                                                            borderRadius:
-                                                            BorderRadius
-                                                                .circular(
-                                                                20),
-                                                            borderSide:
-                                                            const BorderSide(
+                                                      child: Row(
+                                                        children: [
+                                                          const Icon(
+                                                           icCarts,
+                                                            color: white,
+                                                            size: 19,
+                                                          ),const SizedBox(width: 15,),
+                                                          Text(
+                                                            addToCart,
+                                                            style: const TextStyle(fontSize: 19,
                                                                 color:
-                                                                orange),
+                                                                white),
                                                           ),
-                                                          child: Row(
-                                                            children: [
-                                                              Icon(
-                                                                Icons
-                                                                    .add_shopping_cart_sharp,
-                                                                color: white,
-                                                                size: 19,
-                                                              ),SizedBox(width: 15,),
-                                                              Text(
-                                                                addToCart,
-                                                                style: const TextStyle(fontSize: 19,
-                                                                    color:
-                                                                    white),
-                                                              ),
-                                                            ],
-                                                          ),
-                                                        ),
+                                                        ],
                                                       ),
-                                                    ],
-                                                  ),
-                                                ),
-                                                Card(
-                                                  elevation: 10,
-                                                  shape: OutlineInputBorder(
-                                                    borderSide: BorderSide(
-                                                        color: orange),
-                                                    borderRadius:
-                                                    BorderRadius.circular(
-                                                        20),
-                                                  ),
-                                                  child: const CircleAvatar(
-                                                    radius: 20,
-                                                    backgroundColor: orange,
-                                                    child: Icon(
-                                                      icCart,
-                                                      color: white,
                                                     ),
                                                   ),
-                                                )
-                                              ],
+                                                ],
+                                              ),
                                             ),
-                                          ),
-                                        ],
+
+                                            SizedBox(
+                                              height: 80,
+                                              child: Container(margin: const EdgeInsets.only(right: 5),
+                                                height: 40,
+                                                width: 40,
+                                                decoration: const ShapeDecoration(
+                                                  shape: CircleBorder(),
+                                                  color: white,
+                                                  shadows: [
+                                                    BoxShadow(
+                                                      color: placeholder,
+                                                      offset: Offset(0, 2),
+                                                      blurRadius: 15,
+                                                    )
+                                                  ],
+                                                ),
+                                                child: const Icon(icCart,color: orange,),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
                                       )
                                     ],
                                   )
