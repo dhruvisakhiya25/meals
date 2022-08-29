@@ -310,13 +310,13 @@ class _ItemState extends State<Item> {
                                                       onPressed: () {},
                                                       color: orange,
                                                       shape: OutlineInputBorder(
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(20),
-                                                          borderSide:
-                                                              const BorderSide(
-                                                                  color:
-                                                                      orange)),
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(20),
+                                                        borderSide:
+                                                            const BorderSide(
+                                                                color: orange),
+                                                      ),
                                                       child: Text(
                                                         addToCart,
                                                         style: const TextStyle(
@@ -326,22 +326,23 @@ class _ItemState extends State<Item> {
                                                   ],
                                                 ),
                                                 Card(
-                                                    elevation: 10,
-                                                    shape: OutlineInputBorder(
-                                                      borderSide: BorderSide(
-                                                          color: orange),
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              20),
+                                                  elevation: 10,
+                                                  shape: OutlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                        color: orange),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            20),
+                                                  ),
+                                                  child: const CircleAvatar(
+                                                    radius: 20,
+                                                    backgroundColor: orange,
+                                                    child: Icon(
+                                                      icCart,
+                                                      color: white,
                                                     ),
-                                                    child: const CircleAvatar(
-                                                      radius: 20,
-                                                      backgroundColor: orange,
-                                                      child: Icon(
-                                                        icCart,
-                                                        color: white,
-                                                      ),
-                                                    ))
+                                                  ),
+                                                )
                                               ],
                                             ),
                                           ),
