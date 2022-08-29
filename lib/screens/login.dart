@@ -219,6 +219,7 @@ class _LoginPageState extends State<LoginPage> {
                       SharedPref.setFbLoginEmail = userData!['email'];
                       SharedPref.setFbLoginPhoto =
                           userData!['picture']['data']['url'];
+
                     },
                     themeMode: themeMode,
                     isLoading: isLoading,
