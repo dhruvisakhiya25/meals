@@ -76,7 +76,7 @@ class _FoodsState extends State<Foods> {
                       QueryDocumentSnapshot documents = document[index];
                       return GestureDetector(
                         onTap: () {
-                          if (index == 0) {
+                          if (index == 0 ) {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
