@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:meals/screens/login.dart';
-import 'package:meals/screens/signup.dart';
+import 'package:meals/screens/login/login.dart';
+import 'package:meals/screens/login/signup.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/responsive.dart';
 import 'package:meals/utils/strings.dart';

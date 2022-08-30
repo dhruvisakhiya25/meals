@@ -1,14 +1,14 @@
 // ignore_for_file: prefer_const_constructors, use_build_context_synchronously
 
 import 'package:flutter/material.dart';
-import 'package:meals/screens/about_us.dart';
-import 'package:meals/screens/inbox.dart';
-import 'package:meals/screens/login.dart';
-import 'package:meals/screens/my_order.dart';
-import 'package:meals/screens/notification.dart';
-import 'package:meals/screens/payment_details.dart';
-import 'package:meals/screens/profilepage.dart';
-import 'package:meals/screens/shared_pref.dart';
+import 'package:meals/screens/more/about_us.dart';
+import 'package:meals/screens/more/inbox.dart';
+import 'package:meals/screens/login/login.dart';
+import 'package:meals/screens/more/my_order/my_order.dart';
+import 'package:meals/screens/more/notification.dart';
+import 'package:meals/screens/more/payment_details.dart';
+import 'package:meals/screens/Profile/profilepage.dart';
+import 'package:meals/screens/shared_pref/shared_pref.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/strings.dart';

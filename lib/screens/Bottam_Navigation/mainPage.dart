@@ -3,11 +3,11 @@
 import 'package:circle_bottom_navigation_bar/circle_bottom_navigation_bar.dart';
 import 'package:circle_bottom_navigation_bar/widgets/tab_data.dart';
 import 'package:flutter/material.dart';
-import 'package:meals/screens/home_page.dart';
+import 'package:meals/screens/Home/home_page.dart';
 import 'package:meals/screens/menu/menu.dart';
-import 'package:meals/screens/more_page.dart';
-import 'package:meals/screens/offer_page.dart';
-import 'package:meals/screens/profilepage.dart';
+import 'package:meals/screens/more/more_page.dart';
+import 'package:meals/screens/Offer/offer_page.dart';
+import 'package:meals/screens/Profile/profilepage.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/strings.dart';

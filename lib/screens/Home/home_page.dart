@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:meals/screens/homefood.dart';
-import 'package:meals/screens/most_popular.dart';
+import 'package:meals/screens/Home/homefood.dart';
+import 'package:meals/screens/Home/most_popular.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/strings.dart';

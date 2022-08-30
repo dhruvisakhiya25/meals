@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:meals/screens/login.dart';
-import 'package:meals/screens/mainPage.dart';
+import 'package:meals/screens/login/login.dart';
+import 'package:meals/screens/bottam_Navigation/mainPage.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/strings.dart';
