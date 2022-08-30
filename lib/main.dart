@@ -1,9 +1,9 @@
-// import 'dart:io';
-
 import 'dart:io';
-
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:meals/screens/Bottam_Navigation/mainPage.dart';
+import 'package:meals/screens/Splash/meal_monkey.dart';
 import 'package:meals/screens/Splash/splashScreen.dart';
 import 'package:meals/screens/shared_pref/shared_pref.dart';
 
@@ -23,16 +23,34 @@ Future<void> main() async {
   runApp(const MyApp());
 }
 
-
-
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: const SplashScreen(),
+      initialRoute: '/',
+      defaultTransition: Transition.circularReveal,
+      getPages: [
+        GetPage(
+          name: '/mealsHome',
+          page: () {
+            if (SharedPref.getFbLoginName != '' &&
+                      SharedPref.getFbLoginName != null &&
+                      SharedPref.getFbLoginEmail != '' &&
+                      SharedPref.getFbLoginEmail != null) {
+                    return const MainPage();
+                  } else if (SharedPref.getGoogleName != '' &&
+                      SharedPref.getGoogleName != null) {
+                    return const MainPage();
+                  } else {
+                    return const MealMonkey();
+                  }
+          },
+        )
+      ],
     );
   }
 }
