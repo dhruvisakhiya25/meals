@@ -24,13 +24,6 @@ class _PaymentDetailsState extends State<PaymentDetails> {
 
   }
 
-  TextEditingController txtCardNumber = TextEditingController();
-  TextEditingController txtMM = TextEditingController();
-  TextEditingController txtYY = TextEditingController();
-  TextEditingController txtSecurityCode = TextEditingController();
-  TextEditingController txtFirstName = TextEditingController();
-  TextEditingController txtLastName = TextEditingController();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -79,8 +72,8 @@ class _PaymentDetailsState extends State<PaymentDetails> {
               ),
               Center(
                 child: GooglePayButton(
-                  height: 40,
-                  width: 300,
+
+                  width: 310,
                   paymentConfigurationAsset: 'gpay.json',
                   paymentItems: _paymentItems,
                   style: GooglePayButtonStyle.white,
