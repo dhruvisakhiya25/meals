@@ -41,8 +41,6 @@ dependencies:
   firebase_core:
   flutter_facebook_auth: ^4.4.1
   badges:
-  firebase_storage:
-  image_picker:
   star_menu:
   images_picker:
   cloud_firestore:
