@@ -6,6 +6,7 @@ import 'package:meals/screens/shared_pref/shared_pref.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/responsive.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -26,25 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
     await Future.delayed(
       const Duration(seconds: 3),
     );
-
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(
-        builder: (context) {
-          if (SharedPref.getFbLoginName != '' &&
-              SharedPref.getFbLoginName != null &&
-              SharedPref.getFbLoginEmail != '' &&
-              SharedPref.getFbLoginEmail != null) {
-            return const MainPage();
-          } else if (SharedPref.getGoogleName != '' &&
-              SharedPref.getGoogleName != null) {
-            return const MainPage();
-          } else {
-            return const MealMonkey();
-          }
-        },
-      ),
-    );
+    Get.offAndToNamed('/mealsHome');
   }
 
   @override

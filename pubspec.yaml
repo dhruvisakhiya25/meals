@@ -46,8 +46,7 @@ dependencies:
   cloud_firestore:
   shared_preferences:
   pay: ^1.0.10
-
-
+  get:
 
 dev_dependencies:
   flutter_test:
