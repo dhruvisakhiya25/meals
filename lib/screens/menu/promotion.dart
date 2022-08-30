@@ -368,7 +368,7 @@ class _ItemState extends State<Item> {
                                                 ),
                                                 SizedBox(
                                                   height: 80,
-                                                  child: Container(margin: EdgeInsets.only(right: 5),
+                                                  child: Container(margin: const EdgeInsets.only(right: 5),
                                                     height: 40,
                                                     width: 40,
                                                     decoration: const ShapeDecoration(

@@ -13,7 +13,7 @@ class PaymentDetails extends StatefulWidget {
 
 class _PaymentDetailsState extends State<PaymentDetails> {
   final _paymentItems = [
-    PaymentItem(
+    const PaymentItem(
       label: 'Total',
       amount: '99.99',
       status: PaymentItemStatus.final_price,
@@ -30,7 +30,6 @@ class _PaymentDetailsState extends State<PaymentDetails> {
   TextEditingController txtSecurityCode = TextEditingController();
   TextEditingController txtFirstName = TextEditingController();
   TextEditingController txtLastName = TextEditingController();
-  bool _switchValue = true;
 
   @override
   Widget build(BuildContext context) {

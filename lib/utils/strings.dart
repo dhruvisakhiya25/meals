@@ -67,8 +67,8 @@ String resentItem = 'Recent Items';
 String rating = '(124 rating)';
 String logOut = 'Log Out';
 
-///liveTraking
-String liveTraking = 'live Traking';
+///liveTracking
+String liveTraking = 'live Tracking';
 String realTimeTraking = 'Real time tracking of tour food on the app';
 String onceYouPlaced = 'once you placed the order';
 
