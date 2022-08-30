@@ -248,6 +248,7 @@ class _ItemState extends State<Item> {
                                       CupertinoButton(
                                         borderRadius: BorderRadius.circular(30),
                                         color: orange,
+
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 20),
                                         onPressed: decrement,
