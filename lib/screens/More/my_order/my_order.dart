@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:meals/screens/ckeckout.dart';
+import 'package:meals/screens/more/my_order/checkout.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/strings.dart';
