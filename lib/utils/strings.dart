@@ -43,15 +43,7 @@ String youCanRemoveCard = 'You can remove this card';
 String atAnyTime = 'at anytime';
 String sendOrder = 'Send Order';
 
-///fast delivery page
-String fastDelivery = 'Fast Delivery';
-String fastFood = 'Fast food delivery yo tour home, office';
-String whereEverYou = 'wherever you are';
-String next = 'Next';
-String findFood = 'Find Food you Love';
-String discoverFood = 'Discover the best foods over 1,000';
-String restaurantsFast = 'restaurants and fast delivery to your';
-String doorStep = 'doorstep';
+
 
 ///home page
 String goodMorning = 'Good morning Akila!';
@@ -67,10 +59,7 @@ String resentItem = 'Recent Items';
 String rating = '(124 rating)';
 String logOut = 'Log Out';
 
-///liveTracking
-String liveTraking = 'live Tracking';
-String realTimeTraking = 'Real time tracking of tour food on the app';
-String onceYouPlaced = 'once you placed the order';
+
 
 ///login page
 String login = 'Login';

@@ -160,6 +160,17 @@ class Item extends StatefulWidget {
 }
 
 class _ItemState extends State<Item> {
+  int counter = 0;
+
+  void increment() {
+    setState(() {
+      counter++;
+    });
+  }void decrement() {
+    setState(() {
+      counter--;
+    });
+  }
   final CollectionReference _products =
       FirebaseFirestore.instance.collection('items');
   late Stream<QuerySnapshot> _streams;
@@ -262,19 +273,18 @@ class _ItemState extends State<Item> {
                                         color: orange,
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 20),
-                                        onPressed: () {},
+                                       onPressed: decrement,
                                         child: const Icon(icRemove),
-                                      ),
-                                      const Text(
-                                        '3',
-                                        style: TextStyle(fontSize: 30),
-                                      ),
+                                      ),SizedBox(width: 10,),
+                                      Text(
+                                        '$counter',style: TextStyle(fontSize: 30)
+                                      ),SizedBox(width: 10,),
                                       CupertinoButton(
                                         borderRadius: BorderRadius.circular(30),
                                         color: orange,
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 20),
-                                        onPressed: () {},
+                                        onPressed: increment,
                                         child: const Icon(icAdd),
                                       ),
                                     ],
