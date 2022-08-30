@@ -42,7 +42,7 @@ dependencies:
   flutter_facebook_auth: ^4.4.1
   badges:
   star_menu:
-  images_picker:
+  image_picker:
   cloud_firestore:
   shared_preferences:
   pay: ^1.0.10
