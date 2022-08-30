@@ -139,14 +139,21 @@ class _ItemState extends State<Item> {
   int counter = 0;
 
   void increment() {
-    setState(() {
-      counter++;
-    });
-  }void decrement() {
-    setState(() {
-      counter--;
-    });
+    setState(
+      () {
+        counter++;
+      },
+    );
   }
+
+  void decrement() {
+    setState(
+      () {
+        counter--;
+      },
+    );
+  }
+
   final CollectionReference _products =
       FirebaseFirestore.instance.collection('oreosandwitch');
   late Stream<QuerySnapshot> _streams;
@@ -248,14 +255,19 @@ class _ItemState extends State<Item> {
                                         color: orange,
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 20),
-                                        onPressed:
-                                          decrement,
-
+                                        onPressed: decrement,
                                         child: const Icon(icRemove),
-                                      ),SizedBox(width: 10,),
+                                      ),
+                                      const SizedBox(
+                                        width: 10,
+                                      ),
                                       Text(
-                                        '$counter',style: TextStyle(fontSize: 30),
-                                      ),SizedBox(width: 10,),
+                                        '$counter',
+                                        style: const TextStyle(fontSize: 30),
+                                      ),
+                                      const SizedBox(
+                                        width: 10,
+                                      ),
                                       CupertinoButton(
                                         borderRadius: BorderRadius.circular(30),
                                         color: orange,
@@ -268,7 +280,8 @@ class _ItemState extends State<Item> {
                                   ),
                                   const SizedBox(
                                     height: 10,
-                                  ), Stack(
+                                  ),
+                                  Stack(
                                     children: [
                                       Container(
                                         height: 175,
@@ -292,68 +305,69 @@ class _ItemState extends State<Item> {
                                               color: white,
                                               boxShadow: [
                                                 BoxShadow(
-                                                    color: grey,
-                                                    blurRadius: 10)
+                                                    color: grey, blurRadius: 10)
                                               ],
                                               borderRadius: BorderRadius.only(
                                                 topLeft: Radius.circular(45),
-                                                bottomLeft:
-                                                Radius.circular(45),
+                                                bottomLeft: Radius.circular(45),
                                                 topRight: Radius.circular(10),
                                                 bottomRight:
-                                                Radius.circular(10),),
+                                                    Radius.circular(10),
+                                              ),
                                             ),
                                             child: Row(
                                               mainAxisAlignment:
-                                              MainAxisAlignment
-                                                  .spaceBetween,
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
                                               children: [
                                                 Padding(
                                                   padding:
-                                                  const EdgeInsets.only(
-                                                      left: 10),
+                                                      const EdgeInsets.only(
+                                                          left: 10),
                                                   child: Column(
                                                     crossAxisAlignment:
-                                                    CrossAxisAlignment
-                                                        .center,
+                                                        CrossAxisAlignment
+                                                            .center,
                                                     mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .center,
+                                                        MainAxisAlignment
+                                                            .center,
                                                     children: [
                                                       Text(
                                                         totalPrice,
                                                         style: const TextStyle(
                                                             fontSize: 15),
                                                       ),
-                                                      Text(lkr,
-                                                          style: const TextStyle(
-                                                              fontSize: 27,
-                                                              fontWeight:
-                                                              FontWeight
-                                                                  .bold)),
+                                                      Text(
+                                                        lkr,
+                                                        style: const TextStyle(
+                                                            fontSize: 27,
+                                                            fontWeight:
+                                                                FontWeight
+                                                                    .bold),
+                                                      ),
                                                       const SizedBox(
                                                         height: 5,
                                                       ),
                                                       Padding(
                                                         padding:
-                                                        const EdgeInsets
-                                                            .only(
-                                                            left: 20,
-                                                            top: 3),
+                                                            const EdgeInsets
+                                                                    .only(
+                                                                left: 20,
+                                                                top: 3),
                                                         child: MaterialButton(
                                                           minWidth: 200,
                                                           onPressed: () {},
                                                           color: orange,
                                                           shape:
-                                                          OutlineInputBorder(
+                                                              OutlineInputBorder(
                                                             borderRadius:
-                                                            BorderRadius
-                                                                .circular(
-                                                                20),
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        20),
                                                             borderSide:
-                                                            const BorderSide(
-                                                                color:
-                                                                orange),
+                                                                const BorderSide(
+                                                                    color:
+                                                                        orange),
                                                           ),
                                                           child: Row(
                                                             children: [
@@ -361,12 +375,17 @@ class _ItemState extends State<Item> {
                                                                 icCarts,
                                                                 color: white,
                                                                 size: 19,
-                                                              ),const SizedBox(width: 15,),
+                                                              ),
+                                                              const SizedBox(
+                                                                width: 15,
+                                                              ),
                                                               Text(
                                                                 addToCart,
-                                                                style: const TextStyle(fontSize: 19,
+                                                                style: const TextStyle(
+                                                                    fontSize:
+                                                                        19,
                                                                     color:
-                                                                    white),
+                                                                        white),
                                                               ),
                                                             ],
                                                           ),
@@ -377,10 +396,14 @@ class _ItemState extends State<Item> {
                                                 ),
                                                 SizedBox(
                                                   height: 80,
-                                                  child: Container(margin: const EdgeInsets.only(right: 5),
+                                                  child: Container(
+                                                    margin:
+                                                        const EdgeInsets.only(
+                                                            right: 5),
                                                     height: 40,
                                                     width: 40,
-                                                    decoration: const ShapeDecoration(
+                                                    decoration:
+                                                        const ShapeDecoration(
                                                       shape: CircleBorder(),
                                                       color: white,
                                                       shadows: [
@@ -391,7 +414,10 @@ class _ItemState extends State<Item> {
                                                         )
                                                       ],
                                                     ),
-                                                    child: const Icon(icCart,color: orange,),
+                                                    child: const Icon(
+                                                      icCart,
+                                                      color: orange,
+                                                    ),
                                                   ),
                                                 ),
                                               ],
