@@ -65,8 +65,12 @@ class MyApp extends StatelessWidget {
           },
         ),
         GetPage(
-          name: '/item',
-          page: () => const Item(),
+          name: '/loginPage',
+          page: () => const LoginPage(),
+        ),
+        GetPage(
+          name: '/signUpPage',
+          page: () => const SignUpPage(),
         ),
         GetPage(
           name: '/foods',
@@ -85,12 +89,20 @@ class MyApp extends StatelessWidget {
           page: () => const Promotions(),
         ),
         GetPage(
+          name: '/item',
+          page: () => const Item(),
+        ),
+        GetPage(
           name: '/paymentDetails',
           page: () => const PaymentDetails(),
         ),
         GetPage(
           name: '/myOrderPage',
           page: () => const MyOrderPage(),
+        ),
+        GetPage(
+          name: '/checkOutPage',
+          page: () => const CheckOutPage(),
         ),
         GetPage(
           name: '/notificationPage',
@@ -104,15 +116,6 @@ class MyApp extends StatelessWidget {
           name: '/aboutUsPage',
           page: () => const AboutUsPage(),
         ),
-        GetPage(
-          name: '/loginPage',
-          page: () => const LoginPage(),
-        ),
-        GetPage(
-          name: '/checkOutPage',
-          page: () => const CheckOutPage(),
-        ),
-        GetPage(name: '/signUpPage', page: () => const SignUpPage(),)
       ],
     );
   }
