@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:meals/screens/menu/bevagers.dart';
-import 'package:meals/screens/menu/desserts.dart';
-import 'package:meals/screens/menu/food.dart';
-import 'package:meals/screens/menu/promotion.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/strings.dart';

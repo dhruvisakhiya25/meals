@@ -1,8 +1,5 @@
 // ignore_for_file: use_build_context_synchronously, file_names
 
-import 'package:meals/screens/Splash/meal_monkey.dart';
-import 'package:meals/screens/bottam_Navigation/mainPage.dart';
-import 'package:meals/screens/shared_pref/shared_pref.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/responsive.dart';
 import 'package:flutter/material.dart';

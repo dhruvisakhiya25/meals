@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/strings.dart';
@@ -31,15 +32,6 @@ class _CheckOutPageState extends State<CheckOutPage> {
       appBar: AppBar(
         backgroundColor: white,
         elevation: 0,
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: const Icon(
-            icBack,
-            color: black,
-          ),
-        ),
         title: Text(
           checkOut,
           style: const TextStyle(
@@ -173,7 +165,7 @@ class _CheckOutPageState extends State<CheckOutPage> {
                               alignment: Alignment.topRight,
                               child: IconButton(
                                 onPressed: () {
-                                  Navigator.pop(context);
+                                 Get.back();
                                 },
                                 icon: const Icon(icClose),
                               ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-import 'package:meals/screens/more/my_order/checkout.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/strings.dart';
@@ -167,11 +167,7 @@ class _MyOrderPageState extends State<MyOrderPage> {
                       borderRadius: BorderRadius.circular(25),
                       borderSide: const BorderSide(color: orange)),
                   onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const CheckOutPage(),
-                        ));
+                    Get.toNamed('/checkOutPage');
                   },
                   color: orange,
                   child: Text(

@@ -6,10 +6,17 @@ import 'package:meals/screens/Bottam_Navigation/mainPage.dart';
 import 'package:meals/screens/Menu/bevagers.dart';
 import 'package:meals/screens/Menu/food.dart';
 import 'package:meals/screens/Menu/promotion.dart';
+import 'package:meals/screens/More/about_us.dart';
+import 'package:meals/screens/More/my_order/checkout.dart';
+import 'package:meals/screens/More/payment_details.dart';
 
 import 'package:meals/screens/Splash/meal_monkey.dart';
 import 'package:meals/screens/Splash/splashScreen.dart';
+import 'package:meals/screens/login/login.dart';
 import 'package:meals/screens/menu/desserts.dart';
+import 'package:meals/screens/more/inbox.dart';
+import 'package:meals/screens/more/my_order/my_order.dart';
+import 'package:meals/screens/more/notification.dart';
 
 import 'package:meals/screens/shared_pref/shared_pref.dart';
 
@@ -38,7 +45,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: const SplashScreen(),
       initialRoute: '/',
-      defaultTransition: Transition.circularReveal,
+      // defaultTransition: Transition.circularReveal,
       getPages: [
         GetPage(
           name: '/mealsHome',
@@ -75,6 +82,34 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/promotions',
           page: () => const Promotions(),
+        ),
+        GetPage(
+          name: '/paymentDetails',
+          page: () => const PaymentDetails(),
+        ),
+        GetPage(
+          name: '/myOrderPage',
+          page: () => const MyOrderPage(),
+        ),
+        GetPage(
+          name: '/notificationPage',
+          page: () => const NotificationPage(),
+        ),
+        GetPage(
+          name: '/inBoxPage',
+          page: () => const InBoxPage(),
+        ),
+        GetPage(
+          name: '/aboutUsPage',
+          page: () => const AboutUsPage(),
+        ),
+        GetPage(
+          name: '/loginPage',
+          page: () => const LoginPage(),
+        ),
+        GetPage(
+          name: '/checkOutPage',
+          page: () => const CheckOutPage(),
         ),
       ],
     );

@@ -1,12 +1,7 @@
 // ignore_for_file: prefer_const_constructors, use_build_context_synchronously
 
 import 'package:flutter/material.dart';
-import 'package:meals/screens/more/about_us.dart';
-import 'package:meals/screens/more/inbox.dart';
-import 'package:meals/screens/login/login.dart';
-import 'package:meals/screens/more/my_order/my_order.dart';
-import 'package:meals/screens/more/notification.dart';
-import 'package:meals/screens/more/payment_details.dart';
+import 'package:get/get.dart';
 import 'package:meals/screens/Profile/profilepage.dart';
 import 'package:meals/screens/shared_pref/shared_pref.dart';
 import 'package:meals/utils/color.dart';
@@ -62,54 +57,25 @@ class _MorePageState extends State<MorePage> {
                   child: ListTile(
                     onTap: () async {
                       if (index == 0) {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const PaymentDetails(),
-                          ),
-                        );
+                      Get.toNamed('/paymentDetails');
                       }
                       if (index == 1) {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const MyOrderPage(),
-                          ),
-                        );
+                        Get.toNamed('/myOrderPage');
                       }
                       if (index == 2) {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const NotificationPage(),
-                          ),
-                        );
+                        Get.toNamed('/notificationPage');
                       }
                       if (index == 3) {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const InBoxPage(),
-                          ),
-                        );
+                        Get.toNamed('/inBoxPage');
                       }
                       if (index == 4) {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const AboutUsPage(),
-                          ),
-                        );
+                        Get.toNamed('/aboutUsPage');
                       }
                       if (index == 5) {
                         await fbLogout();
                         await googleLogOut();
                         setState(() {});
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const LoginPage(),
-                            ));
+                        Get.toNamed('/loginPage');
                         SharedPref.setFbLoginName = '';
                         SharedPref.setFbLoginEmail = '';
                         SharedPref.setProfileImage = '';
