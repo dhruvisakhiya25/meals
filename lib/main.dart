@@ -13,6 +13,7 @@ import 'package:meals/screens/More/payment_details.dart';
 import 'package:meals/screens/Splash/meal_monkey.dart';
 import 'package:meals/screens/Splash/splashScreen.dart';
 import 'package:meals/screens/login/login.dart';
+import 'package:meals/screens/login/signup.dart';
 import 'package:meals/screens/menu/desserts.dart';
 import 'package:meals/screens/more/inbox.dart';
 import 'package:meals/screens/more/my_order/my_order.dart';
@@ -45,7 +46,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: const SplashScreen(),
       initialRoute: '/',
-      // defaultTransition: Transition.circularReveal,
+      defaultTransition: Transition.circularReveal,
       getPages: [
         GetPage(
           name: '/mealsHome',
@@ -111,6 +112,7 @@ class MyApp extends StatelessWidget {
           name: '/checkOutPage',
           page: () => const CheckOutPage(),
         ),
+        GetPage(name: '/signUpPage', page: () => const SignUpPage(),)
       ],
     );
   }

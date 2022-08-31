@@ -75,7 +75,7 @@ class _MorePageState extends State<MorePage> {
                         await fbLogout();
                         await googleLogOut();
                         setState(() {});
-                        Get.toNamed('/loginPage');
+                        Get.offAllNamed('/loginPage');
                         SharedPref.setFbLoginName = '';
                         SharedPref.setFbLoginEmail = '';
                         SharedPref.setProfileImage = '';

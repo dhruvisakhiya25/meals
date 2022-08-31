@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meals/screens/login/login.dart';
-import 'package:meals/screens/login/signup.dart';
+import 'package:get/get.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/responsive.dart';
 import 'package:meals/utils/strings.dart';
@@ -83,12 +82,7 @@ class _MealMonkeyState extends State<MealMonkey> {
                         borderSide: const BorderSide(color: orange),
                       ),
                       onPressed: () {
-                        Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const LoginPage(),
-                          ),
-                        );
+                        Get.offAllNamed('/loginPage');
                         setState(() {});
                       },
                       child: Text(
@@ -107,14 +101,8 @@ class _MealMonkeyState extends State<MealMonkey> {
                         borderSide: const BorderSide(color: orange),
                       ),
                       onPressed: () {
-                        Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const SignUpPage(),
-                            ));
-                        setState(
-                          () {},
-                        );
+                        Get.offAllNamed('signUpPage');
+                        setState(() {});
                       },
                       child: Text(
                         createAccount,

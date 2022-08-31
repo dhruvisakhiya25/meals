@@ -5,6 +5,7 @@ import 'package:badges/badges.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
+import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:meals/screens/login/login.dart';
@@ -44,7 +45,6 @@ class _ProfilePageState extends State<ProfilePage> {
     super.initState();
     subEntries = subMenuEntries();
     getData = SharedPref.getProfileImage.toString();
-    
   }
 
   List<Widget> subMenuEntries() {
@@ -167,13 +167,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     SharedPref.setFbLoginEmail = '';
                     SharedPref.setFbLoginPhoto = '';
                     await googleLogOut();
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const LoginPage(),
-                      ),
-                    );
-
+                    Get.offAll('/loginPage');
                     SharedPref.setProfileImage = '';
                     SharedPref.setGoogleName = '';
                     SharedPref.setGoogleEmail = '';
@@ -452,12 +446,7 @@ class _ProState extends State<Pro> {
                 onPressed: () async {
                   await fbLogout();
                   await googleLogOut();
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const LoginPage(),
-                    ),
-                  );
+                 Get.offAllNamed('/loginPage');
                   SharedPref.setFbLoginName = '';
                   SharedPref.setFbLoginEmail = '';
                   SharedPref.setFbLoginPhoto = '';
