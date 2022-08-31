@@ -5,6 +5,7 @@ import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';
 import 'package:meals/utils/responsive.dart';
 import 'package:meals/utils/strings.dart';
+import 'package:get/get.dart';
 
 class Bevagers extends StatefulWidget {
   const Bevagers({Key? key}) : super(key: key);
@@ -77,12 +78,7 @@ class _BevagersState extends State<Bevagers> {
                       return GestureDetector(
                         onTap: () {
                           if (index == 1) {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const Item(),
-                              ),
-                            );
+                         Get.toNamed('/item');
                           }
                         },
                         child: Container(

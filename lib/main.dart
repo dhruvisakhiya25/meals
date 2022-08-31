@@ -3,8 +3,14 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:meals/screens/Bottam_Navigation/mainPage.dart';
+import 'package:meals/screens/Menu/bevagers.dart';
+import 'package:meals/screens/Menu/food.dart';
+import 'package:meals/screens/Menu/promotion.dart';
+
 import 'package:meals/screens/Splash/meal_monkey.dart';
 import 'package:meals/screens/Splash/splashScreen.dart';
+import 'package:meals/screens/menu/desserts.dart';
+
 import 'package:meals/screens/shared_pref/shared_pref.dart';
 
 Future<void> main() async {
@@ -38,18 +44,38 @@ class MyApp extends StatelessWidget {
           name: '/mealsHome',
           page: () {
             if (SharedPref.getFbLoginName != '' &&
-                      SharedPref.getFbLoginName != null &&
-                      SharedPref.getFbLoginEmail != '' &&
-                      SharedPref.getFbLoginEmail != null) {
-                    return const MainPage();
-                  } else if (SharedPref.getGoogleName != '' &&
-                      SharedPref.getGoogleName != null) {
-                    return const MainPage();
-                  } else {
-                    return const MealMonkey();
-                  }
+                SharedPref.getFbLoginName != null &&
+                SharedPref.getFbLoginEmail != '' &&
+                SharedPref.getFbLoginEmail != null) {
+              return const MainPage();
+            } else if (SharedPref.getGoogleName != '' &&
+                SharedPref.getGoogleName != null) {
+              return const MainPage();
+            } else {
+              return const MealMonkey();
+            }
           },
-        )
+        ),
+        GetPage(
+          name: '/item',
+          page: () => const Item(),
+        ),
+        GetPage(
+          name: '/foods',
+          page: () => const Foods(),
+        ),
+        GetPage(
+          name: '/bevagers',
+          page: () => const Bevagers(),
+        ),
+        GetPage(
+          name: '/desserts',
+          page: () => const Desserts(),
+        ),
+        GetPage(
+          name: '/promotions',
+          page: () => const Promotions(),
+        ),
       ],
     );
   }

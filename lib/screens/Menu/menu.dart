@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:meals/screens/menu/bevagers.dart';
 import 'package:meals/screens/menu/desserts.dart';
 import 'package:meals/screens/menu/food.dart';
@@ -72,12 +73,7 @@ class MenuScreen extends StatelessWidget {
                             children: [
                               GestureDetector(
                                 onTap: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => const Foods(),
-                                    ),
-                                  );
+                                 Get.toNamed('/foods');
                                 },
                                 child: MenuCard(
                                   imageShape: ClipOval(
@@ -103,12 +99,8 @@ class MenuScreen extends StatelessWidget {
                               ),
                               GestureDetector(
                                 onTap: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => const Bevagers(),
-                                    ),
-                                  );
+                                  Get.toNamed('/bevagers');
+
                                 },
                                 child: MenuCard(
                                   imageShape: ClipRRect(
@@ -131,11 +123,8 @@ class MenuScreen extends StatelessWidget {
                               ),
                               GestureDetector(
                                 onTap: () {
-                                  Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) => const Desserts(),
-                                      ));
+                                  Get.toNamed('/desserts');
+
                                 },
                                 child: MenuCard(
                                   imageShape: ClipPath(
@@ -158,12 +147,8 @@ class MenuScreen extends StatelessWidget {
                               ),
                               GestureDetector(
                                 onTap: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => const Promotions(),
-                                    ),
-                                  );
+                                  Get.toNamed('/promotions');
+
                                 },
                                 child: MenuCard(
                                   imageShape: ClipPath(
