@@ -4,6 +4,7 @@ import 'package:auth_buttons/auth_buttons.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
+import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:meals/screens/bottam_Navigation/mainPage.dart';
 import 'package:meals/screens/login/reset_password.dart';
@@ -157,17 +158,12 @@ class _LoginPageState extends State<LoginPage> {
                       borderSide: const BorderSide(color: orange),
                     ),
                     onPressed: () {
-                      // if (_formKey.currentState!.validate()) {}
+
                       if (txtEmail.text.isNotEmpty &&
                           txtPassword.text.isNotEmpty) {
                         servise.loginUser(
                             txtEmail.text, txtPassword.text, context);
-                        Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const MainPage(),
-                          ),
-                        );
+       Get.offAndToNamed('/mealsHome');
                         SharedPref.setEmail = txtEmail.text;
                       }
                       setState(
