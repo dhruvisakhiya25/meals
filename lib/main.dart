@@ -29,7 +29,12 @@ Future<void> main() async {
             messagingSenderId: "358514215620",
             projectId: "meals-f852f"));
   } else {
-    await Firebase.initializeApp();
+    await Firebase.initializeApp(
+        options: const FirebaseOptions(
+            apiKey: 'AIzaSyCQBUXo2pdipY9R9s7WSG5z9-7P7GBwxZk',
+            appId: '1:358514215620:android :f81f45f22bc168ae629791',
+            messagingSenderId: '358514215620',
+            projectId: 'meals-f852f'));
   }
   await SharedPref.init();
   runApp(const MyApp());
