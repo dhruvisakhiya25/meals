@@ -25,7 +25,7 @@ class _MainPageState extends State<MainPage> {
     const MenuScreen(),
     const OfferPage(),
     const HomePage(),
-    const Pro(),
+    const ProfilePage(),
     const MorePage()
   ];
 
