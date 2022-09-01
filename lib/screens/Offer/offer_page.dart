@@ -18,7 +18,6 @@ class _OfferPageState extends State<OfferPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _streams = _products.snapshots();
   }

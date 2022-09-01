@@ -18,7 +18,6 @@ class _NotificationPageState extends State<NotificationPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _streams = _products.snapshots();
   }

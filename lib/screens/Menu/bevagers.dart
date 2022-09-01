@@ -21,7 +21,6 @@ class _BevagersState extends State<Bevagers> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _streams = _products.snapshots();
   }
@@ -78,7 +77,7 @@ class _BevagersState extends State<Bevagers> {
                       return GestureDetector(
                         onTap: () {
                           if (index == 1) {
-                         Get.toNamed('/item');
+                            Get.toNamed('/item');
                           }
                         },
                         child: Container(
@@ -156,7 +155,6 @@ class _ItemState extends State<Item> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _streams = _products.snapshots();
   }

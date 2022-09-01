@@ -18,7 +18,6 @@ class _AboutUsPageState extends State<AboutUsPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _streams = _products.snapshots();
   }

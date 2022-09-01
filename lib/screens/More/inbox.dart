@@ -18,7 +18,6 @@ class _InBoxPageState extends State<InBoxPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _streams = _products.snapshots();
   }

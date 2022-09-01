@@ -9,7 +9,6 @@ import 'package:meals/screens/Menu/promotion.dart';
 import 'package:meals/screens/More/about_us.dart';
 import 'package:meals/screens/More/my_order/checkout.dart';
 import 'package:meals/screens/More/payment_details.dart';
-
 import 'package:meals/screens/Splash/meal_monkey.dart';
 import 'package:meals/screens/Splash/splashScreen.dart';
 import 'package:meals/screens/login/login.dart';
@@ -18,7 +17,6 @@ import 'package:meals/screens/menu/desserts.dart';
 import 'package:meals/screens/more/inbox.dart';
 import 'package:meals/screens/more/my_order/my_order.dart';
 import 'package:meals/screens/more/notification.dart';
-
 import 'package:meals/screens/shared_pref/shared_pref.dart';
 
 Future<void> main() async {

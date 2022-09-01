@@ -44,7 +44,6 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     getName = SharedPref.getFbLoginName.toString();
     getEmail = SharedPref.getFbLoginEmail.toString();
@@ -158,12 +157,11 @@ class _LoginPageState extends State<LoginPage> {
                       borderSide: const BorderSide(color: orange),
                     ),
                     onPressed: () {
-
                       if (txtEmail.text.isNotEmpty &&
                           txtPassword.text.isNotEmpty) {
                         servise.loginUser(
                             txtEmail.text, txtPassword.text, context);
-       Get.offAndToNamed('/mealsHome');
+                        Get.offAndToNamed('/mealsHome');
                         SharedPref.setEmail = txtEmail.text;
                       }
                       setState(
@@ -215,7 +213,6 @@ class _LoginPageState extends State<LoginPage> {
                       SharedPref.setFbLoginEmail = userData!['email'];
                       SharedPref.setFbLoginPhoto =
                           userData!['picture']['data']['url'];
-
                     },
                     themeMode: themeMode,
                     isLoading: isLoading,

@@ -15,7 +15,6 @@ class _FoodState extends State<Food> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _streams = _products.snapshots();
   }
