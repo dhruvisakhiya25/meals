@@ -116,91 +116,98 @@ class _ProfilePageState extends State<ProfilePage> {
               const SizedBox(
                 height: 90,
               ),
-              Text(userEmail),
-              Center(
-                child: Badge(
-                  position: BadgePosition.bottomEnd(),
-                  badgeContent: StarMenu(
-                    params: const StarMenuParameters(
-                      linearShapeParams:
-                          LinearShapeParams(alignment: LinearAlignment.right),
-                      shape: MenuShape.linear,
-                      openDurationMs: 1200,
+              if (SharedPref.getFbLoginPhoto != '' &&
+                  SharedPref.getFbLoginPhoto != null)
+                Center(
+                  child: Badge(
+                    position: BadgePosition.bottomEnd(),
+                    badgeContent: StarMenu(
+                      params: const StarMenuParameters(
+                        linearShapeParams:
+                            LinearShapeParams(alignment: LinearAlignment.right),
+                        shape: MenuShape.linear,
+                        openDurationMs: 1200,
+                      ),
+                      items: subEntries,
+                      child: const Icon(icEdit),
                     ),
-                    items: subEntries,
-                    child: const Icon(icEdit),
+                    badgeColor: white,
+                    child: CircleAvatar(
+                      radius: 53,
+                      backgroundColor: black,
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: SharedPref.getProfileImage == null
+                                    ? NetworkImage(
+                                        SharedPref.getFbLoginPhoto.toString(),
+                                      )
+                                    : FileImage(
+                                        File(
+                                          SharedPref.getProfileImage.toString(),
+                                        ),
+                                      ) as ImageProvider,
+                                fit: BoxFit.fill),
+                            shape: BoxShape.circle),
+                      ),
+                    ),
                   ),
-                  badgeColor: white,
-                  child: CircleAvatar(
-                    radius: 53,
-                    backgroundColor: black,
-                    child: Container(
-                      height: 100,
-                      width: 100,
-                      decoration: BoxDecoration(
-                          image: DecorationImage(
-                              image: SharedPref.getProfileImage == null
-                                  ? NetworkImage(
-                                      SharedPref.getFbLoginPhoto.toString(),
-                                    )
-                                  : FileImage(
-                                      File(
-                                        SharedPref.getProfileImage.toString(),
-                                      ),
-                                    ) as ImageProvider,
-                              fit: BoxFit.fill),
-                          shape: BoxShape.circle),
+                )
+              else if (SharedPref.getGooglePhoto != '' &&
+                  SharedPref.getGooglePhoto != null)
+                Center(
+                  child: Badge(
+                    position: BadgePosition.bottomEnd(),
+                    badgeContent: StarMenu(
+                      params: const StarMenuParameters(
+                        linearShapeParams:
+                            LinearShapeParams(alignment: LinearAlignment.right),
+                        shape: MenuShape.linear,
+                        openDurationMs: 1200,
+                      ),
+                      items: subEntries,
+                      child: const Icon(icEdit),
+                    ),
+                    badgeColor: white,
+                    child: CircleAvatar(
+                      radius: 53,
+                      backgroundColor: black,
+                      child: Container(
+                        height: 100,
+                        width: 100,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: NetworkImage(
+                                  SharedPref.getGooglePhoto.toString(),
+                                ),
+                                fit: BoxFit.fill),
+                            shape: BoxShape.circle),
+                      ),
                     ),
                   ),
                 ),
-              ),
-              Text(
-                SharedPref.getFbLoginName.toString(),
-              ),
-              Text(
-                SharedPref.getFbLoginEmail.toString(),
-              ),
               TextButton(
                   onPressed: () async {
                     await fbLogout();
+                    await googleLogOut();
+                    Get.offAllNamed('/loginPage');
                     SharedPref.setFbLoginName = '';
                     SharedPref.setFbLoginEmail = '';
                     SharedPref.setFbLoginPhoto = '';
-                    await googleLogOut();
-                    Get.offAll('/loginPage');
                     SharedPref.setProfileImage = '';
                     SharedPref.setGoogleName = '';
                     SharedPref.setGoogleEmail = '';
                     SharedPref.setGooglePhoto = '';
-
                     setState(() {});
                   },
                   child: const Text(
                     'Sign Out',
                     style: TextStyle(color: Colors.grey),
                   )),
-              if (userData != null)
-                Container(
-                  height: 50,
-                  width: Screens.width(context) * 0.9,
-                  decoration: BoxDecoration(
-                    color: Colors.grey.withOpacity(0.2),
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                  padding: const EdgeInsets.only(left: 20),
-                  margin: const EdgeInsets.all(10),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        userData!['name'],
-                        style: const TextStyle(fontSize: 20),
-                      ),
-                    ],
-                  ),
-                )
-              else
+              if (SharedPref.getFbLoginName != '' &&
+                  SharedPref.getFbLoginName != null)
                 Container(
                     height: 40,
                     width: Screens.width(context) * 0.9,
@@ -211,56 +218,102 @@ class _ProfilePageState extends State<ProfilePage> {
                     padding: const EdgeInsets.only(left: 20),
                     margin: const EdgeInsets.all(10),
                     child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
-                          userName!,
-                          style: const TextStyle(fontSize: 20),
-                        ),
+                        Text(SharedPref.getFbLoginName.toString()),
                       ],
-                    )),
-              if (userData != null)
+                    ))
+              else if (SharedPref.getGoogleName != '' &&
+                  SharedPref.getGoogleName != null)
                 Container(
-                    height: 50,
+                    height: 40,
                     width: Screens.width(context) * 0.9,
                     decoration: BoxDecoration(
-                      color: Colors.grey.withOpacity(0.3),
+                      color: Colors.grey.withOpacity(0.2),
                       borderRadius: BorderRadius.circular(30),
                     ),
                     padding: const EdgeInsets.only(left: 20),
                     margin: const EdgeInsets.all(10),
                     child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(
-                          userData!['email'],
-                          style: const TextStyle(fontSize: 20),
-                        ),
+                        Text(SharedPref.getGoogleName.toString()),
                       ],
                     ))
-              else
+              else if (SharedPref.getEmail != '' &&
+                  SharedPref.getEmail != null)
                 Container(
-                  height: 40,
-                  width: Screens.width(context) * 0.9,
-                  decoration: BoxDecoration(
-                    color: Colors.grey.withOpacity(0.2),
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                  padding: const EdgeInsets.only(left: 20),
-                  margin: const EdgeInsets.all(10),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        userEmail,
-                        style: const TextStyle(fontSize: 20),
-                      ),
-                    ],
-                  ),
-                ),
+                    height: 40,
+                    width: Screens.width(context) * 0.9,
+                    decoration: BoxDecoration(
+                      color: Colors.grey.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    padding: const EdgeInsets.only(left: 20),
+                    margin: const EdgeInsets.all(10),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(SharedPref.getEmail.toString()),
+                      ],
+                    )),
+              if (SharedPref.getFbLoginEmail != '' &&
+                  SharedPref.getFbLoginEmail != null)
+                Container(
+                    height: 40,
+                    width: Screens.width(context) * 0.9,
+                    decoration: BoxDecoration(
+                      color: Colors.grey.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    padding: const EdgeInsets.only(left: 20),
+                    margin: const EdgeInsets.all(10),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(SharedPref.getFbLoginEmail.toString()),
+                      ],
+                    ))
+              else if (SharedPref.getGoogleEmail != '' &&
+                  SharedPref.getGoogleEmail != null)
+                Container(
+                    height: 40,
+                    width: Screens.width(context) * 0.9,
+                    decoration: BoxDecoration(
+                      color: Colors.grey.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    padding: const EdgeInsets.only(left: 20),
+                    margin: const EdgeInsets.all(10),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(SharedPref.getGoogleEmail.toString()),
+                      ],
+                    ))
+              else if (SharedPref.getEmail != '' &&
+                  SharedPref.getEmail != null)
+                Container(
+                    height: 40,
+                    width: Screens.width(context) * 0.9,
+                    decoration: BoxDecoration(
+                      color: Colors.grey.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    padding: const EdgeInsets.only(left: 20),
+                    margin: const EdgeInsets.all(10),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(SharedPref.getEmail.toString()),
+                      ],
+                    )),
             ],
           ),
         ),
@@ -370,83 +423,11 @@ class _ProState extends State<Pro> {
             else if (SharedPref.getEmail != '' &&
                 SharedPref.getGoogleName != null)
               Text('Email Login${SharedPref.getEmail.toString()}'),
-            // if (SharedPref.getFbLoginPhoto != '' &&
-            //     SharedPref.getFbLoginPhoto != null)
-            Center(
-              child: Badge(
-                position: BadgePosition.bottomEnd(),
-                badgeContent: StarMenu(
-                  params: const StarMenuParameters(
-                    linearShapeParams:
-                        LinearShapeParams(alignment: LinearAlignment.right),
-                    shape: MenuShape.linear,
-                    openDurationMs: 1200,
-                  ),
-                  items: subEntries,
-                  child: const Icon(icEdit),
-                ),
-                badgeColor: white,
-                child: CircleAvatar(
-                  radius: 53,
-                  backgroundColor: black,
-                  child: Container(
-                    height: 100,
-                    width: 100,
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: SharedPref.getProfileImage == null
-                                ? NetworkImage(
-                                    SharedPref.getFbLoginPhoto.toString(),
-                                  )
-                                : FileImage(
-                                    File(
-                                      SharedPref.getProfileImage.toString(),
-                                    ),
-                                  ) as ImageProvider,
-                            fit: BoxFit.fill),
-                        shape: BoxShape.circle),
-                  ),
-                ),
-              ),
-            ),
-            // else if (SharedPref.getGooglePhoto != '' &&
-            //     SharedPref.getGooglePhoto != null)
-            Center(
-              child: Badge(
-                position: BadgePosition.bottomEnd(),
-                badgeContent: StarMenu(
-                  params: const StarMenuParameters(
-                    linearShapeParams:
-                        LinearShapeParams(alignment: LinearAlignment.right),
-                    shape: MenuShape.linear,
-                    openDurationMs: 1200,
-                  ),
-                  items: subEntries,
-                  child: const Icon(icEdit),
-                ),
-                badgeColor: white,
-                child: CircleAvatar(
-                  radius: 53,
-                  backgroundColor: black,
-                  child: Container(
-                    height: 100,
-                    width: 100,
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: NetworkImage(
-                              SharedPref.getGooglePhoto.toString(),
-                            ),
-                            fit: BoxFit.fill),
-                        shape: BoxShape.circle),
-                  ),
-                ),
-              ),
-            ),
             TextButton(
                 onPressed: () async {
                   await fbLogout();
                   await googleLogOut();
-                 Get.offAllNamed('/loginPage');
+                  Get.offAllNamed('/loginPage');
                   SharedPref.setFbLoginName = '';
                   SharedPref.setFbLoginEmail = '';
                   SharedPref.setFbLoginPhoto = '';
