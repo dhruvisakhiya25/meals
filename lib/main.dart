@@ -20,7 +20,6 @@ import 'package:meals/screens/more/notification.dart';
 import 'package:meals/screens/shared_pref/shared_pref.dart';
 
 
-
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   if (Platform.isIOS) {
