@@ -140,15 +140,17 @@ class _ProfilePageState extends State<ProfilePage> {
                         width: 100,
                         decoration: BoxDecoration(
                             image: DecorationImage(
-                                image: SharedPref.getProfileImage == null
-                                    ? NetworkImage(
-                                        SharedPref.getFbLoginPhoto.toString(),
-                                      )
-                                    : FileImage(
-                                        File(
-                                          SharedPref.getProfileImage.toString(),
-                                        ),
-                                      ) as ImageProvider,
+                                image:
+                                    // SharedPref.getProfileImage == null
+                                    // ?
+                                    NetworkImage(
+                                  SharedPref.getFbLoginPhoto.toString(),
+                                ),
+                                // : FileImage(
+                                //     File(
+                                //       SharedPref.getProfileImage.toString(),
+                                //     ),
+                                //   ) as ImageProvider,
                                 fit: BoxFit.fill),
                             shape: BoxShape.circle),
                       ),
@@ -242,8 +244,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         Text(SharedPref.getGoogleName.toString()),
                       ],
                     ))
-              else if (SharedPref.getEmail != '' &&
-                  SharedPref.getEmail != null)
+              else if (SharedPref.getEmail != '' && SharedPref.getEmail != null)
                 Container(
                     height: 40,
                     width: Screens.width(context) * 0.9,
@@ -296,8 +297,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         Text(SharedPref.getGoogleEmail.toString()),
                       ],
                     ))
-              else if (SharedPref.getEmail != '' &&
-                  SharedPref.getEmail != null)
+              else if (SharedPref.getEmail != '' && SharedPref.getEmail != null)
                 Container(
                     height: 40,
                     width: Screens.width(context) * 0.9,
