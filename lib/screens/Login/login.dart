@@ -1,12 +1,9 @@
 // ignore_for_file: use_build_context_synchronously, avoid_print
 
 import 'package:auth_buttons/auth_buttons.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:get/get.dart';
-import 'package:google_sign_in/google_sign_in.dart';
-import 'package:meals/screens/bottam_Navigation/mainPage.dart';
+import 'package:meals/Network/authController.dart';
 import 'package:meals/screens/login/reset_password.dart';
 import 'package:meals/screens/login/signup.dart';
 import 'package:meals/screens/shared_pref/shared_pref.dart';
@@ -58,6 +55,7 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
+    final authController = Get.put(AuthController());
     return Scaffold(
       body: SingleChildScrollView(
         child: SafeArea(
@@ -115,7 +113,7 @@ class _LoginPageState extends State<LoginPage> {
                         onPressed: () {
                           passwords = !passwords;
                           setState(
-                            () {},
+                                () {},
                           );
                         },
                         icon: Icon(
@@ -157,15 +155,14 @@ class _LoginPageState extends State<LoginPage> {
                       borderSide: const BorderSide(color: orange),
                     ),
                     onPressed: () {
-                      if (txtEmail.text.isNotEmpty &&
-                          txtPassword.text.isNotEmpty) {
-                        servise.loginUser(
-                            txtEmail.text, txtPassword.text, context);
-                        Get.offAndToNamed('/mealsHome');
-                        SharedPref.setEmail = txtEmail.text;
+                      if (_formKey.currentState!.validate()) {
+                        String email = txtEmail.text.trim();
+                        String password = txtPassword.text;
+
+                        authController.signIn(email, password);
                       }
                       setState(
-                        () {},
+                            () {},
                       );
                     },
                     child: Text(
@@ -199,20 +196,21 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   FacebookAuthButton(
                     onPressed: () async {
-                      await fbLogin();
-
-                      Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) {
-                            return const MainPage();
-                          },
-                        ),
-                      );
-                      SharedPref.setFbLoginName = userData!['name'];
-                      SharedPref.setFbLoginEmail = userData!['email'];
+                      // await fbLogin();
+                      //
+                      // Navigator.pushReplacement(
+                      //   context,
+                      //   MaterialPageRoute(
+                      //     builder: (context) {
+                      //       return const MainPage();
+                      //     },
+                      //   ),
+                      // );
+                      await authController.signInWithFacebook(context);
+                      SharedPref.setFbLoginName = authController.userData!['name'];
+                      SharedPref.setFbLoginEmail = authController.userData!['email'];
                       SharedPref.setFbLoginPhoto =
-                          userData!['picture']['data']['url'];
+                      authController.userData!['picture']['data']['url'];
                     },
                     themeMode: themeMode,
                     isLoading: isLoading,
@@ -226,16 +224,20 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   GoogleAuthButton(
                     onPressed: () async {
-                      await signInWithGoogle();
-                      Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const MainPage(),
-                        ),
-                      );
-                      SharedPref.setGoogleName = userName!;
-                      SharedPref.setGoogleEmail = userEmail;
-                      SharedPref.setGooglePhoto = userPhoto!;
+                      // await signInWithGoogle();
+                      await authController.signInWithGoogle(context);
+                      // Navigator.pushReplacement(
+                      //   context,
+                      //   MaterialPageRoute(
+                      //     builder: (context) => const MainPage(),
+                      //   ),
+                      // );
+                      SharedPref.setGoogleName = authController.displayName;
+                      SharedPref.setGoogleEmail = authController.gmailId;
+                      SharedPref.setGooglePhoto = authController.gmailPhoto;
+                      print(SharedPref.getGoogleName.toString());
+                      print(SharedPref.getGoogleEmail.toString());
+                      print(SharedPref.getGooglePhoto.toString());
                     },
                     themeMode: themeMode,
                     isLoading: isLoading,
@@ -278,37 +280,7 @@ class _LoginPageState extends State<LoginPage> {
   }
 }
 
-Future<UserCredential> signInWithGoogle() async {
-  final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
 
-  final GoogleSignInAuthentication googleAuth =
-      await googleUser!.authentication;
-
-  final credential = GoogleAuthProvider.credential(
-    accessToken: googleAuth.accessToken,
-    idToken: googleAuth.idToken,
-  );
-
-  userEmail = googleUser.email;
-  userPhoto = googleUser.photoUrl;
-  userName = googleUser.displayName;
-
-  return await FirebaseAuth.instance.signInWithCredential(credential);
-}
-
-String userEmail = "";
-
-String? userName = "";
-
-String? userPhoto = '';
-
-Map<String, dynamic>? userData;
-
-fbLogin() async {
-  await FacebookAuth.instance.login();
-  final user = await FacebookAuth.instance.getUserData();
-  userData = user;
-}
 
 String? validateEmail(String? value) {
   String pattern =

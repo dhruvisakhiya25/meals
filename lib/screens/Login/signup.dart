@@ -1,5 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:meals/Network/authController.dart';
 import 'package:meals/screens/login/login.dart';
 import 'package:meals/screens/bottam_Navigation/mainPage.dart';
 import 'package:meals/utils/color.dart';
@@ -27,6 +29,7 @@ class _SignUpPageState extends State<SignUpPage> {
 
   @override
   Widget build(BuildContext context) {
+    final authController=Get.put(AuthController());
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
@@ -190,7 +193,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         onPressed: () {
                           passwords = !passwords;
                           setState(
-                            () {},
+                                () {},
                           );
                         },
                         icon: Icon(
@@ -244,7 +247,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         onPressed: () {
                           passwords = !passwords;
                           setState(
-                            () {},
+                                () {},
                           );
                         },
                         icon: Icon(
@@ -286,19 +289,24 @@ class _SignUpPageState extends State<SignUpPage> {
                         borderSide: const BorderSide(color: orange),
                       ),
                       onPressed: () async {
+                        // if (_formKey.currentState!.validate()) {
+                        //   servise.createUser(
+                        //       txtEmail.text, txtConfirmPassword.text, context);
+                        //   Navigator.push(
+                        //     context,
+                        //     MaterialPageRoute(
+                        //       builder: (context) => const MainPage(),
+                        //     ),
+                        //   );
+                        // }
                         if (_formKey.currentState!.validate()) {
-                          servise.createUser(
-                              txtEmail.text, txtConfirmPassword.text, context);
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const MainPage(),
-                            ),
-                          );
+                          String name = txtName.text.trim();
+                          String email = txtEmail.text.trim();
+                          String password = txtConfirmPassword.text;
+                          authController.signUp(name, email, password);
                         }
-
                         setState(
-                          () {},
+                              () {},
                         );
                       },
                       child: Text(
@@ -348,7 +356,7 @@ class Service {
     await auth
         .createUserWithEmailAndPassword(email: email, password: password)
         .then(
-      (value) {
+          (value) {
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
@@ -363,7 +371,7 @@ class Service {
     await auth
         .signInWithEmailAndPassword(email: email, password: password)
         .then(
-      (value) {
+          (value) {
         Navigator.push(
           context,
           MaterialPageRoute(
