@@ -1,11 +1,10 @@
-// ignore_for_file: use_build_context_synchronously, unrelated_type_equality_checks
+// ignore_for_file: use_build_context_synchronously, unrelated_type_equality_checks, file_names
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:meals/screens/Bottam_Navigation/mainPage.dart';
 import 'package:meals/screens/Login/login.dart';
 import 'package:meals/utils/color.dart';
 
@@ -53,14 +52,10 @@ class AuthController extends GetxController {
       Get.offAll('/mainPage');
     } on FirebaseAuthException catch (e) {
       String title = e.code.replaceAll(RegExp('-'), ' ').capitalize!;
-      String message = '';
 
       if (e.code == 'weak-password') {
-        message = 'The password provided is too weak.';
       } else if (e.code == 'email-already-in-use') {
-        message = ('The account already exists for that email.');
       } else {
-        message = e.message.toString();
       }
 
       Get.snackbar(title, 'message',

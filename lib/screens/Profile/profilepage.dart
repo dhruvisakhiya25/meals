@@ -2,14 +2,10 @@
 
 import 'dart:io';
 import 'package:badges/badges.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:get/get.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:meals/Network/authController.dart';
-import 'package:meals/screens/login/login.dart';
 import 'package:meals/screens/shared_pref/shared_pref.dart';
 import 'package:meals/utils/color.dart';
 import 'package:meals/utils/icon.dart';

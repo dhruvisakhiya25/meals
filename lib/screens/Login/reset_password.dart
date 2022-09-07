@@ -44,10 +44,10 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
                 child: TextFormField(
                   controller: txtEmail,
                   validator: (value) {
-                    bool _isEmailValid = RegExp(
+                    bool isEmailValid = RegExp(
                         r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
                         .hasMatch(value!);
-                    if (!_isEmailValid) {
+                    if (!isEmailValid) {
                       return 'Invalid email.';
                     }
                     return null;
