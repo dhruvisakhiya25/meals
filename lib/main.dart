@@ -1,5 +1,8 @@
 import 'dart:io';
-import 'package:meals/Network/export.dart';
+
+import 'Network/export.dart';
+import 'screens/Menu/desserts.dart';
+
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -75,7 +78,16 @@ class MyApp extends StatelessWidget {
         ),
         GetPage(
           name: '/item',
-          page: () => const Item(),
+          page: () => const ItemBevagers(),
+        ), GetPage(
+          name: '/item',
+          page: () => const ItemDesserts(),
+        ), GetPage(
+          name: '/item',
+          page: () => const ItemFoods(),
+        ),GetPage(
+          name: '/item',
+          page: () => const ItemPromotion(),
         ),
         GetPage(
           name: '/paymentDetails',

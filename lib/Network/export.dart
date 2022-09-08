@@ -43,7 +43,6 @@ export 'package:meals/screens/More/my_order/checkout.dart';
 export 'package:meals/screens/More/payment_details.dart';
 export 'package:meals/screens/Splash/meal_monkey.dart';
 export 'package:meals/screens/Splash/splashScreen.dart';
-export 'package:meals/screens/menu/desserts.dart';
 export 'package:meals/screens/more/inbox.dart';
 export 'package:meals/screens/more/my_order/my_order.dart';
 export 'package:meals/screens/more/notification.dart';
