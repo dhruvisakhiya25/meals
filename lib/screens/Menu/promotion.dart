@@ -99,7 +99,7 @@ class _PromotionsState extends State<Promotions> {
                                 ),
                                 Text(
                                   documents['rate'].toString(),
-                                  style: const TextStyle(color: orange),
+                                  style: const TextStyle(color: orange,),
                                 ),
                               ],
                             ),
