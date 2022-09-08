@@ -77,7 +77,7 @@ class _BevagersState extends State<Bevagers> {
                       return GestureDetector(
                         onTap: () {
                           if (index == 1) {
-                            Get.toNamed('/item');
+                            Get.toNamed('/ItemBevagers');
                           }
                         },
                         child: Container(
@@ -123,14 +123,14 @@ class _BevagersState extends State<Bevagers> {
   }
 }
 
-class Item extends StatefulWidget {
-  const Item({Key? key}) : super(key: key);
+class ItemBevagers extends StatefulWidget {
+  const ItemBevagers({Key? key}) : super(key: key);
 
   @override
-  State<Item> createState() => _ItemState();
+  State<ItemBevagers> createState() => _ItemBevagersState();
 }
 
-class _ItemState extends State<Item> {
+class _ItemBevagersState extends State<ItemBevagers> {
   int counter = 0;
 
   void increment() {
