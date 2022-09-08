@@ -71,7 +71,7 @@ class _BevagersState extends State<Bevagers> {
                       return GestureDetector(
                         onTap: () {
                           if (index == 1) {
-                            Get.toNamed('/ItemBevagers');
+                            Get.toNamed('/itemBevagers');
                           }
                         },
                         child: Container(

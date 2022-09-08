@@ -281,16 +281,6 @@ class _SignUpPageState extends State<SignUpPage> {
                         borderSide: const BorderSide(color: orange),
                       ),
                       onPressed: () async {
-                        // if (_formKey.currentState!.validate()) {
-                        //   servise.createUser(
-                        //       txtEmail.text, txtConfirmPassword.text, context);
-                        //   Navigator.push(
-                        //     context,
-                        //     MaterialPageRoute(
-                        //       builder: (context) => const MainPage(),
-                        //     ),
-                        //   );
-                        // }
                         if (_formKey.currentState!.validate()) {
                           String name = txtName.text.trim();
                           String email = txtEmail.text.trim();

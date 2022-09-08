@@ -219,7 +219,10 @@ class MenuCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(_name, style: const TextStyle(fontSize: 20)),
+              Text(
+                _name,
+                style: const TextStyle(fontSize: 20),
+              ),
               const SizedBox(
                 height: 5,
               ),

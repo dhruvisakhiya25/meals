@@ -71,16 +71,7 @@ class _FoodsState extends State<Foods> {
                       return GestureDetector(
                         onTap: () {
                           if (index == 0) {
-                            Get.toNamed('/item');
-                          }
-                          if (index == 1) {
-                            Get.toNamed('/item');
-                          }
-                          if (index == 2) {
-                            Get.toNamed('/item');
-                          }
-                          if (index == 3) {
-                            Get.toNamed('/item');
+                            Get.toNamed('/itemFoods');
                           }
                         },
                         child: Container(
@@ -260,8 +251,10 @@ class _ItemFoodsState extends State<ItemFoods> {
                                       const SizedBox(
                                         width: 10,
                                       ),
-                                      Text('$counter',
-                                          style: const TextStyle(fontSize: 30)),
+                                      Text(
+                                        '$counter',
+                                        style: const TextStyle(fontSize: 30),
+                                      ),
                                       const SizedBox(
                                         width: 10,
                                       ),

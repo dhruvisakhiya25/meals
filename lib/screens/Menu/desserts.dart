@@ -71,7 +71,7 @@ class _DessertsState extends State<Desserts> {
                       return GestureDetector(
                         onTap: () {
                           if (index == 1) {
-                            Get.toNamed('/item');
+                            Get.toNamed('/itemDesserts');
                           }
                         },
                         child: Container(

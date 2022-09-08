@@ -109,11 +109,6 @@ class AuthController extends GetxController {
       gmailId = googleAcc.value!.email;
       gmailPhoto = googleAcc.value!.photoUrl!;
       isSignedIn.value = true;
-      // Navigator.push(
-      //     context,
-      //     MaterialPageRoute(
-      //       builder: (context) => const MainPage(),
-      //     ));
       Get.offAllNamed('/mealsHome');
       Get.snackbar('Successful LogIn', '',
           snackPosition: SnackPosition.BOTTOM,

@@ -183,16 +183,6 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   FacebookAuthButton(
                     onPressed: () async {
-                      // await fbLogin();
-                      //
-                      // Navigator.pushReplacement(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) {
-                      //       return const MainPage();
-                      //     },
-                      //   ),
-                      // );
                       await authController.signInWithFacebook(context);
                       SharedPref.setFbLoginName =
                           authController.userData!['name'];
@@ -213,20 +203,19 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   GoogleAuthButton(
                     onPressed: () async {
-                      // await signInWithGoogle();
                       await authController.signInWithGoogle(context);
-                      // Navigator.pushReplacement(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const MainPage(),
-                      //   ),
-                      // );
                       SharedPref.setGoogleName = authController.displayName;
                       SharedPref.setGoogleEmail = authController.gmailId;
                       SharedPref.setGooglePhoto = authController.gmailPhoto;
-                      print(SharedPref.getGoogleName.toString());
-                      print(SharedPref.getGoogleEmail.toString());
-                      print(SharedPref.getGooglePhoto.toString());
+                      print(
+                        SharedPref.getGoogleName.toString(),
+                      );
+                      print(
+                        SharedPref.getGoogleEmail.toString(),
+                      );
+                      print(
+                        SharedPref.getGooglePhoto.toString(),
+                      );
                     },
                     themeMode: themeMode,
                     isLoading: isLoading,

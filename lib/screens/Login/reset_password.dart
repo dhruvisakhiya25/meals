@@ -74,7 +74,9 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
                 ),
                 onPressed: () {
                   if (_formKey.currentState!.validate()) {
-                    authController.resetPassword(txtEmail.text.trim());
+                    authController.resetPassword(
+                      txtEmail.text.trim(),
+                    );
                   }
                   setState(
                     () {},

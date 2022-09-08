@@ -67,7 +67,6 @@ class _FoodState extends State<Food> {
                                 ),
                                 fit: BoxFit.cover),
                           ),
-                          // alignment: Alignment.bottomLeft,
                         ),
                         Text(
                           documents['food name'],

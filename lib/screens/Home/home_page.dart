@@ -99,7 +99,10 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-                const SizedBox(height: 180, child: Food()),
+                const SizedBox(
+                  height: 180,
+                  child: Food(),
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [

@@ -75,19 +75,19 @@ class MyApp extends StatelessWidget {
           page: () => const Promotions(),
         ),
         GetPage(
-          name: '/item',
+          name: '/itemBevagers',
           page: () => const ItemBevagers(),
         ),
         GetPage(
-          name: '/item',
+          name: '/itemDesserts',
           page: () => const ItemDesserts(),
         ),
         GetPage(
-          name: '/item',
+          name: '/itemFoods',
           page: () => const ItemFoods(),
         ),
         GetPage(
-          name: '/item',
+          name: '/itemPromotion',
           page: () => const ItemPromotion(),
         ),
         GetPage(

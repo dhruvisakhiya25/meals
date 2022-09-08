@@ -71,7 +71,7 @@ class _PromotionsState extends State<Promotions> {
                       return GestureDetector(
                         onTap: () {
                           if (index == 1) {
-                            Get.toNamed('/item');
+                            Get.toNamed('/itemPromotion');
                           }
                         },
                         child: Container(
