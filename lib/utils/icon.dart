@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-
+import 'package:meals/Network/export.dart';
 const IconData icBack = Icons.chevron_left;
 const IconData icCart = Icons.local_grocery_store_sharp;
 const IconData icMenu = Icons.dataset_sharp;

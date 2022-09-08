@@ -1,12 +1,6 @@
 // ignore_for_file: use_build_context_synchronously, unrelated_type_equality_checks, file_names
 
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
-import 'package:get/get.dart';
-import 'package:google_sign_in/google_sign_in.dart';
-import 'package:meals/screens/Login/login.dart';
-import 'package:meals/utils/color.dart';
+import 'package:meals/Network/export.dart';
 
 class AuthController extends GetxController {
   String displayName = '';
@@ -76,11 +70,7 @@ class AuthController extends GetxController {
       await auth
           .signInWithEmailAndPassword(email: email, password: password)
           .then((value) => displayName = userProfile!.displayName!);
-      Get.snackbar('Successful Login', '',
-          snackPosition: SnackPosition.BOTTOM,
-          backgroundColor: orange,
-          colorText: black);
-      Get.offAllNamed('/mainPage');
+
       update();
     } on FirebaseAuthException catch (e) {
       String title = e.code.replaceAll(RegExp('-'), ' ').capitalize!;
@@ -99,16 +89,17 @@ class AuthController extends GetxController {
       Get.snackbar(title, message,
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: orange,
-          colorText: black);
-      Get.offAllNamed('/mealsHome');
+          );
+      print('successful');
     } catch (e) {
       Get.snackbar(
         'Error occurred!',
         e.toString(),
         snackPosition: SnackPosition.BOTTOM,
         backgroundColor: orange,
-        colorText: black,
       );
+      print('unSuccessful');
+
     }
   }
 

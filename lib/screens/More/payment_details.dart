@@ -1,7 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:meals/utils/color.dart';
-import 'package:meals/utils/icon.dart';
-import 'package:meals/utils/strings.dart';
+import 'package:meals/Network/export.dart';
+
 import 'package:pay/pay.dart';
 
 class PaymentDetails extends StatefulWidget {

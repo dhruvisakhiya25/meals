@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/imac/Documents/Yash/meals/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/imac/Documents/meals/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/Users/imac/.gradle/caches/transforms-3/542a859793ec57d6a4d40865c7efc6d9/transformed/jetified-window-1.0.0-beta04/res/values/values.xml",
@@ -20,6 +20,23 @@
                         "endLines": "12,13,14,15,305,2159,2163,3470,3487,3495",
                         "endColumns": "11,59,51,44,59,24,24,24,24,24",
                         "endOffsets": "646,706,758,803,20462,146805,147002,211390,212504,212897"
+                    }
+                },
+                {
+                    "source": "/Users/imac/Documents/meals/android/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "2,3,5,4",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,97,228,157",
+                        "endColumns": "41,59,82,70",
+                        "endOffsets": "92,152,306,223"
+                    },
+                    "to": {
+                        "startLines": "368,412,413,417",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "24184,29063,29123,29421",
+                        "endColumns": "41,59,82,70",
+                        "endOffsets": "24221,29118,29201,29487"
                     }
                 },
                 {
@@ -73,25 +90,6 @@
                         "startOffsets": "21823",
                         "endColumns": "49",
                         "endOffsets": "21868"
-                    }
-                },
-                {
-                    "source": "/Users/imac/Documents/Yash/meals/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "173,818",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "476,982"
-                    },
-                    "to": {
-                        "startLines": "1516,1521",
-                        "startColumns": "4,4",
-                        "startOffsets": "100428,100736",
-                        "endLines": "1520,1523",
-                        "endColumns": "12,12",
-                        "endOffsets": "100731,100900"
                     }
                 },
                 {
@@ -334,7 +332,7 @@
                     }
                 },
                 {
-                    "source": "/Users/imac/Documents/Yash/meals/build/app/generated/res/google-services/debug/values/values.xml",
+                    "source": "/Users/imac/Documents/meals/build/app/generated/res/google-services/debug/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",
@@ -351,20 +349,22 @@
                     }
                 },
                 {
-                    "source": "/Users/imac/Documents/Yash/meals/android/app/src/main/res/values/strings.xml",
+                    "source": "/Users/imac/Documents/meals/android/app/src/main/res/values/styles.xml",
                     "from": {
-                        "startLines": "2,3,5,4",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,97,228,157",
-                        "endColumns": "41,59,82,70",
-                        "endOffsets": "92,152,306,223"
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,818",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "476,982"
                     },
                     "to": {
-                        "startLines": "368,412,413,417",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "24184,29063,29123,29421",
-                        "endColumns": "41,59,82,70",
-                        "endOffsets": "24221,29118,29201,29487"
+                        "startLines": "1516,1521",
+                        "startColumns": "4,4",
+                        "startOffsets": "100428,100736",
+                        "endLines": "1520,1523",
+                        "endColumns": "12,12",
+                        "endOffsets": "100731,100900"
                     }
                 },
                 {

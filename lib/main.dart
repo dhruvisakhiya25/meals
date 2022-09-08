@@ -1,24 +1,6 @@
 import 'dart:io';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:meals/screens/Bottam_Navigation/mainPage.dart';
-import 'package:meals/screens/Menu/bevagers.dart';
-import 'package:meals/screens/Menu/food.dart';
-import 'package:meals/screens/Menu/promotion.dart';
-import 'package:meals/screens/More/about_us.dart';
-import 'package:meals/screens/More/my_order/checkout.dart';
-import 'package:meals/screens/More/payment_details.dart';
-import 'package:meals/screens/Splash/meal_monkey.dart';
-import 'package:meals/screens/Splash/splashScreen.dart';
-import 'package:meals/screens/login/login.dart';
-import 'package:meals/screens/login/signup.dart';
-import 'package:meals/screens/menu/desserts.dart';
-import 'package:meals/screens/more/inbox.dart';
-import 'package:meals/screens/more/my_order/my_order.dart';
-import 'package:meals/screens/more/notification.dart';
-import 'package:meals/screens/shared_pref/shared_pref.dart';
-///yash
+import 'package:meals/Network/export.dart';
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   if (Platform.isIOS) {

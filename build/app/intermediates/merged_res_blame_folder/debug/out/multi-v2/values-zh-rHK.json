@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/imac/Documents/Yash/meals/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml",
+            "outputFile": "/Users/imac/Documents/meals/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml",
             "map": [
                 {
                     "source": "/Users/imac/.gradle/caches/transforms-3/b180a644f0acd5488c15483b30ef54dc/transformed/jetified-facebook-login-14.1.0/res/values-zh-rHK/values-zh-rHK.xml",

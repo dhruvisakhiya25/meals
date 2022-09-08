@@ -1,17 +1,7 @@
 // ignore_for_file: use_build_context_synchronously, avoid_print
+import 'package:meals/Network/export.dart';
 
 import 'dart:io';
-import 'package:badges/badges.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:image_picker/image_picker.dart';
-import 'package:meals/Network/authController.dart';
-import 'package:meals/screens/shared_pref/shared_pref.dart';
-import 'package:meals/utils/color.dart';
-import 'package:meals/utils/icon.dart';
-import 'package:meals/utils/responsive.dart';
-import 'package:meals/utils/strings.dart';
-import 'package:star_menu/star_menu.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);

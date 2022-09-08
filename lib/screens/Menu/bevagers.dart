@@ -1,11 +1,6 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
+
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:meals/utils/color.dart';
-import 'package:meals/utils/icon.dart';
-import 'package:meals/utils/responsive.dart';
-import 'package:meals/utils/strings.dart';
-import 'package:get/get.dart';
+import 'package:meals/Network/export.dart';
 
 class Bevagers extends StatefulWidget {
   const Bevagers({Key? key}) : super(key: key);
