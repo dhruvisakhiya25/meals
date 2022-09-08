@@ -1,4 +1,5 @@
 import 'package:meals/Network/export.dart';
+
 class ResetPasswordPage extends StatefulWidget {
   const ResetPasswordPage({Key? key}) : super(key: key);
 
@@ -12,7 +13,7 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
 
   @override
   Widget build(BuildContext context) {
-    final authController=Get.put(AuthController());
+    final authController = Get.put(AuthController());
     return Scaffold(
       body: SafeArea(
         child: Form(
@@ -40,7 +41,7 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
                   controller: txtEmail,
                   validator: (value) {
                     bool isEmailValid = RegExp(
-                        r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
+                            r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
                         .hasMatch(value!);
                     if (!isEmailValid) {
                       return 'Invalid email.';
@@ -76,7 +77,7 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
                     authController.resetPassword(txtEmail.text.trim());
                   }
                   setState(
-                        () {},
+                    () {},
                   );
                 },
                 child: Text(

@@ -1,6 +1,5 @@
 import 'package:meals/Network/export.dart';
 
-
 class InBoxPage extends StatefulWidget {
   const InBoxPage({Key? key}) : super(key: key);
 

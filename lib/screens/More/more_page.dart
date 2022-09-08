@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors, use_build_context_synchronously
 import 'package:meals/Network/export.dart';
 
-
 class MorePage extends StatefulWidget {
   const MorePage({Key? key}) : super(key: key);
 
@@ -12,7 +11,7 @@ class MorePage extends StatefulWidget {
 class _MorePageState extends State<MorePage> {
   @override
   Widget build(BuildContext context) {
-    final authController=Get.put(AuthController());
+    final authController = Get.put(AuthController());
     return Scaffold(
       body: SafeArea(
         child: Padding(

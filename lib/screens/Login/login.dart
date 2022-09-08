@@ -1,6 +1,4 @@
 // ignore_for_file: use_build_context_synchronously, avoid_print
-
-
 import 'package:meals/Network/export.dart';
 
 class LoginPage extends StatefulWidget {

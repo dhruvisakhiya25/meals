@@ -21,7 +21,7 @@ class _SignUpPageState extends State<SignUpPage> {
 
   @override
   Widget build(BuildContext context) {
-    final authController=Get.put(AuthController());
+    final authController = Get.put(AuthController());
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
@@ -185,7 +185,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         onPressed: () {
                           passwords = !passwords;
                           setState(
-                                () {},
+                            () {},
                           );
                         },
                         icon: Icon(
@@ -239,7 +239,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         onPressed: () {
                           passwords = !passwords;
                           setState(
-                                () {},
+                            () {},
                           );
                         },
                         icon: Icon(
@@ -298,7 +298,7 @@ class _SignUpPageState extends State<SignUpPage> {
                           authController.signUp(name, email, password);
                         }
                         setState(
-                              () {},
+                          () {},
                         );
                       },
                       child: Text(
@@ -348,7 +348,7 @@ class Service {
     await auth
         .createUserWithEmailAndPassword(email: email, password: password)
         .then(
-          (value) {
+      (value) {
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
@@ -363,7 +363,7 @@ class Service {
     await auth
         .signInWithEmailAndPassword(email: email, password: password)
         .then(
-          (value) {
+      (value) {
         Navigator.push(
           context,
           MaterialPageRoute(

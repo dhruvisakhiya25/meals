@@ -43,8 +43,6 @@ String youCanRemoveCard = 'You can remove this card';
 String atAnyTime = 'at anytime';
 String sendOrder = 'Send Order';
 
-
-
 ///home page
 String goodMorning = 'Good morning Akila!';
 String deliveringTo = 'Delivering to';
@@ -58,8 +56,6 @@ String resentItem = 'Recent Items';
 
 String rating = '(124 rating)';
 String logOut = 'Log Out';
-
-
 
 ///login page
 String login = 'Login';

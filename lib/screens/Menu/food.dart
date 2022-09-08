@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:meals/Network/export.dart';
 
-
 class Foods extends StatefulWidget {
   const Foods({Key? key}) : super(key: key);
 

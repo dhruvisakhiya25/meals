@@ -1,5 +1,3 @@
-
-
 import 'package:meals/Network/export.dart';
 
 class MostPopular extends StatefulWidget {

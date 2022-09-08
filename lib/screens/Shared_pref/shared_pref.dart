@@ -1,6 +1,5 @@
 import 'package:meals/Network/export.dart';
 
-
 class SharedPref {
   static SharedPreferences? pref;
   static String fbLoginName = 'login Name';

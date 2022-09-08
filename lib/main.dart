@@ -1,8 +1,6 @@
 import 'dart:io';
-
 import 'Network/export.dart';
 import 'screens/Menu/desserts.dart';
-
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -79,13 +77,16 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/item',
           page: () => const ItemBevagers(),
-        ), GetPage(
+        ),
+        GetPage(
           name: '/item',
           page: () => const ItemDesserts(),
-        ), GetPage(
+        ),
+        GetPage(
           name: '/item',
           page: () => const ItemFoods(),
-        ),GetPage(
+        ),
+        GetPage(
           name: '/item',
           page: () => const ItemPromotion(),
         ),

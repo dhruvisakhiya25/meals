@@ -65,7 +65,7 @@ class MenuScreen extends StatelessWidget {
                             children: [
                               GestureDetector(
                                 onTap: () {
-                                 Get.toNamed('/foods');
+                                  Get.toNamed('/foods');
                                 },
                                 child: MenuCard(
                                   imageShape: ClipOval(
@@ -92,7 +92,6 @@ class MenuScreen extends StatelessWidget {
                               GestureDetector(
                                 onTap: () {
                                   Get.toNamed('/bevagers');
-
                                 },
                                 child: MenuCard(
                                   imageShape: ClipRRect(
@@ -116,7 +115,6 @@ class MenuScreen extends StatelessWidget {
                               GestureDetector(
                                 onTap: () {
                                   Get.toNamed('/desserts');
-
                                 },
                                 child: MenuCard(
                                   imageShape: ClipPath(
@@ -140,7 +138,6 @@ class MenuScreen extends StatelessWidget {
                               GestureDetector(
                                 onTap: () {
                                   Get.toNamed('/promotions');
-
                                 },
                                 child: MenuCard(
                                   imageShape: ClipPath(

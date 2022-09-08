@@ -49,8 +49,7 @@ class AuthController extends GetxController {
 
       if (e.code == 'weak-password') {
       } else if (e.code == 'email-already-in-use') {
-      } else {
-      }
+      } else {}
 
       Get.snackbar(title, 'message',
           snackPosition: SnackPosition.BOTTOM,
@@ -61,7 +60,6 @@ class AuthController extends GetxController {
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: orange,
           colorText: black);
-
     }
   }
 
@@ -81,15 +79,17 @@ class AuthController extends GetxController {
         message = 'Invalid Password. Please try again!';
       } else if (e.code == 'user-not-found') {
         message =
-        ('The account does not exists for $email. Create your account by signing up.');
+            ('The account does not exists for $email. Create your account by signing up.');
       } else {
         message = e.message.toString();
       }
 
-      Get.snackbar(title, message,
-          snackPosition: SnackPosition.BOTTOM,
-          backgroundColor: orange,
-          );
+      Get.snackbar(
+        title,
+        message,
+        snackPosition: SnackPosition.BOTTOM,
+        backgroundColor: orange,
+      );
       print('successful');
     } catch (e) {
       Get.snackbar(
@@ -99,7 +99,6 @@ class AuthController extends GetxController {
         backgroundColor: orange,
       );
       print('unSuccessful');
-
     }
   }
 
@@ -162,7 +161,7 @@ class AuthController extends GetxController {
 
       if (e.code == 'user-not-found') {
         message =
-        ('The account does not exists for $email. Create your account by signing up.');
+            ('The account does not exists for $email. Create your account by signing up.');
       } else {
         message = e.message.toString();
       }

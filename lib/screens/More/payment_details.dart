@@ -18,9 +18,7 @@ class _PaymentDetailsState extends State<PaymentDetails> {
     )
   ];
 
-  void onGooglePayResult(paymentResult) {
-
-  }
+  void onGooglePayResult(paymentResult) {}
 
   @override
   Widget build(BuildContext context) {
@@ -70,7 +68,6 @@ class _PaymentDetailsState extends State<PaymentDetails> {
               ),
               Center(
                 child: GooglePayButton(
-
                   width: 310,
                   paymentConfigurationAsset: 'gpay.json',
                   paymentItems: _paymentItems,

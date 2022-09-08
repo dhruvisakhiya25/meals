@@ -1,6 +1,5 @@
 import 'package:meals/Network/export.dart';
 
-
 class CheckOutPage extends StatefulWidget {
   const CheckOutPage({Key? key}) : super(key: key);
 
@@ -162,7 +161,7 @@ class _CheckOutPageState extends State<CheckOutPage> {
                               alignment: Alignment.topRight,
                               child: IconButton(
                                 onPressed: () {
-                                 Get.back();
+                                  Get.back();
                                 },
                                 icon: const Icon(icClose),
                               ),

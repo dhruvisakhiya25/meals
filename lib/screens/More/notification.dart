@@ -1,6 +1,5 @@
 import 'package:meals/Network/export.dart';
 
-
 class NotificationPage extends StatefulWidget {
   const NotificationPage({Key? key}) : super(key: key);
 
