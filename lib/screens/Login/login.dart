@@ -103,7 +103,7 @@ class _LoginPageState extends State<LoginPage> {
                         onPressed: () {
                           passwords = !passwords;
                           setState(
-                                () {},
+                            () {},
                           );
                         },
                         icon: Icon(
@@ -151,7 +151,6 @@ class _LoginPageState extends State<LoginPage> {
 
                         authController.signIn(email, password);
                       }
-
                     },
                     child: Text(
                       login,
@@ -195,10 +194,12 @@ class _LoginPageState extends State<LoginPage> {
                       //   ),
                       // );
                       await authController.signInWithFacebook(context);
-                      SharedPref.setFbLoginName = authController.userData!['name'];
-                      SharedPref.setFbLoginEmail = authController.userData!['email'];
+                      SharedPref.setFbLoginName =
+                          authController.userData!['name'];
+                      SharedPref.setFbLoginEmail =
+                          authController.userData!['email'];
                       SharedPref.setFbLoginPhoto =
-                      authController.userData!['picture']['data']['url'];
+                          authController.userData!['picture']['data']['url'];
                     },
                     themeMode: themeMode,
                     isLoading: isLoading,
@@ -267,8 +268,6 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
-
-
 
 String? validateEmail(String? value) {
   String pattern =
