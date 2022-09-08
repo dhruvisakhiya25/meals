@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:meals/utils/color.dart';
-import 'package:meals/utils/responsive.dart';
-import 'package:meals/utils/strings.dart';
+import 'package:meals/Network/export.dart';
 
 class MealMonkey extends StatefulWidget {
   const MealMonkey({Key? key}) : super(key: key);

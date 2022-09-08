@@ -1,24 +1,5 @@
 import 'dart:io';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:meals/screens/Bottam_Navigation/mainPage.dart';
-import 'package:meals/screens/Menu/bevagers.dart';
-import 'package:meals/screens/Menu/desserts.dart';
-
-import 'package:meals/screens/Menu/food.dart';
-import 'package:meals/screens/Menu/promotion.dart';
-import 'package:meals/screens/More/about_us.dart';
-import 'package:meals/screens/More/my_order/checkout.dart';
-import 'package:meals/screens/More/payment_details.dart';
-import 'package:meals/screens/Splash/meal_monkey.dart';
-import 'package:meals/screens/Splash/splashScreen.dart';
-import 'package:meals/screens/login/login.dart';
-import 'package:meals/screens/login/signup.dart';
-import 'package:meals/screens/more/inbox.dart';
-import 'package:meals/screens/more/my_order/my_order.dart';
-import 'package:meals/screens/more/notification.dart';
-import 'package:meals/screens/shared_pref/shared_pref.dart';
+import 'package:meals/Network/export.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -86,16 +67,16 @@ class MyApp extends StatelessWidget {
         ),
         GetPage(
           name: '/desserts',
-          page: () =>  Desserts(),
+          page: () => const Desserts(),
         ),
         GetPage(
           name: '/promotions',
           page: () => const Promotions(),
         ),
-       GetPage(name: '/itemDesserts', page: ()=>ItemDesserts()),
-       GetPage(name: '/ItemPromotion', page: ()=>ItemPromotion()),
-       GetPage(name: '/ItemBevagers', page: ()=>ItemBevagers()),
-       GetPage(name: '/ItemFood', page:()=> ItemFood()),
+        GetPage(
+          name: '/item',
+          page: () => const Item(),
+        ),
         GetPage(
           name: '/paymentDetails',
           page: () => const PaymentDetails(),

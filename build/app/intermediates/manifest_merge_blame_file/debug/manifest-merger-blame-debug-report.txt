@@ -13,8 +13,8 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/Users/imac/StudioProjects/meals/android/app/src/main/AndroidManifest.xml:4:5-66
-15-->/Users/imac/StudioProjects/meals/android/app/src/main/AndroidManifest.xml:4:22-64
+15-->/Users/imac/Documents/meals/android/app/src/main/AndroidManifest.xml:4:5-66
+15-->/Users/imac/Documents/meals/android/app/src/main/AndroidManifest.xml:4:22-64
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 16-->[com.google.firebase:firebase-auth:21.0.7] /Users/imac/.gradle/caches/transforms-3/6b415a3bc2b441250bf51af87084b635/transformed/jetified-firebase-auth-21.0.7/AndroidManifest.xml:24:5-79
 16-->[com.google.firebase:firebase-auth:21.0.7] /Users/imac/.gradle/caches/transforms-3/6b415a3bc2b441250bf51af87084b635/transformed/jetified-firebase-auth-21.0.7/AndroidManifest.xml:24:22-76
@@ -131,31 +131,31 @@
 97            android:value="@string/facebook_client_token" />
 98
 99        <service
-99-->[:firebase_auth] /Users/imac/StudioProjects/meals/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+99-->[:firebase_auth] /Users/imac/Documents/meals/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
 100            android:name="com.google.firebase.components.ComponentDiscoveryService"
-100-->[:firebase_auth] /Users/imac/StudioProjects/meals/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
+100-->[:firebase_auth] /Users/imac/Documents/meals/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
 101            android:directBootAware="true"
 101-->[com.google.firebase:firebase-common:20.1.1] /Users/imac/.gradle/caches/transforms-3/fccaa6a289edc53f66333a729d5bb147/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:35:13-43
 102            android:exported="false" >
 102-->[com.google.firebase:firebase-auth:21.0.7] /Users/imac/.gradle/caches/transforms-3/6b415a3bc2b441250bf51af87084b635/transformed/jetified-firebase-auth-21.0.7/AndroidManifest.xml:66:13-37
 103            <meta-data
-103-->[:firebase_auth] /Users/imac/StudioProjects/meals/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+103-->[:firebase_auth] /Users/imac/Documents/meals/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
 104                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-104-->[:firebase_auth] /Users/imac/StudioProjects/meals/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+104-->[:firebase_auth] /Users/imac/Documents/meals/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
 105                android:value="com.google.firebase.components.ComponentRegistrar" />
-105-->[:firebase_auth] /Users/imac/StudioProjects/meals/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+105-->[:firebase_auth] /Users/imac/Documents/meals/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 106            <meta-data
-106-->[:cloud_firestore] /Users/imac/StudioProjects/meals/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+106-->[:cloud_firestore] /Users/imac/Documents/meals/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
 107                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-107-->[:cloud_firestore] /Users/imac/StudioProjects/meals/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-134
+107-->[:cloud_firestore] /Users/imac/Documents/meals/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-134
 108                android:value="com.google.firebase.components.ComponentRegistrar" />
-108-->[:cloud_firestore] /Users/imac/StudioProjects/meals/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+108-->[:cloud_firestore] /Users/imac/Documents/meals/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 109            <meta-data
-109-->[:firebase_core] /Users/imac/StudioProjects/meals/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+109-->[:firebase_core] /Users/imac/Documents/meals/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
 110                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-110-->[:firebase_core] /Users/imac/StudioProjects/meals/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+110-->[:firebase_core] /Users/imac/Documents/meals/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
 111                android:value="com.google.firebase.components.ComponentRegistrar" />
-111-->[:firebase_core] /Users/imac/StudioProjects/meals/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+111-->[:firebase_core] /Users/imac/Documents/meals/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 112            <meta-data
 112-->[com.google.firebase:firebase-auth:21.0.7] /Users/imac/.gradle/caches/transforms-3/6b415a3bc2b441250bf51af87084b635/transformed/jetified-firebase-auth-21.0.7/AndroidManifest.xml:67:13-69:85
 113                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
@@ -183,29 +183,29 @@
 124        </service>
 125
 126        <provider
-126-->[:image_picker_android] /Users/imac/StudioProjects/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+126-->[:image_picker_android] /Users/imac/Documents/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
 127            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-127-->[:image_picker_android] /Users/imac/StudioProjects/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
+127-->[:image_picker_android] /Users/imac/Documents/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
 128            android:authorities="com.example.meals.flutter.image_provider"
-128-->[:image_picker_android] /Users/imac/StudioProjects/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
+128-->[:image_picker_android] /Users/imac/Documents/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
 129            android:exported="false"
-129-->[:image_picker_android] /Users/imac/StudioProjects/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+129-->[:image_picker_android] /Users/imac/Documents/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
 130            android:grantUriPermissions="true" >
-130-->[:image_picker_android] /Users/imac/StudioProjects/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+130-->[:image_picker_android] /Users/imac/Documents/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
 131            <meta-data
-131-->[:image_picker_android] /Users/imac/StudioProjects/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
+131-->[:image_picker_android] /Users/imac/Documents/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
 132                android:name="android.support.FILE_PROVIDER_PATHS"
-132-->[:image_picker_android] /Users/imac/StudioProjects/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+132-->[:image_picker_android] /Users/imac/Documents/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
 133                android:resource="@xml/flutter_image_picker_file_paths" />
-133-->[:image_picker_android] /Users/imac/StudioProjects/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
+133-->[:image_picker_android] /Users/imac/Documents/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
 134        </provider>
 135
 136        <meta-data
-136-->[:pay_android] /Users/imac/StudioProjects/meals/build/pay_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-16:36
+136-->[:pay_android] /Users/imac/Documents/meals/build/pay_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-16:36
 137            android:name="com.google.android.gms.wallet.api.enabled"
-137-->[:pay_android] /Users/imac/StudioProjects/meals/build/pay_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-69
+137-->[:pay_android] /Users/imac/Documents/meals/build/pay_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-69
 138            android:value="true" />
-138-->[:pay_android] /Users/imac/StudioProjects/meals/build/pay_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-33
+138-->[:pay_android] /Users/imac/Documents/meals/build/pay_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-33
 139
 140        <uses-library
 140-->[androidx.window:window:1.0.0-beta04] /Users/imac/.gradle/caches/transforms-3/542a859793ec57d6a4d40865c7efc6d9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40

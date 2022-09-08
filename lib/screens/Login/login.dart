@@ -1,15 +1,7 @@
 // ignore_for_file: use_build_context_synchronously, avoid_print
 
-import 'package:auth_buttons/auth_buttons.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:meals/Network/authController.dart';
-import 'package:meals/screens/login/reset_password.dart';
-import 'package:meals/screens/login/signup.dart';
-import 'package:meals/screens/shared_pref/shared_pref.dart';
-import 'package:meals/utils/color.dart';
-import 'package:meals/utils/icon.dart';
-import 'package:meals/utils/strings.dart';
+
+import 'package:meals/Network/export.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -161,9 +153,7 @@ class _LoginPageState extends State<LoginPage> {
 
                         authController.signIn(email, password);
                       }
-                      setState(
-                            () {},
-                      );
+
                     },
                     child: Text(
                       login,

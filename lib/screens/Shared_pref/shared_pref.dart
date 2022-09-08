@@ -1,4 +1,5 @@
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:meals/Network/export.dart';
+
 
 class SharedPref {
   static SharedPreferences? pref;

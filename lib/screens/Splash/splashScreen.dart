@@ -1,9 +1,5 @@
 // ignore_for_file: use_build_context_synchronously, file_names
-
-import 'package:meals/utils/color.dart';
-import 'package:meals/utils/responsive.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:meals/Network/export.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);

@@ -1,16 +1,6 @@
 // ignore_for_file: library_private_types_in_public_api, file_names
 
-import 'package:circle_bottom_navigation_bar/circle_bottom_navigation_bar.dart';
-import 'package:circle_bottom_navigation_bar/widgets/tab_data.dart';
-import 'package:flutter/material.dart';
-import 'package:meals/screens/Home/home_page.dart';
-import 'package:meals/screens/More/more_page.dart';
-import 'package:meals/screens/menu/menu.dart';
-import 'package:meals/screens/Offer/offer_page.dart';
-import 'package:meals/screens/Profile/profilepage.dart';
-import 'package:meals/utils/color.dart';
-import 'package:meals/utils/icon.dart';
-import 'package:meals/utils/strings.dart';
+import 'package:meals/Network/export.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
