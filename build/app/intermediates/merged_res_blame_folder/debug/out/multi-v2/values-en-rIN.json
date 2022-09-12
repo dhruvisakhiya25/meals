@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/imac/Documents/meals/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "/Users/imac/StudioProjects/meals/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
                     "source": "/Users/imac/.gradle/caches/transforms-3/38e30c664341fe5bfcc1d9de04582443/transformed/browser-1.4.0/res/values-en-rIN/values-en-rIN.xml",

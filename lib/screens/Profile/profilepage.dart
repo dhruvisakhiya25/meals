@@ -133,11 +133,6 @@ class _ProfilePageState extends State<ProfilePage> {
                                     NetworkImage(
                                   SharedPref.getFbLoginPhoto.toString(),
                                 ),
-                                // : FileImage(
-                                //     File(
-                                //       SharedPref.getProfileImage.toString(),
-                                //     ),
-                                //   ) as ImageProvider,
                                 fit: BoxFit.fill),
                             shape: BoxShape.circle),
                       ),
@@ -232,21 +227,24 @@ class _ProfilePageState extends State<ProfilePage> {
                     ))
               else if (SharedPref.getEmail != '' && SharedPref.getEmail != null)
                 Container(
-                    height: 40,
-                    width: Screens.width(context) * 0.9,
-                    decoration: BoxDecoration(
-                      color: Colors.grey.withOpacity(0.2),
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    padding: const EdgeInsets.only(left: 20),
-                    margin: const EdgeInsets.all(10),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(SharedPref.getEmail.toString()),
-                      ],
-                    )),
+                  height: 40,
+                  width: Screens.width(context) * 0.9,
+                  decoration: BoxDecoration(
+                    color: Colors.grey.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  padding: const EdgeInsets.only(left: 20),
+                  margin: const EdgeInsets.all(10),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        SharedPref.getEmail.toString(),
+                      ),
+                    ],
+                  ),
+                ),
               if (SharedPref.getFbLoginEmail != '' &&
                   SharedPref.getFbLoginEmail != null)
                 Container(
@@ -262,44 +260,50 @@ class _ProfilePageState extends State<ProfilePage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text(SharedPref.getFbLoginEmail.toString()),
+                        Text(
+                          SharedPref.getFbLoginEmail.toString(),
+                        ),
                       ],
                     ))
               else if (SharedPref.getGoogleEmail != '' &&
                   SharedPref.getGoogleEmail != null)
                 Container(
-                    height: 40,
-                    width: Screens.width(context) * 0.9,
-                    decoration: BoxDecoration(
-                      color: Colors.grey.withOpacity(0.2),
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    padding: const EdgeInsets.only(left: 20),
-                    margin: const EdgeInsets.all(10),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(SharedPref.getGoogleEmail.toString()),
-                      ],
-                    ))
+                  height: 40,
+                  width: Screens.width(context) * 0.9,
+                  decoration: BoxDecoration(
+                    color: Colors.grey.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  padding: const EdgeInsets.only(left: 20),
+                  margin: const EdgeInsets.all(10),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        SharedPref.getGoogleEmail.toString(),
+                      ),
+                    ],
+                  ),
+                )
               else if (SharedPref.getEmail != '' && SharedPref.getEmail != null)
                 Container(
-                    height: 40,
-                    width: Screens.width(context) * 0.9,
-                    decoration: BoxDecoration(
-                      color: Colors.grey.withOpacity(0.2),
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    padding: const EdgeInsets.only(left: 20),
-                    margin: const EdgeInsets.all(10),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(SharedPref.getEmail.toString()),
-                      ],
-                    )),
+                  height: 40,
+                  width: Screens.width(context) * 0.9,
+                  decoration: BoxDecoration(
+                    color: Colors.grey.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  padding: const EdgeInsets.only(left: 20),
+                  margin: const EdgeInsets.all(10),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(SharedPref.getEmail.toString()),
+                    ],
+                  ),
+                ),
             ],
           ),
         ),

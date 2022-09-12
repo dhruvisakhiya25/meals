@@ -176,6 +176,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_credit_card_new",
+      "rootUri": "file:///Users/imac/Documents/devalopment/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_credit_card_new-0.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "flutter_facebook_auth",
       "rootUri": "file:///Users/imac/Documents/devalopment/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_facebook_auth-4.4.1",
       "packageUri": "lib/",
@@ -632,7 +638,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2022-09-12T05:12:57.834540Z",
+  "generated": "2022-09-12T07:41:42.212508Z",
   "generator": "pub",
   "generatorVersion": "2.17.6"
 }

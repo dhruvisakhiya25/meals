@@ -90,6 +90,7 @@ class AuthController extends GetxController {
         snackPosition: SnackPosition.BOTTOM,
         backgroundColor: orange,
       );
+      Get.offAllNamed('/mealsHome');
       print('successful');
     } catch (e) {
       Get.snackbar(

@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const SplashScreen(),
+      home:  MainPage(),
       initialRoute: '/',
       defaultTransition: Transition.circularReveal,
       getPages: [

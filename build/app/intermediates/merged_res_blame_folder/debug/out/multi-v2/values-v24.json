@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/imac/Documents/meals/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/Users/imac/StudioProjects/meals/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "/Users/imac/.gradle/caches/transforms-3/5947e0a9454735d6371408f26a6b8bbd/transformed/media-1.0.0/res/values-v24/values-v24.xml",

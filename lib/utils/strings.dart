@@ -141,3 +141,15 @@ String mobile = " Mobile";
 String pleaseValidEmail = "Please Enter Your Valid Email";
 String pleaseValidName = "Please Valid name";
 String firstNameEmpty = "First Name cannot be Empty";
+
+/// payment page
+String number = 'Number';
+String xxxx = 'XXXX XXXX XXXX XXXX';
+String expireDate = 'Expired Date';
+String xx = 'XX/XX';
+String cvv = 'CVV';
+String xxx = 'XXX';
+String cardHolder = 'Card Holder';
+String validate = 'Validate';
+String valid ='valid!';
+String inValid = 'invalid!';

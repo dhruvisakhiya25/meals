@@ -1,7 +1,5 @@
 import 'package:meals/Network/export.dart';
 
-import 'package:pay/pay.dart';
-
 class PaymentDetails extends StatefulWidget {
   const PaymentDetails({Key? key}) : super(key: key);
 
@@ -17,11 +15,32 @@ class _PaymentDetailsState extends State<PaymentDetails> {
       status: PaymentItemStatus.final_price,
     )
   ];
-  void onApplePayResult(paymentResult) {
-    // Send the resulting Apple Pay token to your server / PSP
-  }
+
+  void onApplePayResult(paymentResult) {}
 
   void onGooglePayResult(paymentResult) {}
+
+  void onCreditCardModelChange(CreditCardModel? creditCardModel) {
+    setState(
+      () {
+        cardNumber = creditCardModel!.cardNumber;
+        expiryDate = creditCardModel.expiryDate;
+        cardHolderName = creditCardModel.cardHolderName;
+        cvvCode = creditCardModel.cvvCode;
+        isCvvFocused = creditCardModel.isCvvFocused;
+      },
+    );
+  }
+
+  String cardNumber = '';
+  String expiryDate = '';
+  String cardHolderName = '';
+  String cvvCode = '';
+  bool isCvvFocused = false;
+  bool useGlassMorphism = false;
+  bool useBackgroundImage = false;
+  OutlineInputBorder? border;
+  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -82,17 +101,163 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                   ),
                 ),
               ),
-              Center(child: ApplePayButton(
-                paymentConfigurationAsset: 'apple.json',
-                paymentItems: _paymentItems,
-                style: ApplePayButtonStyle.black,
-                type: ApplePayButtonType.buy,
-                margin: const EdgeInsets.only(top: 15.0),
-                onPaymentResult: onApplePayResult,
-                loadingIndicator: const Center(
-                  child: CircularProgressIndicator(),
+              Center(
+                child: ApplePayButton(
+                  width: 350,
+                  paymentConfigurationAsset: 'apple.json',
+                  paymentItems: _paymentItems,
+                  style: ApplePayButtonStyle.white,
+                  onPaymentResult: onApplePayResult,
+                  loadingIndicator: const Center(
+                    child: CircularProgressIndicator(),
+                  ),
                 ),
-              ),)
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              Center(
+                child: MaterialButton(
+                  height: 47,
+                  minWidth: 310,
+                  color: orange,
+                  shape: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(25),
+                    borderSide: const BorderSide(color: orange),
+                  ),
+                  onPressed: () {
+                    showModalBottomSheet(
+                      context: context,
+                      builder: (context) {
+                        return Column(
+                          children: [
+                            CreditCardWidget(
+                              cardNumber: cardNumber,
+                              expiryDate: expiryDate,
+                              cardHolderName: cardHolderName,
+                              cvvCode: cvvCode,
+                              showBackView: isCvvFocused,
+                              obscureCardNumber: true,
+                              obscureCardCvv: true,
+                              isHolderNameVisible: true,
+                              cardBgColor: red,
+                              isSwipeGestureEnabled: true,
+                              onCreditCardWidgetChange:
+                                  (CreditCardBrand creditCardBrand) {},
+                              customCardTypeIcons: const <CustomCardTypeIcon>[],
+                            ),
+                            Expanded(
+                              child: SingleChildScrollView(
+                                child: Column(
+                                  children: <Widget>[
+                                    CreditCardForm(
+                                      formKey: formKey,
+                                      obscureCvv: true,
+                                      obscureNumber: true,
+                                      cardNumber: cardNumber,
+                                      cvvCode: cvvCode,
+                                      isHolderNameVisible: true,
+                                      isCardNumberVisible: true,
+                                      isExpiryDateVisible: true,
+                                      cardHolderName: cardHolderName,
+                                      expiryDate: expiryDate,
+                                      themeColor: blue,
+                                      cardNumberDecoration: InputDecoration(
+                                        labelText: number,
+                                        hintText: xxxx,
+                                        hintStyle:
+                                            const TextStyle(color: black),
+                                        labelStyle:
+                                            const TextStyle(color: black),
+                                        focusedBorder: border,
+                                        enabledBorder: border,
+                                      ),
+                                      expiryDateDecoration: InputDecoration(
+                                        hintStyle:
+                                            const TextStyle(color: black),
+                                        labelStyle:
+                                            const TextStyle(color: black),
+                                        focusedBorder: border,
+                                        enabledBorder: border,
+                                        labelText: expiryDate,
+                                        hintText: xx,
+                                      ),
+                                      cvvCodeDecoration: InputDecoration(
+                                        hintStyle:
+                                            const TextStyle(color: black),
+                                        labelStyle:
+                                            const TextStyle(color: black),
+                                        focusedBorder: border,
+                                        enabledBorder: border,
+                                        labelText: cvv,
+                                        hintText: xxx,
+                                      ),
+                                      cardHolderDecoration: InputDecoration(
+                                        hintStyle:
+                                            const TextStyle(color: black),
+                                        labelStyle:
+                                            const TextStyle(color: black),
+                                        focusedBorder: border,
+                                        enabledBorder: border,
+                                        labelText: cardHolder,
+                                      ),
+                                      onCreditCardModelChange:
+                                          onCreditCardModelChange,
+                                      textStyle: const TextStyle(
+                                          color: black, fontSize: 12),
+                                    ),
+                                    const SizedBox(
+                                      height: 20,
+                                    ),
+                                    const SizedBox(
+                                      height: 20,
+                                    ),
+                                    ElevatedButton(
+                                      style: ElevatedButton.styleFrom(
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(8.0),
+                                        ),
+                                        primary: navyBlue,
+                                      ),
+                                      child: Container(
+                                        margin: const EdgeInsets.all(12),
+                                        child: Text(
+                                          validate,
+                                          style: TextStyle(
+                                            color: white,
+                                            fontFamily: 'halter',
+                                            fontSize: 14,
+                                            package: 'flutter_credit_card',
+                                          ),
+                                        ),
+                                      ),
+                                      onPressed: () {
+                                        if (formKey.currentState!.validate()) {
+                                          // ignore: avoid_print
+                                          print(valid);
+                                        } else {
+                                          // ignore: avoid_print
+                                          print(inValid);
+                                        }
+                                      },
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            )
+                          ],
+                        );
+                      },
+                    );
+                  },
+                  child: Text(addAnotherCreditCard,
+                      style: TextStyle(
+                          color: white,
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold)),
+                ),
+              )
             ],
           ),
         ),

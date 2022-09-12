@@ -202,6 +202,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_credit_card_new:
+    dependency: "direct main"
+    description:
+      name: flutter_credit_card_new
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.4"
   flutter_facebook_auth:
     dependency: "direct main"
     description:
