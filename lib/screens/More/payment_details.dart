@@ -17,6 +17,9 @@ class _PaymentDetailsState extends State<PaymentDetails> {
       status: PaymentItemStatus.final_price,
     )
   ];
+  void onApplePayResult(paymentResult) {
+    // Send the resulting Apple Pay token to your server / PSP
+  }
 
   void onGooglePayResult(paymentResult) {}
 
@@ -79,6 +82,17 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                   ),
                 ),
               ),
+              Center(child: ApplePayButton(
+                paymentConfigurationAsset: 'apple.json',
+                paymentItems: _paymentItems,
+                style: ApplePayButtonStyle.black,
+                type: ApplePayButtonType.buy,
+                margin: const EdgeInsets.only(top: 15.0),
+                onPaymentResult: onApplePayResult,
+                loadingIndicator: const Center(
+                  child: CircularProgressIndicator(),
+                ),
+              ),)
             ],
           ),
         ),
