@@ -6,18 +6,20 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   if (Platform.isIOS) {
     await Firebase.initializeApp(
-        options: const FirebaseOptions(
-            apiKey: "AIzaSyBhFUxeDB6O5ki3R3IoAPDPEcZWjCsGR78",
-            appId: "1:358514215620:ios:fd45c3c61c94a0fa629791",
-            messagingSenderId: "358514215620",
-            projectId: "meals-f852f"));
+      options: const FirebaseOptions(
+          apiKey: "AIzaSyBhFUxeDB6O5ki3R3IoAPDPEcZWjCsGR78",
+          appId: "1:358514215620:ios:fd45c3c61c94a0fa629791",
+          messagingSenderId: "358514215620",
+          projectId: "meals-f852f"),
+    );
   } else {
     await Firebase.initializeApp(
-        options: const FirebaseOptions(
-            apiKey: 'AIzaSyCQBUXo2pdipY9R9s7WSG5z9-7P7GBwxZk',
-            appId: '1:358514215620:android :f81f45f22bc168ae629791',
-            messagingSenderId: '358514215620',
-            projectId: 'meals-f852f'));
+      options: const FirebaseOptions(
+          apiKey: 'AIzaSyCQBUXo2pdipY9R9s7WSG5z9-7P7GBwxZk',
+          appId: '1:358514215620:android :f81f45f22bc168ae629791',
+          messagingSenderId: '358514215620',
+          projectId: 'meals-f852f'),
+    );
   }
   await SharedPref.init();
   runApp(const MyApp());
@@ -30,7 +32,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home:  MainPage(),
+      home: MainPage(),
       initialRoute: '/',
       defaultTransition: Transition.circularReveal,
       getPages: [
