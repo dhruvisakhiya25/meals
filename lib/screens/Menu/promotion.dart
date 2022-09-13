@@ -99,7 +99,9 @@ class _PromotionsState extends State<Promotions> {
                                 ),
                                 Text(
                                   documents['rate'].toString(),
-                                  style: const TextStyle(color: orange,),
+                                  style: const TextStyle(
+                                    color: orange,
+                                  ),
                                 ),
                               ],
                             ),
@@ -150,7 +152,6 @@ class _ItemPromotionState extends State<ItemPromotion> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _streams = _products.snapshots();
   }

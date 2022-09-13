@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:meals/Network/export.dart';
 
 class PaymentDetails extends StatefulWidget {
@@ -224,7 +226,7 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                                         margin: const EdgeInsets.all(12),
                                         child: Text(
                                           validate,
-                                          style: TextStyle(
+                                          style: const TextStyle(
                                             color: white,
                                             fontFamily: 'halter',
                                             fontSize: 14,
@@ -252,7 +254,7 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                     );
                   },
                   child: Text(addAnotherCreditCard,
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: white,
                           fontSize: 17,
                           fontWeight: FontWeight.bold)),
