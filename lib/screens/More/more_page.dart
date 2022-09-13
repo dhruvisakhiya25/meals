@@ -11,7 +11,7 @@ class MorePage extends StatefulWidget {
 class _MorePageState extends State<MorePage> {
   @override
   Widget build(BuildContext context) {
-    final authController = Get.put(AuthController());
+    final authController = Get.put(RegisterController());
     return Scaffold(
       body: SafeArea(
         child: Padding(
@@ -66,7 +66,7 @@ class _MorePageState extends State<MorePage> {
                         Get.toNamed('/aboutUsPage');
                       }
                       if (index == 5) {
-                        await authController.signOut();
+                        authController.signOut();
                         setState(() {});
                         Get.offAllNamed('/loginPage');
                         SharedPref.setFbLoginName = '';

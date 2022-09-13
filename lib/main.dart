@@ -1,20 +1,8 @@
 import 'dart:io';
 
-import 'package:meals/screens/Menu/bevager_drink/drinks.dart';
-import 'package:meals/screens/Menu/bevager_drink/fooddrink.dart';
-import 'package:meals/screens/Menu/bevager_drink/lemonjuice.dart';
-import 'package:meals/screens/Menu/bevager_drink/strawberryjuice.dart';
-import 'package:meals/screens/Menu/milkitem/cake.dart';
-import 'package:meals/screens/Menu/milkitem/chocolate_cake.dart';
-import 'package:meals/screens/Menu/milkitem/milkshake.dart';
-import 'package:meals/screens/Menu/milkitem/oreo_cookies_sandwich.dart';
-import 'package:meals/screens/Menu/sweetitem/foodds.dart';
-import 'package:meals/screens/Menu/sweetitem/healthybites.dart';
-import 'package:meals/screens/Menu/sweetitem/healthydise.dart';
-import 'package:meals/screens/Menu/sweetitem/healthyfood.dart';
+import 'package:meals/screens/Menu/milkitem/desserts.dart';
 
 import 'Network/export.dart';
-import 'screens/Menu/milkitem/desserts.dart';
 
 //a
 Future<void> main() async {
@@ -168,14 +156,38 @@ class MyApp extends StatelessWidget {
           name: '/strawberryjuice',
           page: () => StrawberryJuice(),
         ),
-        GetPage(name: '/cake', page: () => Cake(),),
-        GetPage(name: '/chocolatecake', page: () => ChocolateCake(),),
-        GetPage(name: '/milkshake', page: () => MilkShake(),),
-        GetPage(name: '/oreocookiessandwich', page: () => OreoCookiesSandwich(),),
-        GetPage(name: '/foodds', page: () => Foodds(),),
-        GetPage(name: '/healthybites', page: () => HealthyBites(),),
-        GetPage(name: '/healthydise', page: () => HealthyDise(),),
-        GetPage(name: '/healthyfood', page: () => HealthyFood(),),
+        GetPage(
+          name: '/cake',
+          page: () => Cake(),
+        ),
+        GetPage(
+          name: '/chocolatecake',
+          page: () => ChocolateCake(),
+        ),
+        GetPage(
+          name: '/milkshake',
+          page: () => MilkShake(),
+        ),
+        GetPage(
+          name: '/oreocookiessandwich',
+          page: () => OreoCookiesSandwich(),
+        ),
+        GetPage(
+          name: '/foodds',
+          page: () => Foodds(),
+        ),
+        GetPage(
+          name: '/healthybites',
+          page: () => HealthyBites(),
+        ),
+        GetPage(
+          name: '/healthydise',
+          page: () => HealthyDise(),
+        ),
+        GetPage(
+          name: '/healthyfood',
+          page: () => HealthyFood(),
+        ),
       ],
     );
   }
