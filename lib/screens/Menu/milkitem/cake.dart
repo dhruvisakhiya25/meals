@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 
 import '../../../Network/export.dart';
@@ -64,7 +63,8 @@ class _CakeState extends State<Cake> {
                   QuerySnapshot querySnapshot = snapshot.data;
                   List<QueryDocumentSnapshot> document = querySnapshot.docs;
                   return ListView.separated(
-                    separatorBuilder: (context, index) => const Divider(
+                    separatorBuilder: (context, index) =>
+                    const Divider(
                       height: 3,
                     ),
                     physics: const NeverScrollableScrollPhysics(),
@@ -112,15 +112,24 @@ class _CakeState extends State<Cake> {
                                     height: 30,
                                   ),
                                   Text(
-                                    documents['cake rate'],
+                                    documents['cake rate'], style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w600),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
                                   ),
                                   Text(
-                                    documents['cake decription'],
+                                    documents['cake decription'], style: TextStyle(
+                                    fontSize: 18.5,
+                                  ),
                                   ),
                                   const Divider(thickness: 2),
                                   Row(
                                     children: [
-                                      Text(numberOfPortion),
+                                      Text(numberOfPortion,style: TextStyle(
+                                        fontSize: 15.5,
+                                      )),
                                       const SizedBox(
                                         width: 20,
                                       ),
@@ -136,8 +145,11 @@ class _CakeState extends State<Cake> {
                                         width: 10,
                                       ),
                                       Text(
-                                        '$counter',
-                                        style: const TextStyle(fontSize: 30),
+                                          '$counter',
+
+                                          style: const TextStyle(
+                                            fontSize: 25,
+                                          )
                                       ),
                                       const SizedBox(
                                         width: 10,
@@ -302,10 +314,11 @@ class _CakeState extends State<Cake> {
                                     ],
                                   )
                                 ],
-                              ),
-                            ),
+                              ),)
+                            ,
                           )
-                        ],
+                        ]
+                        ,
                       );
                     },
                   );
