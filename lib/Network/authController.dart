@@ -29,79 +29,39 @@ class AuthController extends GetxController {
 
     super.onInit();
   }
-
-  void signUp(String name, String email, String password) async {
+  void register(String email, String password) async {
     try {
-      await auth
-          .createUserWithEmailAndPassword(email: email, password: password)
-          .then((value) {
-        displayName = name;
-        auth.currentUser!.updateDisplayName(name);
-      });
-      Get.snackbar('Successful Create Account', '',
-          snackPosition: SnackPosition.BOTTOM,
-          backgroundColor: Colors.orange,
-          colorText: Colors.black);
-      update();
-      Get.offAll('/mainPage');
+      await auth.createUserWithEmailAndPassword(
+          email: email, password: password);
     } on FirebaseAuthException catch (e) {
-      String title = e.code.replaceAll(RegExp('-'), ' ').capitalize!;
-
-      if (e.code == 'weak-password') {
-      } else if (e.code == 'email-already-in-use') {
-      } else {}
-
-      Get.snackbar(title, 'message',
-          snackPosition: SnackPosition.BOTTOM,
-          backgroundColor: orange,
-          colorText: black);
+      // this is solely for the Firebase Auth Exception
+      // for example : password did not match
+      print(e.message);
+      // Get.snackbar("Error", e.message!);
+      Get.snackbar(
+        "Error",
+        e.message!,
+        snackPosition: SnackPosition.BOTTOM,
+      );
     } catch (e) {
-      Get.snackbar('Error occurred!', e.toString(),
-          snackPosition: SnackPosition.BOTTOM,
-          backgroundColor: orange,
-          colorText: black);
+      // this is temporary. you can handle different kinds of activities
+      //such as dialogue to indicate what's wrong
+      print(e.toString());
     }
   }
 
-  void signIn(String email, String password) async {
+  void login(String email, String password) async {
     try {
-      await auth
-          .signInWithEmailAndPassword(email: email, password: password)
-          .then((value) => displayName = userProfile!.displayName!);
-
-      update();
+      await auth.signInWithEmailAndPassword(email: email, password: password);
     } on FirebaseAuthException catch (e) {
-      String title = e.code.replaceAll(RegExp('-'), ' ').capitalize!;
-
-      String message = '';
-
-      if (e.code == 'wrong-password') {
-        message = 'Invalid Password. Please try again!';
-      } else if (e.code == 'user-not-found') {
-        message =
-            ('The account does not exists for $email. Create your account by signing up.');
-      } else {
-        message = e.message.toString();
-      }
-
-      Get.snackbar(
-        title,
-        message,
-        snackPosition: SnackPosition.BOTTOM,
-        backgroundColor: orange,
-      );
-      Get.offAllNamed('/mealsHome');
-      print('successful');
+      // this is solely for the Firebase Auth Exception
+      // for example : password did not match
+      print(e.message);
     } catch (e) {
-      Get.snackbar(
-        'Error occurred!',
-        e.toString(),
-        snackPosition: SnackPosition.BOTTOM,
-        backgroundColor: orange,
-      );
-      print('unSuccessful');
+      print(e.toString());
     }
   }
+
 
   signInWithGoogle(BuildContext context) async {
     try {
