@@ -188,6 +188,7 @@ class MyApp extends StatelessWidget {
           name: '/healthyfood',
           page: () => HealthyFood(),
         ),
+        GetPage(name: '/mainPage', page: () => MainPage(),)
       ],
     );
   }
