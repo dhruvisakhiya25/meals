@@ -71,18 +71,15 @@ class MyApp extends StatelessWidget {
           name: '/bevagers',
           page: () => const Bevagers(),
         ),
-        GetPage(
-          name: '/desserts',
-          page: () => const Desserts(),
-        ),
+    GetPage(
+    name: '/desserts',
+    page: () => const Desserts(),
+    ),
         GetPage(
           name: '/promotions',
           page: () => const Promotions(),
         ),
-        GetPage(
-          name: '/itemDesserts',
-          page: () => const ItemDesserts(),
-        ),
+      ,
         GetPage(
           name: '/paymentDetails',
           page: () => const PaymentDetails(),
