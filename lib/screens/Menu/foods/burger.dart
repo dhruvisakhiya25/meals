@@ -129,9 +129,10 @@ class _BurgerState extends State<Burger> {
                                     const Divider(thickness: 2),
                                     Row(
                                       children: [
-                                        Text(numberOfPortion,style: TextStyle(
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.w700)),
+                                        Text(numberOfPortion,
+                                            style: TextStyle(
+                                              fontSize: 15.5,
+                                            )),
                                         const SizedBox(
                                           width: 20,
                                         ),
@@ -149,8 +150,8 @@ class _BurgerState extends State<Burger> {
                                         ),
                                         Text('$counter',
                                             style: const TextStyle(
-                                                fontSize: 30,
-                                                fontWeight: FontWeight.w700)),
+                                              fontSize: 25,
+                                            )),
                                         const SizedBox(
                                           width: 10,
                                         ),
@@ -220,16 +221,14 @@ class _BurgerState extends State<Burger> {
                                                       mainAxisAlignment:
                                                       MainAxisAlignment
                                                           .center,
-
                                                       children: [
                                                         Text(
                                                           totalPrice,
-
-
                                                           style:
                                                           const TextStyle(
                                                               fontSize: 17),
-                                                        ), Text(
+                                                        ),
+                                                        Text(
                                                           lkr,
                                                           style: const TextStyle(
                                                               fontSize: 27,
