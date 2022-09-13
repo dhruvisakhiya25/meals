@@ -41,7 +41,7 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    final authController = Get.put(AuthController());
+    final authController = Get.put(RegisterController());
     return Scaffold(
       body: SingleChildScrollView(
         child: SafeArea(

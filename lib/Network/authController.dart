@@ -2,16 +2,107 @@
 
 import 'package:meals/Network/export.dart';
 
-class AuthController extends GetxController {
-  String displayName = '';
-  String gmailId = '';
-  String gmailPhoto = '';
-  late Rx<User?> firebaseUser;
-  static AuthController authInstance = Get.find();
+// class AuthController extends GetxController {
+//   String displayName = '';
+//   String gmailId = '';
+//   String gmailPhoto = '';
+//   late Rx<User?> firebaseUser;
+//   static AuthController authInstance = Get.find();
+//
+//   FirebaseAuth auth = FirebaseAuth.instance;
+//
+//   ///Google
+//   final _googleSignIn = GoogleSignIn();
+//   var googleAcc = Rx<GoogleSignInAccount?>(null);
+//   var isSignedIn = false.obs;
+//
+//   ///facebook
+//   final _facebookLogin = FacebookAuth.instance;
+//   var fdAcc = Rx<FacebookAuth?>(null);
+//   var isSignedInFb = false.obs;
+//   Map<String, dynamic>? userData;
+//   String fbName = '';
+//
+//   User? get userProfile => auth.currentUser;
+//
+//   @override
+//   void onInit() {
+//     displayName = userProfile != null ? userProfile!.displayName! : '';
+//
+//     super.onInit();
+//   }
+//   void register(String email, String password) async {
+//     try {
+//       await auth.createUserWithEmailAndPassword(
+//           email: email, password: password);
+//       auth.currentUser!.updateDisplayName(email);
+//     } on FirebaseAuthException catch (e) {
+//       // this is solely for the Firebase Auth Exception
+//       // for example : password did not match
+//       print(e.message);
+//       // Get.snackbar("Error", e.message!);
+//       Get.snackbar(
+//         "Error",
+//         e.message!,
+//         snackPosition: SnackPosition.BOTTOM,
+//       );
+//     } catch (e) {
+//       // this is temporary. you can handle different kinds of activities
+//       //such as dialogue to indicate what's wrong
+//       print(e.toString());
+//     }
+//   }
+//
+//   void login(String email, String password) async {
+//     try {
+//       await auth.signInWithEmailAndPassword(email: email, password: password);
+//     } on FirebaseAuthException catch (e) {
+//       // this is solely for the Firebase Auth Exception
+//       // for example : password did not match
+//       print(e.message);
+//     } catch (e) {
+//       print(e.toString());
+//     }
+//   }
+//
+//
+//
+//   signOut() async {
+//     try {
+//       await auth.signOut();
+//       await FirebaseAuth.instance.signOut();
+//       googleAcc.value = await _googleSignIn.signOut();
+//       displayName = '';
+//       gmailId = '';
+//       gmailPhoto = '';
+//       fdAcc.value != _facebookLogin.logOut();
+//       userData = null;
+//       isSignedIn.value = false;
+//       update();
+//       Get.offAll(() => const LoginPage());
+//       Get.snackbar('Successful Logout', '',
+//           snackPosition: SnackPosition.BOTTOM,
+//           backgroundColor: Colors.orange,
+//           colorText: Colors.black);
+//     } catch (e) {
+//       Get.snackbar('Error occurred!', e.toString(),
+//           snackPosition: SnackPosition.BOTTOM,
+//           backgroundColor: orange,
+//           colorText: black);
+//     }
+//   }
+// }
 
+
+
+class RegisterController extends GetxController {
+  late Rx<User?> firebaseUser;
   FirebaseAuth auth = FirebaseAuth.instance;
 
   ///Google
+  String displayName = '';
+  String gmailId = '';
+  String gmailPhoto = '';
   final _googleSignIn = GoogleSignIn();
   var googleAcc = Rx<GoogleSignInAccount?>(null);
   var isSignedIn = false.obs;
@@ -23,19 +114,11 @@ class AuthController extends GetxController {
   Map<String, dynamic>? userData;
   String fbName = '';
 
-  User? get userProfile => auth.currentUser;
-
-  @override
-  void onInit() {
-    displayName = userProfile != null ? userProfile!.displayName! : '';
-
-    super.onInit();
-  }
   void register(String email, String password) async {
     try {
       await auth.createUserWithEmailAndPassword(
           email: email, password: password);
-      auth.currentUser!.updateDisplayName(email);
+      Get.offAllNamed('/mainPage');
     } on FirebaseAuthException catch (e) {
       // this is solely for the Firebase Auth Exception
       // for example : password did not match
@@ -50,6 +133,7 @@ class AuthController extends GetxController {
       // this is temporary. you can handle different kinds of activities
       //such as dialogue to indicate what's wrong
       print(e.toString());
+      Get.snackbar('Error', e.toString(), snackPosition: SnackPosition.BOTTOM);
     }
   }
 
@@ -64,7 +148,6 @@ class AuthController extends GetxController {
       print(e.toString());
     }
   }
-
 
   signInWithGoogle(BuildContext context) async {
     try {
@@ -114,7 +197,9 @@ class AuthController extends GetxController {
           backgroundColor: Colors.orange,
           colorText: Colors.black);
     } on FirebaseAuthException catch (e) {
-      String title = e.code.replaceAll(RegExp('-'), ' ').capitalize!;
+      String title = e.code
+          .replaceAll(RegExp('-'), ' ')
+          .capitalize!;
 
       String message = '';
 
@@ -138,6 +223,14 @@ class AuthController extends GetxController {
     }
   }
 
+
+  // void signOut() {
+  //   try {
+  //     auth.signOut();
+  //   } catch (e) {
+  //     print(e.toString());
+  //   }
+  // }
   signOut() async {
     try {
       await auth.signOut();
@@ -163,55 +256,3 @@ class AuthController extends GetxController {
     }
   }
 }
-
-
-
-class RegisterController extends GetxController {
-  late Rx<User?> firebaseUser;
-  FirebaseAuth auth = FirebaseAuth.instance;
-
-
-  void register(String email, String password) async {
-    try {
-      await auth.createUserWithEmailAndPassword(
-          email: email, password: password);
-      Get.offAllNamed('/mainPage');
-    } on FirebaseAuthException catch (e) {
-      // this is solely for the Firebase Auth Exception
-      // for example : password did not match
-      print(e.message);
-      // Get.snackbar("Error", e.message!);
-      Get.snackbar(
-        "Error",
-        e.message!,
-        snackPosition: SnackPosition.BOTTOM,
-      );
-    } catch (e) {
-      // this is temporary. you can handle different kinds of activities
-      //such as dialogue to indicate what's wrong
-      print(e.toString());
-      Get.snackbar('Error',  e.toString(),snackPosition: SnackPosition.BOTTOM);
-    }
-  }
-
-  void login(String email, String password) async {
-    try {
-      await auth.signInWithEmailAndPassword(email: email, password: password);
-    } on FirebaseAuthException catch (e) {
-      // this is solely for the Firebase Auth Exception
-      // for example : password did not match
-      print(e.message);
-    } catch (e) {
-      print(e.toString());
-    }
-  }
-
-  void signOut() {
-    try {
-      auth.signOut();
-    } catch (e) {
-      print(e.toString());
-    }
-  }
-}
-

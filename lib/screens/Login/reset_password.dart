@@ -13,7 +13,7 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
 
   @override
   Widget build(BuildContext context) {
-    final authController = Get.put(AuthController());
+    final authController = Get.put(RegisterController());
     return Scaffold(
       body: SafeArea(
         child: Form(
