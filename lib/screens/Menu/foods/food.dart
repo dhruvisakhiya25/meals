@@ -72,11 +72,14 @@ class _FoodsState extends State<Foods> {
                         onTap: () {
                           if (index == 0) {
                             Get.toNamed('/iteamsandwich');
-                          }if (index == 1) {
+                          }
+                          if (index == 1) {
                             Get.toNamed('/iteampasta');
-                          }if (index == 2) {
+                          }
+                          if (index == 2) {
                             Get.toNamed('/iteamburger');
-                          }if (index == 3) {
+                          }
+                          if (index == 3) {
                             Get.toNamed('/iteampizza');
                           }
                         },
@@ -124,4 +127,3 @@ class _FoodsState extends State<Foods> {
     );
   }
 }
-
