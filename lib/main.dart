@@ -1,5 +1,11 @@
 import 'dart:io';
 
+import 'package:meals/screens/Menu/bevager_drink/drinks.dart';
+import 'package:meals/screens/Menu/bevager_drink/fooddrink.dart';
+import 'package:meals/screens/Menu/bevager_drink/lemonjuice.dart';
+import 'package:meals/screens/Menu/bevager_drink/oreo_milk_shake.dart';
+import 'package:meals/screens/Menu/bevager_drink/strawberryjuice.dart';
+
 import 'Network/export.dart';
 import 'screens/Menu/desserts.dart';
 
@@ -78,10 +84,7 @@ class MyApp extends StatelessWidget {
           name: '/promotions',
           page: () => const Promotions(),
         ),
-        GetPage(
-          name: '/itemBevagers',
-          page: () => const ItemBevagers(),
-        ),
+
         GetPage(
           name: '/itemDesserts',
           page: () => const ItemDesserts(),
@@ -147,6 +150,11 @@ class MyApp extends StatelessWidget {
           name: '/iteampizza',
           page: () => const Pizzaa(),
         ),
+        GetPage(name: '/drinks', page: ()=>Drinks()),
+        GetPage(name: '/fooddrink', page: ()=>FoodDrink()),
+        GetPage(name: '/lemonjuice', page: ()=>LemonJuice()),
+        GetPage(name: '/oreomilkshake', page: ()=>OreoMilkShake()),
+        GetPage(name: '/strawberryjuice', page: ()=>StrawberryJuice()),
       ],
     );
   }
