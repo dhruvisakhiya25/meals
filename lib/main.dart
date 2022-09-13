@@ -137,7 +137,6 @@ class MyApp extends StatelessWidget {
         ), GetPage(
           name: '/iteamsandwich',
           page: () => const Sandwich(),
-
         ), GetPage(
           name: '/iteampasta',
           page: () => const Pasta(),
