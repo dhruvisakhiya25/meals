@@ -38,7 +38,6 @@ class _PizzaaState extends State<Pizzaa> {
     super.initState();
     _streams = _products.snapshots();
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

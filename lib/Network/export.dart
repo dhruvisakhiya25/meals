@@ -47,4 +47,13 @@ export 'package:meals/screens/more/notification.dart';
 export 'package:flutter_credit_card_new/credit_card_brand.dart';
 export 'package:flutter_credit_card_new/flutter_credit_card.dart';
 export 'package:pay/pay.dart';
+export 'package:meals/screens/Menu/foods/burger.dart';
+export 'package:meals/screens/Menu/foods/pasta.dart';
+export 'package:meals/screens/Menu/foods/pizza.dart';
+export 'package:meals/screens/Menu/foods/sandwich.dart';
+export 'package:meals/screens/Offer/checkoffer/dalbati.dart';
+export 'package:meals/screens/Offer/checkoffer/dalfry.dart';
+export 'package:meals/screens/Offer/checkoffer/ice-cream.dart';
+export 'package:meals/screens/Offer/checkoffer/idlisambhar.dart';
+export 'package:meals/screens/Offer/checkoffer/pizza.dart';
 
