@@ -43,7 +43,6 @@ class _IdliSambharState extends State<IdliSambhar> {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          physics: const NeverScrollableScrollPhysics(),
           child: Column(
             children: [
               StreamBuilder<QuerySnapshot>(

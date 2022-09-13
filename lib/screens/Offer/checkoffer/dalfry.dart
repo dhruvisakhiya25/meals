@@ -43,7 +43,6 @@ class _DalFryState extends State<DalFry> {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          physics: const NeverScrollableScrollPhysics(),
           child: Column(
             children: [
               StreamBuilder<QuerySnapshot>(

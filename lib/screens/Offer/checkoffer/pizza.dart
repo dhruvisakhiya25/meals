@@ -43,7 +43,6 @@ class _PizzaState extends State<Pizza> {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          physics: const NeverScrollableScrollPhysics(),
           child: Column(
             children: [
               StreamBuilder<QuerySnapshot>(

@@ -43,7 +43,6 @@ class _IceCreamState extends State<IceCream> {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          physics: const NeverScrollableScrollPhysics(),
           child: Column(
             children: [
               StreamBuilder<QuerySnapshot>(
