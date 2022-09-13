@@ -21,7 +21,7 @@ class _SignUpPageState extends State<SignUpPage> {
 
   @override
   Widget build(BuildContext context) {
-    final authController = Get.put(AuthController());
+    final authInstance = Get.put(RegisterController());
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
@@ -185,7 +185,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         onPressed: () {
                           passwords = !passwords;
                           setState(
-                            () {},
+                                () {},
                           );
                         },
                         icon: Icon(
@@ -239,7 +239,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         onPressed: () {
                           passwords = !passwords;
                           setState(
-                            () {},
+                                () {},
                           );
                         },
                         icon: Icon(
@@ -247,7 +247,6 @@ class _SignUpPageState extends State<SignUpPage> {
                           color: grey,
                         ),
                       ),
-
                       prefixIconColor: orange,
                       hintText: confirmPassword,
                       focusedBorder: OutlineInputBorder(
@@ -283,10 +282,15 @@ class _SignUpPageState extends State<SignUpPage> {
                       ),
                       onPressed: () async {
                         if (_formKey.currentState!.validate()) {
-                          authController.register(txtEmail.text.trim(), txtConfirmPassword.text.trim(), );
+                          authInstance.register(
+                            txtEmail.text.trim(),
+                            txtConfirmPassword.text.trim(),
+                          );
+
+                          Get.offAllNamed('/mainPage');
                         }
                         setState(
-                          () {},
+                              () {},
                         );
                       },
                       child: Text(
@@ -336,7 +340,7 @@ class Service {
     await auth
         .createUserWithEmailAndPassword(email: email, password: password)
         .then(
-      (value) {
+          (value) {
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
@@ -351,7 +355,7 @@ class Service {
     await auth
         .signInWithEmailAndPassword(email: email, password: password)
         .then(
-      (value) {
+          (value) {
         Navigator.push(
           context,
           MaterialPageRoute(

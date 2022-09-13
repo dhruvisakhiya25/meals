@@ -14,13 +14,8 @@ class _LoginPageState extends State<LoginPage> {
   TextEditingController txtPassword = TextEditingController();
   bool isLoading = false;
   bool darkMode = false;
-  Service servise = Service();
   final _formKey = GlobalKey<FormState>();
 
-  AuthButtonType? buttonType;
-  AuthIconType? iconType;
-
-  ThemeMode get themeMode => darkMode ? ThemeMode.dark : ThemeMode.light;
   String getName = '';
   String getEmail = '';
   String getPhoto = '';
@@ -104,7 +99,7 @@ class _LoginPageState extends State<LoginPage> {
                         onPressed: () {
                           passwords = !passwords;
                           setState(
-                            () {},
+                                () {},
                           );
                         },
                         icon: Icon(
@@ -147,10 +142,9 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
-                        String email = txtEmail.text.trim();
-                        String password = txtPassword.text;
-
-                        authController.login(email, password);
+                        authController.login(
+                            txtEmail.text.trim(), txtPassword.text.trim());
+                        Get.offAllNamed('/mainPage');
                       }
                     },
                     child: Text(
@@ -183,69 +177,66 @@ class _LoginPageState extends State<LoginPage> {
                     height: 20,
                   ),
                   authButton(
-                      color: Colors.blue.shade700,
-                      child: Row(
-                        children: const [
-                          Icon(
-                            Icons.facebook,
+                    // color: Colors.blue.shade700,
+
+                      icon: const Icon(
+                        Icons.facebook,
+                        color: white,
+                      ),
+                      label: const Text(
+                        'Sign in With Facebook',
+                        style: TextStyle(
                             color: white,
-                          ),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Text(
-                            'Sign in With Facebook',
-                            style: TextStyle(
-                                color: white,
-                                fontWeight: FontWeight.w700,
-                                fontSize: 20),
-                          )
-                        ],
+                            fontWeight: FontWeight.w700,
+                            fontSize: 20),
                       ),
                       onPress: () async {
                         await authController.signInWithFacebook(context);
                         SharedPref.setFbLoginName =
-                            authController.userData!['name'];
+                        authController.userData!['name'];
                         SharedPref.setFbLoginEmail =
-                            authController.userData!['email'];
+                        authController.userData!['email'];
                         SharedPref.setFbLoginPhoto =
-                            authController.userData!['picture']['data']['url'];
+                        authController.userData!['picture']['data']['url'];
                       }),
-                  FacebookAuthButton(
-                    onPressed: () async {},
-                    themeMode: themeMode,
-                    isLoading: isLoading,
-                    style: AuthButtonStyle(
-                      buttonType: buttonType,
-                      iconType: iconType,
-                    ),
-                  ),
                   const SizedBox(
                     height: 20,
                   ),
-                  GoogleAuthButton(
-                    onPressed: () async {
-                      await authController.signInWithGoogle(context);
-                      SharedPref.setGoogleName = authController.displayName;
-                      SharedPref.setGoogleEmail = authController.gmailId;
-                      SharedPref.setGooglePhoto = authController.gmailPhoto;
-                      print(
-                        SharedPref.getGoogleName.toString(),
-                      );
-                      print(
-                        SharedPref.getGoogleEmail.toString(),
-                      );
-                      print(
-                        SharedPref.getGooglePhoto.toString(),
-                      );
-                    },
-                    themeMode: themeMode,
-                    isLoading: isLoading,
-                    style: AuthButtonStyle(
-                      buttonType: buttonType,
-                      iconType: iconType,
-                    ),
-                  ),
+                  authButton(
+                      icon: Container(
+                        height: 20,
+                        width: 20,
+                        decoration: const BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage('assets/image/google.png'))),
+                      ),
+                      label: const Text(
+                        'Sign in with Google',
+                        style: TextStyle(
+                            color: black,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w700),
+                      ),
+                      style: ButtonStyle(
+                          backgroundColor:
+                          MaterialStateProperty.resolveWith<Color?>(
+                                (states) => const Color(0xFFFFFFFF),
+                          )),
+                      onPress: () async {
+                        await authController.signInWithGoogle(context);
+                        SharedPref.setGoogleName = authController.displayName;
+                        SharedPref.setGoogleEmail = authController.gmailId;
+                        SharedPref.setGooglePhoto = authController.gmailPhoto;
+                        print(
+                          SharedPref.getGoogleName.toString(),
+                        );
+                        print(
+                          SharedPref.getGoogleEmail.toString(),
+                        );
+                        print(
+                          SharedPref.getGooglePhoto.toString(),
+                        );
+                      }),
                   const SizedBox(
                     height: 30,
                   ),

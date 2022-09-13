@@ -21,7 +21,6 @@ export 'package:meals/screens/Home/most_popular.dart';
 export 'package:meals/utils/color.dart';
 export 'package:meals/utils/icon.dart';
 export 'package:meals/utils/strings.dart';
-export 'package:auth_buttons/auth_buttons.dart';
 export 'package:meals/Network/authController.dart';
 export 'package:meals/screens/login/reset_password.dart';
 export 'package:meals/screens/login/signup.dart';

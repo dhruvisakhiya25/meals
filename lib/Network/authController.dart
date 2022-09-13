@@ -6,6 +6,8 @@ class AuthController extends GetxController {
   String displayName = '';
   String gmailId = '';
   String gmailPhoto = '';
+  late Rx<User?> firebaseUser;
+  static AuthController authInstance = Get.find();
 
   FirebaseAuth auth = FirebaseAuth.instance;
 
@@ -33,6 +35,7 @@ class AuthController extends GetxController {
     try {
       await auth.createUserWithEmailAndPassword(
           email: email, password: password);
+      auth.currentUser!.updateDisplayName(email);
     } on FirebaseAuthException catch (e) {
       // this is solely for the Firebase Auth Exception
       // for example : password did not match
@@ -117,7 +120,7 @@ class AuthController extends GetxController {
 
       if (e.code == 'user-not-found') {
         message =
-            ('The account does not exists for $email. Create your account by signing up.');
+        ('The account does not exists for $email. Create your account by signing up.');
       } else {
         message = e.message.toString();
       }
@@ -160,3 +163,55 @@ class AuthController extends GetxController {
     }
   }
 }
+
+
+
+class RegisterController extends GetxController {
+  late Rx<User?> firebaseUser;
+  FirebaseAuth auth = FirebaseAuth.instance;
+
+
+  void register(String email, String password) async {
+    try {
+      await auth.createUserWithEmailAndPassword(
+          email: email, password: password);
+      Get.offAllNamed('/mainPage');
+    } on FirebaseAuthException catch (e) {
+      // this is solely for the Firebase Auth Exception
+      // for example : password did not match
+      print(e.message);
+      // Get.snackbar("Error", e.message!);
+      Get.snackbar(
+        "Error",
+        e.message!,
+        snackPosition: SnackPosition.BOTTOM,
+      );
+    } catch (e) {
+      // this is temporary. you can handle different kinds of activities
+      //such as dialogue to indicate what's wrong
+      print(e.toString());
+      Get.snackbar('Error',  e.toString(),snackPosition: SnackPosition.BOTTOM);
+    }
+  }
+
+  void login(String email, String password) async {
+    try {
+      await auth.signInWithEmailAndPassword(email: email, password: password);
+    } on FirebaseAuthException catch (e) {
+      // this is solely for the Firebase Auth Exception
+      // for example : password did not match
+      print(e.message);
+    } catch (e) {
+      print(e.toString());
+    }
+  }
+
+  void signOut() {
+    try {
+      auth.signOut();
+    } catch (e) {
+      print(e.toString());
+    }
+  }
+}
+
