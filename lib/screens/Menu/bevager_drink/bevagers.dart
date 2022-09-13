@@ -10,7 +10,7 @@ class Bevagers extends StatefulWidget {
 
 class _BevagersState extends State<Bevagers> {
   final CollectionReference _products =
-      FirebaseFirestore.instance.collection('bevagers');
+  FirebaseFirestore.instance.collection('bevagers');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -72,11 +72,14 @@ class _BevagersState extends State<Bevagers> {
                         onTap: () {
                           if (index == 0) {
                             Get.toNamed('/fooddrink');
-                          }if (index == 1) {
+                          }
+                          if (index == 1) {
                             Get.toNamed('/strawberryjuice');
-                          }if (index == 2) {
+                          }
+                          if (index == 2) {
                             Get.toNamed('/drinks');
-                          }if (index == 3) {
+                          }
+                          if (index == 3) {
                             Get.toNamed('/lemonjuice');
                           }
                         },
@@ -124,4 +127,3 @@ class _BevagersState extends State<Bevagers> {
     );
   }
 }
-
