@@ -125,7 +125,7 @@ class MyApp extends StatelessWidget {
           name: '/iceCream',
           page: () => const IceCream(),
         ),
-        GetPage(name: '/iteamsandwich', page: () => Sandwich()),
+        GetPage(name: '/iteamsandwich', page: () => const Sandwich()),
         GetPage(
           name: '/iteampasta',
           page: () => const Pasta(),
@@ -140,53 +140,53 @@ class MyApp extends StatelessWidget {
         ),
         GetPage(
           name: '/drinks',
-          page: () => Drinks(),
+          page: () => const Drinks(),
         ),
         GetPage(
           name: '/fooddrink',
-          page: () => FoodDrink(),
+          page: () => const FoodDrink(),
         ),
         GetPage(
           name: '/lemonjuice',
-          page: () => LemonJuice(),
+          page: () => const LemonJuice(),
         ),
         GetPage(
           name: '/strawberryjuice',
-          page: () => StrawberryJuice(),
+          page: () => const StrawberryJuice(),
         ),
         GetPage(
           name: '/cake',
-          page: () => Cake(),
+          page: () => const Cake(),
         ),
         GetPage(
           name: '/chocolatecake',
-          page: () => ChocolateCake(),
+          page: () => const ChocolateCake(),
         ),
         GetPage(
           name: '/milkshake',
-          page: () => MilkShake(),
+          page: () => const MilkShake(),
         ),
         GetPage(
           name: '/oreocookiessandwich',
-          page: () => OreoCookiesSandwich(),
+          page: () => const OreoCookiesSandwich(),
         ),
         GetPage(
           name: '/foodds',
-          page: () => Foodds(),
+          page: () => const Foodds(),
         ),
         GetPage(
           name: '/healthybites',
-          page: () => HealthyBites(),
+          page: () => const HealthyBites(),
         ),
         GetPage(
           name: '/healthydise',
-          page: () => HealthyDise(),
+          page: () => const HealthyDise(),
         ),
         GetPage(
           name: '/healthyfood',
-          page: () => HealthyFood(),
+          page: () => const HealthyFood(),
         ),
-        GetPage(name: '/mainPage', page: () => MainPage(),)
+        GetPage(name: '/mainPage', page: () => const MainPage(),)
       ],
     );
   }
