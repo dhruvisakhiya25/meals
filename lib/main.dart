@@ -1,13 +1,5 @@
 import 'dart:io';
-import 'package:meals/screens/Menu/foods/burger.dart';
-import 'package:meals/screens/Menu/foods/pasta.dart';
-import 'package:meals/screens/Menu/foods/pizza.dart';
-import 'package:meals/screens/Menu/foods/sandwich.dart';
-import 'package:meals/screens/Offer/checkoffer/dalbati.dart';
-import 'package:meals/screens/Offer/checkoffer/dalfry.dart';
-import 'package:meals/screens/Offer/checkoffer/ice-cream.dart';
-import 'package:meals/screens/Offer/checkoffer/idlisambhar.dart';
-import 'package:meals/screens/Offer/checkoffer/pizza.dart';
+
 
 import 'Network/export.dart';
 import 'screens/Menu/desserts.dart';
