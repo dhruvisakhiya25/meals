@@ -98,195 +98,204 @@ class _IceCreamState extends State<IceCream> {
                             ),
                             child: Padding(
                               padding: const EdgeInsets.all(20.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    documents['icecream name'],
-                                    style: const TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 30),
-                                  ),
-                                  const SizedBox(
-                                    height: 30,
-                                  ),
-                                  Text(
-                                    documents['icecream rate'],
-                                  ),
-                                  Text(
-                                    documents['icecream decription'],
-                                  ),
-                                  const Divider(thickness: 2),
-                                  Row(
-                                    children: [
-                                      Text(numberOfPortion),
-                                      const SizedBox(
-                                        width: 20,
+                              child: SingleChildScrollView(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      documents['icecream name'],
+                                      style: const TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 30),
+                                    ),
+                                    const SizedBox(
+                                      height: 30,
+                                    ),
+                                    Text(
+                                      documents['icecream rate'],style: TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.w600),
+                                    ),SizedBox(
+                                      height: 10,
+                                    ),
+                                    Text(
+                                      documents['icecream decription'],
+                                      style: TextStyle(
+                                        fontSize: 18.5,
                                       ),
-                                      CupertinoButton(
-                                        borderRadius: BorderRadius.circular(30),
-                                        color: orange,
-                                        padding: const EdgeInsets.symmetric(
-                                            horizontal: 20),
-                                        onPressed: decrement,
-                                        child: const Icon(icRemove),
-                                      ),
-                                      const SizedBox(
-                                        width: 10,
-                                      ),
-                                      Text(
-                                        '$counter',
-                                        style: const TextStyle(fontSize: 30),
-                                      ),
-                                      const SizedBox(
-                                        width: 10,
-                                      ),
-                                      CupertinoButton(
-                                        borderRadius: BorderRadius.circular(30),
-                                        color: orange,
-                                        padding: const EdgeInsets.symmetric(
-                                            horizontal: 20),
-                                        onPressed: increment,
-                                        child: const Icon(icAdd),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(
-                                    height: 10,
-                                  ),
-                                  Stack(
-                                    children: [
-                                      Container(
-                                        height: 175,
-                                        width: 100,
-                                        decoration: const BoxDecoration(
+                                    ),
+                                    const Divider(thickness: 2),
+                                    Row(
+                                      children: [
+                                        Text(numberOfPortion,style: TextStyle(fontSize: 15.5),),
+                                        const SizedBox(
+                                          width: 20,
+                                        ),
+                                        CupertinoButton(
+                                          borderRadius: BorderRadius.circular(30),
                                           color: orange,
-                                          borderRadius: BorderRadius.only(
-                                            topRight: Radius.circular(30),
-                                            bottomRight: Radius.circular(30),
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 20),
+                                          onPressed: decrement,
+                                          child: const Icon(icRemove),
+                                        ),
+                                        const SizedBox(
+                                          width: 10,
+                                        ),
+                                        Text(
+                                          '$counter',
+                                          style: const TextStyle(fontSize: 25),
+                                        ),
+                                        const SizedBox(
+                                          width: 10,
+                                        ),
+                                        CupertinoButton(
+                                          borderRadius: BorderRadius.circular(30),
+                                          color: orange,
+                                          padding: const EdgeInsets.symmetric(
+                                              horizontal: 20),
+                                          onPressed: increment,
+                                          child: const Icon(icAdd),
+                                        ),
+                                      ],
+                                    ),
+                                    const SizedBox(
+                                      height: 10,
+                                    ),
+                                    Stack(
+                                      children: [
+                                        Container(
+                                          height: 175,
+                                          width: 100,
+                                          decoration: const BoxDecoration(
+                                            color: orange,
+                                            borderRadius: BorderRadius.only(
+                                              topRight: Radius.circular(30),
+                                              bottomRight: Radius.circular(30),
+                                            ),
                                           ),
                                         ),
-                                      ),
-                                      Container(
-                                        height: 120,
-                                        width: 300,
-                                        margin: const EdgeInsets.only(
-                                            top: 30, left: 40),
-                                        decoration: const BoxDecoration(
-                                          color: white,
-                                          boxShadow: [
-                                            BoxShadow(
-                                                color: Colors.grey,
-                                                blurRadius: 10)
-                                          ],
-                                          borderRadius: BorderRadius.only(
-                                            topLeft: Radius.circular(45),
-                                            bottomLeft: Radius.circular(45),
-                                            topRight: Radius.circular(10),
-                                            bottomRight: Radius.circular(10),
+                                        Container(
+                                          height: 120,
+                                          width: 300,
+                                          margin: const EdgeInsets.only(
+                                              top: 30, left: 40),
+                                          decoration: const BoxDecoration(
+                                            color: white,
+                                            boxShadow: [
+                                              BoxShadow(
+                                                  color: Colors.grey,
+                                                  blurRadius: 10)
+                                            ],
+                                            borderRadius: BorderRadius.only(
+                                              topLeft: Radius.circular(45),
+                                              bottomLeft: Radius.circular(45),
+                                              topRight: Radius.circular(10),
+                                              bottomRight: Radius.circular(10),
+                                            ),
                                           ),
-                                        ),
-                                        child: Row(
-                                          mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            Padding(
-                                              padding: const EdgeInsets.only(
-                                                  left: 10),
-                                              child: Column(
-                                                crossAxisAlignment:
-                                                CrossAxisAlignment.center,
-                                                mainAxisAlignment:
-                                                MainAxisAlignment.center,
-                                                children: [
-                                                  Text(
-                                                    totalPrice,
-                                                    style: const TextStyle(
-                                                        fontSize: 15),
-                                                  ),
-                                                  Text(
-                                                    lkr,
-                                                    style: const TextStyle(
-                                                        fontSize: 27,
-                                                        fontWeight:
-                                                        FontWeight.bold),
-                                                  ),
-                                                  const SizedBox(
-                                                    height: 5,
-                                                  ),
-                                                  Padding(
-                                                    padding:
-                                                    const EdgeInsets.only(
-                                                        left: 20, top: 3),
-                                                    child: MaterialButton(
-                                                      minWidth: 200,
-                                                      onPressed: () {},
-                                                      color: orange,
-                                                      shape: OutlineInputBorder(
-                                                        borderRadius:
-                                                        BorderRadius
-                                                            .circular(20),
-                                                        borderSide:
-                                                        const BorderSide(
-                                                            color: orange),
-                                                      ),
-                                                      child: Row(
-                                                        children: [
-                                                          const Icon(
-                                                            icCarts,
-                                                            color: white,
-                                                            size: 19,
-                                                          ),
-                                                          const SizedBox(
-                                                            width: 15,
-                                                          ),
-                                                          Text(
-                                                            addToCart,
-                                                            style:
-                                                            const TextStyle(
-                                                                fontSize:
-                                                                19,
-                                                                color:
-                                                                white),
-                                                          ),
-                                                        ],
+                                          child: Row(
+                                            mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Padding(
+                                                padding: const EdgeInsets.only(
+                                                    left: 10),
+                                                child: Column(
+                                                  crossAxisAlignment:
+                                                  CrossAxisAlignment.center,
+                                                  mainAxisAlignment:
+                                                  MainAxisAlignment.center,
+                                                  children: [
+                                                    Text(
+                                                      totalPrice,
+                                                      style: const TextStyle(
+                                                          fontSize: 15),
+                                                    ),
+                                                    Text(
+                                                      lkr,
+                                                      style: const TextStyle(
+                                                          fontSize: 27,
+                                                          fontWeight:
+                                                          FontWeight.bold),
+                                                    ),
+                                                    const SizedBox(
+                                                      height: 5,
+                                                    ),
+                                                    Padding(
+                                                      padding:
+                                                      const EdgeInsets.only(
+                                                          left: 20, top: 3),
+                                                      child: MaterialButton(
+                                                        minWidth: 200,
+                                                        onPressed: () {},
+                                                        color: orange,
+                                                        shape: OutlineInputBorder(
+                                                          borderRadius:
+                                                          BorderRadius
+                                                              .circular(20),
+                                                          borderSide:
+                                                          const BorderSide(
+                                                              color: orange),
+                                                        ),
+                                                        child: Row(
+                                                          children: [
+                                                            const Icon(
+                                                              icCarts,
+                                                              color: white,
+                                                              size: 19,
+                                                            ),
+                                                            const SizedBox(
+                                                              width: 15,
+                                                            ),
+                                                            Text(
+                                                              addToCart,
+                                                              style:
+                                                              const TextStyle(
+                                                                  fontSize:
+                                                                  19,
+                                                                  color:
+                                                                  white),
+                                                            ),
+                                                          ],
+                                                        ),
                                                       ),
                                                     ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                            SizedBox(
-                                              height: 80,
-                                              child: Container(
-                                                margin: const EdgeInsets.only(
-                                                    right: 5),
-                                                height: 40,
-                                                width: 40,
-                                                decoration:
-                                                const ShapeDecoration(
-                                                  shape: CircleBorder(),
-                                                  color: white,
-                                                  shadows: [
-                                                    BoxShadow(
-                                                      color: placeholder,
-                                                      offset: Offset(0, 2),
-                                                      blurRadius: 15,
-                                                    )
                                                   ],
                                                 ),
-                                                child: const Icon(
-                                                  icCart,
-                                                  color: orange,
+                                              ),
+                                              SizedBox(
+                                                height: 80,
+                                                child: Container(
+                                                  margin: const EdgeInsets.only(
+                                                      right: 5),
+                                                  height: 40,
+                                                  width: 40,
+                                                  decoration:
+                                                  const ShapeDecoration(
+                                                    shape: CircleBorder(),
+                                                    color: white,
+                                                    shadows: [
+                                                      BoxShadow(
+                                                        color: placeholder,
+                                                        offset: Offset(0, 2),
+                                                        blurRadius: 15,
+                                                      )
+                                                    ],
+                                                  ),
+                                                  child: const Icon(
+                                                    icCart,
+                                                    color: orange,
+                                                  ),
                                                 ),
                                               ),
-                                            ),
-                                          ],
-                                        ),
-                                      )
-                                    ],
-                                  )
-                                ],
+                                            ],
+                                          ),
+                                        )
+                                      ],
+                                    )
+                                  ],
+                                ),
                               ),
                             ),
                           )
