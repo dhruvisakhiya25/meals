@@ -1,4 +1,8 @@
 import 'dart:io';
+import 'package:meals/screens/Menu/foods/burger.dart';
+import 'package:meals/screens/Menu/foods/pasta.dart';
+import 'package:meals/screens/Menu/foods/pizza.dart';
+import 'package:meals/screens/Menu/foods/sandwich.dart';
 import 'package:meals/screens/Offer/checkoffer/dalbati.dart';
 import 'package:meals/screens/Offer/checkoffer/dalfry.dart';
 import 'package:meals/screens/Offer/checkoffer/ice-cream.dart';
@@ -138,6 +142,18 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/iceCream',
           page: () => const IceCream(),
+        ), GetPage(
+          name: '/iteamsandwich',
+          page: () => const Sandwich(),
+        ), GetPage(
+          name: '/iteampasta',
+          page: () => const Pasta(),
+        ), GetPage(
+          name: '/iteamburger',
+          page: () => const Burger(),
+        ), GetPage(
+          name: '/iteampizza',
+          page: () => const Pizzaa(),
         ),
       ],
     );
