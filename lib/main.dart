@@ -1,6 +1,5 @@
 import 'dart:io';
 
-
 import 'Network/export.dart';
 import 'screens/Menu/desserts.dart';
 
@@ -134,16 +133,17 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/iceCream',
           page: () => const IceCream(),
-        ), GetPage(
-          name: '/iteamsandwich',
-          page: () => const Sandwich(),
-        ), GetPage(
+        ),
+        GetPage(name: '/iteamsandwich', page: ()=>Sandwich()),
+        GetPage(
           name: '/iteampasta',
           page: () => const Pasta(),
-        ), GetPage(
+        ),
+        GetPage(
           name: '/iteamburger',
           page: () => const Burger(),
-        ), GetPage(
+        ),
+        GetPage(
           name: '/iteampizza',
           page: () => const Pizzaa(),
         ),
