@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 
 import '../../../Network/export.dart';
@@ -114,19 +113,31 @@ class _BurgerState extends State<Burger> {
                                     ),
                                     Text(
                                       documents['iteamburger rate'],
+                                      style: TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w600),
+                                    ),
+                                    SizedBox(
+                                      height: 10,
                                     ),
                                     Text(
                                       documents['iteamburger decription'],
+                                      style: TextStyle(
+                                        fontSize: 18.5,
+                                      ),
                                     ),
                                     const Divider(thickness: 2),
                                     Row(
                                       children: [
-                                        Text(numberOfPortion),
+                                        Text(numberOfPortion,style: TextStyle(
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.w700)),
                                         const SizedBox(
                                           width: 20,
                                         ),
                                         CupertinoButton(
-                                          borderRadius: BorderRadius.circular(30),
+                                          borderRadius:
+                                          BorderRadius.circular(30),
                                           color: orange,
                                           padding: const EdgeInsets.symmetric(
                                               horizontal: 20),
@@ -136,15 +147,16 @@ class _BurgerState extends State<Burger> {
                                         const SizedBox(
                                           width: 10,
                                         ),
-                                        Text(
-                                          '$counter',
-                                          style: const TextStyle(fontSize: 30),
-                                        ),
+                                        Text('$counter',
+                                            style: const TextStyle(
+                                                fontSize: 30,
+                                                fontWeight: FontWeight.w700)),
                                         const SizedBox(
                                           width: 10,
                                         ),
                                         CupertinoButton(
-                                          borderRadius: BorderRadius.circular(30),
+                                          borderRadius:
+                                          BorderRadius.circular(30),
                                           color: orange,
                                           padding: const EdgeInsets.symmetric(
                                               horizontal: 20),
@@ -180,11 +192,13 @@ class _BurgerState extends State<Burger> {
                                                 color: white,
                                                 boxShadow: [
                                                   BoxShadow(
-                                                      color: grey, blurRadius: 10)
+                                                      color: grey,
+                                                      blurRadius: 10)
                                                 ],
                                                 borderRadius: BorderRadius.only(
                                                   topLeft: Radius.circular(45),
-                                                  bottomLeft: Radius.circular(45),
+                                                  bottomLeft:
+                                                  Radius.circular(45),
                                                   topRight: Radius.circular(10),
                                                   bottomRight:
                                                   Radius.circular(10),
@@ -206,13 +220,16 @@ class _BurgerState extends State<Burger> {
                                                       mainAxisAlignment:
                                                       MainAxisAlignment
                                                           .center,
+
                                                       children: [
                                                         Text(
                                                           totalPrice,
-                                                          style: const TextStyle(
-                                                              fontSize: 15),
-                                                        ),
-                                                        Text(
+
+
+                                                          style:
+                                                          const TextStyle(
+                                                              fontSize: 17),
+                                                        ), Text(
                                                           lkr,
                                                           style: const TextStyle(
                                                               fontSize: 27,
@@ -284,7 +301,8 @@ class _BurgerState extends State<Burger> {
                                                         shadows: [
                                                           BoxShadow(
                                                             color: placeholder,
-                                                            offset: Offset(0, 2),
+                                                            offset:
+                                                            Offset(0, 2),
                                                             blurRadius: 15,
                                                           )
                                                         ],
