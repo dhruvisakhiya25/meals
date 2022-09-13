@@ -117,6 +117,22 @@ class MyApp extends StatelessWidget {
           name: '/aboutUsPage',
           page: () => const AboutUsPage(),
         ),
+        GetPage(
+          name: '/dalFry',
+          page: () => DalFry(),
+        ),GetPage(
+          name: '/idliSambhar',
+          page: () => IdliSambhar(),
+        ),GetPage(
+          name: '/dalBati',
+          page: () => DalBati(),
+        ),GetPage(
+          name: '/pizza',
+          page: () => Pizza(),
+        ),GetPage(
+          name: '/iceCream',
+          page: () => IceCream(),
+        ),
       ],
     );
   }
