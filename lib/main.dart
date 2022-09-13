@@ -1,4 +1,10 @@
 import 'dart:io';
+import 'package:meals/screens/Offer/checkoffer/dalbati.dart';
+import 'package:meals/screens/Offer/checkoffer/dalfry.dart';
+import 'package:meals/screens/Offer/checkoffer/ice-cream.dart';
+import 'package:meals/screens/Offer/checkoffer/idlisambhar.dart';
+import 'package:meals/screens/Offer/checkoffer/pizza.dart';
+
 import 'Network/export.dart';
 import 'screens/Menu/desserts.dart';
 
@@ -119,19 +125,23 @@ class MyApp extends StatelessWidget {
         ),
         GetPage(
           name: '/dalFry',
-          page: () => DalFry(),
-        ),GetPage(
+          page: () => const DalFry(),
+        ),
+        GetPage(
           name: '/idliSambhar',
-          page: () => IdliSambhar(),
-        ),GetPage(
+          page: () => const IdliSambhar(),
+        ),
+        GetPage(
           name: '/dalBati',
-          page: () => DalBati(),
-        ),GetPage(
+          page: () => const DalBati(),
+        ),
+        GetPage(
           name: '/pizza',
-          page: () => Pizza(),
-        ),GetPage(
+          page: () => const Pizza(),
+        ),
+        GetPage(
           name: '/iceCream',
-          page: () => IceCream(),
+          page: () => const IceCream(),
         ),
       ],
     );
