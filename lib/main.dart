@@ -1,6 +1,5 @@
 import 'dart:io';
 
-import 'package:meals/screens/Menu/milkitem/desserts.dart';
 
 import 'Network/export.dart';
 
@@ -79,7 +78,7 @@ class MyApp extends StatelessWidget {
           name: '/promotions',
           page: () => const Promotions(),
         ),
-      ,
+
         GetPage(
           name: '/paymentDetails',
           page: () => const PaymentDetails(),
