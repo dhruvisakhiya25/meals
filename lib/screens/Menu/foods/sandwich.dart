@@ -67,6 +67,7 @@ class _SandwichState extends State<Sandwich> {
                   return ListView.separated(
                     separatorBuilder: (context, index) => const Divider(
                       height: 3,
+
                     ),
                     physics: const NeverScrollableScrollPhysics(),
                     itemCount: document.length,
