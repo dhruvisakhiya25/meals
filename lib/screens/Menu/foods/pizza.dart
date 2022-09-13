@@ -111,15 +111,23 @@ class _PizzaaState extends State<Pizzaa> {
                                     height: 30,
                                   ),
                                   Text(
-                                    documents['iteampizza rate'],
+                                    documents['iteampizza rate'],style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w600),
+                                  ), SizedBox(
+                                    height: 10,
                                   ),
                                   Text(
-                                    documents['iteampizza decription'],
+                                    documents['iteampizza decription'],style: TextStyle(
+                                    fontSize: 18.5,
+                                  ),
                                   ),
                                   const Divider(thickness: 2),
                                   Row(
                                     children: [
-                                      Text(numberOfPortion),
+                                      Text(numberOfPortion,style: TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w700)),
                                       const SizedBox(
                                         width: 20,
                                       ),
@@ -135,9 +143,11 @@ class _PizzaaState extends State<Pizzaa> {
                                         width: 10,
                                       ),
                                       Text(
-                                        '$counter',
-                                        style: const TextStyle(fontSize: 30),
-                                      ),
+                                          '$counter',
+                                          style: const TextStyle(
+                                              fontSize: 30,
+                                              fontWeight: FontWeight.w700)),
+
                                       const SizedBox(
                                         width: 10,
                                       ),
@@ -207,8 +217,9 @@ class _PizzaaState extends State<Pizzaa> {
                                                     children: [
                                                       Text(
                                                         totalPrice,
-                                                        style: const TextStyle(
-                                                            fontSize: 15),
+                                                        style:
+                                                        const TextStyle(
+                                                            fontSize: 17),
                                                       ),
                                                       Text(
                                                         lkr,

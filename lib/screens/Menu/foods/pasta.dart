@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 
 import '../../../Network/export.dart';
@@ -113,14 +112,26 @@ class _PastaState extends State<Pasta> {
                                   ),
                                   Text(
                                     documents['iteampasta rate'],
+                                    style: TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.w600),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
                                   ),
                                   Text(
                                     documents['iteampasta decription'],
+                                    style: TextStyle(
+                                      fontSize: 18.5,
+                                    ),
                                   ),
                                   const Divider(thickness: 2),
                                   Row(
                                     children: [
-                                      Text(numberOfPortion),
+                                      Text(numberOfPortion,
+                                          style: TextStyle(
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.w700)),
                                       const SizedBox(
                                         width: 20,
                                       ),
@@ -137,7 +148,9 @@ class _PastaState extends State<Pasta> {
                                       ),
                                       Text(
                                         '$counter',
-                                        style: const TextStyle(fontSize: 30),
+                                        style: const TextStyle(
+                                            fontSize: 30,
+                                            fontWeight: FontWeight.w700),
                                       ),
                                       const SizedBox(
                                         width: 10,
@@ -209,7 +222,7 @@ class _PastaState extends State<Pasta> {
                                                       Text(
                                                         totalPrice,
                                                         style: const TextStyle(
-                                                            fontSize: 15),
+                                                            fontSize: 17),
                                                       ),
                                                       Text(
                                                         lkr,

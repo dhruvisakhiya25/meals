@@ -10,7 +10,7 @@ class Foods extends StatefulWidget {
 
 class _FoodsState extends State<Foods> {
   final CollectionReference _products =
-      FirebaseFirestore.instance.collection('food');
+  FirebaseFirestore.instance.collection('food');
   late Stream<QuerySnapshot> _streams;
 
   @override
