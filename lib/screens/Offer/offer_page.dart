@@ -89,47 +89,62 @@ class _OfferPageState extends State<OfferPage> {
                       shrinkWrap: true,
                       itemBuilder: (context, index) {
                         QueryDocumentSnapshot documents = document[index];
-                        return Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Container(
-                              height: 200,
-                              width: 360,
-                              decoration: BoxDecoration(
-                                image: DecorationImage(
-                                    image: NetworkImage(
-                                      documents['item image'],
-                                    ),
-                                    fit: BoxFit.fill),
+                        return GestureDetector(
+                          onTap: (){
+                            if(index==0){
+                              Get.toNamed('/dalFry');
+                            }if(index==1){
+                              Get.toNamed('/idliSambhar');
+                            }if(index==2){
+                              Get.toNamed('/dalBati');
+                            }if(index==3){
+                              Get.toNamed('/pizza');
+                            }if(index==4){
+                              Get.toNamed('/iceCream');
+                            }
+                          },
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                height: 200,
+                                width: 360,
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                      image: NetworkImage(
+                                        documents['item image'],
+                                      ),
+                                      fit: BoxFit.fill),
+                                ),
                               ),
-                            ),
-                            Text(
-                              documents['item name'],
-                              style: const TextStyle(
-                                  color: black,
-                                  fontSize: 25,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                            Row(
-                              children: [
-                                const Icon(
-                                  icStar,
-                                  color: orange,
-                                ),
-                                Text(
-                                  documents['item rate'].toString(),
-                                  style: const TextStyle(color: orange),
-                                ),
-                                const SizedBox(
-                                  width: 5,
-                                ),
-                                Text(
-                                  documents['item type'],
-                                  style: const TextStyle(color: grey),
-                                )
-                              ],
-                            )
-                          ],
+                              Text(
+                                documents['item name'],
+                                style: const TextStyle(
+                                    color: black,
+                                    fontSize: 25,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Row(
+                                children: [
+                                  const Icon(
+                                    icStar,
+                                    color: orange,
+                                  ),
+                                  Text(
+                                    documents['item rate'].toString(),
+                                    style: const TextStyle(color: orange),
+                                  ),
+                                  const SizedBox(
+                                    width: 5,
+                                  ),
+                                  Text(
+                                    documents['item type'],
+                                    style: const TextStyle(color: grey),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         );
                       },
                     );
