@@ -55,4 +55,15 @@ export 'package:meals/screens/Offer/checkoffer/dalfry.dart';
 export 'package:meals/screens/Offer/checkoffer/ice-cream.dart';
 export 'package:meals/screens/Offer/checkoffer/idlisambhar.dart';
 export 'package:meals/screens/Offer/checkoffer/pizza.dart';
-
+export 'package:meals/screens/Menu/bevager_drink/drinks.dart';
+export 'package:meals/screens/Menu/bevager_drink/fooddrink.dart';
+export 'package:meals/screens/Menu/bevager_drink/lemonjuice.dart';
+export 'package:meals/screens/Menu/bevager_drink/strawberryjuice.dart';
+export 'package:meals/screens/Menu/milkitem/cake.dart';
+export 'package:meals/screens/Menu/milkitem/chocolate_cake.dart';
+export 'package:meals/screens/Menu/milkitem/milkshake.dart';
+export 'package:meals/screens/Menu/milkitem/oreo_cookies_sandwich.dart';
+export 'package:meals/screens/Menu/sweetitem/foodds.dart';
+export 'package:meals/screens/Menu/sweetitem/healthybites.dart';
+export 'package:meals/screens/Menu/sweetitem/healthydise.dart';
+export 'package:meals/screens/Menu/sweetitem/healthyfood.dart';
