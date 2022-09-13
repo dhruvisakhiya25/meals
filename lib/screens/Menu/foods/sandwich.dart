@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 
 import '../../../Network/export.dart';
@@ -15,7 +14,7 @@ class _SandwichState extends State<Sandwich> {
 
   void increment() {
     setState(
-          () {
+      () {
         counter++;
       },
     );
@@ -23,14 +22,14 @@ class _SandwichState extends State<Sandwich> {
 
   void decrement() {
     setState(
-          () {
+      () {
         counter--;
       },
     );
   }
 
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('iteamsandwich');
+      FirebaseFirestore.instance.collection('iteamsandwich');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -113,14 +112,21 @@ class _SandwichState extends State<Sandwich> {
                                   ),
                                   Text(
                                     documents['iteamsandwich rate'],
+                                    style: TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.w600),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
                                   ),
                                   Text(
                                     documents['iteamsandwich decription'],
+                                    style: TextStyle(fontSize: 18.5,),
                                   ),
                                   const Divider(thickness: 2),
                                   Row(
                                     children: [
-                                      Text(numberOfPortion),
+                                      Text(numberOfPortion,style: TextStyle(fontSize: 15),),
                                       const SizedBox(
                                         width: 20,
                                       ),
@@ -186,25 +192,25 @@ class _SandwichState extends State<Sandwich> {
                                                 bottomLeft: Radius.circular(45),
                                                 topRight: Radius.circular(10),
                                                 bottomRight:
-                                                Radius.circular(10),
+                                                    Radius.circular(10),
                                               ),
                                             ),
                                             child: Row(
                                               mainAxisAlignment:
-                                              MainAxisAlignment
-                                                  .spaceBetween,
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
                                               children: [
                                                 Padding(
                                                   padding:
-                                                  const EdgeInsets.only(
-                                                      left: 10),
+                                                      const EdgeInsets.only(
+                                                          left: 10),
                                                   child: Column(
                                                     crossAxisAlignment:
-                                                    CrossAxisAlignment
-                                                        .center,
+                                                        CrossAxisAlignment
+                                                            .center,
                                                     mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .center,
+                                                        MainAxisAlignment
+                                                            .center,
                                                     children: [
                                                       Text(
                                                         totalPrice,
@@ -216,32 +222,32 @@ class _SandwichState extends State<Sandwich> {
                                                         style: const TextStyle(
                                                             fontSize: 27,
                                                             fontWeight:
-                                                            FontWeight
-                                                                .bold),
+                                                                FontWeight
+                                                                    .bold),
                                                       ),
                                                       const SizedBox(
                                                         height: 5,
                                                       ),
                                                       Padding(
                                                         padding:
-                                                        const EdgeInsets
-                                                            .only(
-                                                            left: 20,
-                                                            top: 3),
+                                                            const EdgeInsets
+                                                                    .only(
+                                                                left: 20,
+                                                                top: 3),
                                                         child: MaterialButton(
                                                           minWidth: 200,
                                                           onPressed: () {},
                                                           color: orange,
                                                           shape:
-                                                          OutlineInputBorder(
+                                                              OutlineInputBorder(
                                                             borderRadius:
-                                                            BorderRadius
-                                                                .circular(
-                                                                20),
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        20),
                                                             borderSide:
-                                                            const BorderSide(
-                                                                color:
-                                                                orange),
+                                                                const BorderSide(
+                                                                    color:
+                                                                        orange),
                                                           ),
                                                           child: Row(
                                                             children: [
@@ -257,9 +263,9 @@ class _SandwichState extends State<Sandwich> {
                                                                 addToCart,
                                                                 style: const TextStyle(
                                                                     fontSize:
-                                                                    19,
+                                                                        19,
                                                                     color:
-                                                                    white),
+                                                                        white),
                                                               ),
                                                             ],
                                                           ),
@@ -272,12 +278,12 @@ class _SandwichState extends State<Sandwich> {
                                                   height: 80,
                                                   child: Container(
                                                     margin:
-                                                    const EdgeInsets.only(
-                                                        right: 5),
+                                                        const EdgeInsets.only(
+                                                            right: 5),
                                                     height: 40,
                                                     width: 40,
                                                     decoration:
-                                                    const ShapeDecoration(
+                                                        const ShapeDecoration(
                                                       shape: CircleBorder(),
                                                       color: white,
                                                       shadows: [
