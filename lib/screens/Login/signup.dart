@@ -247,6 +247,7 @@ class _SignUpPageState extends State<SignUpPage> {
                           color: grey,
                         ),
                       ),
+
                       prefixIconColor: orange,
                       hintText: confirmPassword,
                       focusedBorder: OutlineInputBorder(
