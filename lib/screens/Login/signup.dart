@@ -282,10 +282,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       ),
                       onPressed: () async {
                         if (_formKey.currentState!.validate()) {
-                          String name = txtName.text.trim();
-                          String email = txtEmail.text.trim();
-                          String password = txtConfirmPassword.text;
-                          authController.signUp(name, email, password);
+                          authController.register(txtEmail.text.trim(), txtConfirmPassword.text.trim(), );
                         }
                         setState(
                           () {},

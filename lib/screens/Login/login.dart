@@ -150,7 +150,7 @@ class _LoginPageState extends State<LoginPage> {
                         String email = txtEmail.text.trim();
                         String password = txtPassword.text;
 
-                        authController.signIn(email, password);
+                        authController.login(email, password);
                       }
                     },
                     child: Text(
