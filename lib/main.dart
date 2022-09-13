@@ -3,11 +3,18 @@ import 'dart:io';
 import 'package:meals/screens/Menu/bevager_drink/drinks.dart';
 import 'package:meals/screens/Menu/bevager_drink/fooddrink.dart';
 import 'package:meals/screens/Menu/bevager_drink/lemonjuice.dart';
-import 'package:meals/screens/Menu/bevager_drink/oreo_milk_shake.dart';
 import 'package:meals/screens/Menu/bevager_drink/strawberryjuice.dart';
+import 'package:meals/screens/Menu/milkitem/cake.dart';
+import 'package:meals/screens/Menu/milkitem/chocolate_cake.dart';
+import 'package:meals/screens/Menu/milkitem/milkshake.dart';
+import 'package:meals/screens/Menu/milkitem/oreo_cookies_sandwich.dart';
+import 'package:meals/screens/Menu/sweetitem/foodds.dart';
+import 'package:meals/screens/Menu/sweetitem/healthybites.dart';
+import 'package:meals/screens/Menu/sweetitem/healthydise.dart';
+import 'package:meals/screens/Menu/sweetitem/healthyfood.dart';
 
 import 'Network/export.dart';
-import 'screens/Menu/desserts.dart';
+import 'screens/Menu/milkitem/desserts.dart';
 
 //a
 Future<void> main() async {
@@ -84,14 +91,9 @@ class MyApp extends StatelessWidget {
           name: '/promotions',
           page: () => const Promotions(),
         ),
-
         GetPage(
           name: '/itemDesserts',
           page: () => const ItemDesserts(),
-        ),
-        GetPage(
-          name: '/itemPromotion',
-          page: () => const ItemPromotion(),
         ),
         GetPage(
           name: '/paymentDetails',
@@ -137,7 +139,7 @@ class MyApp extends StatelessWidget {
           name: '/iceCream',
           page: () => const IceCream(),
         ),
-        GetPage(name: '/iteamsandwich', page: ()=>Sandwich()),
+        GetPage(name: '/iteamsandwich', page: () => Sandwich()),
         GetPage(
           name: '/iteampasta',
           page: () => const Pasta(),
@@ -150,11 +152,30 @@ class MyApp extends StatelessWidget {
           name: '/iteampizza',
           page: () => const Pizzaa(),
         ),
-        GetPage(name: '/drinks', page: ()=>Drinks()),
-        GetPage(name: '/fooddrink', page: ()=>FoodDrink()),
-        GetPage(name: '/lemonjuice', page: ()=>LemonJuice()),
-        GetPage(name: '/oreomilkshake', page: ()=>OreoMilkShake()),
-        GetPage(name: '/strawberryjuice', page: ()=>StrawberryJuice()),
+        GetPage(
+          name: '/drinks',
+          page: () => Drinks(),
+        ),
+        GetPage(
+          name: '/fooddrink',
+          page: () => FoodDrink(),
+        ),
+        GetPage(
+          name: '/lemonjuice',
+          page: () => LemonJuice(),
+        ),
+        GetPage(
+          name: '/strawberryjuice',
+          page: () => StrawberryJuice(),
+        ),
+        GetPage(name: '/cake', page: () => Cake(),),
+        GetPage(name: '/chocolatecake', page: () => ChocolateCake(),),
+        GetPage(name: '/milkshake', page: () => MilkShake(),),
+        GetPage(name: '/oreocookiessandwich', page: () => OreoCookiesSandwich(),),
+        GetPage(name: '/foodds', page: () => Foodds(),),
+        GetPage(name: '/healthybites', page: () => HealthyBites(),),
+        GetPage(name: '/healthydise', page: () => HealthyDise(),),
+        GetPage(name: '/healthyfood', page: () => HealthyFood(),),
       ],
     );
   }

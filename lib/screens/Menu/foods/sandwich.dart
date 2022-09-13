@@ -44,7 +44,6 @@ class _SandwichState extends State<Sandwich> {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          physics: const NeverScrollableScrollPhysics(),
           child: Column(
             children: [
               StreamBuilder<QuerySnapshot>(
@@ -68,7 +67,7 @@ class _SandwichState extends State<Sandwich> {
                     separatorBuilder: (context, index) => const Divider(
                       height: 3,
                     ),
-                    physics: const NeverScrollableScrollPhysics(),
+                    physics: NeverScrollableScrollPhysics(),
                     itemCount: document.length,
                     shrinkWrap: true,
                     itemBuilder: (context, index) {

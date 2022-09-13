@@ -43,7 +43,6 @@ class _PizzaaState extends State<Pizzaa> {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          physics: const NeverScrollableScrollPhysics(),
           child: Column(
             children: [
               StreamBuilder<QuerySnapshot>(
@@ -67,7 +66,7 @@ class _PizzaaState extends State<Pizzaa> {
                     separatorBuilder: (context, index) => const Divider(
                       height: 3,
                     ),
-                    physics: const NeverScrollableScrollPhysics(),
+                    physics: NeverScrollableScrollPhysics(),
                     itemCount: document.length,
                     shrinkWrap: true,
                     itemBuilder: (context, index) {
