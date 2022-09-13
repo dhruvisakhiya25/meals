@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:meals/Network/export.dart';
 
 class Promotions extends StatefulWidget {
@@ -8,9 +8,10 @@ class Promotions extends StatefulWidget {
   State<Promotions> createState() => _PromotionsState();
 }
 
+
 class _PromotionsState extends State<Promotions> {
   final CollectionReference _products =
-      FirebaseFirestore.instance.collection('promotions');
+  FirebaseFirestore.instance.collection('promotions');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -72,11 +73,14 @@ class _PromotionsState extends State<Promotions> {
                         onTap: () {
                           if (index == 0) {
                             Get.toNamed('/healthyfood');
-                          }if (index == 1) {
+                          }
+                          if (index == 1) {
                             Get.toNamed('/foodds');
-                          }if (index == 2) {
+                          }
+                          if (index == 2) {
                             Get.toNamed('/healthydise');
-                          }if (index == 3) {
+                          }
+                          if (index == 3) {
                             Get.toNamed('/healthybites');
                           }
                         },
