@@ -1,5 +1,6 @@
 // ignore_for_file: use_build_context_synchronously, avoid_print
 import 'package:meals/Network/export.dart';
+import 'package:meals/Widgets/auth_button.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -181,16 +182,37 @@ class _LoginPageState extends State<LoginPage> {
                   const SizedBox(
                     height: 20,
                   ),
+                  authButton(
+                      color: Colors.blue.shade700,
+                      child: Row(
+                        children: const [
+                          Icon(
+                            Icons.facebook,
+                            color: white,
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            'Sign in With Facebook',
+                            style: TextStyle(
+                                color: white,
+                                fontWeight: FontWeight.w700,
+                                fontSize: 20),
+                          )
+                        ],
+                      ),
+                      onPress: () async {
+                        await authController.signInWithFacebook(context);
+                        SharedPref.setFbLoginName =
+                            authController.userData!['name'];
+                        SharedPref.setFbLoginEmail =
+                            authController.userData!['email'];
+                        SharedPref.setFbLoginPhoto =
+                            authController.userData!['picture']['data']['url'];
+                      }),
                   FacebookAuthButton(
-                    onPressed: () async {
-                      await authController.signInWithFacebook(context);
-                      SharedPref.setFbLoginName =
-                          authController.userData!['name'];
-                      SharedPref.setFbLoginEmail =
-                          authController.userData!['email'];
-                      SharedPref.setFbLoginPhoto =
-                          authController.userData!['picture']['data']['url'];
-                    },
+                    onPressed: () async {},
                     themeMode: themeMode,
                     isLoading: isLoading,
                     style: AuthButtonStyle(
