@@ -1,7 +1,4 @@
 import 'dart:io';
-import 'package:meals/screens/Menu/foods/burger.dart';
-import 'package:meals/screens/Menu/foods/pasta.dart';
-import 'package:meals/screens/Menu/foods/sandwich.dart';
 import 'package:meals/screens/Offer/checkoffer/dalbati.dart';
 import 'package:meals/screens/Offer/checkoffer/dalfry.dart';
 import 'package:meals/screens/Offer/checkoffer/ice-cream.dart';
@@ -95,17 +92,8 @@ class MyApp extends StatelessWidget {
           page: () => const ItemDesserts(),
         ),
         GetPage(
-          name: '/iteamsandwich',
-          page: () => const Sandwich(),
-        ),GetPage(
-          name: '/iteampasta',
-          page: () => const Pasta(),
-        ),GetPage(
-          name: '/iteamburger',
-          page: () => const Burger(),
-        ),GetPage(
-          name: '/iteampizza',
-          page: () => const Pizza(),
+          name: '/itemFoods',
+          page: () => const ItemFoods(),
         ),
         GetPage(
           name: '/itemPromotion',
@@ -137,19 +125,23 @@ class MyApp extends StatelessWidget {
         ),
         GetPage(
           name: '/dalFry',
-          page: () => DalFry(),
-        ),GetPage(
+          page: () => const DalFry(),
+        ),
+        GetPage(
           name: '/idliSambhar',
-          page: () => IdliSambhar(),
-        ),GetPage(
+          page: () => const IdliSambhar(),
+        ),
+        GetPage(
           name: '/dalBati',
-          page: () => DalBati(),
-        ),GetPage(
+          page: () => const DalBati(),
+        ),
+        GetPage(
           name: '/pizza',
-          page: () => Pizza(),
-        ),GetPage(
+          page: () => const Pizza(),
+        ),
+        GetPage(
           name: '/iceCream',
-          page: () => IceCream(),
+          page: () => const IceCream(),
         ),
       ],
     );
