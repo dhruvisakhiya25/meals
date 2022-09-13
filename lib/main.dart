@@ -95,7 +95,6 @@ class MyApp extends StatelessWidget {
           name: '/itemPromotion',
           page: () => const ItemPromotion(),
         ),
-
         GetPage(
           name: '/paymentDetails',
           page: () => const PaymentDetails(),
