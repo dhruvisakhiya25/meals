@@ -1,7 +1,5 @@
 import 'package:meals/Network/export.dart';
 
-
-
 class Foods extends StatefulWidget {
   const Foods({Key? key}) : super(key: key);
 
@@ -71,7 +69,7 @@ class _FoodsState extends State<Foods> {
                       QueryDocumentSnapshot documents = document[index];
                       return GestureDetector(
                         onTap: () {
-                          Get.to(()=>FoodDetails(index: index));
+                          Get.to(() => FoodDetails(index: index));
                         },
                         child: SingleChildScrollView(
                           child: Container(
@@ -88,7 +86,10 @@ class _FoodsState extends State<Foods> {
                             child: ListTile(
                               title: Text(
                                 documents['txt'],
-                                style: const TextStyle(color: white,fontSize: 23,fontWeight: FontWeight.w600),
+                                style: const TextStyle(
+                                    color: white,
+                                    fontSize: 23,
+                                    fontWeight: FontWeight.w600),
                               ),
                               subtitle: Row(
                                 children: [
@@ -98,7 +99,8 @@ class _FoodsState extends State<Foods> {
                                   ),
                                   Text(
                                     documents['rate'].toString(),
-                                    style: const TextStyle(color: orange,fontSize: 20),
+                                    style: const TextStyle(
+                                        color: orange, fontSize: 20),
                                   ),
                                 ],
                               ),
