@@ -1,15 +1,15 @@
 import '../../../Network/export.dart';
 
-class Italian extends StatefulWidget {
-  const Italian({Key? key}) : super(key: key);
+class Western extends StatefulWidget {
+  const Western({Key? key}) : super(key: key);
 
   @override
-  State<Italian> createState() => _ItalianState();
+  State<Western> createState() => _WesternState();
 }
 
-class _ItalianState extends State<Italian> {
+class _WesternState extends State<Western> {
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('italian');
+  FirebaseFirestore.instance.collection('western');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -60,7 +60,7 @@ class _ItalianState extends State<Italian> {
                             borderRadius: BorderRadius.circular(20),
                             image: DecorationImage(
                                 image: NetworkImage(
-                                  documents['italian image'],
+                                  documents['western image'],
                                 ),
                                 fit: BoxFit.cover),
                           ),
