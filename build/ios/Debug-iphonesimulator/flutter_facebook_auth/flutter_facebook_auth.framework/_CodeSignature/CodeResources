@@ -18,23 +18,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		q08QN+OosQ6AjZIPDh6dYIk/Prs=
+		QngnzxhXQfahu5Bu6iAfWMxAWkI=
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		4ddm9Q6ATu+G53i5k+pNwW8RL/4=
+		BkwEs2L248uTUYi4UrL9TH7QbME=
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		4ddm9Q6ATu+G53i5k+pNwW8RL/4=
+		BkwEs2L248uTUYi4UrL9TH7QbME=
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		7vCiH5QV7T/GqEMGUViI8ZY3Gyk=
+		MUsGrRl4unAjfahNS+ONcGwRt9c=
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		7vCiH5QV7T/GqEMGUViI8ZY3Gyk=
+		MUsGrRl4unAjfahNS+ONcGwRt9c=
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		K9PSUeP68kNJzC84sjRVPoF68WE=
+		SwAuPUxERmnF02ObcQNcs6eVmow=
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		K9PSUeP68kNJzC84sjRVPoF68WE=
+		SwAuPUxERmnF02ObcQNcs6eVmow=
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XOD9xMyOSX1n5JSlt/omC/JCjcY=
+		MD8dP/I0Ciquj4PI7CAmOE9Wk4M=
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/flutter_facebook_auth.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		XOD9xMyOSX1n5JSlt/omC/JCjcY=
+		MD8dP/I0Ciquj4PI7CAmOE9Wk4M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -100,28 +100,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nvR1Xm1rFUGFc2M5c4iwKG7A5bM07RcKhlsaW9NryCM=
+			+dOfzvX477xg84YPBbSiU7pSVCv+1Wc2apUs79JpB+g=
 			</data>
 		</dict>
 		<key>Modules/flutter_facebook_auth.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nvR1Xm1rFUGFc2M5c4iwKG7A5bM07RcKhlsaW9NryCM=
+			+dOfzvX477xg84YPBbSiU7pSVCv+1Wc2apUs79JpB+g=
 			</data>
 		</dict>
 		<key>Modules/flutter_facebook_auth.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zoUQfjAPJ69poXya2WTMqFyAOZu0Y0jmTSoacOKmi/Y=
+			gjal29f53zkhVz+kREoqcg8UlLIEYFa3ZHf87fi7MkE=
 			</data>
 		</dict>
 		<key>Modules/flutter_facebook_auth.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zoUQfjAPJ69poXya2WTMqFyAOZu0Y0jmTSoacOKmi/Y=
+			gjal29f53zkhVz+kREoqcg8UlLIEYFa3ZHf87fi7MkE=
 			</data>
 		</dict>
 		<key>Modules/flutter_facebook_auth.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -135,7 +135,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/SnNViLGq6fHrmbfp0ANQQ5q5cNs23J52lfZiswSr1U=
+			gmj5V0sVB3K/Yyj7LbX4jHIRl+xIvZdv4pFYpqtoQGc=
 			</data>
 		</dict>
 		<key>Modules/flutter_facebook_auth.swiftmodule/arm64.swiftdoc</key>
@@ -149,7 +149,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/SnNViLGq6fHrmbfp0ANQQ5q5cNs23J52lfZiswSr1U=
+			gmj5V0sVB3K/Yyj7LbX4jHIRl+xIvZdv4pFYpqtoQGc=
 			</data>
 		</dict>
 		<key>Modules/flutter_facebook_auth.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -163,7 +163,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vC1R1/R5JqcNMRSoTs6kHPRRPl0v7y7rgvvqt4pexL8=
+			FM5eiirzNAARKjNAInb99rtSIo8hLtb8XG6jjaTddRw=
 			</data>
 		</dict>
 		<key>Modules/flutter_facebook_auth.swiftmodule/x86_64.swiftdoc</key>
@@ -177,7 +177,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vC1R1/R5JqcNMRSoTs6kHPRRPl0v7y7rgvvqt4pexL8=
+			FM5eiirzNAARKjNAInb99rtSIo8hLtb8XG6jjaTddRw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
