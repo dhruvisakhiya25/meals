@@ -168,7 +168,7 @@ class _HomePageState extends State<HomePage> {
                               Text(
                                 documents['popular name'],
                                 style: const TextStyle(
-                                    color: black, fontWeight: FontWeight.w600),
+                                    color: black, fontWeight: FontWeight.w600,fontSize: 30),
                               ),
                               Row(
                                 children: [
@@ -179,14 +179,14 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                   Text(
                                     documents['popular rate'].toString(),
-                                    style: const TextStyle(color: orange),
+                                    style: const TextStyle(color: orange,fontSize: 25),
                                   ),
                                   const SizedBox(
                                     width: 3,
                                   ),
                                   Text(
                                     documents['popular type'],
-                                    style: const TextStyle(color: black),
+                                    style: const TextStyle(color: black,fontSize: 25),
                                   )
                                 ],
                               )

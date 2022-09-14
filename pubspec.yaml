@@ -35,7 +35,6 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   circle_bottom_navigation_bar:
-  auth_buttons:
   google_sign_in:
   firebase_auth: ^3.7.0
   firebase_core: ^1.21.1
