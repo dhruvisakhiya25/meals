@@ -45,5 +45,8 @@ export 'package:meals/screens/more/notification.dart';
 export 'package:flutter_credit_card_new/credit_card_brand.dart';
 export 'package:flutter_credit_card_new/flutter_credit_card.dart';
 export 'package:pay/pay.dart';
-
-
+export 'package:meals/screens/Offer/offer_details.dart';
+export 'package:meals/screens/Menu/bevager/bevagers_details.dart';
+export  'package:meals/screens/Menu/desserts/desserts_details.dart';
+export 'package:meals/screens/Menu/foods/food_details.dart';
+export 'package:meals/screens/Menu/promotion/promotion_details.dart';

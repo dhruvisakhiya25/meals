@@ -1,6 +1,6 @@
 
 import 'package:meals/Network/export.dart';
-import 'package:meals/screens/Menu/promotion/promotion_details.dart';
+
 
 class Promotions extends StatefulWidget {
   const Promotions({Key? key}) : super(key: key);

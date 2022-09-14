@@ -1,5 +1,5 @@
 import 'package:meals/Network/export.dart';
-import 'package:meals/screens/Offer/offer_details.dart';
+
 
 class OfferPage extends StatefulWidget {
   const OfferPage({Key? key}) : super(key: key);
