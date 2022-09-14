@@ -1,6 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:meals/Network/export.dart';
-import 'package:meals/screens/Menu/desserts/desserts_details.dart';
+
 
 class Desserts extends StatefulWidget {
   const Desserts({Key? key}) : super(key: key);
@@ -71,7 +70,7 @@ class _DessertsState extends State<Desserts> {
                       QueryDocumentSnapshot documents = document[index];
                       return GestureDetector(
                         onTap: () {
-                          Get.to(DessertDetails(index: index,));
+                          Get.to(()=>DessertDetails(index: index,));
                         },
                         child: SingleChildScrollView(
                           child: Container(

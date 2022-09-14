@@ -19,6 +19,7 @@ class _ChineseState extends State<Chinese> {
     _streams = _products.snapshots();
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(

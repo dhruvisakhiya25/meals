@@ -1,6 +1,6 @@
 
 import 'package:meals/Network/export.dart';
-import 'package:meals/screens/Menu/promotion/promotion_details.dart';
+
 
 class Promotions extends StatefulWidget {
   const Promotions({Key? key}) : super(key: key);
@@ -72,7 +72,7 @@ class _PromotionsState extends State<Promotions> {
                       QueryDocumentSnapshot documents = document[index];
                       return GestureDetector(
                         onTap: () {
-                        Get.to(PromotionDetails(index: index,));
+                        Get.to(()=>PromotionDetails(index: index,));
                         },
                         child: SingleChildScrollView(
                           child: Container(

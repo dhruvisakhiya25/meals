@@ -1,5 +1,5 @@
 import 'package:meals/Network/export.dart';
-import 'package:meals/screens/Home/Popular/mostPopular_Details.dart';
+
 
 class MostPopular extends StatefulWidget {
   const MostPopular({Key? key}) : super(key: key);
