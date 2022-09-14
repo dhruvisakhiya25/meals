@@ -46,7 +46,7 @@ dependencies:
   shared_preferences:
   pay:
   get:
-  flutter_credit_card_new: ^0.0.4
+  flutter_credit_card_brazilian: ^2.0.0
 
 
 
