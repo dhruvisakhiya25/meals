@@ -20,12 +20,6 @@
       "languageVersion": "2.14"
     },
     {
-      "name": "auth_buttons",
-      "rootUri": "file:///Users/imac/Documents/devlopment/flutter/.pub-cache/hosted/pub.dartlang.org/auth_buttons-3.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.17"
-    },
-    {
       "name": "badges",
       "rootUri": "file:///Users/imac/Documents/devlopment/flutter/.pub-cache/hosted/pub.dartlang.org/badges-2.0.3",
       "packageUri": "lib/",
@@ -242,12 +236,6 @@
       "languageVersion": "2.15"
     },
     {
-      "name": "google_fonts",
-      "rootUri": "file:///Users/imac/Documents/devlopment/flutter/.pub-cache/hosted/pub.dartlang.org/google_fonts-3.0.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "google_sign_in",
       "rootUri": "file:///Users/imac/Documents/devlopment/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in-5.4.1",
       "packageUri": "lib/",
@@ -380,32 +368,8 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "path_provider",
-      "rootUri": "file:///Users/imac/Documents/devlopment/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.11",
-      "packageUri": "lib/",
-      "languageVersion": "2.14"
-    },
-    {
-      "name": "path_provider_android",
-      "rootUri": "file:///Users/imac/Documents/devlopment/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_android-2.0.20",
-      "packageUri": "lib/",
-      "languageVersion": "2.14"
-    },
-    {
-      "name": "path_provider_ios",
-      "rootUri": "file:///Users/imac/Documents/devlopment/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_ios-2.0.11",
-      "packageUri": "lib/",
-      "languageVersion": "2.14"
-    },
-    {
       "name": "path_provider_linux",
       "rootUri": "file:///Users/imac/Documents/devlopment/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-2.1.7",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "path_provider_macos",
-      "rootUri": "file:///Users/imac/Documents/devlopment/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-2.0.6",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -632,7 +596,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2022-09-14T09:19:15.534728Z",
+  "generated": "2022-09-14T09:20:15.743660Z",
   "generator": "pub",
   "generatorVersion": "2.18.0"
 }
