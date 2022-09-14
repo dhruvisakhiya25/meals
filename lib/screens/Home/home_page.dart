@@ -1,4 +1,6 @@
 import 'package:meals/Network/export.dart';
+import 'package:meals/screens/Home/Popular/popular.dart';
+import 'package:meals/screens/Home/RecentIems/recentIteams_Details.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -146,47 +148,52 @@ class _HomePageState extends State<HomePage> {
                       shrinkWrap: true,
                       itemBuilder: (context, index) {
                         QueryDocumentSnapshot documents = document[index];
-                        return Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Container(
-                              height: 250,
-                              width: 400,
-                              decoration: BoxDecoration(
-                                image: DecorationImage(
-                                  image: NetworkImage(
-                                    documents['popular image'],
+                        return GestureDetector(
+                          onTap: (){
+                            Get.to(PopularDetails(index: index));
+                          },
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                height: 250,
+                                width: 400,
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                      documents['popular image'],
+                                    ),
+                                    fit: BoxFit.fitWidth,
                                   ),
-                                  fit: BoxFit.fitWidth,
                                 ),
                               ),
-                            ),
-                            Text(
-                              documents['popular name'],
-                              style: const TextStyle(
-                                  color: black, fontWeight: FontWeight.w600),
-                            ),
-                            Row(
-                              children: [
-                                const Icon(
-                                  icStar,
-                                  color: orange,
-                                  size: 18,
-                                ),
-                                Text(
-                                  documents['popular rate'].toString(),
-                                  style: const TextStyle(color: orange),
-                                ),
-                                const SizedBox(
-                                  width: 3,
-                                ),
-                                Text(
-                                  documents['popular type'],
-                                  style: const TextStyle(color: black),
-                                )
-                              ],
-                            )
-                          ],
+                              Text(
+                                documents['popular name'],
+                                style: const TextStyle(
+                                    color: black, fontWeight: FontWeight.w600),
+                              ),
+                              Row(
+                                children: [
+                                  const Icon(
+                                    icStar,
+                                    color: orange,
+                                    size: 18,
+                                  ),
+                                  Text(
+                                    documents['popular rate'].toString(),
+                                    style: const TextStyle(color: orange),
+                                  ),
+                                  const SizedBox(
+                                    width: 3,
+                                  ),
+                                  Text(
+                                    documents['popular type'],
+                                    style: const TextStyle(color: black),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         );
                       },
                     );
@@ -259,63 +266,59 @@ class _HomePageState extends State<HomePage> {
                       shrinkWrap: true,
                       itemBuilder: (context, index) {
                         QueryDocumentSnapshot documents = document[index];
-                        return SizedBox(
-                          height: 100,
-                          child: Row(
+                        return ListTile(
+                          onTap: () {
+                            Get.to(RecentItemDetails(index: index));
+                          },
+                          leading: Container(
+                            // margin: const EdgeInsets.all(15),
+                            height: 130,
+                            width: 100,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                  image: NetworkImage(
+                                    documents['recent image'],
+                                  ),
+                                  fit: BoxFit.fill),
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                          ),
+                          title: Text(
+                            documents['recent name'],
+                            style: const TextStyle(
+                                color: black,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          subtitle: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+
                             children: [
-                              Container(
-                                margin: const EdgeInsets.all(15),
-                                width: 100,
-                                decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                      image: NetworkImage(
-                                        documents['recent image'],
+                            Text(
+                                        documents['recent type'],
                                       ),
-                                      fit: BoxFit.fill),
-                                  borderRadius: BorderRadius.circular(15),
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 20),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      documents['recent name'],
-                                      style: const TextStyle(
-                                          color: black,
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold),
-                                    ),
-                                    const SizedBox(
-                                      height: 5,
-                                    ),
-                                    Text(
-                                      documents['recent type'],
-                                    ),
-                                    const SizedBox(
-                                      height: 5,
-                                    ),
-                                    Row(
-                                      children: [
-                                        const Icon(
-                                          icStar,
-                                          color: orange,
-                                          size: 15,
-                                        ),
-                                        Text(
-                                          documents['recent rate'],
-                                          style: const TextStyle(
-                                              color: orange, fontSize: 15),
-                                        ),
-                                      ],
-                                    ),
-                                    const SizedBox(
-                                      height: 5,
-                                    ),
-                                  ],
-                                ),
-                              )
+                                      const SizedBox(
+                                        height: 5,
+                                      ),
+                                      Row(
+                                        children: [
+                                          const Icon(
+                                            icStar,
+                                            color: orange,
+                                            size: 15,
+                                          ),
+                                          Text(
+                                            documents['recent rate'],
+                                            style: const TextStyle(
+                                                color: orange, fontSize: 15),
+                                          ),
+                                        ],
+                                      ),
+                                      const SizedBox(
+                                        height: 5,
+                                      ),
+
+
                             ],
                           ),
                         );

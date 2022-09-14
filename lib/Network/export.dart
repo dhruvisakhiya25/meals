@@ -17,7 +17,7 @@ export 'package:meals/utils/icon.dart';
 export 'package:meals/utils/strings.dart';
 export 'package:cloud_firestore/cloud_firestore.dart';
 export 'package:meals/screens/Home/homefood.dart';
-export 'package:meals/screens/Home/most_popular.dart';
+export 'package:meals/screens/Home/Popular/most_popular.dart';
 export 'package:meals/utils/color.dart';
 export 'package:meals/utils/icon.dart';
 export 'package:meals/utils/strings.dart';
