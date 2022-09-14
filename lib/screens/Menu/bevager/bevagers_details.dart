@@ -100,15 +100,19 @@ class _BevagersDetailsState extends State<BevagersDetails> {
                                 height: 30,
                               ),
                               Text(
-                                document[widget.index]['rate'].toString(),
+                                document[widget.index]['rate'].toString(),style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w600),
                               ),
                               Text(
-                                document[widget.index]['description'].toString(),
+                                document[widget.index]['description'].toString(), style: TextStyle(
+                                fontSize: 18.5,
+                              ),
                               ),
                               const Divider(thickness: 2),
                               Row(
                                 children: [
-                                  Text(numberOfPortion),
+                                  Text(numberOfPortion,style: TextStyle(fontSize: 15.5),),
                                   const SizedBox(
                                     width: 20,
                                   ),
@@ -125,7 +129,7 @@ class _BevagersDetailsState extends State<BevagersDetails> {
                                   ),
                                   Text(
                                     '$counter',
-                                    style: const TextStyle(fontSize: 30),
+                                    style: const TextStyle(fontSize: 25),
                                   ),
                                   const SizedBox(
                                     width: 10,
