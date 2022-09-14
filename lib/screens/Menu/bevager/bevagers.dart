@@ -1,5 +1,4 @@
 import 'package:meals/Network/export.dart';
-import 'package:meals/screens/Menu/bevager/bevagers_details.dart';
 
 class Bevagers extends StatefulWidget {
   const Bevagers({Key? key}) : super(key: key);
@@ -70,7 +69,7 @@ class _BevagersState extends State<Bevagers> {
                       QueryDocumentSnapshot documents = document[index];
                       return GestureDetector(
                         onTap: () {
-                          Get.to(BevagersDetails(index: index));
+                          Get.to(()=>BevagersDetails(index: index));
                         },
                         child: SingleChildScrollView(
                           child: Container(
