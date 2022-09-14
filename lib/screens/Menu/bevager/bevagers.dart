@@ -1,6 +1,5 @@
 import 'package:meals/Network/export.dart';
 
-
 class Bevagers extends StatefulWidget {
   const Bevagers({Key? key}) : super(key: key);
 
@@ -10,7 +9,7 @@ class Bevagers extends StatefulWidget {
 
 class _BevagersState extends State<Bevagers> {
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('bevagers');
+      FirebaseFirestore.instance.collection('bevagers');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -70,7 +69,7 @@ class _BevagersState extends State<Bevagers> {
                       QueryDocumentSnapshot documents = document[index];
                       return GestureDetector(
                         onTap: () {
-                          Get.to(()=>BevagersDetails(index: index));
+                          Get.to(() => BevagersDetails(index: index));
                         },
                         child: SingleChildScrollView(
                           child: Container(
@@ -87,7 +86,10 @@ class _BevagersState extends State<Bevagers> {
                             child: ListTile(
                               title: Text(
                                 documents['txt'],
-                                style: const TextStyle(color: white,fontSize: 23,fontWeight: FontWeight.w600),
+                                style: const TextStyle(
+                                    color: white,
+                                    fontSize: 23,
+                                    fontWeight: FontWeight.w600),
                               ),
                               subtitle: Row(
                                 children: [
@@ -97,7 +99,8 @@ class _BevagersState extends State<Bevagers> {
                                   ),
                                   Text(
                                     documents['rate'].toString(),
-                                    style: const TextStyle(color: orange,fontSize: 20),
+                                    style: const TextStyle(
+                                        color: orange, fontSize: 20),
                                   ),
                                 ],
                               ),
