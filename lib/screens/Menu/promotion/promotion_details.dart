@@ -46,7 +46,7 @@ class _PromotionDetailsState extends State<PromotionDetails> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              StreamBuilder<QuerySnapshot>+(
+              StreamBuilder<QuerySnapshot>(
                 stream: _streams,
                 builder: (BuildContext context, AsyncSnapshot snapshot) {
                   if (snapshot.hasError) {
