@@ -1,6 +1,5 @@
 import 'package:meals/Network/export.dart';
 
-
 class Desserts extends StatefulWidget {
   const Desserts({Key? key}) : super(key: key);
 
@@ -10,7 +9,7 @@ class Desserts extends StatefulWidget {
 
 class _DessertsState extends State<Desserts> {
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('desserts');
+      FirebaseFirestore.instance.collection('desserts');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -70,7 +69,9 @@ class _DessertsState extends State<Desserts> {
                       QueryDocumentSnapshot documents = document[index];
                       return GestureDetector(
                         onTap: () {
-                          Get.to(()=>DessertDetails(index: index,));
+                          Get.to(() => DessertDetails(
+                                index: index,
+                              ));
                         },
                         child: SingleChildScrollView(
                           child: Container(
@@ -87,7 +88,10 @@ class _DessertsState extends State<Desserts> {
                             child: ListTile(
                               title: Text(
                                 documents['txt'],
-                                style: const TextStyle(color: white,fontSize: 23,fontWeight: FontWeight.w600),
+                                style: const TextStyle(
+                                    color: white,
+                                    fontSize: 23,
+                                    fontWeight: FontWeight.w600),
                               ),
                               subtitle: Row(
                                 children: [
@@ -97,7 +101,8 @@ class _DessertsState extends State<Desserts> {
                                   ),
                                   Text(
                                     documents['rate'].toString(),
-                                    style: const TextStyle(color: orange,fontSize: 20),
+                                    style: const TextStyle(
+                                        color: orange, fontSize: 20),
                                   ),
                                 ],
                               ),
@@ -116,5 +121,3 @@ class _DessertsState extends State<Desserts> {
     );
   }
 }
-
-
