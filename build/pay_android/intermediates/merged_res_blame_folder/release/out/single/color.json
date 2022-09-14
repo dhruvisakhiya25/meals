@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/imac/Documents/meals/build/pay_android/intermediates/merged_res/release/color/wallet_secondary_text_holo_dark.xml",
+        "source": "/Users/imac/.gradle/caches/transforms-3/a4704a6098d47fda30f4098900d7643c/transformed/jetified-play-services-wallet-18.1.2/res/color/wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/imac/Documents/meals/build/pay_android/intermediates/merged_res/release/color/common_google_signin_btn_tint.xml",
+        "source": "/Users/imac/.gradle/caches/transforms-3/95f06be4be8f7395144a44190fb4b75f/transformed/jetified-play-services-base-17.0.0/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/Users/imac/Documents/meals/build/pay_android/intermediates/merged_res/release/color/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/imac/.gradle/caches/transforms-3/95f06be4be8f7395144a44190fb4b75f/transformed/jetified-play-services-base-17.0.0/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/imac/Documents/meals/build/pay_android/intermediates/merged_res/release/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/imac/.gradle/caches/transforms-3/95f06be4be8f7395144a44190fb4b75f/transformed/jetified-play-services-base-17.0.0/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/imac/Documents/meals/build/pay_android/intermediates/merged_res/release/color/wallet_primary_text_holo_light.xml",
+        "source": "/Users/imac/.gradle/caches/transforms-3/a4704a6098d47fda30f4098900d7643c/transformed/jetified-play-services-wallet-18.1.2/res/color/wallet_primary_text_holo_light.xml"
+    }
+]
