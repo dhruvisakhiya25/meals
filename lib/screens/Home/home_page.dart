@@ -147,8 +147,8 @@ class _HomePageState extends State<HomePage> {
                       itemBuilder: (context, index) {
                         QueryDocumentSnapshot documents = document[index];
                         return GestureDetector(
-                          onTap: (){
-                            Get.to(()=>PopularDetails(index: index));
+                          onTap: () {
+                            Get.to(() => PopularDetails(index: index));
                           },
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -168,7 +168,9 @@ class _HomePageState extends State<HomePage> {
                               Text(
                                 documents['popular name'],
                                 style: const TextStyle(
-                                    color: black, fontWeight: FontWeight.w600,fontSize: 30),
+                                    color: black,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 30),
                               ),
                               Row(
                                 children: [
@@ -179,14 +181,16 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                   Text(
                                     documents['popular rate'].toString(),
-                                    style: const TextStyle(color: orange,fontSize: 25),
+                                    style: const TextStyle(
+                                        color: orange, fontSize: 25),
                                   ),
                                   const SizedBox(
                                     width: 3,
                                   ),
                                   Text(
                                     documents['popular type'],
-                                    style: const TextStyle(color: black,fontSize: 25),
+                                    style: const TextStyle(
+                                        color: black, fontSize: 25),
                                   )
                                 ],
                               )
@@ -266,7 +270,7 @@ class _HomePageState extends State<HomePage> {
                         QueryDocumentSnapshot documents = document[index];
                         return ListTile(
                           onTap: () {
-                            Get.to(()=>RecentItemDetails(index: index));
+                            Get.to(() => RecentItemDetails(index: index));
                           },
                           leading: Container(
                             // margin: const EdgeInsets.all(15),
@@ -290,33 +294,30 @@ class _HomePageState extends State<HomePage> {
                           ),
                           subtitle: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-
                             children: [
-                            Text(
-                                        documents['recent type'],
-                                      ),
-                                      const SizedBox(
-                                        height: 5,
-                                      ),
-                                      Row(
-                                        children: [
-                                          const Icon(
-                                            icStar,
-                                            color: orange,
-                                            size: 15,
-                                          ),
-                                          Text(
-                                            documents['recent rate'],
-                                            style: const TextStyle(
-                                                color: orange, fontSize: 15),
-                                          ),
-                                        ],
-                                      ),
-                                      const SizedBox(
-                                        height: 5,
-                                      ),
-
-
+                              Text(
+                                documents['recent type'],
+                              ),
+                              const SizedBox(
+                                height: 5,
+                              ),
+                              Row(
+                                children: [
+                                  const Icon(
+                                    icStar,
+                                    color: orange,
+                                    size: 15,
+                                  ),
+                                  Text(
+                                    documents['recent rate'],
+                                    style: const TextStyle(
+                                        color: orange, fontSize: 15),
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(
+                                height: 5,
+                              ),
                             ],
                           ),
                         );
