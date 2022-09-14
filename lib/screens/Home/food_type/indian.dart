@@ -9,11 +9,10 @@ class Indian extends StatefulWidget {
 
 class _IndianState extends State<Indian> {
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('indian');
+      FirebaseFirestore.instance.collection('indian');
   late Stream<QuerySnapshot> _streams;
 
   @override
-
   void initState() {
     super.initState();
     _streams = _products.snapshots();
@@ -66,7 +65,6 @@ class _IndianState extends State<Indian> {
                                 fit: BoxFit.cover),
                           ),
                         ),
-
                       ],
                     );
                   },
