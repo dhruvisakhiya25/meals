@@ -5,7 +5,8 @@ import 'package:meals/Network/export.dart';
 
 class DessertDetails extends StatefulWidget {
   int index;
-  DessertDetails({Key? key,required this.index}) : super(key: key);
+
+  DessertDetails({Key? key, required this.index}) : super(key: key);
 
   @override
   State<DessertDetails> createState() => _DessertDetailsState();
@@ -16,7 +17,7 @@ class _DessertDetailsState extends State<DessertDetails> {
 
   void increment() {
     setState(
-          () {
+      () {
         counter++;
       },
     );
@@ -24,14 +25,14 @@ class _DessertDetailsState extends State<DessertDetails> {
 
   void decrement() {
     setState(
-          () {
+      () {
         counter--;
       },
     );
   }
 
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('desserts');
+      FirebaseFirestore.instance.collection('desserts');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -96,31 +97,32 @@ class _DessertDetailsState extends State<DessertDetails> {
                               Text(
                                 document[widget.index]['txt'],
                                 style: const TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 30),
+                                    fontWeight: FontWeight.bold, fontSize: 30),
                               ),
                               const SizedBox(
                                 height: 30,
                               ),
                               Text(
-                                document[widget.index]['rate'].toString(), style: const TextStyle(
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.w600),
+                                document[widget.index]['rate'].toString(),
+                                style: const TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.w600),
                               ),
                               const SizedBox(
                                 height: 10,
                               ),
                               Text(
-                                document[widget.index]['description'], style: const TextStyle(
-                                fontSize: 18.5,
-                              ),
+                                document[widget.index]['description'],
+                                style: const TextStyle(
+                                  fontSize: 18.5,
+                                ),
                               ),
                               const Divider(thickness: 2),
                               Row(
                                 children: [
-                                  Text(numberOfPortion,style: const TextStyle(
-                                    fontSize: 15.5,
-                                  )),
+                                  Text(numberOfPortion,
+                                      style: const TextStyle(
+                                        fontSize: 15.5,
+                                      )),
                                   const SizedBox(
                                     width: 20,
                                   ),
@@ -135,13 +137,10 @@ class _DessertDetailsState extends State<DessertDetails> {
                                   const SizedBox(
                                     width: 10,
                                   ),
-                                  Text(
-                                      '$counter',
-
+                                  Text('$counter',
                                       style: const TextStyle(
                                         fontSize: 25,
-                                      )
-                                  ),
+                                      )),
                                   const SizedBox(
                                     width: 10,
                                   ),
@@ -188,26 +187,21 @@ class _DessertDetailsState extends State<DessertDetails> {
                                             topLeft: Radius.circular(45),
                                             bottomLeft: Radius.circular(45),
                                             topRight: Radius.circular(10),
-                                            bottomRight:
-                                            Radius.circular(10),
+                                            bottomRight: Radius.circular(10),
                                           ),
                                         ),
                                         child: Row(
                                           mainAxisAlignment:
-                                          MainAxisAlignment
-                                              .spaceBetween,
+                                              MainAxisAlignment.spaceBetween,
                                           children: [
                                             Padding(
-                                              padding:
-                                              const EdgeInsets.only(
+                                              padding: const EdgeInsets.only(
                                                   left: 10),
                                               child: Column(
                                                 crossAxisAlignment:
-                                                CrossAxisAlignment
-                                                    .center,
+                                                    CrossAxisAlignment.center,
                                                 mainAxisAlignment:
-                                                MainAxisAlignment
-                                                    .center,
+                                                    MainAxisAlignment.center,
                                                 children: [
                                                   Text(
                                                     totalPrice,
@@ -219,32 +213,26 @@ class _DessertDetailsState extends State<DessertDetails> {
                                                     style: const TextStyle(
                                                         fontSize: 27,
                                                         fontWeight:
-                                                        FontWeight
-                                                            .bold),
+                                                            FontWeight.bold),
                                                   ),
                                                   const SizedBox(
                                                     height: 5,
                                                   ),
                                                   Padding(
                                                     padding:
-                                                    const EdgeInsets
-                                                        .only(
-                                                        left: 20,
-                                                        top: 3),
+                                                        const EdgeInsets.only(
+                                                            left: 20, top: 3),
                                                     child: MaterialButton(
                                                       minWidth: 200,
                                                       onPressed: () {},
                                                       color: orange,
-                                                      shape:
-                                                      OutlineInputBorder(
+                                                      shape: OutlineInputBorder(
                                                         borderRadius:
-                                                        BorderRadius
-                                                            .circular(
-                                                            20),
+                                                            BorderRadius
+                                                                .circular(20),
                                                         borderSide:
-                                                        const BorderSide(
-                                                            color:
-                                                            orange),
+                                                            const BorderSide(
+                                                                color: orange),
                                                       ),
                                                       child: Row(
                                                         children: [
@@ -258,11 +246,12 @@ class _DessertDetailsState extends State<DessertDetails> {
                                                           ),
                                                           Text(
                                                             addToCart,
-                                                            style: const TextStyle(
-                                                                fontSize:
-                                                                19,
-                                                                color:
-                                                                white),
+                                                            style:
+                                                                const TextStyle(
+                                                                    fontSize:
+                                                                        19,
+                                                                    color:
+                                                                        white),
                                                           ),
                                                         ],
                                                       ),
@@ -274,13 +263,12 @@ class _DessertDetailsState extends State<DessertDetails> {
                                             SizedBox(
                                               height: 80,
                                               child: Container(
-                                                margin:
-                                                const EdgeInsets.only(
+                                                margin: const EdgeInsets.only(
                                                     right: 5),
                                                 height: 40,
                                                 width: 40,
                                                 decoration:
-                                                const ShapeDecoration(
+                                                    const ShapeDecoration(
                                                   shape: CircleBorder(),
                                                   color: white,
                                                   shadows: [
@@ -305,11 +293,10 @@ class _DessertDetailsState extends State<DessertDetails> {
                                 ],
                               )
                             ],
-                          ),)
-                        ,
+                          ),
+                        ),
                       )
-                    ]
-                    ,
+                    ],
                   );
                 },
               ),

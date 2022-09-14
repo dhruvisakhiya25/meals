@@ -5,7 +5,8 @@ import 'package:meals/Network/export.dart';
 
 class BevagersDetails extends StatefulWidget {
   int index;
-  BevagersDetails({Key? key,required this.index}) : super(key: key);
+
+  BevagersDetails({Key? key, required this.index}) : super(key: key);
 
   @override
   State<BevagersDetails> createState() => _BevagersDetailsState();
@@ -16,7 +17,7 @@ class _BevagersDetailsState extends State<BevagersDetails> {
 
   void increment() {
     setState(
-          () {
+      () {
         counter++;
       },
     );
@@ -24,14 +25,14 @@ class _BevagersDetailsState extends State<BevagersDetails> {
 
   void decrement() {
     setState(
-          () {
+      () {
         counter--;
       },
     );
   }
 
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('bevagers');
+      FirebaseFirestore.instance.collection('bevagers');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -39,10 +40,11 @@ class _BevagersDetailsState extends State<BevagersDetails> {
     super.initState();
     _streams = _products.snapshots();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:  SafeArea(
+      body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -63,7 +65,7 @@ class _BevagersDetailsState extends State<BevagersDetails> {
                   }
                   QuerySnapshot querySnapshot = snapshot.data;
                   List<QueryDocumentSnapshot> document = querySnapshot.docs;
-                  return  Stack(
+                  return Stack(
                     children: [
                       Container(
                         height: Screens.height(context) * 0.5,
@@ -95,26 +97,33 @@ class _BevagersDetailsState extends State<BevagersDetails> {
                               Text(
                                 document[widget.index]['txt'].toString(),
                                 style: const TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 30),
+                                    fontWeight: FontWeight.bold, fontSize: 30),
                               ),
                               const SizedBox(
                                 height: 30,
                               ),
                               Text(
-                                document[widget.index]['rate'].toString(),style: const TextStyle(
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.w600),
-                              ),const SizedBox(height: 10,),
-                              Text(
-                                document[widget.index]['description'].toString(), style: const TextStyle(
-                                fontSize: 18.5,
+                                document[widget.index]['rate'].toString(),
+                                style: const TextStyle(
+                                    fontSize: 20, fontWeight: FontWeight.w600),
                               ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                document[widget.index]['description']
+                                    .toString(),
+                                style: const TextStyle(
+                                  fontSize: 18.5,
+                                ),
                               ),
                               const Divider(thickness: 2),
                               Row(
                                 children: [
-                                  Text(numberOfPortion,style: const TextStyle(fontSize: 15.5),),
+                                  Text(
+                                    numberOfPortion,
+                                    style: const TextStyle(fontSize: 15.5),
+                                  ),
                                   const SizedBox(
                                     width: 20,
                                   ),
@@ -179,26 +188,21 @@ class _BevagersDetailsState extends State<BevagersDetails> {
                                             topLeft: Radius.circular(45),
                                             bottomLeft: Radius.circular(45),
                                             topRight: Radius.circular(10),
-                                            bottomRight:
-                                            Radius.circular(10),
+                                            bottomRight: Radius.circular(10),
                                           ),
                                         ),
                                         child: Row(
                                           mainAxisAlignment:
-                                          MainAxisAlignment
-                                              .spaceBetween,
+                                              MainAxisAlignment.spaceBetween,
                                           children: [
                                             Padding(
-                                              padding:
-                                              const EdgeInsets.only(
+                                              padding: const EdgeInsets.only(
                                                   left: 10),
                                               child: Column(
                                                 crossAxisAlignment:
-                                                CrossAxisAlignment
-                                                    .center,
+                                                    CrossAxisAlignment.center,
                                                 mainAxisAlignment:
-                                                MainAxisAlignment
-                                                    .center,
+                                                    MainAxisAlignment.center,
                                                 children: [
                                                   Text(
                                                     totalPrice,
@@ -210,32 +214,26 @@ class _BevagersDetailsState extends State<BevagersDetails> {
                                                     style: const TextStyle(
                                                         fontSize: 27,
                                                         fontWeight:
-                                                        FontWeight
-                                                            .bold),
+                                                            FontWeight.bold),
                                                   ),
                                                   const SizedBox(
                                                     height: 5,
                                                   ),
                                                   Padding(
                                                     padding:
-                                                    const EdgeInsets
-                                                        .only(
-                                                        left: 20,
-                                                        top: 3),
+                                                        const EdgeInsets.only(
+                                                            left: 20, top: 3),
                                                     child: MaterialButton(
                                                       minWidth: 200,
                                                       onPressed: () {},
                                                       color: orange,
-                                                      shape:
-                                                      OutlineInputBorder(
+                                                      shape: OutlineInputBorder(
                                                         borderRadius:
-                                                        BorderRadius
-                                                            .circular(
-                                                            20),
+                                                            BorderRadius
+                                                                .circular(20),
                                                         borderSide:
-                                                        const BorderSide(
-                                                            color:
-                                                            orange),
+                                                            const BorderSide(
+                                                                color: orange),
                                                       ),
                                                       child: Row(
                                                         children: [
@@ -249,11 +247,12 @@ class _BevagersDetailsState extends State<BevagersDetails> {
                                                           ),
                                                           Text(
                                                             addToCart,
-                                                            style: const TextStyle(
-                                                                fontSize:
-                                                                19,
-                                                                color:
-                                                                white),
+                                                            style:
+                                                                const TextStyle(
+                                                                    fontSize:
+                                                                        19,
+                                                                    color:
+                                                                        white),
                                                           ),
                                                         ],
                                                       ),
@@ -265,13 +264,12 @@ class _BevagersDetailsState extends State<BevagersDetails> {
                                             SizedBox(
                                               height: 80,
                                               child: Container(
-                                                margin:
-                                                const EdgeInsets.only(
+                                                margin: const EdgeInsets.only(
                                                     right: 5),
                                                 height: 40,
                                                 width: 40,
                                                 decoration:
-                                                const ShapeDecoration(
+                                                    const ShapeDecoration(
                                                   shape: CircleBorder(),
                                                   color: white,
                                                   shadows: [
