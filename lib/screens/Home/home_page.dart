@@ -110,13 +110,13 @@ class _HomePageState extends State<HomePage> {
                       popularRestaurants,
                       style: const TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 20,
+                          fontSize: 25,
                           color: black),
                     ),
                     Text(
                       viewAll,
                       style: const TextStyle(
-                          color: orange, fontWeight: FontWeight.w500),
+                          color: orange, fontWeight: FontWeight.w500,fontSize: 20),
                     )
                   ],
                 ),
@@ -212,12 +212,12 @@ class _HomePageState extends State<HomePage> {
                       style: const TextStyle(
                           color: black,
                           fontWeight: FontWeight.bold,
-                          fontSize: 20),
+                          fontSize: 30),
                     ),
                     Text(
                       viewAll,
                       style: const TextStyle(
-                          color: orange, fontWeight: FontWeight.w500),
+                          color: orange, fontWeight: FontWeight.w500,fontSize: 20),
                     )
                   ],
                 ),
@@ -238,7 +238,7 @@ class _HomePageState extends State<HomePage> {
                     Text(
                       viewAll,
                       style: const TextStyle(
-                          color: orange, fontWeight: FontWeight.w500),
+                          color: orange, fontWeight: FontWeight.w500,fontSize: 20),
                     )
                   ],
                 ),
