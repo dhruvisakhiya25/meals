@@ -1,5 +1,6 @@
 
 import 'package:meals/Network/export.dart';
+import 'package:meals/screens/Menu/promotion/promotion_details.dart';
 
 class Promotions extends StatefulWidget {
   const Promotions({Key? key}) : super(key: key);
@@ -71,18 +72,7 @@ class _PromotionsState extends State<Promotions> {
                       QueryDocumentSnapshot documents = document[index];
                       return GestureDetector(
                         onTap: () {
-                          if (index == 0) {
-                            Get.toNamed('/healthyfood');
-                          }
-                          if (index == 1) {
-                            Get.toNamed('/foodds');
-                          }
-                          if (index == 2) {
-                            Get.toNamed('/healthydise');
-                          }
-                          if (index == 3) {
-                            Get.toNamed('/healthybites');
-                          }
+                        Get.to(PromotionDetails(index: index,));
                         },
                         child: SingleChildScrollView(
                           child: Container(

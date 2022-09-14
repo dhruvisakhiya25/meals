@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'package:meals/screens/Menu/desserts/desserts.dart';
+import 'package:meals/screens/Menu/promotion/promotion.dart';
 
 import 'Network/export.dart';
 
@@ -121,22 +122,6 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/iceCream',
           page: () => const IceCream(),
-        ),
-        GetPage(
-          name: '/foodds',
-          page: () => const Foodds(),
-        ),
-        GetPage(
-          name: '/healthybites',
-          page: () => const HealthyBites(),
-        ),
-        GetPage(
-          name: '/healthydise',
-          page: () => const HealthyDise(),
-        ),
-        GetPage(
-          name: '/healthyfood',
-          page: () => const HealthyFood(),
         ),
         GetPage(name: '/mainPage', page: () => const MainPage(),)
       ],

@@ -75,7 +75,6 @@ class _BevagersDetailsState extends State<BevagersDetails> {
                         ),
                       ),
                       Container(
-                        // height: Screens.height(context) * 0.7,
                         width: Screens.width(context),
                         margin: EdgeInsets.only(
                             top: Screens.height(context) * 0.43),

@@ -34,7 +34,6 @@ export 'package:star_menu/star_menu.dart';
 export 'package:firebase_core/firebase_core.dart';
 export 'package:meals/screens/Menu/bevager/bevagers.dart';
 export 'package:meals/screens/Menu/foods/food.dart';
-export 'package:meals/screens/Menu/sweetitem/promotion.dart';
 export 'package:meals/screens/More/about_us.dart';
 export 'package:meals/screens/More/my_order/checkout.dart';
 export 'package:meals/screens/More/payment_details.dart';
@@ -51,7 +50,4 @@ export 'package:meals/screens/Offer/checkoffer/dalfry.dart';
 export 'package:meals/screens/Offer/checkoffer/ice-cream.dart';
 export 'package:meals/screens/Offer/checkoffer/idlisambhar.dart';
 export 'package:meals/screens/Offer/checkoffer/pizza.dart';
-export 'package:meals/screens/Menu/sweetitem/foodds.dart';
-export 'package:meals/screens/Menu/sweetitem/healthybites.dart';
-export 'package:meals/screens/Menu/sweetitem/healthydise.dart';
-export 'package:meals/screens/Menu/sweetitem/healthyfood.dart';
+
