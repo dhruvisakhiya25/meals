@@ -1,17 +1,16 @@
-
-
 import 'package:flutter/cupertino.dart';
 import 'package:meals/Network/export.dart';
 
-class OfferDetails extends StatefulWidget {
+class RecentItemDetails extends StatefulWidget {
   int index;
-   OfferDetails({Key? key,required this.index}) : super(key: key);
+   RecentItemDetails({Key? key,required this.index}) : super(key: key);
 
   @override
-  State<OfferDetails> createState() => _OfferDetailsState();
+  State<RecentItemDetails> createState() => _RecentItemDetailsState();
 }
 
-class _OfferDetailsState extends State<OfferDetails> {
+class _RecentItemDetailsState extends State<RecentItemDetails> {
+  @override
   int counter = 0;
 
   void increment() {
@@ -31,7 +30,7 @@ class _OfferDetailsState extends State<OfferDetails> {
   }
 
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('offer');
+  FirebaseFirestore.instance.collection('recent');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -39,11 +38,9 @@ class _OfferDetailsState extends State<OfferDetails> {
     super.initState();
     _streams = _products.snapshots();
   }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
+      body:  SafeArea(
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -72,7 +69,7 @@ class _OfferDetailsState extends State<OfferDetails> {
                         decoration: BoxDecoration(
                           image: DecorationImage(
                               image: NetworkImage(
-                                document[widget.index]['item image'],
+                                document[widget.index]['recent image'],
                               ),
                               fit: BoxFit.cover),
                         ),
@@ -95,7 +92,7 @@ class _OfferDetailsState extends State<OfferDetails> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  document[widget.index]['item name'],
+                                  document[widget.index]['recent name'],
                                   style: const TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 30),
@@ -104,7 +101,7 @@ class _OfferDetailsState extends State<OfferDetails> {
                                   height: 30,
                                 ),
                                 Text(
-                                  document[widget.index]['item rate'],
+                                  document[widget.index]['recent rate'],
                                   style: const TextStyle(
                                       fontSize: 20,
                                       fontWeight: FontWeight.w600),
