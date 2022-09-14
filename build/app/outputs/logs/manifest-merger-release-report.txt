@@ -93,7 +93,6 @@ MERGED from [:cloud_firestore] /Users/imac/Documents/meals/build/cloud_firestore
 MERGED from [:firebase_core] /Users/imac/Documents/meals/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-17:12
 MERGED from [:image_picker_android] /Users/imac/Documents/meals/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-21:12
 MERGED from [:flutter_plugin_android_lifecycle] /Users/imac/Documents/meals/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
-MERGED from [:path_provider_android] /Users/imac/Documents/meals/build/path_provider_android/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
 MERGED from [:pay_android] /Users/imac/Documents/meals/build/pay_android/intermediates/merged_manifest/release/AndroidManifest.xml:6:1-19:12
 MERGED from [:google_sign_in_android] /Users/imac/Documents/meals/build/google_sign_in_android/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-11:12
 MERGED from [:flutter_facebook_auth] /Users/imac/Documents/meals/build/flutter_facebook_auth/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
@@ -228,8 +227,6 @@ MERGED from [:image_picker_android] /Users/imac/Documents/meals/build/image_pick
 MERGED from [:image_picker_android] /Users/imac/Documents/meals/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_plugin_android_lifecycle] /Users/imac/Documents/meals/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
 MERGED from [:flutter_plugin_android_lifecycle] /Users/imac/Documents/meals/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
-MERGED from [:path_provider_android] /Users/imac/Documents/meals/build/path_provider_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
-MERGED from [:path_provider_android] /Users/imac/Documents/meals/build/path_provider_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
 MERGED from [:pay_android] /Users/imac/Documents/meals/build/pay_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-11:41
 MERGED from [:pay_android] /Users/imac/Documents/meals/build/pay_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-11:41
 MERGED from [:google_sign_in_android] /Users/imac/Documents/meals/build/google_sign_in_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41

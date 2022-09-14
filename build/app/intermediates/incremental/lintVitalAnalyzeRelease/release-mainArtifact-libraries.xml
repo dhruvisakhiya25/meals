@@ -69,19 +69,6 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="/Users/imac/Documents/meals/android@@:path_provider_android::release"
-      jars="/Users/imac/Documents/meals/build/path_provider_android/.transforms/ada5967a470b1cd71e4dba65fdb752de/transformed/out/jars/classes.jar"
-      resolved="io.flutter.plugins.pathprovider:path_provider_android:unspecified"
-      folder="/Users/imac/Documents/meals/build/path_provider_android/.transforms/ada5967a470b1cd71e4dba65fdb752de/transformed/out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
       name="/Users/imac/Documents/meals/android@@:pay_android::release"
       jars="/Users/imac/Documents/meals/build/pay_android/.transforms/178f7310c1d9e1b082278358ac12ddc4/transformed/out/jars/classes.jar"
       resolved="io.flutter.plugins.pay_android:pay_android:unspecified"
