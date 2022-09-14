@@ -9,11 +9,10 @@ class Chinese extends StatefulWidget {
 
 class _ChineseState extends State<Chinese> {
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('chinese');
+      FirebaseFirestore.instance.collection('chinese');
   late Stream<QuerySnapshot> _streams;
 
   @override
-
   void initState() {
     super.initState();
     _streams = _products.snapshots();
@@ -66,7 +65,6 @@ class _ChineseState extends State<Chinese> {
                                 fit: BoxFit.cover),
                           ),
                         ),
-
                       ],
                     );
                   },
