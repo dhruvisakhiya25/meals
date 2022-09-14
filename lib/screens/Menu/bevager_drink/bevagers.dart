@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:meals/Network/export.dart';
+import 'package:meals/screens/Menu/bevager_drink/bevagers_details.dart';
 
 class Bevagers extends StatefulWidget {
   const Bevagers({Key? key}) : super(key: key);
@@ -70,18 +71,7 @@ class _BevagersState extends State<Bevagers> {
                       QueryDocumentSnapshot documents = document[index];
                       return GestureDetector(
                         onTap: () {
-                          if (index == 0) {
-                            Get.toNamed('/fooddrink');
-                          }
-                          if (index == 1) {
-                            Get.toNamed('/strawberryjuice');
-                          }
-                          if (index == 2) {
-                            Get.toNamed('/drinks');
-                          }
-                          if (index == 3) {
-                            Get.toNamed('/lemonjuice');
-                          }
+                          Get.to(BevagersDetails(index: index));
                         },
                         child: SingleChildScrollView(
                           child: Container(
