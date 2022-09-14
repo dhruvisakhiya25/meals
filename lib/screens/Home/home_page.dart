@@ -1,4 +1,5 @@
 import 'package:meals/Network/export.dart';
+import 'package:meals/screens/Home/Popular/popular.dart';
 import 'package:meals/screens/Home/RecentIems/recentIteams_Details.dart';
 
 class HomePage extends StatefulWidget {
@@ -147,47 +148,52 @@ class _HomePageState extends State<HomePage> {
                       shrinkWrap: true,
                       itemBuilder: (context, index) {
                         QueryDocumentSnapshot documents = document[index];
-                        return Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Container(
-                              height: 250,
-                              width: 400,
-                              decoration: BoxDecoration(
-                                image: DecorationImage(
-                                  image: NetworkImage(
-                                    documents['popular image'],
+                        return GestureDetector(
+                          onTap: (){
+                            Get.to(PopularDetails(index: index));
+                          },
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                height: 250,
+                                width: 400,
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                      documents['popular image'],
+                                    ),
+                                    fit: BoxFit.fitWidth,
                                   ),
-                                  fit: BoxFit.fitWidth,
                                 ),
                               ),
-                            ),
-                            Text(
-                              documents['popular name'],
-                              style: const TextStyle(
-                                  color: black, fontWeight: FontWeight.w600),
-                            ),
-                            Row(
-                              children: [
-                                const Icon(
-                                  icStar,
-                                  color: orange,
-                                  size: 18,
-                                ),
-                                Text(
-                                  documents['popular rate'].toString(),
-                                  style: const TextStyle(color: orange),
-                                ),
-                                const SizedBox(
-                                  width: 3,
-                                ),
-                                Text(
-                                  documents['popular type'],
-                                  style: const TextStyle(color: black),
-                                )
-                              ],
-                            )
-                          ],
+                              Text(
+                                documents['popular name'],
+                                style: const TextStyle(
+                                    color: black, fontWeight: FontWeight.w600),
+                              ),
+                              Row(
+                                children: [
+                                  const Icon(
+                                    icStar,
+                                    color: orange,
+                                    size: 18,
+                                  ),
+                                  Text(
+                                    documents['popular rate'].toString(),
+                                    style: const TextStyle(color: orange),
+                                  ),
+                                  const SizedBox(
+                                    width: 3,
+                                  ),
+                                  Text(
+                                    documents['popular type'],
+                                    style: const TextStyle(color: black),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         );
                       },
                     );
