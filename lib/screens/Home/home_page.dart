@@ -296,7 +296,7 @@ class _HomePageState extends State<HomePage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                documents['recent type'],
+                                documents['recent type'],style: TextStyle(fontSize: 18),
                               ),
                               const SizedBox(
                                 height: 5,
@@ -311,7 +311,7 @@ class _HomePageState extends State<HomePage> {
                                   Text(
                                     documents['recent rate'],
                                     style: const TextStyle(
-                                        color: orange, fontSize: 15),
+                                        color: orange, fontSize: 17),
                                   ),
                                 ],
                               ),
