@@ -42,8 +42,6 @@ export 'package:meals/screens/Splash/splashScreen.dart';
 export 'package:meals/screens/more/inbox.dart';
 export 'package:meals/screens/more/my_order/my_order.dart';
 export 'package:meals/screens/more/notification.dart';
-export 'package:flutter_credit_card_new/credit_card_brand.dart';
-export 'package:flutter_credit_card_new/flutter_credit_card.dart';
 export 'package:pay/pay.dart';
 export 'package:meals/screens/Menu/promotion/promotion_details.dart';
 export 'package:meals/screens/Home/Popular/mostPopular_Details.dart';
