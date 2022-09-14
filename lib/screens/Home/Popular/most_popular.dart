@@ -1,6 +1,5 @@
 import 'package:meals/Network/export.dart';
 
-
 class MostPopular extends StatefulWidget {
   const MostPopular({Key? key}) : super(key: key);
 
@@ -52,7 +51,7 @@ class _MostPopularState extends State<MostPopular> {
                   itemBuilder: (context, index) {
                     QueryDocumentSnapshot documents = document[index];
                     return GestureDetector(
-                      onTap: (){
+                      onTap: () {
                         Get.to(MostPopularDetails(index: index));
                       },
                       child: Column(

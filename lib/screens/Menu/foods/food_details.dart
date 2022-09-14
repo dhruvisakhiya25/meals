@@ -6,7 +6,7 @@ import 'package:meals/Network/export.dart';
 class FoodDetails extends StatefulWidget {
   int index;
 
-   FoodDetails({Key? key,required this.index}) : super(key: key);
+  FoodDetails({Key? key, required this.index}) : super(key: key);
 
   @override
   State<FoodDetails> createState() => _FoodDetailsState();
@@ -17,7 +17,7 @@ class _FoodDetailsState extends State<FoodDetails> {
 
   void increment() {
     setState(
-          () {
+      () {
         counter++;
       },
     );
@@ -25,14 +25,14 @@ class _FoodDetailsState extends State<FoodDetails> {
 
   void decrement() {
     setState(
-          () {
+      () {
         counter--;
       },
     );
   }
 
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('food');
+      FirebaseFirestore.instance.collection('food');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -65,7 +65,7 @@ class _FoodDetailsState extends State<FoodDetails> {
                   }
                   QuerySnapshot querySnapshot = snapshot.data;
                   List<QueryDocumentSnapshot> document = querySnapshot.docs;
-                  return  Stack(
+                  return Stack(
                     children: [
                       Container(
                         height: Screens.height(context) * 0.5,
@@ -97,8 +97,7 @@ class _FoodDetailsState extends State<FoodDetails> {
                               Text(
                                 document[widget.index]['txt'].toString(),
                                 style: const TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 30),
+                                    fontWeight: FontWeight.bold, fontSize: 30),
                               ),
                               const SizedBox(
                                 height: 30,
@@ -106,14 +105,14 @@ class _FoodDetailsState extends State<FoodDetails> {
                               Text(
                                 document[widget.index]['rate'].toString(),
                                 style: const TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w600),
+                                    fontSize: 20, fontWeight: FontWeight.w600),
                               ),
                               const SizedBox(
                                 height: 10,
                               ),
                               Text(
-                                document[widget.index]['description'].toString(),
+                                document[widget.index]['description']
+                                    .toString(),
                                 style: const TextStyle(
                                   fontSize: 18.5,
                                 ),
@@ -129,8 +128,7 @@ class _FoodDetailsState extends State<FoodDetails> {
                                     width: 20,
                                   ),
                                   CupertinoButton(
-                                    borderRadius:
-                                    BorderRadius.circular(30),
+                                    borderRadius: BorderRadius.circular(30),
                                     color: orange,
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 20),
@@ -148,8 +146,7 @@ class _FoodDetailsState extends State<FoodDetails> {
                                     width: 10,
                                   ),
                                   CupertinoButton(
-                                    borderRadius:
-                                    BorderRadius.circular(30),
+                                    borderRadius: BorderRadius.circular(30),
                                     color: orange,
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 20),
@@ -185,39 +182,31 @@ class _FoodDetailsState extends State<FoodDetails> {
                                           color: white,
                                           boxShadow: [
                                             BoxShadow(
-                                                color: grey,
-                                                blurRadius: 10)
+                                                color: grey, blurRadius: 10)
                                           ],
                                           borderRadius: BorderRadius.only(
                                             topLeft: Radius.circular(45),
-                                            bottomLeft:
-                                            Radius.circular(45),
+                                            bottomLeft: Radius.circular(45),
                                             topRight: Radius.circular(10),
-                                            bottomRight:
-                                            Radius.circular(10),
+                                            bottomRight: Radius.circular(10),
                                           ),
                                         ),
                                         child: Row(
                                           mainAxisAlignment:
-                                          MainAxisAlignment
-                                              .spaceBetween,
+                                              MainAxisAlignment.spaceBetween,
                                           children: [
                                             Padding(
-                                              padding:
-                                              const EdgeInsets.only(
+                                              padding: const EdgeInsets.only(
                                                   left: 10),
                                               child: Column(
                                                 crossAxisAlignment:
-                                                CrossAxisAlignment
-                                                    .center,
+                                                    CrossAxisAlignment.center,
                                                 mainAxisAlignment:
-                                                MainAxisAlignment
-                                                    .center,
+                                                    MainAxisAlignment.center,
                                                 children: [
                                                   Text(
                                                     totalPrice,
-                                                    style:
-                                                    const TextStyle(
+                                                    style: const TextStyle(
                                                         fontSize: 17),
                                                   ),
                                                   Text(
@@ -225,32 +214,26 @@ class _FoodDetailsState extends State<FoodDetails> {
                                                     style: const TextStyle(
                                                         fontSize: 27,
                                                         fontWeight:
-                                                        FontWeight
-                                                            .bold),
+                                                            FontWeight.bold),
                                                   ),
                                                   const SizedBox(
                                                     height: 5,
                                                   ),
                                                   Padding(
                                                     padding:
-                                                    const EdgeInsets
-                                                        .only(
-                                                        left: 20,
-                                                        top: 3),
+                                                        const EdgeInsets.only(
+                                                            left: 20, top: 3),
                                                     child: MaterialButton(
                                                       minWidth: 200,
                                                       onPressed: () {},
                                                       color: orange,
-                                                      shape:
-                                                      OutlineInputBorder(
+                                                      shape: OutlineInputBorder(
                                                         borderRadius:
-                                                        BorderRadius
-                                                            .circular(
-                                                            20),
+                                                            BorderRadius
+                                                                .circular(20),
                                                         borderSide:
-                                                        const BorderSide(
-                                                            color:
-                                                            orange),
+                                                            const BorderSide(
+                                                                color: orange),
                                                       ),
                                                       child: Row(
                                                         children: [
@@ -264,11 +247,12 @@ class _FoodDetailsState extends State<FoodDetails> {
                                                           ),
                                                           Text(
                                                             addToCart,
-                                                            style: const TextStyle(
-                                                                fontSize:
-                                                                19,
-                                                                color:
-                                                                white),
+                                                            style:
+                                                                const TextStyle(
+                                                                    fontSize:
+                                                                        19,
+                                                                    color:
+                                                                        white),
                                                           ),
                                                         ],
                                                       ),
@@ -280,20 +264,18 @@ class _FoodDetailsState extends State<FoodDetails> {
                                             SizedBox(
                                               height: 80,
                                               child: Container(
-                                                margin:
-                                                const EdgeInsets.only(
+                                                margin: const EdgeInsets.only(
                                                     right: 5),
                                                 height: 40,
                                                 width: 40,
                                                 decoration:
-                                                const ShapeDecoration(
+                                                    const ShapeDecoration(
                                                   shape: CircleBorder(),
                                                   color: white,
                                                   shadows: [
                                                     BoxShadow(
                                                       color: placeholder,
-                                                      offset:
-                                                      Offset(0, 2),
+                                                      offset: Offset(0, 2),
                                                       blurRadius: 15,
                                                     )
                                                   ],
