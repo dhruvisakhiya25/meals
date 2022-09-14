@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:meals/Network/export.dart';
+import 'package:meals/screens/Menu/foods/food_details.dart';
 
 class Foods extends StatefulWidget {
   const Foods({Key? key}) : super(key: key);
@@ -10,7 +11,7 @@ class Foods extends StatefulWidget {
 
 class _FoodsState extends State<Foods> {
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('food');
+      FirebaseFirestore.instance.collection('food');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -70,18 +71,24 @@ class _FoodsState extends State<Foods> {
                       QueryDocumentSnapshot documents = document[index];
                       return GestureDetector(
                         onTap: () {
-                          if (index == 0) {
-                            Get.toNamed('/iteamsandwich');
-                          }
-                          if (index == 1) {
-                            Get.toNamed('/iteampasta');
-                          }
-                          if (index == 2) {
-                            Get.toNamed('/iteamburger');
-                          }
-                          if (index == 3) {
-                            Get.toNamed('/iteampizza');
-                          }
+                          // Navigator.push(
+                          //     context,
+                          //     MaterialPageRoute(
+                          //       builder: (context) => Demo(index: index),
+                          //     ));
+                          Get.to(FoodDetails(index: index));
+                          // if (index == 0) {
+                          //   Get.toNamed('/iteamsandwich');
+                          // }
+                          // if (index == 1) {
+                          //   Get.toNamed('/iteampasta');
+                          // }
+                          // if (index == 2) {
+                          //   Get.toNamed('/iteamburger');
+                          // }
+                          // if (index == 3) {
+                          //   Get.toNamed('/iteampizza');
+                          // }
                         },
                         child: SingleChildScrollView(
                           child: Container(
@@ -125,5 +132,71 @@ class _FoodsState extends State<Foods> {
         ),
       ),
     );
+  }
+}
+
+class Demo extends StatefulWidget {
+  int index;
+
+  Demo({Key? key, required this.index}) : super(key: key);
+
+  @override
+  State<Demo> createState() => _DemoState();
+}
+
+class _DemoState extends State<Demo> {
+  final CollectionReference _products =
+      FirebaseFirestore.instance.collection('iteam');
+  late Stream<QuerySnapshot> _streams;
+
+  @override
+  void initState() {
+    super.initState();
+    _streams = _products.snapshots();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        body: SafeArea(
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            StreamBuilder<QuerySnapshot>(
+              stream: _streams,
+              builder: (BuildContext context, AsyncSnapshot snapshot) {
+                if (snapshot.hasError) {
+                  return Center(
+                    child: Text(
+                      snapshot.error.toString(),
+                    ),
+                  );
+                }
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return const Center(
+                    child: CircularProgressIndicator(),
+                  );
+                }
+                QuerySnapshot querySnapshot = snapshot.data;
+                List<QueryDocumentSnapshot> document = querySnapshot.docs;
+                return Column(
+                  children: [
+                    Container(
+                      height: 100,
+                      width: 100,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: NetworkImage(document[widget.index]['iteamburger image'])
+                        )
+                      ),
+                    )
+                  ],
+                );
+              },
+            ),
+          ],
+        ),
+      ),
+    ));
   }
 }

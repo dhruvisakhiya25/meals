@@ -1,11 +1,8 @@
 import 'dart:io';
-
-
-import 'package:meals/screens/Menu/milkitem/desserts.dart';
+import 'package:meals/screens/Menu/desserts/desserts.dart';
 
 import 'Network/export.dart';
 
-//a
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   if (Platform.isIOS) {
@@ -125,68 +122,23 @@ class MyApp extends StatelessWidget {
           name: '/iceCream',
           page: () => const IceCream(),
         ),
-        GetPage(name: '/iteamsandwich', page: () => Sandwich()),
-        GetPage(
-          name: '/iteampasta',
-          page: () => const Pasta(),
-        ),
-        GetPage(
-          name: '/iteamburger',
-          page: () => const Burger(),
-        ),
-        GetPage(
-          name: '/iteampizza',
-          page: () => const Pizzaa(),
-        ),
-        GetPage(
-          name: '/drinks',
-          page: () => Drinks(),
-        ),
-        GetPage(
-          name: '/fooddrink',
-          page: () => FoodDrink(),
-        ),
-        GetPage(
-          name: '/lemonjuice',
-          page: () => LemonJuice(),
-        ),
-        GetPage(
-          name: '/strawberryjuice',
-          page: () => StrawberryJuice(),
-        ),
-        GetPage(
-          name: '/cake',
-          page: () => Cake(),
-        ),
-        GetPage(
-          name: '/chocolatecake',
-          page: () => ChocolateCake(),
-        ),
-        GetPage(
-          name: '/milkshake',
-          page: () => MilkShake(),
-        ),
-        GetPage(
-          name: '/oreocookiessandwich',
-          page: () => OreoCookiesSandwich(),
-        ),
         GetPage(
           name: '/foodds',
-          page: () => Foodds(),
+          page: () => const Foodds(),
         ),
         GetPage(
           name: '/healthybites',
-          page: () => HealthyBites(),
+          page: () => const HealthyBites(),
         ),
         GetPage(
           name: '/healthydise',
-          page: () => HealthyDise(),
+          page: () => const HealthyDise(),
         ),
         GetPage(
           name: '/healthyfood',
-          page: () => HealthyFood(),
+          page: () => const HealthyFood(),
         ),
-        GetPage(name: '/mainPage', page: () => MainPage(),)
+        GetPage(name: '/mainPage', page: () => const MainPage(),)
       ],
     );
   }
