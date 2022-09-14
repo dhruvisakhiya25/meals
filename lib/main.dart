@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const SplashScreen(),
+      home:  MySample(),
       initialRoute: '/',
       defaultTransition: Transition.circularReveal,
       getPages: [
@@ -81,7 +81,7 @@ class MyApp extends StatelessWidget {
 
         GetPage(
           name: '/paymentDetails',
-          page: () => const PaymentDetails(),
+          page: () =>  MySample(),
         ),
         GetPage(
           name: '/myOrderPage',
