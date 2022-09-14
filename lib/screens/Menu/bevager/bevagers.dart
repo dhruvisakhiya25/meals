@@ -1,6 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:meals/Network/export.dart';
-import 'package:meals/screens/Menu/bevager_drink/bevagers_details.dart';
+import 'package:meals/screens/Menu/bevager/bevagers_details.dart';
 
 class Bevagers extends StatefulWidget {
   const Bevagers({Key? key}) : super(key: key);

@@ -1,11 +1,8 @@
 import 'dart:io';
-
-
-import 'package:meals/screens/Menu/milkitem/desserts.dart';
+import 'package:meals/screens/Menu/desserts/desserts.dart';
 
 import 'Network/export.dart';
 
-//a
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   if (Platform.isIOS) {
@@ -124,22 +121,6 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/iceCream',
           page: () => const IceCream(),
-        ),
-        GetPage(
-          name: '/cake',
-          page: () => const Cake(),
-        ),
-        GetPage(
-          name: '/chocolatecake',
-          page: () => const ChocolateCake(),
-        ),
-        GetPage(
-          name: '/milkshake',
-          page: () => const MilkShake(),
-        ),
-        GetPage(
-          name: '/oreocookiessandwich',
-          page: () => const OreoCookiesSandwich(),
         ),
         GetPage(
           name: '/foodds',
