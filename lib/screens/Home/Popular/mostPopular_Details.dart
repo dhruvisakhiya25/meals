@@ -1,3 +1,5 @@
+// ignore_for_file: file_names, must_be_immutable
+
 import 'package:flutter/cupertino.dart';
 import 'package:meals/Network/export.dart';
 
@@ -11,7 +13,6 @@ class MostPopularDetails extends StatefulWidget {
 }
 
 class _MostPopularDetailsState extends State<MostPopularDetails> {
-  @override
   int counter = 0;
 
   void increment() {

@@ -72,7 +72,7 @@ class _PromotionsState extends State<Promotions> {
                       QueryDocumentSnapshot documents = document[index];
                       return GestureDetector(
                         onTap: () {
-                        Get.to(PromotionDetails(index: index,));
+                        Get.to(()=>PromotionDetails(index: index,));
                         },
                         child: SingleChildScrollView(
                           child: Container(

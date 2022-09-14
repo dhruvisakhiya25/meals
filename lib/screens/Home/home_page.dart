@@ -1,6 +1,4 @@
 import 'package:meals/Network/export.dart';
-import 'package:meals/screens/Home/Popular/popular.dart';
-import 'package:meals/screens/Home/RecentIems/recentIteams_Details.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -150,7 +148,7 @@ class _HomePageState extends State<HomePage> {
                         QueryDocumentSnapshot documents = document[index];
                         return GestureDetector(
                           onTap: (){
-                            Get.to(PopularDetails(index: index));
+                            Get.to(()=>PopularDetails(index: index));
                           },
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -268,7 +266,7 @@ class _HomePageState extends State<HomePage> {
                         QueryDocumentSnapshot documents = document[index];
                         return ListTile(
                           onTap: () {
-                            Get.to(RecentItemDetails(index: index));
+                            Get.to(()=>RecentItemDetails(index: index));
                           },
                           leading: Container(
                             // margin: const EdgeInsets.all(15),

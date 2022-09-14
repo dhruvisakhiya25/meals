@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/cupertino.dart';
 import 'package:meals/Network/export.dart';
 
@@ -100,19 +102,19 @@ class _BevagersDetailsState extends State<BevagersDetails> {
                                 height: 30,
                               ),
                               Text(
-                                document[widget.index]['rate'].toString(),style: TextStyle(
+                                document[widget.index]['rate'].toString(),style: const TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.w600),
-                              ),SizedBox(height: 10,),
+                              ),const SizedBox(height: 10,),
                               Text(
-                                document[widget.index]['description'].toString(), style: TextStyle(
+                                document[widget.index]['description'].toString(), style: const TextStyle(
                                 fontSize: 18.5,
                               ),
                               ),
                               const Divider(thickness: 2),
                               Row(
                                 children: [
-                                  Text(numberOfPortion,style: TextStyle(fontSize: 15.5),),
+                                  Text(numberOfPortion,style: const TextStyle(fontSize: 15.5),),
                                   const SizedBox(
                                     width: 20,
                                   ),

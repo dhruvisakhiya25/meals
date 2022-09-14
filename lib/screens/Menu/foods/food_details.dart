@@ -1,5 +1,6 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:meals/Network/export.dart';
 
 class FoodDetails extends StatefulWidget {
@@ -104,16 +105,16 @@ class _FoodDetailsState extends State<FoodDetails> {
                               ),
                               Text(
                                 document[widget.index]['rate'].toString(),
-                                style: TextStyle(
+                                style: const TextStyle(
                                     fontSize: 20,
                                     fontWeight: FontWeight.w600),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 10,
                               ),
                               Text(
                                 document[widget.index]['description'].toString(),
-                                style: TextStyle(
+                                style: const TextStyle(
                                   fontSize: 18.5,
                                 ),
                               ),
@@ -121,7 +122,7 @@ class _FoodDetailsState extends State<FoodDetails> {
                               Row(
                                 children: [
                                   Text(numberOfPortion,
-                                      style: TextStyle(
+                                      style: const TextStyle(
                                         fontSize: 15.5,
                                       )),
                                   const SizedBox(

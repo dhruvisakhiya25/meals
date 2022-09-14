@@ -1,3 +1,5 @@
+// ignore_for_file: file_names, must_be_immutable
+
 import 'package:flutter/cupertino.dart';
 import 'package:meals/Network/export.dart';
 
@@ -10,7 +12,6 @@ class RecentItemDetails extends StatefulWidget {
 }
 
 class _RecentItemDetailsState extends State<RecentItemDetails> {
-  @override
   int counter = 0;
 
   void increment() {
@@ -38,6 +39,7 @@ class _RecentItemDetailsState extends State<RecentItemDetails> {
     super.initState();
     _streams = _products.snapshots();
   }
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body:  SafeArea(

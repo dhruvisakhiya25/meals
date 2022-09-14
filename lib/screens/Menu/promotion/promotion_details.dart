@@ -1,5 +1,6 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:meals/Network/export.dart';
 
 class PromotionDetails extends StatefulWidget {
@@ -103,15 +104,15 @@ class _PromotionDetailsState extends State<PromotionDetails> {
                                   height: 30,
                                 ),
                                 Text(
-                                  document[widget.index]['rate'].toString(),style: TextStyle(
+                                  document[widget.index]['rate'].toString(),style: const TextStyle(
                                     fontSize: 20,
                                     fontWeight: FontWeight.w600),
-                                ),SizedBox(
+                                ),const SizedBox(
                                   height: 10,
                                 ),
                                 Text(
                                   document[widget.index]['description'],
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     fontSize: 18.5,
                                   ),
                                 ),
@@ -119,7 +120,7 @@ class _PromotionDetailsState extends State<PromotionDetails> {
                                 const Divider(thickness: 2),
                                 Row(
                                   children: [
-                                    Text(numberOfPortion,style: TextStyle(fontSize: 15.5),),
+                                    Text(numberOfPortion,style: const TextStyle(fontSize: 15.5),),
                                     const SizedBox(
                                       width: 20,
                                     ),
