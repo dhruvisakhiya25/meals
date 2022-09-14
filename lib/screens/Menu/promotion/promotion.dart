@@ -90,7 +90,7 @@ class _PromotionsState extends State<Promotions> {
                             child: ListTile(
                               title: Text(
                                 documents['txt'],
-                                style: const TextStyle(color: white),
+                                style: const TextStyle(color: white,fontWeight: FontWeight.w600,fontSize: 23),
                               ),
                               subtitle: Row(
                                 children: [
@@ -101,7 +101,7 @@ class _PromotionsState extends State<Promotions> {
                                   Text(
                                     documents['rate'].toString(),
                                     style: const TextStyle(
-                                      color: orange,
+                                      color: orange,fontSize: 20
                                     ),
                                   ),
                                 ],
