@@ -9,11 +9,10 @@ class Western extends StatefulWidget {
 
 class _WesternState extends State<Western> {
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('western');
+      FirebaseFirestore.instance.collection('western');
   late Stream<QuerySnapshot> _streams;
 
   @override
-
   void initState() {
     super.initState();
     _streams = _products.snapshots();
@@ -66,7 +65,6 @@ class _WesternState extends State<Western> {
                                 fit: BoxFit.cover),
                           ),
                         ),
-
                       ],
                     );
                   },
