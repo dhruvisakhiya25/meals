@@ -1,5 +1,3 @@
-
-
 // ignore_for_file: must_be_immutable
 
 import 'package:flutter/cupertino.dart';
@@ -7,7 +5,8 @@ import 'package:meals/Network/export.dart';
 
 class OfferDetails extends StatefulWidget {
   int index;
-   OfferDetails({Key? key,required this.index}) : super(key: key);
+
+  OfferDetails({Key? key, required this.index}) : super(key: key);
 
   @override
   State<OfferDetails> createState() => _OfferDetailsState();
@@ -18,7 +17,7 @@ class _OfferDetailsState extends State<OfferDetails> {
 
   void increment() {
     setState(
-          () {
+      () {
         counter++;
       },
     );
@@ -26,14 +25,14 @@ class _OfferDetailsState extends State<OfferDetails> {
 
   void decrement() {
     setState(
-          () {
+      () {
         counter--;
       },
     );
   }
 
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('offer');
+      FirebaseFirestore.instance.collection('offer');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -125,15 +124,13 @@ class _OfferDetailsState extends State<OfferDetails> {
                                   children: [
                                     Text(
                                       numberOfPortion,
-                                      style:
-                                      const TextStyle(fontSize: 15.5),
+                                      style: const TextStyle(fontSize: 15.5),
                                     ),
                                     const SizedBox(
                                       width: 20,
                                     ),
                                     CupertinoButton(
-                                      borderRadius:
-                                      BorderRadius.circular(30),
+                                      borderRadius: BorderRadius.circular(30),
                                       color: orange,
                                       padding: const EdgeInsets.symmetric(
                                           horizontal: 20),
@@ -151,8 +148,7 @@ class _OfferDetailsState extends State<OfferDetails> {
                                       width: 10,
                                     ),
                                     CupertinoButton(
-                                      borderRadius:
-                                      BorderRadius.circular(30),
+                                      borderRadius: BorderRadius.circular(30),
                                       color: orange,
                                       padding: const EdgeInsets.symmetric(
                                           horizontal: 20),
@@ -198,16 +194,16 @@ class _OfferDetailsState extends State<OfferDetails> {
                                       ),
                                       child: Row(
                                         mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
+                                            MainAxisAlignment.spaceBetween,
                                         children: [
                                           Padding(
-                                            padding: const EdgeInsets.only(
-                                                left: 10),
+                                            padding:
+                                                const EdgeInsets.only(left: 10),
                                             child: Column(
                                               crossAxisAlignment:
-                                              CrossAxisAlignment.center,
+                                                  CrossAxisAlignment.center,
                                               mainAxisAlignment:
-                                              MainAxisAlignment.center,
+                                                  MainAxisAlignment.center,
                                               children: [
                                                 Text(
                                                   totalPrice,
@@ -219,28 +215,26 @@ class _OfferDetailsState extends State<OfferDetails> {
                                                   style: const TextStyle(
                                                       fontSize: 27,
                                                       fontWeight:
-                                                      FontWeight.bold),
+                                                          FontWeight.bold),
                                                 ),
                                                 const SizedBox(
                                                   height: 5,
                                                 ),
                                                 Padding(
                                                   padding:
-                                                  const EdgeInsets.only(
-                                                      left: 20, top: 3),
+                                                      const EdgeInsets.only(
+                                                          left: 20, top: 3),
                                                   child: MaterialButton(
                                                     minWidth: 200,
                                                     onPressed: () {},
                                                     color: orange,
-                                                    shape:
-                                                    OutlineInputBorder(
+                                                    shape: OutlineInputBorder(
                                                       borderRadius:
-                                                      BorderRadius
-                                                          .circular(20),
+                                                          BorderRadius.circular(
+                                                              20),
                                                       borderSide:
-                                                      const BorderSide(
-                                                          color:
-                                                          orange),
+                                                          const BorderSide(
+                                                              color: orange),
                                                     ),
                                                     child: Row(
                                                       children: [
@@ -255,11 +249,9 @@ class _OfferDetailsState extends State<OfferDetails> {
                                                         Text(
                                                           addToCart,
                                                           style:
-                                                          const TextStyle(
-                                                              fontSize:
-                                                              19,
-                                                              color:
-                                                              white),
+                                                              const TextStyle(
+                                                                  fontSize: 19,
+                                                                  color: white),
                                                         ),
                                                       ],
                                                     ),
@@ -275,8 +267,7 @@ class _OfferDetailsState extends State<OfferDetails> {
                                                   right: 5),
                                               height: 40,
                                               width: 40,
-                                              decoration:
-                                              const ShapeDecoration(
+                                              decoration: const ShapeDecoration(
                                                 shape: CircleBorder(),
                                                 color: white,
                                                 shadows: [

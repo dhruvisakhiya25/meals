@@ -5,7 +5,8 @@ import 'package:meals/Network/export.dart';
 
 class PromotionDetails extends StatefulWidget {
   int index;
-   PromotionDetails({Key? key,required this.index}) : super(key: key);
+
+  PromotionDetails({Key? key, required this.index}) : super(key: key);
 
   @override
   State<PromotionDetails> createState() => _PromotionDetailsState();
@@ -16,7 +17,7 @@ class _PromotionDetailsState extends State<PromotionDetails> {
 
   void increment() {
     setState(
-          () {
+      () {
         counter++;
       },
     );
@@ -24,14 +25,14 @@ class _PromotionDetailsState extends State<PromotionDetails> {
 
   void decrement() {
     setState(
-          () {
+      () {
         counter--;
       },
     );
   }
 
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('promotions');
+      FirebaseFirestore.instance.collection('promotions');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -64,7 +65,7 @@ class _PromotionDetailsState extends State<PromotionDetails> {
                   }
                   QuerySnapshot querySnapshot = snapshot.data;
                   List<QueryDocumentSnapshot> document = querySnapshot.docs;
-                  return  Stack(
+                  return Stack(
                     children: [
                       Container(
                         height: Screens.height(context) * 0.5,
@@ -104,10 +105,12 @@ class _PromotionDetailsState extends State<PromotionDetails> {
                                   height: 30,
                                 ),
                                 Text(
-                                  document[widget.index]['rate'].toString(),style: const TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w600),
-                                ),const SizedBox(
+                                  document[widget.index]['rate'].toString(),
+                                  style: const TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w600),
+                                ),
+                                const SizedBox(
                                   height: 10,
                                 ),
                                 Text(
@@ -116,11 +119,13 @@ class _PromotionDetailsState extends State<PromotionDetails> {
                                     fontSize: 18.5,
                                   ),
                                 ),
-
                                 const Divider(thickness: 2),
                                 Row(
                                   children: [
-                                    Text(numberOfPortion,style: const TextStyle(fontSize: 15.5),),
+                                    Text(
+                                      numberOfPortion,
+                                      style: const TextStyle(fontSize: 15.5),
+                                    ),
                                     const SizedBox(
                                       width: 20,
                                     ),
@@ -185,26 +190,21 @@ class _PromotionDetailsState extends State<PromotionDetails> {
                                               topLeft: Radius.circular(45),
                                               bottomLeft: Radius.circular(45),
                                               topRight: Radius.circular(10),
-                                              bottomRight:
-                                              Radius.circular(10),
+                                              bottomRight: Radius.circular(10),
                                             ),
                                           ),
                                           child: Row(
                                             mainAxisAlignment:
-                                            MainAxisAlignment
-                                                .spaceBetween,
+                                                MainAxisAlignment.spaceBetween,
                                             children: [
                                               Padding(
-                                                padding:
-                                                const EdgeInsets.only(
+                                                padding: const EdgeInsets.only(
                                                     left: 10),
                                                 child: Column(
                                                   crossAxisAlignment:
-                                                  CrossAxisAlignment
-                                                      .center,
+                                                      CrossAxisAlignment.center,
                                                   mainAxisAlignment:
-                                                  MainAxisAlignment
-                                                      .center,
+                                                      MainAxisAlignment.center,
                                                   children: [
                                                     Text(
                                                       totalPrice,
@@ -216,32 +216,28 @@ class _PromotionDetailsState extends State<PromotionDetails> {
                                                       style: const TextStyle(
                                                           fontSize: 27,
                                                           fontWeight:
-                                                          FontWeight
-                                                              .bold),
+                                                              FontWeight.bold),
                                                     ),
                                                     const SizedBox(
                                                       height: 5,
                                                     ),
                                                     Padding(
                                                       padding:
-                                                      const EdgeInsets
-                                                          .only(
-                                                          left: 20,
-                                                          top: 3),
+                                                          const EdgeInsets.only(
+                                                              left: 20, top: 3),
                                                       child: MaterialButton(
                                                         minWidth: 200,
                                                         onPressed: () {},
                                                         color: orange,
                                                         shape:
-                                                        OutlineInputBorder(
+                                                            OutlineInputBorder(
                                                           borderRadius:
-                                                          BorderRadius
-                                                              .circular(
-                                                              20),
+                                                              BorderRadius
+                                                                  .circular(20),
                                                           borderSide:
-                                                          const BorderSide(
-                                                              color:
-                                                              orange),
+                                                              const BorderSide(
+                                                                  color:
+                                                                      orange),
                                                         ),
                                                         child: Row(
                                                           children: [
@@ -255,11 +251,12 @@ class _PromotionDetailsState extends State<PromotionDetails> {
                                                             ),
                                                             Text(
                                                               addToCart,
-                                                              style: const TextStyle(
-                                                                  fontSize:
-                                                                  19,
-                                                                  color:
-                                                                  white),
+                                                              style:
+                                                                  const TextStyle(
+                                                                      fontSize:
+                                                                          19,
+                                                                      color:
+                                                                          white),
                                                             ),
                                                           ],
                                                         ),
@@ -271,13 +268,12 @@ class _PromotionDetailsState extends State<PromotionDetails> {
                                               SizedBox(
                                                 height: 80,
                                                 child: Container(
-                                                  margin:
-                                                  const EdgeInsets.only(
+                                                  margin: const EdgeInsets.only(
                                                       right: 5),
                                                   height: 40,
                                                   width: 40,
                                                   decoration:
-                                                  const ShapeDecoration(
+                                                      const ShapeDecoration(
                                                     shape: CircleBorder(),
                                                     color: white,
                                                     shadows: [
