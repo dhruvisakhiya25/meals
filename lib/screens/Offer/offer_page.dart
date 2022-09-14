@@ -1,4 +1,5 @@
 import 'package:meals/Network/export.dart';
+import 'package:meals/screens/Offer/offer_details.dart';
 
 class OfferPage extends StatefulWidget {
   const OfferPage({Key? key}) : super(key: key);
@@ -91,17 +92,7 @@ class _OfferPageState extends State<OfferPage> {
                         QueryDocumentSnapshot documents = document[index];
                         return GestureDetector(
                           onTap: (){
-                            if(index==0){
-                              Get.toNamed('/dalFry');
-                            }if(index==1){
-                              Get.toNamed('/idliSambhar');
-                            }if(index==2){
-                              Get.toNamed('/dalBati');
-                            }if(index==3){
-                              Get.toNamed('/pizza');
-                            }if(index==4){
-                              Get.toNamed('/iceCream');
-                            }
+                          Get.to(OfferDetails(index: index));
                           },
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
