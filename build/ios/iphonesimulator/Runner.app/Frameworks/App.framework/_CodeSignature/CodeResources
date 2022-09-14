@@ -94,7 +94,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		isjSg0ghDOOgo0ke9T/B29ZEj4M=
+		nhcKTmBTGdh1sbi1WZBWFtNKyyE=
 		</data>
 		<key>flutter_assets/packages/auth_buttons/images/default/apple.svg</key>
 		<data>
@@ -1728,10 +1728,6 @@
 		<data>
 		G2nXXMD0VTqIkooMoENxBgH+zJA=
 		</data>
-		<key>flutter_assets/shaders/ink_sparkle.frag</key>
-		<data>
-		ougUWo4BSMC4Fulu4E/7KI64QEQ=
-		</data>
 		<key>flutter_assets/vm_snapshot_data</key>
 		<data>
 		EGrx+ceECFYMCwgndwmfZXgJFDU=
@@ -1952,11 +1948,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			isjSg0ghDOOgo0ke9T/B29ZEj4M=
+			nhcKTmBTGdh1sbi1WZBWFtNKyyE=
 			</data>
 			<key>hash2</key>
 			<data>
-			0j4O3UgnUVhxgdtZ25Rra519vofhbwxgW2fSZhC1bqw=
+			3d/MGfd5SzYKNsds7qETLHcVP2GyEDcPsQ597d0QeVU=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/default/apple.svg</key>
@@ -6445,17 +6441,6 @@
 			<key>hash2</key>
 			<data>
 			su+tiaI29HfR+Ya0PEzn/yR8KqxnSQ6sSbrjvscQz1g=
-			</data>
-		</dict>
-		<key>flutter_assets/shaders/ink_sparkle.frag</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ougUWo4BSMC4Fulu4E/7KI64QEQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			TJi4IoLl73mq25dUNTn1ASDQCHAXB890QAQ1YIkU0fw=
 			</data>
 		</dict>
 		<key>flutter_assets/vm_snapshot_data</key>
