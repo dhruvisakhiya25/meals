@@ -51,3 +51,5 @@ export 'package:meals/screens/Home/Popular/popular.dart';
 export 'package:meals/screens/Home/RecentIems/recentIteams_Details.dart';
 export 'package:meals/screens/Menu/bevager/bevagers_details.dart';
 export 'package:meals/screens/Menu/desserts/desserts_details.dart';
+export 'package:meals/screens/Menu/foods/food_details.dart';
+export  'package:meals/screens/Offer/offer_details.dart';
