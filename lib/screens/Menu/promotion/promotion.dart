@@ -1,6 +1,4 @@
-
 import 'package:meals/Network/export.dart';
-
 
 class Promotions extends StatefulWidget {
   const Promotions({Key? key}) : super(key: key);
@@ -9,10 +7,9 @@ class Promotions extends StatefulWidget {
   State<Promotions> createState() => _PromotionsState();
 }
 
-
 class _PromotionsState extends State<Promotions> {
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('promotions');
+      FirebaseFirestore.instance.collection('promotions');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -72,7 +69,9 @@ class _PromotionsState extends State<Promotions> {
                       QueryDocumentSnapshot documents = document[index];
                       return GestureDetector(
                         onTap: () {
-                        Get.to(()=>PromotionDetails(index: index,));
+                          Get.to(() => PromotionDetails(
+                                index: index,
+                              ));
                         },
                         child: SingleChildScrollView(
                           child: Container(
@@ -90,7 +89,10 @@ class _PromotionsState extends State<Promotions> {
                             child: ListTile(
                               title: Text(
                                 documents['txt'],
-                                style: const TextStyle(color: white,fontWeight: FontWeight.w600,fontSize: 23),
+                                style: const TextStyle(
+                                    color: white,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 23),
                               ),
                               subtitle: Row(
                                 children: [
@@ -101,8 +103,7 @@ class _PromotionsState extends State<Promotions> {
                                   Text(
                                     documents['rate'].toString(),
                                     style: const TextStyle(
-                                      color: orange,fontSize: 20
-                                    ),
+                                        color: orange, fontSize: 20),
                                   ),
                                 ],
                               ),
