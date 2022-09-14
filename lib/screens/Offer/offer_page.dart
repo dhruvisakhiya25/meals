@@ -91,17 +91,17 @@ class _OfferPageState extends State<OfferPage> {
                         QueryDocumentSnapshot documents = document[index];
                         return GestureDetector(
                           onTap: (){
-                            if(index==0){
-                              Get.toNamed('/dalFry');
-                            }if(index==1){
-                              Get.toNamed('/idliSambhar');
-                            }if(index==2){
-                              Get.toNamed('/dalBati');
-                            }if(index==3){
-                              Get.toNamed('/pizza');
-                            }if(index==4){
-                              Get.toNamed('/iceCream');
-                            }
+                            // if(index==0){
+                            //   Get.toNamed('/dalFry');
+                            // }if(index==1){
+                            //   Get.toNamed('/idliSambhar');
+                            // }if(index==2){
+                            //   Get.toNamed('/dalBati');
+                            // }if(index==3){
+                            //   Get.toNamed('/pizza');
+                            // }if(index==4){
+                            //   Get.toNamed('/iceCream');
+                            // }
                           },
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
