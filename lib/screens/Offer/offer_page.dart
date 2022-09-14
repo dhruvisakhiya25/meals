@@ -123,14 +123,14 @@ class _OfferPageState extends State<OfferPage> {
                                   ),
                                   Text(
                                     documents['item rate'].toString(),
-                                    style: const TextStyle(color: orange),
+                                    style: const TextStyle(color: orange,fontSize: 20),
                                   ),
                                   const SizedBox(
                                     width: 5,
                                   ),
                                   Text(
                                     documents['item type'],
-                                    style: const TextStyle(color: grey),
+                                    style: const TextStyle(color: grey,fontSize: 20),
                                   )
                                 ],
                               )
