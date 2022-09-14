@@ -88,7 +88,7 @@ class _DessertsState extends State<Desserts> {
                             child: ListTile(
                               title: Text(
                                 documents['txt'],
-                                style: const TextStyle(color: white),
+                                style: const TextStyle(color: white,fontSize: 23,fontWeight: FontWeight.w600),
                               ),
                               subtitle: Row(
                                 children: [
@@ -98,7 +98,7 @@ class _DessertsState extends State<Desserts> {
                                   ),
                                   Text(
                                     documents['rate'].toString(),
-                                    style: const TextStyle(color: orange),
+                                    style: const TextStyle(color: orange,fontSize: 20),
                                   ),
                                 ],
                               ),

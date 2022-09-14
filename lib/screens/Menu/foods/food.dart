@@ -71,24 +71,7 @@ class _FoodsState extends State<Foods> {
                       QueryDocumentSnapshot documents = document[index];
                       return GestureDetector(
                         onTap: () {
-                          // Navigator.push(
-                          //     context,
-                          //     MaterialPageRoute(
-                          //       builder: (context) => Demo(index: index),
-                          //     ));
                           Get.to(FoodDetails(index: index));
-                          // if (index == 0) {
-                          //   Get.toNamed('/iteamsandwich');
-                          // }
-                          // if (index == 1) {
-                          //   Get.toNamed('/iteampasta');
-                          // }
-                          // if (index == 2) {
-                          //   Get.toNamed('/iteamburger');
-                          // }
-                          // if (index == 3) {
-                          //   Get.toNamed('/iteampizza');
-                          // }
                         },
                         child: SingleChildScrollView(
                           child: Container(
@@ -105,7 +88,7 @@ class _FoodsState extends State<Foods> {
                             child: ListTile(
                               title: Text(
                                 documents['txt'],
-                                style: const TextStyle(color: white),
+                                style: const TextStyle(color: white,fontSize: 23,fontWeight: FontWeight.w600),
                               ),
                               subtitle: Row(
                                 children: [
@@ -115,7 +98,7 @@ class _FoodsState extends State<Foods> {
                                   ),
                                   Text(
                                     documents['rate'].toString(),
-                                    style: const TextStyle(color: orange),
+                                    style: const TextStyle(color: orange,fontSize: 20),
                                   ),
                                 ],
                               ),

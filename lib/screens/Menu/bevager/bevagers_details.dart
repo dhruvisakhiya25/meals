@@ -103,7 +103,7 @@ class _BevagersDetailsState extends State<BevagersDetails> {
                                 document[widget.index]['rate'].toString(),style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.w600),
-                              ),
+                              ),SizedBox(height: 10,),
                               Text(
                                 document[widget.index]['description'].toString(), style: TextStyle(
                                 fontSize: 18.5,
