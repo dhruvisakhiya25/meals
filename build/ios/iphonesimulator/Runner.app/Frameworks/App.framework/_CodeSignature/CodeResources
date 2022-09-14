@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		Z/0WoG4WJIVW4iMIhtvtF5sovxU=
+		s0cxr3Muv7BuJORXoJjU5tvKBQs=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		6pVS2ZEp7NBMt7C8wrsxdr33wCY=
+		2Q/JofiZIShE783unpAdf+CfSGM=
 		</data>
 		<key>flutter_assets/assets/.DS_Store</key>
 		<data>
@@ -90,11 +90,11 @@
 		</data>
 		<key>flutter_assets/isolate_snapshot_data</key>
 		<data>
-		+udtKIRyAcIS6rTHnYkqPRthPjk=
+		eQjUSN4q35Uzd/55EBjW4jV/nYU=
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		9wPRNud5GZr45PJBLGCAb7XBMhU=
+		fzL+mivhALrk76HxTVMm7ytENBc=
 		</data>
 		<key>flutter_assets/packages/auth_buttons/images/default/apple.svg</key>
 		<data>
@@ -1734,20 +1734,28 @@
 		</data>
 		<key>flutter_assets/vm_snapshot_data</key>
 		<data>
-		h8pEgB2abbws6A/J7VE0iurKhow=
+		EGrx+ceECFYMCwgndwmfZXgJFDU=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			s0cxr3Muv7BuJORXoJjU5tvKBQs=
+			</data>
 			<key>hash2</key>
 			<data>
-			2QDLvb/QzLzZcQCSvjUzsbc9inonJKPej+tcClQy9a0=
+			6MReBFoKxtdtygLKYT19BS/Uakkf6MEXAuON8NBfsZk=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			IkAlvJMyOn3dpuvCecRdKcED2gM=
+			</data>
 			<key>hash2</key>
 			<data>
 			7qoRbrNx1H0sldSDBIx5A971SSKih5TqtL1WaJCizCU=
@@ -1755,13 +1763,21 @@
 		</dict>
 		<key>flutter_assets/NOTICES.Z</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			2Q/JofiZIShE783unpAdf+CfSGM=
+			</data>
 			<key>hash2</key>
 			<data>
-			B9diVU/kHVw5nc/bZedasLMgexrH4EScFj4wQPCQZsk=
+			YxAXS9qYkTNnf5MoEw7xP4YLsip1fWyI227/5e75JH0=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/apple.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			SL7lxwRwTRgRgI08Ct7LCsf5EZg=
+			</data>
 			<key>hash2</key>
 			<data>
 			i1zHflZ/RC0sXzXwDK1vRZgH40jmIZClxQB26Gtbezw=
@@ -1769,6 +1785,10 @@
 		</dict>
 		<key>flutter_assets/assets/gpay.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			/uMGtHgYFzdASIBYLAyQct7rmm0=
+			</data>
 			<key>hash2</key>
 			<data>
 			3gQkP74tyvp+35vnMgsE/3Q3MtyB1eWvsMgz6xzcGwQ=
@@ -1776,6 +1796,10 @@
 		</dict>
 		<key>flutter_assets/assets/image/MealMonkeyLogo.png</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			PN+ACIvKj2F+Z1omB6Ehejr8exc=
+			</data>
 			<key>hash2</key>
 			<data>
 			zacPi/8WFlZzY6apJLdgbN/vCJsdDTy5hnWFshwL3jc=
@@ -1783,6 +1807,10 @@
 		</dict>
 		<key>flutter_assets/assets/image/background.jpg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			8bDEWpM4gH6zrIX8xhCM6M0QFns=
+			</data>
 			<key>hash2</key>
 			<data>
 			pTWKZGGNncYNmpOo3dTlrkaABWgVL76FxnTwF+sLJpw=
@@ -1790,6 +1818,10 @@
 		</dict>
 		<key>flutter_assets/assets/image/coffee2.jpg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			SrWqSxGwTmyy2tp216GfZusT/7E=
+			</data>
 			<key>hash2</key>
 			<data>
 			0DphCfPKxxFObMgWqZmbHz3OdG9mxTa+DbYWQZTtTO8=
@@ -1797,6 +1829,10 @@
 		</dict>
 		<key>flutter_assets/assets/image/dessert.jpg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			ZFX37QoJ+FRe10KYKUaewpIviEw=
+			</data>
 			<key>hash2</key>
 			<data>
 			WjjwzXdfDs7SR9GFvTuWz1HrFTYWcYcUzo3GZIbxI4Q=
@@ -1804,6 +1840,10 @@
 		</dict>
 		<key>flutter_assets/assets/image/google.png</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			1BBLJUmflkKAb2KKATnDW1GuwKM=
+			</data>
 			<key>hash2</key>
 			<data>
 			WsmNAsRDL6rgaGkgjcmiEVpCJBO3ZOHBatkxZC1gi9k=
@@ -1811,6 +1851,10 @@
 		</dict>
 		<key>flutter_assets/assets/image/hamburger3.jpg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			HN50Cvyy67t2K3DNAfFdh0PEUKk=
+			</data>
 			<key>hash2</key>
 			<data>
 			Vg/+GrwAs9Ii6KFxilMSwmLWaj/sDQMQybCBMPg6ypo=
@@ -1818,6 +1862,10 @@
 		</dict>
 		<key>flutter_assets/assets/image/img.png</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			k1CArOlPMSwwpjuARrGCjhuc2R8=
+			</data>
 			<key>hash2</key>
 			<data>
 			1m3PPucmFKFufZsN8brWUOFVqJKlVKiBkPA4vSO4+9A=
@@ -1825,6 +1873,10 @@
 		</dict>
 		<key>flutter_assets/assets/image/login_bg.png</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			jywCp1pvQKf3QdohQ88+RcSnjb0=
+			</data>
 			<key>hash2</key>
 			<data>
 			pNnt3JbyuqEO3iO9/p+zPj9KNBwdlUcEEZ6jCbjzqQo=
@@ -1832,6 +1884,10 @@
 		</dict>
 		<key>flutter_assets/assets/image/splashIcon.png</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			r5+VFSwa1dEn6e1tSNRDsEEzQ8U=
+			</data>
 			<key>hash2</key>
 			<data>
 			ViWo8811RQ55dkpCHqe5H+OypnxCPY/MM1NSdhlqa+U=
@@ -1839,6 +1895,10 @@
 		</dict>
 		<key>flutter_assets/assets/image/splashs.png</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			HzZQ7JUy4bddl4+nHp8ihkqmkPo=
+			</data>
 			<key>hash2</key>
 			<data>
 			UNPpMP+4ltVp9dsLfbnpElBBe1NVisXIqwfp2Brl55M=
@@ -1846,6 +1906,10 @@
 		</dict>
 		<key>flutter_assets/assets/image/visa.jpg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			NfK9rAFObtJCRBL4hvPU1Veqrus=
+			</data>
 			<key>hash2</key>
 			<data>
 			SqDpsfKP9chO+KjuKf244W1xHJCMDPSem6T/3vvxA6A=
@@ -1853,6 +1917,10 @@
 		</dict>
 		<key>flutter_assets/assets/image/western2.jpg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			yM8YjKEKufJSBIy0YOt8hNcEgYQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			YxnCgSVXMmxmMi7jF4zZPgvLRTnhqRf379h4whOgllQ=
@@ -1860,6 +1928,10 @@
 		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			mcmNrC70e/OT89y/p5EgxkVsLrs=
+			</data>
 			<key>hash2</key>
 			<data>
 			BugRRJlkJdABYrpi+ZDcvZjsh+EPQ4Uf2ST65b83vlc=
@@ -1867,20 +1939,32 @@
 		</dict>
 		<key>flutter_assets/isolate_snapshot_data</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			eQjUSN4q35Uzd/55EBjW4jV/nYU=
+			</data>
 			<key>hash2</key>
 			<data>
-			eSIT6ez3qoVubFYyO1nZwI2rBt+8+ysx4WZAsR28p80=
+			C7/dHOIHQrKZs9QJ05ge+h+ASynlvfrCK18NZnYRNOw=
 			</data>
 		</dict>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			fzL+mivhALrk76HxTVMm7ytENBc=
+			</data>
 			<key>hash2</key>
 			<data>
-			R7GL45MhboeYoQKyHBpXi/9GgLhP9bx0P5NNnLp8ADU=
+			lpa1vrQYJMDOqFsxHQpoYrioyTEVpTeZjOFR7G0YwOo=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/default/apple.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			1hR32DYNgZTj2hrNJ0DEk9bv9Rw=
+			</data>
 			<key>hash2</key>
 			<data>
 			HDU5ROfFdfyIpTKFE8Bko1KN9j5Ugsdl+lyMU8yJuxc=
@@ -1888,6 +1972,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/default/email.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			6LZilekXiP9N9qONhhH/I4tOW0I=
+			</data>
 			<key>hash2</key>
 			<data>
 			yc0+bj4gEyyVF8UjV5r1rbq3G/cAyOYTIQDuKZaHdL4=
@@ -1895,6 +1983,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/default/facebook.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			wUuHK+Ahe9gCOBCRXX7amW0ATG0=
+			</data>
 			<key>hash2</key>
 			<data>
 			QAjGTpKUsmmNtI/LtcJyIH+WxlASzk+vC5aeCyaDqvY=
@@ -1902,6 +1994,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/default/github_black.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			YjC0vBuv8o4WmYnadh042iZiwyg=
+			</data>
 			<key>hash2</key>
 			<data>
 			pCmXseFo0JnRZZy1wzzpdZL60YC1i/A7iZesEwjRXNY=
@@ -1909,6 +2005,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/default/google.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Q6dgXu/D4YpmiF7vwMZsnL46WJw=
+			</data>
 			<key>hash2</key>
 			<data>
 			BmjE04DMnLI1GVD+eqYDM+aw59fb9TuliddGYByLLIo=
@@ -1916,6 +2016,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/default/huawei.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			LJuX93qSB6gXVo2lmfVi0pMxPBc=
+			</data>
 			<key>hash2</key>
 			<data>
 			zD6K1ej9YX4L4EQrHRb2QDwRy5owHceiKt88M6E6HFc=
@@ -1923,6 +2027,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/default/microsoft.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			j1OfM/Wwno6dJAbGyPujqpNGq3U=
+			</data>
 			<key>hash2</key>
 			<data>
 			74EfnIWrZ0WeB1z7szIhl5dn+v3qJ9jMCDDNNQnReeU=
@@ -1930,6 +2038,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/default/twitter.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			OIRW7JWajiwV3nbigwvLm1j2sdg=
+			</data>
 			<key>hash2</key>
 			<data>
 			O/0A3f2xMmvE8xoTZnHZluQ4QcwCFITjzYGIdOvwvPk=
@@ -1937,6 +2049,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/outlined/apple.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			71qxE4kJMQwCkAX8Md21pI+9U5Y=
+			</data>
 			<key>hash2</key>
 			<data>
 			ehsbySseAsYyadtMxWKptdzBpZ9Ho6kWdtuLeEzskCQ=
@@ -1944,6 +2060,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/outlined/email.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			021SzmWFMKWcrARNSYTF2MagH/M=
+			</data>
 			<key>hash2</key>
 			<data>
 			UW3DkbFjlDNmtm04WRnRDa3k2QPt6UkXqMMwQNMYI9U=
@@ -1951,6 +2071,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/outlined/facebook.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			NJMKb2+JW3ax5NTLWTI3wvMBSek=
+			</data>
 			<key>hash2</key>
 			<data>
 			tJXRW+OoOYJcMG8W96+NhSMgRp3raOjW6vM9K0TtyQw=
@@ -1958,6 +2082,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/outlined/github.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			svTRYnjqSPeZGnoXk9ChcGh+nqM=
+			</data>
 			<key>hash2</key>
 			<data>
 			ccAOGHpqrOUgAkPk4dvA29UYwWL5elDY2H+qGkhVI9w=
@@ -1965,6 +2093,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/outlined/google.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			MYppN2RzRK2m0epO30Uy7v9xadg=
+			</data>
 			<key>hash2</key>
 			<data>
 			ocFcM/Ykqsl8VoA4cdKD732ydQl9Vasta6eTM66fmUE=
@@ -1972,6 +2104,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/outlined/huawei.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			R6eukndhOf/EaEHiNB4MXtqjFtg=
+			</data>
 			<key>hash2</key>
 			<data>
 			YNcK3uf3ZHtgmgXwjGWqIB74+GZBWXrQu5foUIJ5lpY=
@@ -1979,6 +2115,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/outlined/microsoft.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			nmrAu0XRRr7foFvRBFolyMK9Kh0=
+			</data>
 			<key>hash2</key>
 			<data>
 			2Ju/LokV112YjIlmZrnRzmIacNE8KmnbJThDynKd8js=
@@ -1986,6 +2126,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/outlined/twitter.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			/OOWDXxTDa0EjJgVWPw7NGHTXfw=
+			</data>
 			<key>hash2</key>
 			<data>
 			MIEwYq22tzpFiV1cNpFY3CPCkVR5u4RoIjkK0jHToHU=
@@ -1993,6 +2137,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/secondary/apple.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			C23Xe5Rfy9bGVUW1op4ne31uzsQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			Wulx3loI7L7FE8EJsPnOA6PRk0tVvOzqdTii7wMk0KE=
@@ -2000,6 +2148,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/secondary/email.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			9DZWI8ym4ApyHWBGSN4T90gZ9y8=
+			</data>
 			<key>hash2</key>
 			<data>
 			5RFW/Bum6UKt7B2MzsP7RpVJrmXiuBQcB7sGwvpi8fs=
@@ -2007,6 +2159,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/secondary/facebook.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			U8gXUczIsAif7DA2PciV1Dyeo3U=
+			</data>
 			<key>hash2</key>
 			<data>
 			owViSpJPTXlbGU3Q9WUERXhmxGkXB/LkijmKFSIQhUU=
@@ -2014,6 +2170,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/secondary/github.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			tsbOi2A+gtyvHBVjj/KHzYSazJI=
+			</data>
 			<key>hash2</key>
 			<data>
 			youYFdpw0itIazQwfIFsvIAWHjltudX8uzLBcNQLPNI=
@@ -2021,6 +2181,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/secondary/google.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			zhsE/exR9cwlsoGeuyeYZ7NAgo8=
+			</data>
 			<key>hash2</key>
 			<data>
 			xLG0v0o7aGymdsYd2nK9d4vDLN+bydhJCZ/3FxAbaVU=
@@ -2028,6 +2192,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/secondary/huawei.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			xKl1PLww1u/EyVb4mdjrqFCxLMY=
+			</data>
 			<key>hash2</key>
 			<data>
 			Eh/Vvd3yszVphsK5GlMCZlmed9D+FydsPxV8REy/NGA=
@@ -2035,6 +2203,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/secondary/microsoft.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			MPFrQaP82xMfb34XA4mfNVhg+tk=
+			</data>
 			<key>hash2</key>
 			<data>
 			XIyq+oMQ5X1Z6SOD6z0QIgJ5OnneH2EtAqsnfu/8Cdg=
@@ -2042,6 +2214,10 @@
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/secondary/twitter.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Vk1tx2FQVVHs2HK46TxyniWEhH4=
+			</data>
 			<key>hash2</key>
 			<data>
 			RyfTTS+8CBtSBI4zgqkqPYY2OfMZ823IKfhTl1eVl30=
@@ -2049,6 +2225,10 @@
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			P7bb/oR3EhwqCIH1M6LyTuBIWYU=
+			</data>
 			<key>hash2</key>
 			<data>
 			x6NX+tjyECiQtyzbbjyY8U2zoZ7GDbJtE+T+k/dzgI0=
@@ -2056,6 +2236,10 @@
 		</dict>
 		<key>flutter_assets/packages/flutter_credit_card_new/font/halter.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			f0f7HY52Y/z+wr8EoDxQDd8vi2Q=
+			</data>
 			<key>hash2</key>
 			<data>
 			mFRgChob2tVvyDDFaNctGEivOTLBWAmJjHBYEt7v+Fg=
@@ -2063,6 +2247,10 @@
 		</dict>
 		<key>flutter_assets/packages/flutter_credit_card_new/icons/amex.png</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			tibA4tAJazw6VclrtMs/zJMNSmc=
+			</data>
 			<key>hash2</key>
 			<data>
 			AHlgOdky6ferhO1MJE533dn5ajtAYa05sVzs/kvlGhU=
@@ -2070,6 +2258,10 @@
 		</dict>
 		<key>flutter_assets/packages/flutter_credit_card_new/icons/chip.png</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			f7LWq07RkqmfHOdLvvlF3AAGLqE=
+			</data>
 			<key>hash2</key>
 			<data>
 			LMxAletOxblEUTSEHMCcNmHv1+xafdf+SbkyI0xElME=
@@ -2077,6 +2269,10 @@
 		</dict>
 		<key>flutter_assets/packages/flutter_credit_card_new/icons/discover.png</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			MjfpsfZga+aKTAssHMhanH8+hAE=
+			</data>
 			<key>hash2</key>
 			<data>
 			xgAnHU4cvaUf+t1SL9lKKJ6jbddjTCDJjwg1rYOe05o=
@@ -2084,6 +2280,10 @@
 		</dict>
 		<key>flutter_assets/packages/flutter_credit_card_new/icons/mastercard.png</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			iGTGZszT8F4nOPpehyeMN19v6Lg=
+			</data>
 			<key>hash2</key>
 			<data>
 			SfN6vMHxyPEgcbXPpdTzCodd9sjLCEvUSbSnS12OpR4=
@@ -2091,6 +2291,10 @@
 		</dict>
 		<key>flutter_assets/packages/flutter_credit_card_new/icons/visa.png</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			IgZRY6jNkEutEdI2XuCftt4VibQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			gMuV0z3N776cX+nZExZvQ80hUibF8+RhajQy+jgL6LY=
@@ -2098,6 +2302,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ar/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			mxtYmrtc3sdivSfe7AY/pZCZbh8=
+			</data>
 			<key>hash2</key>
 			<data>
 			Cm/NsAouvEiAL08kdOxpRLjGR5dJ71JPSptfUK5dM9k=
@@ -2105,6 +2313,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ar/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			ybjpWr/DyHzm5djTKpCY4mT4IVc=
+			</data>
 			<key>hash2</key>
 			<data>
 			luG55DLfOc5jrfRBD7/KMDFchS+qz8VHvHoPtjy5NTA=
@@ -2112,6 +2324,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ar/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			riR/CIzTd0iUIpPMB7cIFj28byw=
+			</data>
 			<key>hash2</key>
 			<data>
 			DeFjhRrVAjCBWghm7PfQpXMobUGYPhs0XqfJkxNcvxc=
@@ -2119,6 +2335,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ar/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			pFwEDNp8JYhL/RuTf3RD8aMPTm8=
+			</data>
 			<key>hash2</key>
 			<data>
 			DADF7KMLWad2KBrExBYrSw/MXZgXQiLZfbKHQLX229k=
@@ -2126,6 +2346,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ar/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			BSRAFmIH6pt/3JgEAPDX+xW9mfg=
+			</data>
 			<key>hash2</key>
 			<data>
 			GSI01yKUXPhyMiFXnF3gDd0woys7cRN1Nf7U0AfCK7o=
@@ -2133,6 +2357,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ar/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			dqbO57cDXA0MOZsrm/pyEj+DCSI=
+			</data>
 			<key>hash2</key>
 			<data>
 			/j14gwh/c/4yipzas/TcBHSjXj0yJtuVXCZPP3Tm4O8=
@@ -2140,6 +2368,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ar/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			0jNXEBmfezlDjkSaXS9OnbnCDf8=
+			</data>
 			<key>hash2</key>
 			<data>
 			S1pOaB5pblEq0jHm7CMzwIHmGnb9DJFm+m33Xi4q7DE=
@@ -2147,6 +2379,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ar/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			onoqtMwlUyPKF61aVLYbULdBeU8=
+			</data>
 			<key>hash2</key>
 			<data>
 			dAmxXDr+Vk9zHO3F2kCscnCq+JYYjloeA/QNTppMV2Y=
@@ -2154,6 +2390,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ar/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			UaQ6m+yawz7QUwTN6Cv5lA3lZcc=
+			</data>
 			<key>hash2</key>
 			<data>
 			QjZtmwt8bNNor7fauPU4pmX6KDOpMkYm9hVs/IqfYfU=
@@ -2161,6 +2401,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ar/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			6PUaztswbPmHlHGDeBeZfZpeSn8=
+			</data>
 			<key>hash2</key>
 			<data>
 			HMGYCR9hpSB72DTLpDKAMCLORaK3GDgjjeSjYzHTYKI=
@@ -2168,6 +2412,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ar/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			S8a85YdEd6KIMo5qjyscffsqqSc=
+			</data>
 			<key>hash2</key>
 			<data>
 			3ueCjIiznaxhELXlX52ytrZAhgsxigq3PKTp1FZFEec=
@@ -2175,6 +2423,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ar/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			SdBZtWSQqsBJV4TgteNlxqMAr8A=
+			</data>
 			<key>hash2</key>
 			<data>
 			WCWblPMJajtPynvObermbTGCg8+B2zFaGk2Y0My+UiE=
@@ -2182,6 +2434,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/bg/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			NCUY4hkjq0FNw5SajG5IGdjvbeA=
+			</data>
 			<key>hash2</key>
 			<data>
 			XRXxHMAOKqpd5b6F0mNmNxJJ1KxtDLLW5WDjhO5STfk=
@@ -2189,6 +2445,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/bg/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			AzrXA1IfXbg3KblwvU1D5bTRBts=
+			</data>
 			<key>hash2</key>
 			<data>
 			IuaIAzUfCXQN3yC10cLHXA0lnqhrd0+ha3zcfDPs0K4=
@@ -2196,6 +2456,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/bg/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			WZqpCv2bZwx6dE/2/3CHkyPmsSo=
+			</data>
 			<key>hash2</key>
 			<data>
 			duiTSaI00rUa5hvwQ7vvdO6VXqjPrvpyC4XnvplV58U=
@@ -2203,6 +2467,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/bg/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Ab6uRmCnqdx5S8JF2WgIdUbX7sE=
+			</data>
 			<key>hash2</key>
 			<data>
 			Pk06KNZeUX/LHACi8DFXG2Z5qSadsnMJ5CHdGwkabIk=
@@ -2210,6 +2478,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/bg/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			I/3/D9nnQ/4BfL+RykV9aqDHEIk=
+			</data>
 			<key>hash2</key>
 			<data>
 			taLf6uaSRM8DWq7w18WaXDww6drs6WGJwAQ9oYAc4IQ=
@@ -2217,6 +2489,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/bg/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Rc+o7s06xja8mihGXxx3ISLbYC0=
+			</data>
 			<key>hash2</key>
 			<data>
 			i8XCCQiT4WEPp+I2WFp361K7pZZ57iSSdIFy8fErhVU=
@@ -2224,6 +2500,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/bg/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			q17O+u3uTxmA4jRTZ0sViuzBP20=
+			</data>
 			<key>hash2</key>
 			<data>
 			VxyF15HSn9aSgYTz3uD+SeMLNKF5lXQdgSAqBUF37a8=
@@ -2231,6 +2511,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/bg/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			rHs9WirMWwCioduNboVpvXoeBRc=
+			</data>
 			<key>hash2</key>
 			<data>
 			Va9Y7T7E4wiam9oLpOJHf4ABM2g4R0TN0cwuJobHW84=
@@ -2238,6 +2522,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/bg/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			c1Yw5ltmCrjyH65XFMmHjR2GARg=
+			</data>
 			<key>hash2</key>
 			<data>
 			XI5hOjLO1SU27qTV+WQbXY97RS4ymb7YpeXi7zjAq3g=
@@ -2245,6 +2533,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/bg/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			IhKK5OeUyxPw6pgmAXYy1HtwNpA=
+			</data>
 			<key>hash2</key>
 			<data>
 			c1WfH0lvtcTTnXeizFxdttHJTZ+NW4OOFk031MjKSZg=
@@ -2252,6 +2544,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/bg/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			mSbXp5keyo4p5P/8xyi6euclOsg=
+			</data>
 			<key>hash2</key>
 			<data>
 			stQr4xJJaekMvAx/VPcZnRyzirJV86Tj5NQkEEZ6CTU=
@@ -2259,6 +2555,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/bg/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			pEcHLzf/vmmBhfU898vE4dqxHuc=
+			</data>
 			<key>hash2</key>
 			<data>
 			f5BYWPfQKxrXqEXuWbb+B/L3VzzaN1eEmkvh2HhgoXY=
@@ -2266,6 +2566,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/buy_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			C7dGpBYy6JJmTXM0BdUZA+3eZIo=
+			</data>
 			<key>hash2</key>
 			<data>
 			C5LbylOADBWmTHRd7Dy7DOR7ruKop5BGGhXSzKElenE=
@@ -2273,6 +2577,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/buy_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			snrnlPPUNnmrV9+3B0iXz2kRm0g=
+			</data>
 			<key>hash2</key>
 			<data>
 			IfYQB6ub/oKIovFoMWR1yCIkeiFejyi+VmV/zI8f0wQ=
@@ -2280,6 +2588,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ca/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			azinMRxk1p4Zrh/slZnoPB+hvRE=
+			</data>
 			<key>hash2</key>
 			<data>
 			aspK/Wxy0j31IebHo9glUS80cjZg6RbJg/jEF3iKH+0=
@@ -2287,6 +2599,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ca/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			IB+/K2s3ldD6nvEJzRwhYlyk7gE=
+			</data>
 			<key>hash2</key>
 			<data>
 			AM1egDwfsPC7LEPzzkAeLnYD5XSq74W+/cbTma9mBxg=
@@ -2294,6 +2610,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ca/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			ukDKWSc21KEgP9Zz+ozBY4QA4Ro=
+			</data>
 			<key>hash2</key>
 			<data>
 			QSfLZwEcVaCoohbQ7W1IwPqtFaZ9/M+0GxkY7L1HNME=
@@ -2301,6 +2621,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ca/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			URemjdmagTF2t1LN4PWs5zXLGwA=
+			</data>
 			<key>hash2</key>
 			<data>
 			OaaSrKnmxClhQy2zpkSx5gnhgp5YE4cqc2STzn5AVok=
@@ -2308,6 +2632,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ca/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			jIijMaxIbURpLxZBSET33lNezsc=
+			</data>
 			<key>hash2</key>
 			<data>
 			zwf4rdf0/Jr6h8HSlhGqEdEFD0jz8ZBP3IZyImqizPE=
@@ -2315,6 +2643,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ca/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			o5DpSOfenPVh/CP8nAuHRaznN84=
+			</data>
 			<key>hash2</key>
 			<data>
 			sdYWY2QY8AyfhH9qpBVrxmB0QWC5140Xt0u4NRYz7pA=
@@ -2322,6 +2654,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ca/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			IyEYWbxhWsOG+yqgB5z1EEY39tg=
+			</data>
 			<key>hash2</key>
 			<data>
 			TQk0ejlNEISVku78Nzu4pGBqX0zu5TtJLEn43WdmSEM=
@@ -2329,6 +2665,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ca/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			eU1jjuzL+0KJOo/G8QvXC2OUkDY=
+			</data>
 			<key>hash2</key>
 			<data>
 			xLlYaTJbGGFUJmz6YHYQWAgGlJphoIOoTyisupOohV8=
@@ -2336,6 +2676,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ca/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			qtdrJ/F+wXWWUk+PyUtKWj/sSX0=
+			</data>
 			<key>hash2</key>
 			<data>
 			ZHViTpn41rpspW2RHNhMs26BtfZkx7hhqfc4CcYDcgg=
@@ -2343,6 +2687,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ca/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			2kkYnj9bRwP93xw4LScAReEyE7k=
+			</data>
 			<key>hash2</key>
 			<data>
 			CZnuch7dRyVPpIgAFcXPIzLBnMT9EzmexIk1npxg0I4=
@@ -2350,6 +2698,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ca/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			2ThLr62mpuj0qboBs8PvXCA6Cu8=
+			</data>
 			<key>hash2</key>
 			<data>
 			ZYUmydd2iKwaM+MgpU+iIDvRv4tS5aIr3KvegQF/vT4=
@@ -2357,6 +2709,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ca/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Mbh0wG89cJqVDA3nCxs25r6qrGI=
+			</data>
 			<key>hash2</key>
 			<data>
 			4YJsanEhbXnm2wCZ8C5O1sx8dCBQX5iKsxA+GyeyzFw=
@@ -2364,6 +2720,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/cs/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			MumtsvSpcapRWtthZ0xDyPakHjM=
+			</data>
 			<key>hash2</key>
 			<data>
 			QBEIQeSQrRXscoWe/VeUPhosLSb5mZHoGQW08k8MSUU=
@@ -2371,6 +2731,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/cs/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			uw+nbIOz/rhD9umpF9AGcXg3rvo=
+			</data>
 			<key>hash2</key>
 			<data>
 			h2cghpENQvkP4kdBarr4vyr4HbZrAwBGtNRn0ZU8nFc=
@@ -2378,6 +2742,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/cs/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			mkrCb2ADJ44aLtGzjwo4jmlXdP0=
+			</data>
 			<key>hash2</key>
 			<data>
 			4EHcyE92VzktIDoMR/SC3JeYn5Z4zfPnEgi3FIPvcMM=
@@ -2385,6 +2753,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/cs/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			aVZHo3FkQVsRWHWY5hxYeZixEcU=
+			</data>
 			<key>hash2</key>
 			<data>
 			Jqzq6A6hAmBXhPSF2bEZNft9k1PT/xHVZAyQTfR3Q5M=
@@ -2392,6 +2764,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/cs/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			9bMVJ6+PuHyB++XOBUAYa1PH/dc=
+			</data>
 			<key>hash2</key>
 			<data>
 			6XbLaCKEr5ADV9uWhtkaNy74NGOmZl+CbkJCvcHlCE4=
@@ -2399,6 +2775,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/cs/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			I0RXf/f1s9ZS+qshS7jc+TwbUBM=
+			</data>
 			<key>hash2</key>
 			<data>
 			WaPhvWZrVzodOZTFHKJCVbtWxkAne+TGo6YJyWfPOl4=
@@ -2406,6 +2786,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/cs/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			ZuXJqQdVMh/52L5d9jIHT+ow0Ks=
+			</data>
 			<key>hash2</key>
 			<data>
 			N3AUlVY6bKlev1pzD0BHdBOUMsUWc4l0pfZjdI9qsmo=
@@ -2413,6 +2797,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/cs/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			HNZtEEo/3xu5ZqkR1oasiHq7oW4=
+			</data>
 			<key>hash2</key>
 			<data>
 			SLIQXb+/iUg2FTQC65X+26ZIae+ZWs/iqiXcq6D2ok8=
@@ -2420,6 +2808,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/cs/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			kP/SbqMSsaFKL8RBu1wB3InHWaE=
+			</data>
 			<key>hash2</key>
 			<data>
 			FKsmEeFVixHN906BeS2me5UNuWUCS7xQmncebomC5tU=
@@ -2427,6 +2819,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/cs/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			ASsKdrZJRoTVkNk3tYgA4NJ3Cpo=
+			</data>
 			<key>hash2</key>
 			<data>
 			LHr1LRRyBLhReJo9ReToj8s8uADhJaZQUEjHj7T+gT4=
@@ -2434,6 +2830,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/cs/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			pOX/hcFGqyYwkkRxWPDMYnsv7Gw=
+			</data>
 			<key>hash2</key>
 			<data>
 			0P0pwWm+QNgWBF2TUJ+n6Bt7vHUECZgxIi9mL9nOkFc=
@@ -2441,6 +2841,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/cs/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			ZXbpUAo5OkvU4nUSabWLJ2RqgZ4=
+			</data>
 			<key>hash2</key>
 			<data>
 			nM/FKsN0ScGsDvBqxTl+SvqQV9WQjL9CHLoggmy8cho=
@@ -2448,6 +2852,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/da/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			zkw/k5zExMaDnXoq3DqAz9kWMfA=
+			</data>
 			<key>hash2</key>
 			<data>
 			GeJ7+XNuH0F1IU5KPSOdYBOmgYktil0O5jJQFShFx50=
@@ -2455,6 +2863,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/da/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Xc8n4SA8j+TCw+MjtQtCNtSK8M4=
+			</data>
 			<key>hash2</key>
 			<data>
 			vsNQLxllLukOhrYZoNtbAlx7aVtKlX/5RN/KEG40AnQ=
@@ -2462,6 +2874,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/da/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			YCVos7mxMIRQ+9VKISR9ogedeJQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			bgpkK1H+wuXBEMqG3gh/dsokdC7kWiGmFOB16ecUwMU=
@@ -2469,6 +2885,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/da/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			gZRjoBhEf+C0jwKD3GeSNdgdtA0=
+			</data>
 			<key>hash2</key>
 			<data>
 			ZMh2kc6/yiV+QM5GGFhi8urQQMehLZRwEqzps7U9708=
@@ -2476,6 +2896,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/da/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			splM8OT7oGOvIlDGaIsptNsmzR4=
+			</data>
 			<key>hash2</key>
 			<data>
 			kKux9HQj3VLAzrDf8WQGq6iRV40jtzbkpinwIp/PXMU=
@@ -2483,6 +2907,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/da/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			0Bbjw1iahrONIjd6msmbYAGx/SQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			fkcjiW518s3nVfLysVn/LtnMoAQVy27jYWv4MdQAEhE=
@@ -2490,6 +2918,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/da/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			ZVzjCX3+N4frJPoAB5hRagxUUE0=
+			</data>
 			<key>hash2</key>
 			<data>
 			uMJxveIdDn3oL8etY0MIDLqHhLSbTtnGFbG2fS4NpKo=
@@ -2497,6 +2929,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/da/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			J/oVOkHAhu2+x5ZZAHv3TXq2i38=
+			</data>
 			<key>hash2</key>
 			<data>
 			Tt6i8nbyGN7UvhT9nQmUFihE3JHiCmsA9rl9se/PhO0=
@@ -2504,6 +2940,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/da/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			vIXKMSpvzJQP8P+AsmQxrYUBbcY=
+			</data>
 			<key>hash2</key>
 			<data>
 			BRHdwIBBN2Xf/SfV7tPaG80wCMI1WchLSVSyVTI1zzw=
@@ -2511,6 +2951,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/da/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			o45sClKbJrlxrFQ/P41OCRDf6/0=
+			</data>
 			<key>hash2</key>
 			<data>
 			d4f/zJc4zBAxn4tsitzdbQL+yaB7n3k8bMPLvGZiq5A=
@@ -2518,6 +2962,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/da/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			gdE8OWBp8jGRaGuOICzUv7JnAF0=
+			</data>
 			<key>hash2</key>
 			<data>
 			GM1ptVw+eVJ2WWeVDvnWv97t2rzLGuPWYiIHGkmGSiQ=
@@ -2525,6 +2973,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/da/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			oQSiN0PVZgF0Ay5252AuKx2iLSo=
+			</data>
 			<key>hash2</key>
 			<data>
 			77vF9oTvFpPuhIS3gwVoPlmaryUX9Hmx3AdgMpA/uYQ=
@@ -2532,6 +2984,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/de/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			1EkHPLrNGgagUR5Gy5Yw1OFZA4s=
+			</data>
 			<key>hash2</key>
 			<data>
 			zG04C7mA55bCClsm7r2Xn/0if2Q/MJzYNL+vijddf4M=
@@ -2539,6 +2995,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/de/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Xfi8NfYoDGNvhQa+vha99gERMPw=
+			</data>
 			<key>hash2</key>
 			<data>
 			OAsa7EE4IvOTiuRzPXLixOR4F3Z4bB8IYum4l3ICzEQ=
@@ -2546,6 +3006,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/de/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			hBBHuQNm2H4jSC9q/vph2hyl8WU=
+			</data>
 			<key>hash2</key>
 			<data>
 			UIQ6JwstS1f3H52rQ7eyl2IEF2IJZrID4C1jfZdYS90=
@@ -2553,6 +3017,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/de/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			d6j9YzPXDbuMu/llDjTOmNhxR68=
+			</data>
 			<key>hash2</key>
 			<data>
 			SJd60gyyiWbHyaPp9vBf5M+7PZtvoKXCiAl80L3JWQ8=
@@ -2560,6 +3028,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/de/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			+sz+2cjHWw9FF8SQ4VX7Ky6rbkQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			mBrb4b1eM6CSIqDdWxK7Cms38gJQDRK+THmyID8bqcE=
@@ -2567,6 +3039,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/de/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			i0i1kVpqEZdm8Oba6CZAYwfZ1xA=
+			</data>
 			<key>hash2</key>
 			<data>
 			ysywe2Ad3jiTxsxC0tPpR12EH0kXH7/sQmPMQACRMm8=
@@ -2574,6 +3050,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/de/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			sdqc0bBR4TgOhZ1SCU/V6VM7zOo=
+			</data>
 			<key>hash2</key>
 			<data>
 			YjIRztzMiWwn41ddahw1VPcGzKw0z7/L3+Ui82+NrEA=
@@ -2581,6 +3061,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/de/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			44veMAKKQNHXR5pdcB4U0Cpz7Sc=
+			</data>
 			<key>hash2</key>
 			<data>
 			Lw21tjx1AT64LfbTaUqZVXcgKlvOOgdxN0m7BlKPIrQ=
@@ -2588,6 +3072,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/de/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			78qX+MczdqqVH3lLVINkkKb3stI=
+			</data>
 			<key>hash2</key>
 			<data>
 			ynXIs3dQKgjBQN6Nuq43OvUvKSehfyZETXupdiW4GXs=
@@ -2595,6 +3083,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/de/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Rud69BUbFHJbSg+ErYQrTaFkTV8=
+			</data>
 			<key>hash2</key>
 			<data>
 			awyYqb6CuEb6k471qafo2OWyAHrsVmoCZOK1s/5nTnI=
@@ -2602,6 +3094,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/de/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Aj7jM8qnicGPFp648tpirxl9+Vg=
+			</data>
 			<key>hash2</key>
 			<data>
 			platNsZcLK1w+hjYfJ/IV4sSxQm6bv6P+onuCK37m2Q=
@@ -2609,6 +3105,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/de/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			fY0bSqZW18wFMjteY25poquf6RY=
+			</data>
 			<key>hash2</key>
 			<data>
 			Fd7r2MeB2oNDrI0S1VjceqKqrmwn7lKvcaCzlp1aycw=
@@ -2616,6 +3116,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/el/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			8r7UOZ/zgDYUEAfmb0wGXqyAUjw=
+			</data>
 			<key>hash2</key>
 			<data>
 			WoaGF4KT8DHSL84/Wz+6cyB1evHkeToIlqkEdUtVp+c=
@@ -2623,6 +3127,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/el/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			IDVckKIRvJ+0pZhlKeDShwEQlh0=
+			</data>
 			<key>hash2</key>
 			<data>
 			MrtKUM0UovA0tey6krok/CnaRfuVXkLGbf6GrpASqas=
@@ -2630,6 +3138,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/el/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			JyJaQELICbwR4TBRLleV8BLAszw=
+			</data>
 			<key>hash2</key>
 			<data>
 			W5TUP+YyNU6w8A0v9JvFzq+6mV3Os2S5VkPi1jYI86Y=
@@ -2637,6 +3149,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/el/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			HN65MtRNdTD9pL3e0d8q2NcmtR8=
+			</data>
 			<key>hash2</key>
 			<data>
 			w7vL9oglhNEJmZDI5xybu9N6rb9auV/lw21Io7Q+Ge8=
@@ -2644,6 +3160,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/el/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			xKdmLg7suGHwTr1RGHulmM+h0bA=
+			</data>
 			<key>hash2</key>
 			<data>
 			TaMSE9jcAh/1tpGVhL51sQc5sN1WNuVP4lSXxg3kfwo=
@@ -2651,6 +3171,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/el/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			hiRawZzKJ6zC7jqOu0F/lqq042E=
+			</data>
 			<key>hash2</key>
 			<data>
 			N/QS2dK7sMCyr8R7rwiAckX1LG4j7jOspCVFRA8pE9o=
@@ -2658,6 +3182,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/el/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			J6ue+rXcgBSBiXSHjeg+saSt6zc=
+			</data>
 			<key>hash2</key>
 			<data>
 			q9huuQIBsL8RKeJXvyeQUIcWijqkKtt4/LGpozDqIB0=
@@ -2665,6 +3193,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/el/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			JAN/BRvOzYU4EL9jaSrthYS1W3U=
+			</data>
 			<key>hash2</key>
 			<data>
 			TIz9KNI/BMwyd1l9jkUA/6CfnK5ISqwHqHWSI2jqevY=
@@ -2672,6 +3204,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/el/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			bRVT3y7fXg/yJQrzoSZUrrqblWI=
+			</data>
 			<key>hash2</key>
 			<data>
 			/okyDwtLj8Md8qitYEjY68225YX4wUS+gNSIXrsM2Sg=
@@ -2679,6 +3215,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/el/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			BPwXUko6SYm7BFHBC+PYfyXjlpA=
+			</data>
 			<key>hash2</key>
 			<data>
 			L6oaxiwme52QIZlH9d4BamFJLrU5nPq4xCRDl0lBiEo=
@@ -2686,6 +3226,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/el/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Q8g3Vbi8IdKhW43g4MJOCR20O64=
+			</data>
 			<key>hash2</key>
 			<data>
 			LEflZqjqSAh/8deBW9/KpDK8FX79CR2H8u9DbEqRJ/E=
@@ -2693,6 +3237,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/el/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			9k2+roRzMUXshuHfq3tx4b6/L7s=
+			</data>
 			<key>hash2</key>
 			<data>
 			F5HLGYBG7ylo//1mZhnOLp3V9dyZDQ5szHJlTgMtVrM=
@@ -2700,6 +3248,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/en/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			aDmk7/5sqgKux2eDuLh2eU1Ns3o=
+			</data>
 			<key>hash2</key>
 			<data>
 			BvxeTx2+55HRHFZVhZCDY7lT5o8o+ULXDBxLcLJVUmc=
@@ -2707,6 +3259,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/en/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			wSQM5HXDLu+gp8p6VnZbTmWtx+4=
+			</data>
 			<key>hash2</key>
 			<data>
 			kxlOY57Co7jvbYd3tNR3WIDkkwKcayZxNIgajdK21R0=
@@ -2714,6 +3270,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/en/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			9cbp37XnjOMO2S1Ds688R6gxbUU=
+			</data>
 			<key>hash2</key>
 			<data>
 			VtF+reZMOX2GBpstDM/jbmbH/QJnkUAePYtsl4dWL2w=
@@ -2721,6 +3281,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/en/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			ILXwcGSVn9kz4krZf1tXMahbT2Q=
+			</data>
 			<key>hash2</key>
 			<data>
 			zFVCWJVGOXm7MM4TPWsvGpFyTaumIsBJ66BgLJ6SvVY=
@@ -2728,6 +3292,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/en/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			/vTbPuF375GRmJlqhfRcn7VZzFs=
+			</data>
 			<key>hash2</key>
 			<data>
 			waKeq5foyJnipS1VPh7dYlmMDY4ZiJ3PaG5+vLtDVDY=
@@ -2735,6 +3303,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/en/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			H2vsw3FxZnCJTdBI11/VUpForJ0=
+			</data>
 			<key>hash2</key>
 			<data>
 			Iod0M8fL4vrj3rRKS23Yvp7+pHA4XuwAqSyZn0mGAko=
@@ -2742,6 +3314,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/en/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			q5dniaW09JijHWiLHGlABnyVm9M=
+			</data>
 			<key>hash2</key>
 			<data>
 			/Q4qw9b4NyhaYt6C1mmsLtjVKIomMWsAsL/S6rmUvCU=
@@ -2749,6 +3325,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/en/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Mk5STtggZPPGhl9DlTeXCIY5ocs=
+			</data>
 			<key>hash2</key>
 			<data>
 			JKHwZ7jBedQkVJM/FVPQIT+Zpyaxe7sjwHSGrynAJvQ=
@@ -2756,6 +3336,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/en/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			jdhRQFSOUkzCASiAz5iUZx2OqFM=
+			</data>
 			<key>hash2</key>
 			<data>
 			fbmR97wgxKdj5/wVFsZdT3OHUn9NTV80yN4/IOJwj8s=
@@ -2763,6 +3347,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/en/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			2YtVzX6+qCLSR2LhR3u6puKS9E4=
+			</data>
 			<key>hash2</key>
 			<data>
 			nU1Sz9zXWWhXLlhp6jgg3VteVv+4FELsM7FodFYmqeE=
@@ -2770,6 +3358,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/en/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			mekUn5peoQG/zfKW6FTbO0jrP2A=
+			</data>
 			<key>hash2</key>
 			<data>
 			EpvN6o69rRShJULpzuLIdeQ+qblawIcnEs7AiWZxPDI=
@@ -2777,6 +3369,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/en/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			iA9UgzI7amEzZzU1Mduew6azgZI=
+			</data>
 			<key>hash2</key>
 			<data>
 			o9qyH45ALnh5cdKGENMtorUPtwuwyZW2SCfoT7DN+s0=
@@ -2784,6 +3380,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/es/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			fD0IbswI0fQfGhGSzLRO7P6wtvU=
+			</data>
 			<key>hash2</key>
 			<data>
 			QC+PkKCSev6KxJP9RxwKnR+Y6ynM0tzF4SCNMtol6Yw=
@@ -2791,6 +3391,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/es/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			s+NzaRoU1HwGV88kLmaS4gdTPV4=
+			</data>
 			<key>hash2</key>
 			<data>
 			DoiBXVvQ2wCYcQZMn8MM658TVW1H/aWS/E+Wr499j/M=
@@ -2798,6 +3402,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/es/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			cQLNs5qETfhSWQn+MZDR4VEdBuc=
+			</data>
 			<key>hash2</key>
 			<data>
 			VduO+vd7Tvh0ibCe4Ho8Q+0lGU3wVOowwACPQD+LVrs=
@@ -2805,6 +3413,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/es/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			YRAUmNl0lbBcPOfDYzY1GYELvQI=
+			</data>
 			<key>hash2</key>
 			<data>
 			9S5JlpHI/2HUr5hmNRml3nqNAqVYcoTCKX8b1TfUbRw=
@@ -2812,6 +3424,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/es/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			7LNaAhUedlQ4WU1lMz3IP3/MLq0=
+			</data>
 			<key>hash2</key>
 			<data>
 			7AcZa8MqUgK/U1VNPwrNsk6Kf6B93QR4hcEE1iJzJN4=
@@ -2819,6 +3435,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/es/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			1ej1FQk0Ro8cBP4ef3eNYVLo460=
+			</data>
 			<key>hash2</key>
 			<data>
 			N+CQmnl9wrKp5kpM4dFr8MnvyxmqMaex1iZu0XsOuXs=
@@ -2826,6 +3446,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/es/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			oqCerCoF4qsjB0aAialL7HMfle8=
+			</data>
 			<key>hash2</key>
 			<data>
 			l7dw57S76agFSkZk3NNjqFBSiG2NWH3ugaI/7S2Oo94=
@@ -2833,6 +3457,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/es/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			L/FCK32+Z0V+1GCD1Tr5Rfuk3uY=
+			</data>
 			<key>hash2</key>
 			<data>
 			9MYKBX8JURAFG42/H+sIjkReSEXELxcstxoG8+01XqY=
@@ -2840,6 +3468,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/es/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			6XjusFyGsz1F16fNd2yyxqRYYM8=
+			</data>
 			<key>hash2</key>
 			<data>
 			3MZoxPo1r89oqeuQggSRcyeCWfOjw4maw6x4drHW2xU=
@@ -2847,6 +3479,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/es/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			jOe4HJYnyhEy0tC2Fkhgv1k8azk=
+			</data>
 			<key>hash2</key>
 			<data>
 			NtHdZOEsqa721mcXNQ+kBgb6ShzTfLcL6mdn4BSpcIU=
@@ -2854,6 +3490,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/es/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Qx2FtFZai/wpFOdapgUgttAJibg=
+			</data>
 			<key>hash2</key>
 			<data>
 			r+NzUjoVzQB6Zd0RyAmA7uESke+CqsrfriQ2WbDY7J4=
@@ -2861,6 +3501,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/es/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			8WOCXGY6WE6njo9UffNM8/iWjTo=
+			</data>
 			<key>hash2</key>
 			<data>
 			hfiIn+/429T1TAujQG3oKYLpc8odVvbLCywMVBLMGbA=
@@ -2868,6 +3512,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/et/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			KcH6pnmnXnLYVyXbbbUG9B2E2zA=
+			</data>
 			<key>hash2</key>
 			<data>
 			m1Cw2KH2TkTjwemS4pmd/tjqAE05EftbhOkorLQ6+MA=
@@ -2875,6 +3523,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/et/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			85+8c8Sc1J7T86RmB3HpUEerz1A=
+			</data>
 			<key>hash2</key>
 			<data>
 			THWhDRnwKUOAf50oTzFAWC+GwqVafTjsWax9XNm+oXM=
@@ -2882,6 +3534,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/et/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			8mh75vXp166z7AhBbsynr3HeDjc=
+			</data>
 			<key>hash2</key>
 			<data>
 			YOK638LhKlMjm/HZj7de3/pAKU6FlTXNMUew3WTvaag=
@@ -2889,6 +3545,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/et/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			D8OUmPABgezHlLzxYvM1h3h1QeQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			ZwNumPB1UfSEUYOrnUu3RE1ha/2kqrw+5+oA4ZFsuEQ=
@@ -2896,6 +3556,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/et/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			84ZlB0VZTHeY8uIjP3r0g0Tilkc=
+			</data>
 			<key>hash2</key>
 			<data>
 			B2uYzIt5qP8gNvUViwdewoiFemiR7x/zdUAwkyl+0jA=
@@ -2903,6 +3567,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/et/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			RH6V35sFMHktaAwmqCY5yPd7oKo=
+			</data>
 			<key>hash2</key>
 			<data>
 			r4kn2DLQCU5+jegxIbCCp9XmGfv9cSpwUBvOOb4hL0I=
@@ -2910,6 +3578,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/et/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			F8hBIJnwCBd0pl0QUTmuywvSN1Y=
+			</data>
 			<key>hash2</key>
 			<data>
 			i9elJAMd/BYgRl7IVWXSL7EV264+fTTRdFWHMSI/tgI=
@@ -2917,6 +3589,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/et/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			D0JouI5RtiVMATs/n5nedrB7/Tw=
+			</data>
 			<key>hash2</key>
 			<data>
 			aA8+8yYfYEXTswtk/vWMLprnrh+Gv/ewAR1pwpc1OFE=
@@ -2924,6 +3600,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/et/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			nf3Iby+LL6amlEdJ3GSKKW2kKz4=
+			</data>
 			<key>hash2</key>
 			<data>
 			Ig+wCxql5AINu8V4wnaKnK0zsab3R+eHtosFmVWsmK4=
@@ -2931,6 +3611,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/et/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			CiimD4hbDZUOolbIGENa+Y3S8hI=
+			</data>
 			<key>hash2</key>
 			<data>
 			lmEBQvxN0fWEqGRdbWktfQ5q/+K+Fl/NRTgRMpImH2g=
@@ -2938,6 +3622,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/et/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			wdfWKVZQotNSR0XERpBmzmHFkFs=
+			</data>
 			<key>hash2</key>
 			<data>
 			8P/p9jEdXPEnx+ONngZwPXwgwFS/xWMWkpiGK11pnNc=
@@ -2945,6 +3633,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/et/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			WrgjzDeehJYYEnfsQmG2DDacg/Y=
+			</data>
 			<key>hash2</key>
 			<data>
 			Vc9pRAPOyCOAUIjNKmWukdOyI/uy5QVMFcCcwfcHxFk=
@@ -2952,6 +3644,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fi/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			sgUpNjkc+CufJNxIbmEPk/s+lUo=
+			</data>
 			<key>hash2</key>
 			<data>
 			0l/gkygjkFmLgs9MKBLbh3fZbJ/ynV5qcHKrCbAJFeQ=
@@ -2959,6 +3655,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fi/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Z8thuXeyWbD+aL97rxyk4D8VPvE=
+			</data>
 			<key>hash2</key>
 			<data>
 			G8zk8wLaH1ma0V/pnk9CEwouHqy992sB74e9G4rXfwk=
@@ -2966,6 +3666,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fi/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			7H2SEQGVDym8zwMe5oUl+srIRvY=
+			</data>
 			<key>hash2</key>
 			<data>
 			aOS16bu9saMICbrh1i0642qyGBTnoydQFcCK1tJOe8I=
@@ -2973,6 +3677,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fi/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			HgMueJ8HgwuK/xMjJ0kyju4EhWA=
+			</data>
 			<key>hash2</key>
 			<data>
 			x/BqKb7uy9pciEFSxdhpUMnfNla/Zx2sx8JCqIFR5Cg=
@@ -2980,6 +3688,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fi/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			SzIrCsPUWoT28r4Qsi5cM/p8Hao=
+			</data>
 			<key>hash2</key>
 			<data>
 			9u6j+JxIEuMs57z0R0DsCxbAzHsbn6FsAogertsP/a4=
@@ -2987,6 +3699,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fi/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			P52itGT2ieW/FYn9ssAVa0JBIh8=
+			</data>
 			<key>hash2</key>
 			<data>
 			WLzxKEi5nmN5p4buqXdTNJLYwwEg4H/gIo7c79APVo0=
@@ -2994,6 +3710,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fi/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			xAQtzdG4rqpYugkbFDC5F+OvAhg=
+			</data>
 			<key>hash2</key>
 			<data>
 			cVvT/lc9uCKM9iqdxhIr7/xjQmlZNzUqUbt688d5RjA=
@@ -3001,6 +3721,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fi/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			O0Rzh/ohdp4nnLR6wF2zdBvhKU8=
+			</data>
 			<key>hash2</key>
 			<data>
 			QOdSO9tw1Q+9B0Xc2x1pAMW7b57dnfasbyEuaUBrBoM=
@@ -3008,6 +3732,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fi/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			IHdQxuKEPBROWnME1GBIBjKvbm4=
+			</data>
 			<key>hash2</key>
 			<data>
 			4fWEKERCNFxNDa2O9tvHmOzF+mRYX6n4h3WPrHeoDc8=
@@ -3015,6 +3743,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fi/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			o74xNaMhe/+ta/vOxTe14Xih3IM=
+			</data>
 			<key>hash2</key>
 			<data>
 			oILThbeC+5Vs5TFWSrW/AOmclETkDB770aBHIxpa5vg=
@@ -3022,6 +3754,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fi/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			6nTLfebOp1P9O+/zdMQonGDx3BY=
+			</data>
 			<key>hash2</key>
 			<data>
 			0RkW50eTMdePhWd5AYBpztgU/nxhXR/P7ko1yGaSupI=
@@ -3029,6 +3765,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fi/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			xO+Y0QY+0GcVdwPwsoGihXkkbjc=
+			</data>
 			<key>hash2</key>
 			<data>
 			MLzON0X3xY8SMaZ1TopvdXzOJSDvFsvGmZB4/O7+W64=
@@ -3036,6 +3776,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fr/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			88G5zj8NDse6iTDfFKdGlU/ZLOk=
+			</data>
 			<key>hash2</key>
 			<data>
 			b+NS1G1ZyoVifxbYcH2z66IgS+8QIjoIkvDNVnWNfZM=
@@ -3043,6 +3787,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fr/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			sdunoiXeshBDuS15rGhjVaAhTv8=
+			</data>
 			<key>hash2</key>
 			<data>
 			Eb+pMF6aFZHJQEueSBHepcqoWVTTVenWDFHznpluJ+k=
@@ -3050,6 +3798,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fr/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			b4Eh1pXWXJ3sTqHn0lQ/X5r0FH0=
+			</data>
 			<key>hash2</key>
 			<data>
 			jOMzvRRgr0TZ0fPnksshfYHe6Hky6ayE4rkEDZqdbq8=
@@ -3057,6 +3809,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fr/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			NkGOLThsInV6uD6NQiOWLId5JNU=
+			</data>
 			<key>hash2</key>
 			<data>
 			znMKlrWz/8GQqWlq3uAoaAFIJrKwTL6np8zOZnsCFic=
@@ -3064,6 +3820,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fr/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			T74qfnIx/X+XTa42jjbxVJF0Gdk=
+			</data>
 			<key>hash2</key>
 			<data>
 			rZiwKXT1WdtHrWLGxbOpginpatzxGUM33VWkGAiPXXA=
@@ -3071,6 +3831,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fr/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			i88KcdiJ1s3v/X6jMGVsix4eiB0=
+			</data>
 			<key>hash2</key>
 			<data>
 			eS8m/VpqOJaZnLfjl3KZy5Xtf1TJA5dSnFS0nME8xJQ=
@@ -3078,6 +3842,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fr/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			fv807FsdXTAFrzQTOvTvNJrBaak=
+			</data>
 			<key>hash2</key>
 			<data>
 			VXaJxziYG6JzOlAMPALdAmhY3LnpoTO7mqeImU+iCHA=
@@ -3085,6 +3853,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fr/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			89i8jGanQUz9sprTNXZs7prSzHc=
+			</data>
 			<key>hash2</key>
 			<data>
 			Rz6Q+bVkXBhUqIqSmYqNVkTyh7dyf1eae6H01+uwA8o=
@@ -3092,6 +3864,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fr/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			zNNaeMYe0dH38lwez+PJyKAuqa4=
+			</data>
 			<key>hash2</key>
 			<data>
 			qkoHa2pn0Girw42PjeGdPz4xpOch7bzzZnARZ37VaOM=
@@ -3099,6 +3875,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fr/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			OmKH7mnrIqS1ncwmqc1vbxQKums=
+			</data>
 			<key>hash2</key>
 			<data>
 			JwHiRu5MbcVOrxrZUV9F35qX1vlxw7EsglC9xWU2obg=
@@ -3106,6 +3886,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fr/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			8/MQi4HNF0WZjMSf2/1VADy0/lk=
+			</data>
 			<key>hash2</key>
 			<data>
 			rBNMAleY3cJaZp+F4ez0sfgBOg0R6Hv2LPO/pSnH8AQ=
@@ -3113,6 +3897,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/fr/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			6qRdacsN0ktWUz69rkpXcOn7AB4=
+			</data>
 			<key>hash2</key>
 			<data>
 			Sj7RbuD3hSgjYL6fIUakxMGtEvGKd9XUwtBT+UFbT7c=
@@ -3120,6 +3908,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/gpay_logo_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			HrIaUKSJax0MauL1x1l9Vp6Ik40=
+			</data>
 			<key>hash2</key>
 			<data>
 			JCMwP4jEFpYqrHKVON4PQrY/wms6gQmqAFaBBj0U+Kc=
@@ -3127,6 +3919,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/gpay_logo_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			RxZcbU8g7V5L9GM0ejkmthONK8E=
+			</data>
 			<key>hash2</key>
 			<data>
 			UTto4YeWbNKsMBgudUaRdbuYsUXVH5cSlwqnW4sSfK0=
@@ -3134,6 +3930,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/hr/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			/kNSIc+WEDkr5rVy6zQmBvd1ICw=
+			</data>
 			<key>hash2</key>
 			<data>
 			fptNhxWzyn9tCRB5gwzGUgLF0LvnfUomAgYfcHKMGsE=
@@ -3141,6 +3941,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/hr/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			kXjVlEy7wl65kQdDos4404RLgg0=
+			</data>
 			<key>hash2</key>
 			<data>
 			nUXULJjRtiHq3KGQxlIxXMR0JiOo12ZGnXBl5qmYayw=
@@ -3148,6 +3952,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/hr/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			0LYPAfphaxa2K3WLBOE6VMd4IQM=
+			</data>
 			<key>hash2</key>
 			<data>
 			EbUS41hykSdL6n3TMSramlOdt7huyNagyXh7obv86/0=
@@ -3155,6 +3963,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/hr/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			VfjLQkvVBLuFC3xFc8NPrCgXSAg=
+			</data>
 			<key>hash2</key>
 			<data>
 			Ddvs9PbxuoGggxsP6U0Zi73w/iX6vB/XCJbd7qb1MMI=
@@ -3162,6 +3974,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/hr/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			uEoNlLjnL2/AO92xDq14LgD9tQw=
+			</data>
 			<key>hash2</key>
 			<data>
 			ZV9eNNSdy7O/r+uoyj1shGIt2APAKtFoeMFeFYg56h0=
@@ -3169,6 +3985,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/hr/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Ma8ITooNtqJu8RqDF7yfoQ8mUtg=
+			</data>
 			<key>hash2</key>
 			<data>
 			cp54zqAEPEkwHpUIxqd70fnuspblZqVMgvObG7J2sPc=
@@ -3176,6 +3996,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/hr/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			I0ul/mVk6l5VgPyYUL6JZ+qexNI=
+			</data>
 			<key>hash2</key>
 			<data>
 			MGx/rSm5FCiTb4ZzkEgquAI2rwEcCIOPriqs/uGeOjQ=
@@ -3183,6 +4007,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/hr/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			TAjutaz1dmafes1vU+G1FKImxH4=
+			</data>
 			<key>hash2</key>
 			<data>
 			v7AiUQbeIze7w1V7NJ8P/vq06v6VVwWDaN/M38SEyNM=
@@ -3190,6 +4018,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/hr/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			6c2X2Nt2w4xnFl20mSIbj6M4QX8=
+			</data>
 			<key>hash2</key>
 			<data>
 			2ABNdOht5Xc6/pE4T/zOre8CPG8eLtA2GV9fgcxIZK8=
@@ -3197,6 +4029,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/hr/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			7UyFYrKK6MvB7eIrsBc9rkGTamE=
+			</data>
 			<key>hash2</key>
 			<data>
 			UMOTMOWeImSYI9J3QAQMWV3VTRqm/xr7EEHYgWYHnDg=
@@ -3204,6 +4040,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/hr/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			9YVOuMuYwoqqw3Prj2UxbVLyr9s=
+			</data>
 			<key>hash2</key>
 			<data>
 			pcx1UUh8X7l1tF/0oZOmBWYKNYZtEGsRm4j3Y5N+K1k=
@@ -3211,6 +4051,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/hr/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			nhVUcTjBYROXunexMZ24bW7aYIw=
+			</data>
 			<key>hash2</key>
 			<data>
 			vpmva7VY/W+/qk5noitDJHGkzeK2ji8Jb+nlKq4bilM=
@@ -3218,6 +4062,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/id/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			r+IEh6EA7kcKINWEtlvHCY7Hk0c=
+			</data>
 			<key>hash2</key>
 			<data>
 			Fd16SXkcwkOSmgkYA3g9TBLfMuEhqzZH1j1Q3bmXhqE=
@@ -3225,6 +4073,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/id/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			3BGCzMOiHHYdDW/zRnppRIXeeew=
+			</data>
 			<key>hash2</key>
 			<data>
 			ERnDT5KLwQIIYYYjd2TntRCnLPdQ3/JcNV2KOBSZojU=
@@ -3232,6 +4084,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/id/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			ZMNX5z/mEUdTrEVJ9mrAS89B0ro=
+			</data>
 			<key>hash2</key>
 			<data>
 			7ihS34aViMbTpF2Fe6BsEx3xmzK4PVx0KHKASOBVbHQ=
@@ -3239,6 +4095,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/id/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Y80LODP39zV+2OsKcR3ETsY7qFM=
+			</data>
 			<key>hash2</key>
 			<data>
 			XQPC6GDookHDxBLNBx/qrmWJ+pKbQqkjF4XG7D+cpaA=
@@ -3246,6 +4106,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/id/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			GSWgNcMOyzsLzpeTP7UfOAc2jgI=
+			</data>
 			<key>hash2</key>
 			<data>
 			vuEzYUSZ7jcuuUS+d3G87z98xA7ZRdt1DP0AA77BxNM=
@@ -3253,6 +4117,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/id/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			UQFjBvpq0GeEOK5dvrVFWeU3B1s=
+			</data>
 			<key>hash2</key>
 			<data>
 			TNCk/BWH8LWaRcxKCTdUyiOT+GeVQqlzlhi7M2cBW7U=
@@ -3260,6 +4128,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/id/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			/enZnbI4kUzGRoTq8eyRc88LV9E=
+			</data>
 			<key>hash2</key>
 			<data>
 			BxJw8GVGnX+hTAkT4L2bAPPetZ7iZoTTrE1iJJdHi5Y=
@@ -3267,6 +4139,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/id/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Y5KyE4s3j73km4pphVWTjiTQdfg=
+			</data>
 			<key>hash2</key>
 			<data>
 			PVwCotNxFzu0n/IlT/eu1WpYJhu9tQeKtIJ3RaeC98w=
@@ -3274,6 +4150,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/id/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			+v37CNXBddkr+TAvWOqoIt5t+gw=
+			</data>
 			<key>hash2</key>
 			<data>
 			+PzltPvx2E9B3zRk/aqxYgpIKSoceT2RKopzCRctfHQ=
@@ -3281,6 +4161,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/id/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			29lwCZwDKD/07XcF/VhcdCIYhX0=
+			</data>
 			<key>hash2</key>
 			<data>
 			5UbLrPl6SKP+XRCAoe2BQ/tnw+V81n1E4nSoOxBgcfU=
@@ -3288,6 +4172,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/id/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			l03oF0XZ2TO//+t3dISZ0wUV1fo=
+			</data>
 			<key>hash2</key>
 			<data>
 			CNAr357qRr30wQzq2dXwIrogZqJ6i/T7N1Ak///yNY4=
@@ -3295,6 +4183,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/id/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			od5bla+EcO36IDlmK9VUeiNzVRo=
+			</data>
 			<key>hash2</key>
 			<data>
 			zFrt49fmHucsyYNTc/Flar6s/ohT5njZJIMpuau3scc=
@@ -3302,6 +4194,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/it/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			8Wghy1Fy73JZw5FPzaM0Zh5QwdE=
+			</data>
 			<key>hash2</key>
 			<data>
 			4pWhb/oYxDexjw4S2c/3a64lN2z0uJoLcWnU6tMUUI0=
@@ -3309,6 +4205,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/it/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			ydO2SuUtSSUMIEHx4DqrpXb9c5A=
+			</data>
 			<key>hash2</key>
 			<data>
 			bAMFThYbLfMZGbIQyU/S/NNLfsM/ZEbw+EoJNxr518Y=
@@ -3316,6 +4216,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/it/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			kNAAds6/HSGbiEPS5QJrrunQsQg=
+			</data>
 			<key>hash2</key>
 			<data>
 			NkJzpgph2xPwKjkiLM08n+jB46zaT6fBlwpdGCl2UFM=
@@ -3323,6 +4227,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/it/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			1dgmOt9p2XI+VDj3Wff9qA5bRrw=
+			</data>
 			<key>hash2</key>
 			<data>
 			GTD6vW2PTdGsuV6bYxO/AEe5j2fz/5eZMtEGJRZ2qXg=
@@ -3330,6 +4238,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/it/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			lCGsCwWuTWTfFxbZC9ZVbyeUNc4=
+			</data>
 			<key>hash2</key>
 			<data>
 			iNsvULpv0m9pSl/mkImuc0vUwUn8YUaoHCf+pN9Dhcg=
@@ -3337,6 +4249,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/it/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			j1L8aoSW6P8Gb4rx232VfTKKVqA=
+			</data>
 			<key>hash2</key>
 			<data>
 			il0WsoLiHxDphtrewo1NdCIi7eqiUU1NEmE+2CFak80=
@@ -3344,6 +4260,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/it/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			fomFhXZCV7F6gOi3PqyP1zhBUqI=
+			</data>
 			<key>hash2</key>
 			<data>
 			UFqzyMwAZN6Cm7RmEllgNp8TwWCWkH0B00AKo+BgAmE=
@@ -3351,6 +4271,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/it/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			PZyS0d1THhDKK11HguvkhXjeFbE=
+			</data>
 			<key>hash2</key>
 			<data>
 			E83BgPc9pn4fMzv4JM7DcvfSg40l+TJtsnlvmQNGcI0=
@@ -3358,6 +4282,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/it/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			g8O7bSYRvWgnOh78kPNwI880VXY=
+			</data>
 			<key>hash2</key>
 			<data>
 			8d8mZ1+5QsHi3J9oeBXDMDxITKs8gUdgYpATx5D2LOk=
@@ -3365,6 +4293,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/it/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			PMYm1/N4k7waMCv8WD0reqW2w2w=
+			</data>
 			<key>hash2</key>
 			<data>
 			rPWPFY181jtQ6/53ddN7LdojbsQmaJLYtpQbDE6Ch1I=
@@ -3372,6 +4304,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/it/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			KVGEQlqg54lPqSp85OtgENL/yp4=
+			</data>
 			<key>hash2</key>
 			<data>
 			/z/kXeMDdlh38+cAlFwrnm6fIAcyWk+rEWIoaV1mpKY=
@@ -3379,6 +4315,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/it/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			4lgSW32CaisOqhUyOaVlTeiXznk=
+			</data>
 			<key>hash2</key>
 			<data>
 			9UsH4qU1P2T6hUx4ArAdc9sed/SlKm5Vbg0GockXOGA=
@@ -3386,6 +4326,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ja/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			GbUrQPv4whbz1lYFfC4yqdTp1/0=
+			</data>
 			<key>hash2</key>
 			<data>
 			oUy1pRKzq2w0MQ3y2eugHfpKQW4+KT83tkfeiQBWx6I=
@@ -3393,6 +4337,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ja/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			kez+136mhrZ7zIGnS2Js0HeUvBI=
+			</data>
 			<key>hash2</key>
 			<data>
 			HKEk5/0BGh3w+aH/0V66C3/9G8xImgu6lbZ4OTfrh2w=
@@ -3400,6 +4348,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ja/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			rS1DPvXyta2iHxDvxQzz5mDHGAk=
+			</data>
 			<key>hash2</key>
 			<data>
 			WZyH4/oZvcgiacRlZ+MuRwH3RbhcPG4AjLWAkG3djBo=
@@ -3407,6 +4359,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ja/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			iJbcYtT/QnBgN+/Eyws0kQ6P66g=
+			</data>
 			<key>hash2</key>
 			<data>
 			jndU6OYxdggjzyJcAaae6TtIjo4Ln5Wrkz5InKOuaaQ=
@@ -3414,6 +4370,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ja/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			U29BVfasPo7MWlustRQoomcYezc=
+			</data>
 			<key>hash2</key>
 			<data>
 			JPJb9MVuwEPgu/JIRktzZaJcIHj/tAxrV8IdwD177oE=
@@ -3421,6 +4381,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ja/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Pje63bUB+g5EQS7sNR1Byy2qvy8=
+			</data>
 			<key>hash2</key>
 			<data>
 			4eCflOwZ+vZDvcvv6hlMC7U1uLput1t/GUHeF1criDY=
@@ -3428,6 +4392,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ja/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			DlRtL1ClOxsj723G0y/RvwSVBO0=
+			</data>
 			<key>hash2</key>
 			<data>
 			zx3MvR9SJqh3aFBag/r2sx2OWfUadRjwvUu7O7BIvUE=
@@ -3435,6 +4403,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ja/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Qwxuj5mwuteuwDH+YwKeyKyG0Mg=
+			</data>
 			<key>hash2</key>
 			<data>
 			l9JoOVrDMlQJ9ws4W9t2ukjKJmwpFFuMWLKRNDrsNGE=
@@ -3442,6 +4414,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ja/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			xDS5K+ZURlcwRY7G4UsbEQLYX3s=
+			</data>
 			<key>hash2</key>
 			<data>
 			7KUe2zLDBCkmI8KDRsxk700+5GyCSjs2hiEva4JqeBU=
@@ -3449,6 +4425,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ja/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			rZtSy84xIHTKiaY1d9neoBuamDY=
+			</data>
 			<key>hash2</key>
 			<data>
 			DFWDnK1eTvCLWX5cypUpibYiwZ+1lnOjcsFUnO1/XMY=
@@ -3456,6 +4436,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ja/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			N3KFm2FNp4sUz/+XuO8lDQJQFH0=
+			</data>
 			<key>hash2</key>
 			<data>
 			0rDv1N2KgPQSc/O+KDU10UU5gJ8dp81QsTyqcEr4loc=
@@ -3463,6 +4447,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ja/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			PVKpM/gByxLrwZ6upFye4DtMBLk=
+			</data>
 			<key>hash2</key>
 			<data>
 			jQvBZRqvypl2YLRMypsKCYU0V4tiqvDpj31z+00Jbw8=
@@ -3470,6 +4458,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ko/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			kzEWiRbuI0jrPWV0EQCn6qUvQGs=
+			</data>
 			<key>hash2</key>
 			<data>
 			gB/Y9CQPxDq9Mg/hJ/oXs5NB3HFXhHcCsBpboLBPAEo=
@@ -3477,6 +4469,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ko/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			v4OZfvz7sZ4fXP4hMbaFdRWTjkI=
+			</data>
 			<key>hash2</key>
 			<data>
 			Fz50K5j+OcqKGg1+XH8u1pSs5yg2tReCOvcaB7izVMM=
@@ -3484,6 +4480,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ko/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			ePqfCINm27RsjVhupgzDx819exY=
+			</data>
 			<key>hash2</key>
 			<data>
 			tdZf8oOFIPXuYVt/lfsSlLPOPHy+uT635DTdfFxpcEE=
@@ -3491,6 +4491,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ko/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			8fSAmuWXFyQ7vG/BJzB0SyZ1piY=
+			</data>
 			<key>hash2</key>
 			<data>
 			uynXh/uQPTWWzAbX5hyoBEMhJ66TCoSzbteooyzplTg=
@@ -3498,6 +4502,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ko/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			dLFablnEu5J9q50HV4k+5fI+c8s=
+			</data>
 			<key>hash2</key>
 			<data>
 			KoozR69N1jjgUHY0pvOJ8ZFX5ltuBAGi5W7a0QBHopc=
@@ -3505,6 +4513,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ko/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			cn4mnIp/WSyJw3AiUdl67+IWMo0=
+			</data>
 			<key>hash2</key>
 			<data>
 			4iZFAblCeMd+7rE+qhCbPQCIoSjwoqnqhBlNFvSq1Ro=
@@ -3512,6 +4524,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ko/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			FmSpiRK/6fWTmfX7QCfKB+FfVpQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			Rl14/yAJxn0K23VIIV0WPjiYSQ4rRRhBxMbv8rPtnTc=
@@ -3519,6 +4535,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ko/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			zXoGa7tp5gT+U2Xfs2F/VluDuiU=
+			</data>
 			<key>hash2</key>
 			<data>
 			KQr6MpvDT4IFHGVwopDZovZYjkEfu8jeCiopHgaFbIc=
@@ -3526,6 +4546,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ko/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			FxNBXXvyumuJmLqpObwRLvb607A=
+			</data>
 			<key>hash2</key>
 			<data>
 			I123QHUlRohvTEqJl+FYls2SNNQ6KkU/+/iXz7dkCts=
@@ -3533,6 +4557,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ko/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			SCATpXzaA7nTx1wqb+1jCnR8kwY=
+			</data>
 			<key>hash2</key>
 			<data>
 			oRJmQM48fqqSQuEkJXKkt8+bUHt7xLtHXe45EgkFvMI=
@@ -3540,6 +4568,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ko/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			d6LroySb8upV2niHwD/maSI2P4o=
+			</data>
 			<key>hash2</key>
 			<data>
 			lUVRXFL3Fb685EjKk8bHFNRh6NjfcIjZMZfaibiv2nc=
@@ -3547,6 +4579,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ko/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			akBMKnZ8DTANVcu5KfSQEDYUPs8=
+			</data>
 			<key>hash2</key>
 			<data>
 			2sDgFTJCtJorIuUIC/xLRDiczE2dDT1lPuzhA0c5h6E=
@@ -3554,6 +4590,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ms/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			dqnDXAyTgn4WW2GFtK9o+uFfdrU=
+			</data>
 			<key>hash2</key>
 			<data>
 			UgSRH2xepgAgQq++d0RNNh1MWCKE+GTQb4TVRD1wwyg=
@@ -3561,6 +4601,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ms/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			f+mxAAYtNVS8iGrNa/TuqJ5jH2c=
+			</data>
 			<key>hash2</key>
 			<data>
 			qz03TBkizSPG4xk3knhKZsZ+7XnOWE1sxX09KDDn9/g=
@@ -3568,6 +4612,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ms/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			jO1Eraoued7gLfUN8HWcBZgtoiQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			oRe+wMD4XExMHV2t4Rp4tpStaJwDT9Q91cF6vYIEmg8=
@@ -3575,6 +4623,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ms/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			3ufUk5J+OQfNnBbTO9S5yqN4wxg=
+			</data>
 			<key>hash2</key>
 			<data>
 			LFkmqMIeqoG7qPn1hHzb1dE20ZDHkk6THbhq1ccDI2I=
@@ -3582,6 +4634,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ms/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			ZbpyJkGCeiDeckncTyktAArVPV0=
+			</data>
 			<key>hash2</key>
 			<data>
 			r/t2rmr2+OcXbQwZTqpBoS9Nu8mzfovD49FekByEjrk=
@@ -3589,6 +4645,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ms/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			2d5eyr6Tcwo9Fd6Rc7T6mjr4MnA=
+			</data>
 			<key>hash2</key>
 			<data>
 			KBm0OQA6DcA4kS+IQfFERdxm2zsaGQ53UkPnsLVqTLc=
@@ -3596,6 +4656,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ms/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			6U52TmZ9mfy0mAbyqYHUvzGaGV4=
+			</data>
 			<key>hash2</key>
 			<data>
 			t9tTZzYwlo3lDJ1HZvTc9byA+0+AcArlYH8HbQFD64w=
@@ -3603,6 +4667,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ms/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			thjj+w34JqFaRW3+OvfQm0VQDBI=
+			</data>
 			<key>hash2</key>
 			<data>
 			6vB4kZyf/qIxQTuz9ehEtowY+HZzwZMv7u+NFZ/Cxqw=
@@ -3610,6 +4678,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ms/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			+DkcAYrR2Xzy3JQWrMXd43AX8lk=
+			</data>
 			<key>hash2</key>
 			<data>
 			mBfWUji8n9WUY44HovSvztdU+sLnew/DcX4GySI1RR8=
@@ -3617,6 +4689,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ms/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			vhogD1Qep3u+FIMYHpY8gyCygig=
+			</data>
 			<key>hash2</key>
 			<data>
 			zWPOORKNh+GPRRZwkPpSJAf1exTf3ZLB5ZOtfcSmsZU=
@@ -3624,6 +4700,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ms/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			hGHKUrT9SrR+fPrvrS0Olw88QHE=
+			</data>
 			<key>hash2</key>
 			<data>
 			JKlj7KCUSKxX3BRWxOpt4JSvU0EA0JJgj4UfBO4l7pM=
@@ -3631,6 +4711,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ms/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			UgyjBef2IsR3aAQcMuaVafVgpIY=
+			</data>
 			<key>hash2</key>
 			<data>
 			VL7Qrb/2lsWHJoHeFO9nQ56ZHuP5ZnJ9UUBUlpUavHs=
@@ -3638,6 +4722,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/nl/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			zV7DUQtXCR123PHNyP8wNGEYNI4=
+			</data>
 			<key>hash2</key>
 			<data>
 			R4HoSkEsoQmY0Vi/+DbiPHeZYxOTjC/J+fFhzK5Bc+k=
@@ -3645,6 +4733,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/nl/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			86xHMAh+1j83NuAatotl7yRRbjE=
+			</data>
 			<key>hash2</key>
 			<data>
 			SyGRU2VqP0oeUV2UPovF3ENVwN5k1MmPdbw7/qXlwuE=
@@ -3652,6 +4744,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/nl/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			TPgnNHn/8WppeTEFa0/hy82/OiA=
+			</data>
 			<key>hash2</key>
 			<data>
 			LCxGn8+4CTXmZEx81hB2JyPpYbW9fWwBiM3cP4/RNhs=
@@ -3659,6 +4755,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/nl/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			g1YGAlQus202X93UPp3kAd8nxYI=
+			</data>
 			<key>hash2</key>
 			<data>
 			D9hvBbMM1JpSeeht8SvcK1JJ5gdWP6YZ+fyMzrRJfSU=
@@ -3666,6 +4766,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/nl/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			n3vw8EKdY8izMutQgtnK/yzjyko=
+			</data>
 			<key>hash2</key>
 			<data>
 			77nGDTTzEq0/pln2yClv4GTmeBfJlYxfmohp2qfScKw=
@@ -3673,6 +4777,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/nl/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			zmtXCD0TvKdJHnuXu/YyPNFZmbM=
+			</data>
 			<key>hash2</key>
 			<data>
 			KHu3WAktThTe+Ms2GoFh+ojx/oYWYXbXBdfM3i1lULs=
@@ -3680,6 +4788,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/nl/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			+zYaIjvGDR2VNVsyVmkJ1IoxWxs=
+			</data>
 			<key>hash2</key>
 			<data>
 			od9p3h0nOOEGi2Hfq83MzQ8Q9CXvKt9LBk2kPrdeXGo=
@@ -3687,6 +4799,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/nl/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			46kBH5o0YoZmvSQO6ujCLU01QzY=
+			</data>
 			<key>hash2</key>
 			<data>
 			DKjtibA5kknrkjxBQ5bSc69Kp7VhIXvA95c+J4VWfyw=
@@ -3694,6 +4810,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/nl/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			PcJbnxUwO/L+wjRm6/qzUuLLmCw=
+			</data>
 			<key>hash2</key>
 			<data>
 			njCTBm9DjUn214x6zbf40xi0WOSoRBrj+1Zn1vu6SeA=
@@ -3701,6 +4821,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/nl/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			BWhT+20pQY87d/1bycTwEJtOaL8=
+			</data>
 			<key>hash2</key>
 			<data>
 			d9upAvmew9+GrLjdGFoqgmo+PsxgRqdkKtD9RqtKCio=
@@ -3708,6 +4832,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/nl/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			BXG98PEVh0szroZKLMrc1qcEUgU=
+			</data>
 			<key>hash2</key>
 			<data>
 			0iyNPHAmjX4EgDO5j2i0OMaOB+Oh3eIIRNVJGRRfpqk=
@@ -3715,6 +4843,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/nl/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			xic98gLa6nc8yY1stZfj8DgVaVU=
+			</data>
 			<key>hash2</key>
 			<data>
 			ThSIX9tTgyN7PebBZdp2IQZbM7ROe3LlV7pt2gaWAss=
@@ -3722,6 +4854,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/no/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			+RcNP3KfkvL7vRQTkL4XCD4WQqw=
+			</data>
 			<key>hash2</key>
 			<data>
 			JttP8hoLKDp8uELCPDwSjwnnM9If8Xrht6M/qCcFScI=
@@ -3729,6 +4865,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/no/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			5pBKk79y58XZXoEtF8G17K9owDk=
+			</data>
 			<key>hash2</key>
 			<data>
 			EOf3EnlK8IHVSQ1XNnFWDoGUI09KyE9t7wHvuB8T/LY=
@@ -3736,6 +4876,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/no/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			0P2IyfO3DytEeaPptr6YclVapsg=
+			</data>
 			<key>hash2</key>
 			<data>
 			rcjcaVFoT54sIQRSLReAdQPsqfTBzZLvnEK01zrPVw4=
@@ -3743,6 +4887,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/no/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			npEBJD4I6JJO+6sDY+kT6Dha/x8=
+			</data>
 			<key>hash2</key>
 			<data>
 			x2ddndCmawlp2hpqhXx3E1AYWGyx9+mouKM0soPB31w=
@@ -3750,6 +4898,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/no/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			mfuSsJDXMZpVz5uS49cDgOTBYOA=
+			</data>
 			<key>hash2</key>
 			<data>
 			Gu38fQHhtSnuD+svuqw6/Qcr6/XqaFgJf3QfsYY89ds=
@@ -3757,6 +4909,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/no/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			VtK0lkH5zlBvbaoWx4ghU+B8rGc=
+			</data>
 			<key>hash2</key>
 			<data>
 			xGak6R1RxlsXZWZgQ0NPyjmDk9UsZWt/swu3NvB7gUY=
@@ -3764,6 +4920,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/no/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			QszGX6qHChMgcz74R8NfCD4rbVc=
+			</data>
 			<key>hash2</key>
 			<data>
 			WNvAjXNeQz/0VS2GroAGJI7Ss+st3vJpmyZbLiiziAE=
@@ -3771,6 +4931,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/no/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			x6wbK8rjNjNuZpPno04VflDVv18=
+			</data>
 			<key>hash2</key>
 			<data>
 			qOXoRDe4GoYImya7nR54RWj+eiWQrkn3NKsC93XBNDk=
@@ -3778,6 +4942,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/no/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			7TCSeiPvhXLwrlrvlkZmMrGeQ74=
+			</data>
 			<key>hash2</key>
 			<data>
 			Jr0xcU14LAQYXQllxJquSzeTP3AklqsW4Wq/RevwMIo=
@@ -3785,6 +4953,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/no/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			9khj7b5lsB76NsSq9dbkN0Vc298=
+			</data>
 			<key>hash2</key>
 			<data>
 			gh63uU0rRlXaxZ+LkDQ1TDpv/EIE09pIrDH1O/JZJuw=
@@ -3792,6 +4964,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/no/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			YDK8tytJDzb4t8ONhvdw++8B7+0=
+			</data>
 			<key>hash2</key>
 			<data>
 			8d16mp5dB1eglIfRo8U1+MV69XV0aJetZbNo/Kr5/Zs=
@@ -3799,6 +4975,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/no/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			xmSeiItDEmHzTlYDhfKQNOiG6qI=
+			</data>
 			<key>hash2</key>
 			<data>
 			nYh3hu6dfgJqbs5MnhLwo+ru2MRiexuWuQCoL+sIzcI=
@@ -3806,6 +4986,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pl/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			j24snmaWGQHktrdR63x8PYGPlog=
+			</data>
 			<key>hash2</key>
 			<data>
 			US2A90JZB/4DrRnpn5Ss4dyS4MRSBLRTkELeCgLH0b8=
@@ -3813,6 +4997,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pl/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			nGjwxeFJCVek0/6W3rNxULcLWbc=
+			</data>
 			<key>hash2</key>
 			<data>
 			cvMtt6egzgUZSsYDUasPKCesS4NGehj5NagnOtzBIpE=
@@ -3820,6 +5008,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pl/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			eTMQGHybjvPF1FsGf8l/jcpATP8=
+			</data>
 			<key>hash2</key>
 			<data>
 			9IwMVrgkaWiLGbLLTe8JwnXJkL1S0a9uBFXx76k/k14=
@@ -3827,6 +5019,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pl/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			72RtRnUYOia4TjNl0O6JfNLjg90=
+			</data>
 			<key>hash2</key>
 			<data>
 			NkutV01nU7b0Hhf0EOGxP5Knx04EOewYa6Mhf+yrnnc=
@@ -3834,6 +5030,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pl/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			xP62EuBH+3qMzzhFedK7gxI8hmY=
+			</data>
 			<key>hash2</key>
 			<data>
 			uDKcM6E2xw2Ebq8PVm5EacIU+GP6x9EW9IzrNb8cIUQ=
@@ -3841,6 +5041,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pl/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			fvHIAn8RPtOR7sNwK+73JLaS4nM=
+			</data>
 			<key>hash2</key>
 			<data>
 			6ubAiEhK31eyRawywMI0TSgkQ4jV4SLkUOdgKuEYSZ0=
@@ -3848,6 +5052,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pl/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			u+HUirVMOqc/O+tO1zXDCoKbbeM=
+			</data>
 			<key>hash2</key>
 			<data>
 			JGvilXEK+R1UyrKRrKz82DopY+p6qh54Pc1XZK7Y6Uo=
@@ -3855,6 +5063,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pl/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Qk0aJJ9/qflQcJDW5ZKIctr3WHM=
+			</data>
 			<key>hash2</key>
 			<data>
 			iRi5sE23m/A32s/w5HUr4tSSO60BbmGte6js2xqQUCE=
@@ -3862,6 +5074,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pl/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			M8JMk4rt2XY8e3uR+hIt+w2r+Cg=
+			</data>
 			<key>hash2</key>
 			<data>
 			ddh8Wte9+BZLx0acIPJcRnVz/K8C0tXP1xbJYy8uNEI=
@@ -3869,6 +5085,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pl/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			DbU6ejwJjMiiS7Aywalu0yZtDqc=
+			</data>
 			<key>hash2</key>
 			<data>
 			KzT7pahDfBb30u840FI5y/1X02i0mxRYibRL/IWjt9k=
@@ -3876,6 +5096,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pl/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			zJtB3NE3YFTkO6PS5AVhDj7RLM0=
+			</data>
 			<key>hash2</key>
 			<data>
 			tZ9XGDDGnHRsXVZbWGw60ffhbL8KGcc5OnS5tdXRNZs=
@@ -3883,6 +5107,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pl/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			gnI9nLv4O09+z03Oamh2G04DZGM=
+			</data>
 			<key>hash2</key>
 			<data>
 			q12lLfiFL1rnSh3QEJ3HsRu0M+k6+S0I9VfPA9rz320=
@@ -3890,6 +5118,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pt/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			eM2S4jSVjhQuh9rf+TAEpszfFc4=
+			</data>
 			<key>hash2</key>
 			<data>
 			uHHqCrEOkHmX9ODY9nqYOT5vSzRmZVsEoUr8Ln8SkgM=
@@ -3897,6 +5129,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pt/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			AaGiySsbgi+tdz+1BMEpCgtA7I0=
+			</data>
 			<key>hash2</key>
 			<data>
 			fy1OKqYSwr2JXWPTy5R2fiABf2CWQfA9yjHRmY5Pmeo=
@@ -3904,6 +5140,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pt/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			0Vm9khqs0Qp5sx/CMzopMh9B85s=
+			</data>
 			<key>hash2</key>
 			<data>
 			+D87HPqhAX2FkoEQNbnb7wFTHwDFSjDhrN/oTJdpe08=
@@ -3911,6 +5151,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pt/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			RYj5kFR2BwuC8fLC+LYdoA3SXYk=
+			</data>
 			<key>hash2</key>
 			<data>
 			GSj6QIjJdJXmi5A79al/03kjYv2dlmVsg46EE5mvOP8=
@@ -3918,6 +5162,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pt/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			HNGGOJTtxA7qDf6lgFb+GbkFX04=
+			</data>
 			<key>hash2</key>
 			<data>
 			vCel2c1rWfVqISEBHIYmpBBTGayhl8dY14h3e/X8IGs=
@@ -3925,6 +5173,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pt/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			0z54m7VMZNZs27+FjyWmoa+RW60=
+			</data>
 			<key>hash2</key>
 			<data>
 			Ba6FuFQKWG+IUQ7SD3ofRiV4FjRZm/NkV3ik/mplSC8=
@@ -3932,6 +5184,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pt/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			qWnJVWkRJ7DhOamslYwvaSmS/fQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			k/511lQ0RrBdDxq6/x8p+pinM+7VATU7vtz0YTYYScc=
@@ -3939,6 +5195,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pt/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			wrciiOjv+xJ8oGEKT6vny/sIoY8=
+			</data>
 			<key>hash2</key>
 			<data>
 			Avbf02ARtA/8syQHdlpTGTwg/RDOC9uAazOAJ9glHeU=
@@ -3946,6 +5206,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pt/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			cGzayVAXVoZeniERPbaEUW27msM=
+			</data>
 			<key>hash2</key>
 			<data>
 			8mih5UTBkdgNiRnhDw2vRbBmWAyCTCwaRHP0106YqIU=
@@ -3953,6 +5217,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pt/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			AxjuLzu/4AwLHjlsN4/mHItwxu0=
+			</data>
 			<key>hash2</key>
 			<data>
 			yqoWSvwhXbAiFe8AHNiZ6+kxLM3cBh+wYVRdhMVaNYI=
@@ -3960,6 +5228,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pt/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			hOyFyx8saT8P6jSlx3a1SrFZCn8=
+			</data>
 			<key>hash2</key>
 			<data>
 			Tzstd6PukY185ugjTvocPpwJq01Nhxg1vS90R5GLsE4=
@@ -3967,6 +5239,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/pt/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			VWkjUyMMU6t3Xsi3Ft98OFNMO9Y=
+			</data>
 			<key>hash2</key>
 			<data>
 			nbFCrMrrbrzdMJsMb/bbP/T1YpDCqvneTbYi8fW4W0A=
@@ -3974,6 +5250,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ru/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			oJ+TOK3A1kdRtd+LDqv1Ul8HgMs=
+			</data>
 			<key>hash2</key>
 			<data>
 			6rfWK2UrWqMdyq2JcwmeoAO9yT9ZSqPqxnk+rzIfqio=
@@ -3981,6 +5261,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ru/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			BVqwjvZsFmwVs3w1uCclYrVB4L4=
+			</data>
 			<key>hash2</key>
 			<data>
 			BPrYk17L7SSpOKQCreKdkZj10YpFzWKSPHCXc7JJQUQ=
@@ -3988,6 +5272,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ru/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			u2ZaIyD9Ah9fYDtiJxZE8wgHF7o=
+			</data>
 			<key>hash2</key>
 			<data>
 			tD7HlBBdD7YEL1Ir5/kXpqosrU8mRADfJqf77cuoPS8=
@@ -3995,6 +5283,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ru/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			6MEalLDMdOhBw8cTbYNBuouHzmk=
+			</data>
 			<key>hash2</key>
 			<data>
 			wNsxgpA3GPZWKAJ9UkF5nqDIXtW43rGyiqHWhwQMJyE=
@@ -4002,6 +5294,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ru/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			xtrF2vN8+y5YGa/P4dO/By/zxBo=
+			</data>
 			<key>hash2</key>
 			<data>
 			QYuqpUAMJROY0Knqd19dTjnuY3kEBvGTNxvcb9oMkjc=
@@ -4009,6 +5305,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ru/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			sRfqT8LVfq6gBWdXIwdCo5yxcxA=
+			</data>
 			<key>hash2</key>
 			<data>
 			ZpLvfEJjj2Bmo22pr5J7OKPQNSpSQ/SAwMTZ/s6a+zM=
@@ -4016,6 +5316,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ru/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			N0W34whir9QSpuBGqGyTHHbD7Ww=
+			</data>
 			<key>hash2</key>
 			<data>
 			wAjN7EZKmEK4WLyiXQLwotlNrHBCZ1UUdy0h816tN6Y=
@@ -4023,6 +5327,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ru/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			uSRiY+XHtPofSVcWv/m66X7n7qE=
+			</data>
 			<key>hash2</key>
 			<data>
 			clIroBDZR/IYrKOGIy99uRPDCTrMTzlrsPBUs/f8rbI=
@@ -4030,6 +5338,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ru/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			1HLdt8BlwLINGWF2B/qT/7KTKkc=
+			</data>
 			<key>hash2</key>
 			<data>
 			GZ9YvM60A8nGv+jy6Dn5oqxJMnVTGxZ8v9GlmScVIHo=
@@ -4037,6 +5349,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ru/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			fHjHg5HNXtyd9MNq5bc9mC99s4I=
+			</data>
 			<key>hash2</key>
 			<data>
 			vrJWEKzOGy9CviHjI7rWBMmfWyXY7Os9ZWJXlWzt2Vc=
@@ -4044,6 +5360,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ru/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			xY76vAbRF/HcHcsikEsR+GuXcsw=
+			</data>
 			<key>hash2</key>
 			<data>
 			nKKtoJJd37PpcfR28I4nJ1Ng8tviMFmEN0BDRwoWfaQ=
@@ -4051,6 +5371,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/ru/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			z5LpJ899P57ORCzJ2Oz7Wutqs5Q=
+			</data>
 			<key>hash2</key>
 			<data>
 			MbDlOMjwMs3KoFQVqnYZQFhKM97VU+Kc5DXozemhgEY=
@@ -4058,6 +5382,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sk/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			14XZFMcjKOjX0K61ImiG7D5gICs=
+			</data>
 			<key>hash2</key>
 			<data>
 			hXhyJshVgi4skfzf4z1THsfh1wYTTlWE2og5u73AV5Y=
@@ -4065,6 +5393,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sk/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			rWgNFuBr6SQFNhgHRKZdSSFluLw=
+			</data>
 			<key>hash2</key>
 			<data>
 			/lhzs73mFjyjdKH1z2W/rj991acS+tpE0ovXbTmCGyo=
@@ -4072,6 +5404,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sk/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Omo1zd76DZFhFsYdQ+vNAGwVU7w=
+			</data>
 			<key>hash2</key>
 			<data>
 			ZcjiPoV4sqgCJvleme03RCAiPNxQuIYEqRdBamFphTw=
@@ -4079,6 +5415,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sk/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			XzwoezsARnL0C5tsGQSULXfdoF8=
+			</data>
 			<key>hash2</key>
 			<data>
 			yD5dkNSSFAJ2SpAZEKjtEfP3ROp99GnvnFsra/A3YmM=
@@ -4086,6 +5426,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sk/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			hJ78RQZo4Xmv4i0XOVu8aWVEe0g=
+			</data>
 			<key>hash2</key>
 			<data>
 			zDLkFwBXxF1Y8GNDrhRAMzI19nZADEYsPUMGNJEqhWQ=
@@ -4093,6 +5437,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sk/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Jn3WB4NAx9/6DHCjak2CXHNuQcs=
+			</data>
 			<key>hash2</key>
 			<data>
 			hzRsRzRjjf7+sGJs/wfqcZy8i4gjZbGuxLOHNzINleM=
@@ -4100,6 +5448,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sk/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			0gm6B/MCrIX9ZQTxLFBCjKjkKxE=
+			</data>
 			<key>hash2</key>
 			<data>
 			cFzofyXsQk66YuOjtHZW7nbJn/swQEl0hgiytcFsims=
@@ -4107,6 +5459,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sk/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			oguxAW52mYjXf1CyiyQcF6RmQAg=
+			</data>
 			<key>hash2</key>
 			<data>
 			m2dXE7LUdqiN6WifCO54SeG1fP6UEefNQyZsQPN8TdY=
@@ -4114,6 +5470,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sk/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			9xLjPMJY0vLokZG4+zvXHnGc/WE=
+			</data>
 			<key>hash2</key>
 			<data>
 			ZnNjNMvwBng7VgcRfXToOx8QxCAbKiuIJHiAFQs7nZY=
@@ -4121,6 +5481,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sk/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			TKlTJv4CmfVncgEbNg02ssLcM2M=
+			</data>
 			<key>hash2</key>
 			<data>
 			1Nsvxt725nFcOKWmpyvgnCNrNZB5FEnHHnUpscz5w6s=
@@ -4128,6 +5492,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sk/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			MNBM1uGBMpvbdmNHLGMCmASAswg=
+			</data>
 			<key>hash2</key>
 			<data>
 			M9kBI4fpbS7UMNjdbQmL4BF190LjGbhPm4UXoINmSYo=
@@ -4135,6 +5503,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sk/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			C/D9OCvBj1+cfGSHO9PSVehdnVY=
+			</data>
 			<key>hash2</key>
 			<data>
 			2hz5aTqgn7ZaUMTJgY2u8YLT9emB79w7MQbduYy7rw0=
@@ -4142,6 +5514,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sl/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			6qZpcm8OLtkuSAkap4gMm+pJpck=
+			</data>
 			<key>hash2</key>
 			<data>
 			xtq3GFI2boUztI9+kSn1IYxQVpHHDyu+aeWRLfI727Q=
@@ -4149,6 +5525,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sl/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			RokZHBly7YXs02V5CmG09tVH5cI=
+			</data>
 			<key>hash2</key>
 			<data>
 			/TK1AbM/3dqFtWOeyl2VxiZtEF+hS8A2pE9ottrMT0w=
@@ -4156,6 +5536,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sl/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			jAMEuvQ4KFH9hQbz0FChVrTEz2c=
+			</data>
 			<key>hash2</key>
 			<data>
 			iJ7oHaV9DNIZoVl7vfv4k/g3+yQdhSi50qMk3c1nzKE=
@@ -4163,6 +5547,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sl/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			jTsueyYz3kLQzKZ3JTb7kDCq9Ro=
+			</data>
 			<key>hash2</key>
 			<data>
 			d/a5m1jsKdp5fq9IZ3rI+r3aGmjzvCyHDmRhP58s20E=
@@ -4170,6 +5558,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sl/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			bXFLvzCYkO7xvMYqjt3jXbwBk1w=
+			</data>
 			<key>hash2</key>
 			<data>
 			dTCLupOJyb16hwxDyVRb+aX6Co+rzKunMzL1lc2F6kI=
@@ -4177,6 +5569,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sl/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			SCnvW6oBxDouv1NxVttLnYSfsAU=
+			</data>
 			<key>hash2</key>
 			<data>
 			58q0i4LgvbyJbsS9YtD09wnm07jOWd2jzeVu6G00awU=
@@ -4184,6 +5580,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sl/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			MOckJE8oxgJMPdxhjbUi4A5W2FM=
+			</data>
 			<key>hash2</key>
 			<data>
 			37XlGDBbKPoCLdQG3QIqeprlDmIvyiFX6mRaB9KMeyw=
@@ -4191,6 +5591,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sl/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			HmbcegCLtNvvuJL1SGfCVeH4Fp8=
+			</data>
 			<key>hash2</key>
 			<data>
 			wH51YaR3AD8OyxseAscxsdYikzz90yhrfrJFsCTLiKw=
@@ -4198,6 +5602,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sl/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			1nrOGBBgy9jcbvHstySOsy0iSg8=
+			</data>
 			<key>hash2</key>
 			<data>
 			fg3bPOLH6yPmCMNtf+PjNweEilVU+SrZ/sfK/sk5Ss8=
@@ -4205,6 +5613,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sl/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			oX8WR7+g3Rpg59fyQ4MqjZIt+m0=
+			</data>
 			<key>hash2</key>
 			<data>
 			Zzh8y06NhlmnC1iNF/PYBVRj/6a+Zke1fw/os3qo+Xk=
@@ -4212,6 +5624,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sl/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			JFwpdhmOHiZv923inxTWf2m/5xw=
+			</data>
 			<key>hash2</key>
 			<data>
 			lGKtoeo+mdHyOORl+p94a8+rlyJKmOapuQZ7jyqlPjE=
@@ -4219,6 +5635,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sl/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Kcx0ApV8/LhJkIkS8Qj9tH/rS/U=
+			</data>
 			<key>hash2</key>
 			<data>
 			CMk8l4MVi+Hj1LzQ7Y8WNJI6Q4Ru2uaAmB82QfSUmtE=
@@ -4226,6 +5646,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sr/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Mp9Hv5M5gk/qsHYbYFpXe46ymx0=
+			</data>
 			<key>hash2</key>
 			<data>
 			HdDw1QERhTos3Ep+Gp7laRPvDbTGy/dlk41hqfZMI+w=
@@ -4233,6 +5657,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sr/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Fu/aUYvOBhlfrgpnbFi6kJQCyk0=
+			</data>
 			<key>hash2</key>
 			<data>
 			KwauoLVPhXGK+gqkdxryvltzfvevsCWZX0PQdNvNG8M=
@@ -4240,6 +5668,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sr/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			//KsaNPOEAV3zlvURN+x1Vf61y0=
+			</data>
 			<key>hash2</key>
 			<data>
 			xvFPo8wBbLL9I13ak+ZRp3sqL+gRng0ERwIRDD0slsw=
@@ -4247,6 +5679,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sr/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			uZWPeQHaY8X7Bzc4Rv3HhF5B/D4=
+			</data>
 			<key>hash2</key>
 			<data>
 			T/pOesbw1vphZL/H0yKdglBTjTzrYmfPfmTptIwqkDg=
@@ -4254,6 +5690,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sr/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			sJd4WAaeK5iVLFvf9BtNtL+ACmE=
+			</data>
 			<key>hash2</key>
 			<data>
 			aTLPh5rx3FUDWmWRiHRyx4bjGhyS6eKHgAj276lnMFQ=
@@ -4261,6 +5701,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sr/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			vCK4xsHSoCjbNNLFQvT2Pj0FVGM=
+			</data>
 			<key>hash2</key>
 			<data>
 			Rfep9FtpwfzrG9LGawmumxXT5SAKUA9OJdjMKIb0ER4=
@@ -4268,6 +5712,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sr/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			28o+tcEGZsjcuqerF9RgMxQ9Gu0=
+			</data>
 			<key>hash2</key>
 			<data>
 			2dhcb8ZtdtzQlsfPpX4eblNlq7sM5aXXiSOL4CdjK+U=
@@ -4275,6 +5723,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sr/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			YCZeDOuqFNPgqf7vbieKr4vLl/w=
+			</data>
 			<key>hash2</key>
 			<data>
 			WJgM7Vz3RkrlxjaJiXqHLww4YBdSRZjYsj0SnWbditY=
@@ -4282,6 +5734,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sr/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			xhaEIvYwgt6aUvj8pUldoFzN3bk=
+			</data>
 			<key>hash2</key>
 			<data>
 			wp5caHyk/tZgUlsMTQ+zmUYpnm5Jfl9OdaP0h2BJQRs=
@@ -4289,6 +5745,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sr/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Xra0/UV8pHkDGTw2Lu3et+jeF4k=
+			</data>
 			<key>hash2</key>
 			<data>
 			6TyVtQN7VitMFtpcWJIiuWLMTphHMmi1iKRFQYTo95A=
@@ -4296,6 +5756,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sr/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			5TXGE0PzeJ6eMwNxpv5ISJqA3ms=
+			</data>
 			<key>hash2</key>
 			<data>
 			aZxcCaS5+ohtG3uslKcj8S/szZdgqoGFieDZwWHgy6M=
@@ -4303,6 +5767,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sr/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			b10loNmIWdzjnqt1xin2ZfsAbUg=
+			</data>
 			<key>hash2</key>
 			<data>
 			G7w633ZaN9w+JVDB46CzLrR0ILFp/mHy86dAtlhAmZI=
@@ -4310,6 +5778,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sv/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			4FpId4z0VmMIqlrotqEZT7mGREE=
+			</data>
 			<key>hash2</key>
 			<data>
 			+BcUOJhLlDixckrzyLvpuUiytvl5pjJh+BTzgnM2CnM=
@@ -4317,6 +5789,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sv/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			fyDAZr9mO1G8vpo9ucct4Shq4VQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			rj57obNHd0OpJazHVcgbm5ZNt2j3wzlhrrsARwn+i68=
@@ -4324,6 +5800,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sv/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			AnUB++Rh1Ep5RstRuoWxGC6MrLg=
+			</data>
 			<key>hash2</key>
 			<data>
 			9kNItY9t+iOcI2U0k5DNpF8EcI1kfxfvIkfhj4qOAUI=
@@ -4331,6 +5811,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sv/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			xnIrv9/XLZIh/2/dgEAOaRXRs/g=
+			</data>
 			<key>hash2</key>
 			<data>
 			EVH77Z3Yvi5I58fgtBRLK6+u8AcGjeO/lheUTe8eofI=
@@ -4338,6 +5822,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sv/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			bZnzqCqb4gFJF4rjcJEfi1i6T48=
+			</data>
 			<key>hash2</key>
 			<data>
 			ROPgiVXWWgwfxPzkrd9geSLX9CxhLHxA5dBHJ/54xi8=
@@ -4345,6 +5833,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sv/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			jt5rOAh/4fCF40ikITUQCQp15Sc=
+			</data>
 			<key>hash2</key>
 			<data>
 			UmtIwUsG9sG0hIez8fobVTNob8mMrwD6eyG2RrL5RgY=
@@ -4352,6 +5844,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sv/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Wgx+H75prPHGdY8d3JJ2TBFnnQw=
+			</data>
 			<key>hash2</key>
 			<data>
 			hzBVyK1MvmivSykJkW/NGAr/jDY594kz+yfdDiB3sfk=
@@ -4359,6 +5855,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sv/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			bVvleTNSBm+daZEibyzUSJVkdOc=
+			</data>
 			<key>hash2</key>
 			<data>
 			Nk+FrVCz/VxQbdHZcHWMcL+/q5nED8by0m5qSohYC9M=
@@ -4366,6 +5866,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sv/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			jGE9JiCbaJIIu5SZJjQRdImFThw=
+			</data>
 			<key>hash2</key>
 			<data>
 			B9MqikWD1SvVe3dr9ovDjpU/5zjtmEHIH6O5uWR1BMU=
@@ -4373,6 +5877,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sv/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			FaLv723M+aNzy5ZpHrK6Cw0IyC8=
+			</data>
 			<key>hash2</key>
 			<data>
 			hnrRo8OaIoGB57PXivYVAVGZ5ABUzpUqgSXCpWY7HmA=
@@ -4380,6 +5888,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sv/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			sEfeVQiAXviVUo2aMk5j4VN4oR8=
+			</data>
 			<key>hash2</key>
 			<data>
 			AzeTyQ+RKuVD3hOT0k+LAwkUPoiuEUNw6YoLu84wt5I=
@@ -4387,6 +5899,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/sv/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			5t/Voj9cMTU3GuF8AJi+Hn/pngk=
+			</data>
 			<key>hash2</key>
 			<data>
 			F6Pqfv7Cxw4ip8xhdflR6PS2/8nFaFV+t7tp0sjzwQE=
@@ -4394,6 +5910,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/th/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			c1ChoyTdlB5ApMydWZztLiO4aDs=
+			</data>
 			<key>hash2</key>
 			<data>
 			3aeALJyAJeNU49fNtyYl9UNIhVKQ84xX4Af8Y+F9e1E=
@@ -4401,6 +5921,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/th/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			J4I7T4zv9/x76au7CtQBjtuGDyU=
+			</data>
 			<key>hash2</key>
 			<data>
 			pnFVno8OX7q8Yd0YZnwfvwWYLpKqluVc9F8ywHtf5ME=
@@ -4408,6 +5932,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/th/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			nPIjXoGjgDv1yuHDrF+aqe3urtk=
+			</data>
 			<key>hash2</key>
 			<data>
 			w0BtmmgQyCMTq2nQaXU+hMXQvCWTIHBfV3yh/ZZxAPk=
@@ -4415,6 +5943,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/th/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			4YZ4fUKs5CXzG2qu/xBJVPk8xPQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			CivdXeS3wFqOgrsUOhUJyM9H+RI8FI6LEJZqinJ5OJY=
@@ -4422,6 +5954,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/th/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			OqJLx9LT9Fz7QvgZXlWsGBWyis0=
+			</data>
 			<key>hash2</key>
 			<data>
 			YYaq+QOoQCU2OzwfwVG2WspJNBhZ7R5KEoyyqFetwww=
@@ -4429,6 +5965,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/th/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			oBLsbwYh1KPA+CM4YSNkjZKhffQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			g4kQx/P71//wUqiGD0z3SEA8iPZXracIVKT+10NllCw=
@@ -4436,6 +5976,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/th/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			GfywDss4D0PVhCSX3mv6HTjdzog=
+			</data>
 			<key>hash2</key>
 			<data>
 			VXbBloDZmsh/CWl6/ORGWUnetIvGKaaHKr7LHVEnwDE=
@@ -4443,6 +5987,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/th/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			c7aTy2JHhX0nsO0uhqVW7aFFhBY=
+			</data>
 			<key>hash2</key>
 			<data>
 			lrHHCWGYVndCSVLwtAQjb+ByEEDaAUEbhhcAMXr7Ovc=
@@ -4450,6 +5998,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/th/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			x+B3pM3OAidHSBaD8lR9YmN8xj0=
+			</data>
 			<key>hash2</key>
 			<data>
 			NdLDSEczTFZO73Ws2ceASG5yNvwFDaVJqQPcK2lIMyc=
@@ -4457,6 +6009,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/th/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Ipp3DhxutsGL+xWqNa+hhbJP2bk=
+			</data>
 			<key>hash2</key>
 			<data>
 			DsPuwOu0lLMDbd+Lz0T2Tp1MBTMjJOzFKLb7DJTbqls=
@@ -4464,6 +6020,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/th/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			GaTXQv6SH43PKKPk7oQvb7xHWuQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			HFWeVxPknReKnKxTL1UrEbD4/fRuSURvIkF7DWI4JLQ=
@@ -4471,6 +6031,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/th/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			y0xshXHliUbWcKwqCorTAzeU8FQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			63UsKEh8E+JoFCKhMHsWfwWNXvN4/5D9vsJoBOkCFZI=
@@ -4478,6 +6042,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/tr/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			flnUX/47MOaqgGMK0S+aysnnsjI=
+			</data>
 			<key>hash2</key>
 			<data>
 			zsKbKySWT8Qk3pbk3bR9K2PSjchzsvQdfO4laT3g/Wg=
@@ -4485,6 +6053,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/tr/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			geyUOgxB6Li2L0pmOtCMubBqWB8=
+			</data>
 			<key>hash2</key>
 			<data>
 			rhcXIFSYL7EzpHIilHkdMIZg0JePbHNmhkESCPu2tvc=
@@ -4492,6 +6064,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/tr/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			5icC7PPZGaFUHUPWWAxyg/R3S5o=
+			</data>
 			<key>hash2</key>
 			<data>
 			y1ZU5zk8SDJmjHje9+21KkxgXWEhDhBeJaeD7qWxYf0=
@@ -4499,6 +6075,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/tr/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			GVSteJW5UDKlIqCg82aXczcBQI4=
+			</data>
 			<key>hash2</key>
 			<data>
 			mCYrcOTYGw5KGQ7xDloA9aPLv369BLmy7Ct8yKp2yDI=
@@ -4506,6 +6086,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/tr/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			2Esqp8rOEUS4WhSWtm/lKeIKjq0=
+			</data>
 			<key>hash2</key>
 			<data>
 			8prZab50z4YTo9a/uTC6tq8MuJULPLdNagDAAtocb7c=
@@ -4513,6 +6097,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/tr/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			TxB3io7XVhVcnw4XGROjtzoweA0=
+			</data>
 			<key>hash2</key>
 			<data>
 			cDvNKRnzL7xUdsCk+2b7GA1EnxC5x9IZUBpyjM97Z74=
@@ -4520,6 +6108,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/tr/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			S33VMoLTzGWsVSBhQzWFWJOO94I=
+			</data>
 			<key>hash2</key>
 			<data>
 			khYZqJTh8FHT1+6CUY5A98o8kivT1N82u/1YsSr3jy0=
@@ -4527,6 +6119,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/tr/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			/3xDWlBuJlAiyzJtWDAeLCgkg+I=
+			</data>
 			<key>hash2</key>
 			<data>
 			kA0nFruC/8x954hXROWS/SpUczjZy71zIjw0Q9FedS0=
@@ -4534,6 +6130,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/tr/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			DS9swyrun5pxaoStiucf6MD+wnc=
+			</data>
 			<key>hash2</key>
 			<data>
 			Po+31sbIcbt1ogKsXd2h8bmbY/986uHKiXzEhkSanH0=
@@ -4541,6 +6141,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/tr/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			kGvYxriYCdVGJUdKrM2d24f9dds=
+			</data>
 			<key>hash2</key>
 			<data>
 			d58xTLkOPWuPAAmuyl0OIyf6doesvs3z+8NgFVjQZAo=
@@ -4548,6 +6152,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/tr/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			z7ZSn4kdnfM4HnglRejfexl36Pc=
+			</data>
 			<key>hash2</key>
 			<data>
 			gPnm5WnetAoyZK4B8gBoZobNQS6KPzcIKMtuGdSAiD0=
@@ -4555,6 +6163,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/tr/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			p5uaNAyCcFbdmMqM9GGxh6ifR3c=
+			</data>
 			<key>hash2</key>
 			<data>
 			yEpskUBCNW5aIISN1Jrwvqc2yP/Fa3+Q0FHKgynsJF0=
@@ -4562,6 +6174,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/uk/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			asOryGjPX6u7rU02O2aTubZ0E+c=
+			</data>
 			<key>hash2</key>
 			<data>
 			7Imb9cx0EbKBmluV0MlzfqZ/yXS5N802GfQFJykBLOA=
@@ -4569,6 +6185,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/uk/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			HSAtjKp21RrPchb9vhYAnedUVdo=
+			</data>
 			<key>hash2</key>
 			<data>
 			vJGv8jKqNgiiQraPtgHcSa6LN9HwzY/jXTw4eS0gKtg=
@@ -4576,6 +6196,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/uk/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			d/2SyrtCIKR1s+agoZ1CrB/6fyA=
+			</data>
 			<key>hash2</key>
 			<data>
 			8TlWfR8FIUxf3KXR0/cByPhGLRfmCYIIWMCJH7t+UQM=
@@ -4583,6 +6207,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/uk/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			E83ou/Dqvy4r2+F87JdVQbpRl0U=
+			</data>
 			<key>hash2</key>
 			<data>
 			Vinn1NyUOkdvZMC1AUzu5/jeW2IapEy0C0JNhscWMZc=
@@ -4590,6 +6218,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/uk/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			3xP0HqLaZB0dzp9VI2872h5hdP0=
+			</data>
 			<key>hash2</key>
 			<data>
 			yEoCsus5/D+TUGtu+fDnPYs7CCQqiGJPxzRcfMcGz1E=
@@ -4597,6 +6229,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/uk/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			hhLaKlh6WqpHnz4DeSnK3UDX1gY=
+			</data>
 			<key>hash2</key>
 			<data>
 			KxZB9MRDdOJKiyG97/yf3VZOtQbU3kMoNBEP9bzxPpc=
@@ -4604,6 +6240,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/uk/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			+b3LCaeIxqS2zIwMA5gkK2lMIIk=
+			</data>
 			<key>hash2</key>
 			<data>
 			HDYqhzLu3NYPTGZSU1O14jgZgyc3iLq8WmIbJ43yYnU=
@@ -4611,6 +6251,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/uk/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			tXZ0j0y2uasS7C1hT4u/qHV1ilE=
+			</data>
 			<key>hash2</key>
 			<data>
 			hpEmMDX6Cfo+U4eWVKGjEo7YuqisstSBwJ79VPLDO5c=
@@ -4618,6 +6262,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/uk/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			lrUBAX0a11YpwXAs2qHzfopHLOo=
+			</data>
 			<key>hash2</key>
 			<data>
 			v9DuozS8V2jc2qSG3Up71phky2WHq+qFAXUzPYEMhD0=
@@ -4625,6 +6273,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/uk/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			i5wq5ms4eYm9XVe9nmWqMA3IsI0=
+			</data>
 			<key>hash2</key>
 			<data>
 			g4RFmGmvYY3/0QI/+RqrSGEQOjZMhKTEHJSKibjPmaM=
@@ -4632,6 +6284,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/uk/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			wrvSPT3iLtpO0F7UUuVpuBCTqY0=
+			</data>
 			<key>hash2</key>
 			<data>
 			htDFTBnLFh5e62SZ/i0Lq6MMbFIVwlAlkFfmpR1zvtg=
@@ -4639,6 +6295,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/uk/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			IoM6OibJ045t0s9vhieNYua9dvA=
+			</data>
 			<key>hash2</key>
 			<data>
 			RoMw3Bs83bcqnCfCYUau90pNks08Bqi5hKW1zl4hoyM=
@@ -4646,6 +6306,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/zh/book_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			IuDd4JjtSAlNyTTck7/geteop24=
+			</data>
 			<key>hash2</key>
 			<data>
 			Mt/u49GL9BojNWMkQEifh63gYJF6EkzaB7f8aiPUCeQ=
@@ -4653,6 +6317,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/zh/book_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			EFO+8ZexeHFU8CGTfzgr1f5b1bI=
+			</data>
 			<key>hash2</key>
 			<data>
 			5Nq2keBH3v+wI9xz0zHZtNAEl8CPuxmL66UblPeWhnU=
@@ -4660,6 +6328,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/zh/checkout_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			3G5Z5fYVJN5MO3lzJtOZ8zKM9X4=
+			</data>
 			<key>hash2</key>
 			<data>
 			u3nmYkn2Chr30d1znaR8Bd7mv0IbSJI40fEU5VqhX/0=
@@ -4667,6 +6339,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/zh/checkout_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			SMvKWnEnvVjX1pjVGZ2qY+95oB4=
+			</data>
 			<key>hash2</key>
 			<data>
 			XRuul6aGMTYt2A4Frtlq9OtxOhcv8HrxZufmQz7IMEQ=
@@ -4674,6 +6350,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/zh/donate_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			vnF1j5iLdy5nPZl6thFfpWTpfCs=
+			</data>
 			<key>hash2</key>
 			<data>
 			za8JNIr9TViCgtD5JPXxBAbAoD6oJvl3fWy+ch0C5oc=
@@ -4681,6 +6361,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/zh/donate_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			NWmKYwk96AHeXRntelqt4DUmUeg=
+			</data>
 			<key>hash2</key>
 			<data>
 			1hxVVcKidwCulNGrGFWwpqCOa2KNdSI/i7y++sUl0YE=
@@ -4688,6 +6372,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/zh/order_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			ggzlDDPw82sv2rh1kHozZNHqYiA=
+			</data>
 			<key>hash2</key>
 			<data>
 			ykIYyHb2N1o+4ZyUdz7BrvZrUAm4G+LT6G2zUFvxjsg=
@@ -4695,6 +6383,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/zh/order_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			AacuGHLpP7DPbxZLgE8prhOh54g=
+			</data>
 			<key>hash2</key>
 			<data>
 			1wVsWwjfXmlrjy/iHKEaY68RRkW+h4kE21erZVOAQJo=
@@ -4702,6 +6394,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/zh/pay_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			uxEITeMHUFlAGq4ICWytrHOcJ+M=
+			</data>
 			<key>hash2</key>
 			<data>
 			+GaPJ1xY/EhqnCtegzva9Bx2wNCVKhqHRt4pkKBPGKg=
@@ -4709,6 +6405,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/zh/pay_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			0B44XUxqvih2P+o6IA7+jYSa7/A=
+			</data>
 			<key>hash2</key>
 			<data>
 			KVZkc29z4SU+Xrty/L96BYjQfSX84+UDJEtn+I7TTjY=
@@ -4716,6 +6416,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/zh/subscribe_with_dark.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			w7jt6BDhnKSFY1Li7oMyV1wJSPY=
+			</data>
 			<key>hash2</key>
 			<data>
 			jY3VbsXaXQY67mU9fy4U6Nk4nOroxoLQthgEDgTdxGM=
@@ -4723,6 +6427,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_android/assets/zh/subscribe_with_light.svg</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			QgK7uETcDdYoPy2o6NASIfKbgcM=
+			</data>
 			<key>hash2</key>
 			<data>
 			IgrjD/vnDUt8mQ1Eu2cpm3I8WcjPWmO+kb944gKI8iQ=
@@ -4730,6 +6438,10 @@
 		</dict>
 		<key>flutter_assets/packages/pay_platform_interface/pubspec.yaml</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			G2nXXMD0VTqIkooMoENxBgH+zJA=
+			</data>
 			<key>hash2</key>
 			<data>
 			su+tiaI29HfR+Ya0PEzn/yR8KqxnSQ6sSbrjvscQz1g=
@@ -4737,6 +6449,10 @@
 		</dict>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			ougUWo4BSMC4Fulu4E/7KI64QEQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			TJi4IoLl73mq25dUNTn1ASDQCHAXB890QAQ1YIkU0fw=
@@ -4744,9 +6460,13 @@
 		</dict>
 		<key>flutter_assets/vm_snapshot_data</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			EGrx+ceECFYMCwgndwmfZXgJFDU=
+			</data>
 			<key>hash2</key>
 			<data>
-			nfs3sjv7oinwH9C9t8WvFHN0xSlF9POWHw5G1/7TY2A=
+			cK33CI3s1P2SzbU//6hag8jxyl1KnDk2YkEoRBtUvuc=
 			</data>
 		</dict>
 	</dict>
