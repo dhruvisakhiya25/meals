@@ -227,7 +227,14 @@ class _PromotionDetailsState extends State<PromotionDetails> {
                                                               left: 20, top: 3),
                                                       child: MaterialButton(
                                                         minWidth: 200,
-                                                        onPressed: () {},
+                                                        onPressed: () {
+                                                          cart.add({
+                                                            'image': document[widget.index]['image'],
+                                                            'name':document[widget.index]['txt'],
+                                                            'rate':document[widget.index]['rate'],
+                                                            'description': document[widget.index]['description'],
+                                                          });
+                                                        },
                                                         color: orange,
                                                         shape:
                                                             OutlineInputBorder(

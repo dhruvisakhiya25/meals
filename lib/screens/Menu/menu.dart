@@ -1,4 +1,5 @@
 import 'package:meals/Network/export.dart';
+import 'package:meals/Widgets/addtoCart.dart';
 
 class MenuScreen extends StatelessWidget {
   const MenuScreen({Key? key}) : super(key: key);
@@ -27,10 +28,7 @@ class MenuScreen extends StatelessWidget {
                               fontWeight: FontWeight.w500,
                               fontSize: 25),
                         ),
-                        const Icon(
-                          icCart,
-                          color: black,
-                        )
+                        goToCart()
                       ],
                     ),
                   ),

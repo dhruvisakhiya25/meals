@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, use_build_context_synchronously
 import 'package:meals/Network/export.dart';
+import 'package:meals/Widgets/addtoCart.dart';
 
 class MorePage extends StatefulWidget {
   const MorePage({Key? key}) : super(key: key);
@@ -30,10 +31,7 @@ class _MorePageState extends State<MorePage> {
                           fontSize: 25),
                     ),
                   ),
-                  Icon(
-                    icCart,
-                    color: black,
-                  ),
+                goToCart()
                 ],
               ),
               SizedBox(

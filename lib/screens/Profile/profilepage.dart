@@ -2,6 +2,8 @@
 import 'package:meals/Network/export.dart';
 import 'dart:io';
 
+import 'package:meals/Widgets/addtoCart.dart';
+
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
 
@@ -94,10 +96,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         fontWeight: FontWeight.bold,
                         fontSize: 30),
                   ),
-                  const Icon(
-                    icCart,
-                    color: black,
-                  )
+                  goToCart()
                 ],
               ),
               const SizedBox(

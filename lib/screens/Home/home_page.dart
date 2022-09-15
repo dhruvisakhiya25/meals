@@ -1,4 +1,5 @@
 import 'package:meals/Network/export.dart';
+import 'package:meals/Widgets/addtoCart.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -46,11 +47,7 @@ class _HomePageState extends State<HomePage> {
                             fontWeight: FontWeight.bold,
                             color: black),
                       ),
-                      const Icon(
-                        icCart,
-                        color: black,
-                        size: 30,
-                      )
+                      goToCart()
                     ],
                   ),
                 ),

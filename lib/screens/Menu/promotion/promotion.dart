@@ -1,4 +1,5 @@
 import 'package:meals/Network/export.dart';
+import 'package:meals/Widgets/addtoCart.dart';
 
 class Promotions extends StatefulWidget {
   const Promotions({Key? key}) : super(key: key);
@@ -34,10 +35,7 @@ class _PromotionsState extends State<Promotions> {
                       promotion,
                       style: const TextStyle(color: black, fontSize: 30),
                     ),
-                    const Icon(
-                      icCart,
-                      color: black,
-                    ),
+                   goToCart()
                   ],
                 ),
               ),

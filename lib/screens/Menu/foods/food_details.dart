@@ -232,8 +232,7 @@ class _FoodDetailsState extends State<FoodDetails> {
                                                           'rate':document[widget.index]['rate'],
                                                          'description': document[widget.index]['description'],
                                                         });
-                                                        print('a');
-                                                        print(cart);
+
                                                       },
                                                       color: orange,
                                                       shape: OutlineInputBorder(

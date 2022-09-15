@@ -1,4 +1,5 @@
 import 'package:meals/Network/export.dart';
+import 'package:meals/Widgets/addtoCart.dart';
 
 
 
@@ -39,10 +40,7 @@ class _OfferPageState extends State<OfferPage> {
                         latestOffers,
                         style: const TextStyle(color: black, fontSize: 30),
                       ),
-                      const Icon(
-                        icCart,
-                        color: black,
-                      ),
+                     goToCart()
                     ],
                   ),
                 ),
