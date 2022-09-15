@@ -53,3 +53,4 @@ export 'package:meals/screens/Menu/foods/food_details.dart';
 export  'package:meals/screens/Offer/offer_details.dart';
 export 'package:meals/screens/Menu/desserts/desserts.dart';
 export 'package:meals/screens/Menu/promotion/promotion.dart';
+export 'package:meals/Widgets/removeCart.dart';

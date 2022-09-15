@@ -18,6 +18,7 @@ class _CartState extends State<Cart> {
         itemBuilder: (context, index) => Dismissible(
           key: Key(cart[index]['name']),
           direction: DismissDirection.endToStart,
+          background: slideLeftBackground(),
           onDismissed: (direction) {
             cart.removeAt(index);
             ScaffoldMessenger.of(context).showSnackBar(

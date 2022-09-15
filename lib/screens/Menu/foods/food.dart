@@ -73,7 +73,7 @@ class _FoodsState extends State<Foods> {
                       QueryDocumentSnapshot documents = document[index];
                       return GestureDetector(
                         onTap: () {
-                          Get.to(() => FoodDetails(index: index));
+                          Get.to(() =>          FoodDetails(index: index));
                         },
                         child: SingleChildScrollView(
                           child: Container(
@@ -103,7 +103,7 @@ class _FoodsState extends State<Foods> {
                                   ),
                                   Text(
                                     documents['rate'].toString(),
-                                    style: const TextStyle(
+                                      style: const TextStyle(
                                         color: orange, fontSize: 20),
                                   ),
                                 ],
