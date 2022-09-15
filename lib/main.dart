@@ -1,7 +1,4 @@
 import 'dart:io';
-import 'package:meals/screens/Menu/desserts/desserts.dart';
-import 'package:meals/screens/Menu/promotion/promotion.dart';
-
 import 'Network/export.dart';
 
 Future<void> main() async {
@@ -34,7 +31,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home:  SplashScreen(),
+      // home: SplashScreen(),
       initialRoute: '/',
       defaultTransition: Transition.circularReveal,
       getPages: [
@@ -54,6 +51,7 @@ class MyApp extends StatelessWidget {
             }
           },
         ),
+        GetPage(name: '/', page: ()=>SplashScreen()),
         GetPage(
           name: '/loginPage',
           page: () => const LoginPage(),
@@ -70,18 +68,17 @@ class MyApp extends StatelessWidget {
           name: '/bevagers',
           page: () => const Bevagers(),
         ),
-    GetPage(
-    name: '/desserts',
-    page: () => const Desserts(),
-    ),
+        GetPage(
+          name: '/desserts',
+          page: () => const Desserts(),
+        ),
         GetPage(
           name: '/promotions',
           page: () => const Promotions(),
         ),
-
         GetPage(
           name: '/paymentDetails',
-          page: () =>  PaymentDetails(),
+          page: () => PaymentDetails(),
         ),
         GetPage(
           name: '/myOrderPage',
@@ -103,7 +100,10 @@ class MyApp extends StatelessWidget {
           name: '/aboutUsPage',
           page: () => const AboutUsPage(),
         ),
-        GetPage(name: '/mainPage', page: () => const MainPage(),)
+        GetPage(
+          name: '/mainPage',
+          page: () => const MainPage(),
+        )
       ],
     );
   }

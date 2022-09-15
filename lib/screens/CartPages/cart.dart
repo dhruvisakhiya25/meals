@@ -1,20 +1,43 @@
-class Product {
-  final String name;
-  final double price;
-  final String imageUrl;
+import 'package:flutter/material.dart';
+import 'package:meals/Network/export.dart';
 
-  const Product({
-    required this.name,
-    required this.price,
-    required this.imageUrl,
-  });
+class Cart extends StatefulWidget {
+  const Cart({Key? key}) : super(key: key);
+
+  @override
+  State<Cart> createState() => _CartState();
 }
 
-List products = [
-  const Product(
-    name: 'Pizza',
-    price: 100,
-    imageUrl:
-        'https://images.unsplash.com/photo-1593504049359-74330189a345?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
-  ),
-];
+class _CartState extends State<Cart> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: ListView.builder(
+        itemCount: cart.length,
+        itemBuilder: (context, index) => Container(
+          child: Row(
+            children: [
+              Container(
+                height: 100,
+                width: 100,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: NetworkImage(cart[index]['image']))),
+              ),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(cart[index]['name']),
+                    Text(cart[index]['rate'].toString()),
+                    Text(cart[index]['description'],overflow: TextOverflow.visible),
+                  ],
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

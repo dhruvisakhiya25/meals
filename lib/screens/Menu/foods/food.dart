@@ -1,4 +1,5 @@
 import 'package:meals/Network/export.dart';
+import 'package:meals/screens/CartPages/cart.dart';
 
 class Foods extends StatefulWidget {
   const Foods({Key? key}) : super(key: key);
@@ -34,9 +35,12 @@ class _FoodsState extends State<Foods> {
                       foods,
                       style: const TextStyle(color: black, fontSize: 30),
                     ),
-                    const Icon(
-                      icCart,
-                      color: black,
+                     IconButton(
+                      onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => Cart(),));
+                      },
+                     icon:Icon( icCart,
+                      color: black,)
                     ),
                   ],
                 ),

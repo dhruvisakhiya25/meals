@@ -225,7 +225,16 @@ class _FoodDetailsState extends State<FoodDetails> {
                                                             left: 20, top: 3),
                                                     child: MaterialButton(
                                                       minWidth: 200,
-                                                      onPressed: () {},
+                                                      onPressed: () {
+                                                        cart.add({
+                                                         'image': document[widget.index]['image'],
+                                                          'name':document[widget.index]['txt'],
+                                                          'rate':document[widget.index]['rate'],
+                                                         'description': document[widget.index]['description'],
+                                                        });
+                                                        print('a');
+                                                        print(cart);
+                                                      },
                                                       color: orange,
                                                       shape: OutlineInputBorder(
                                                         borderRadius:
@@ -308,3 +317,6 @@ class _FoodDetailsState extends State<FoodDetails> {
     );
   }
 }
+
+
+List<Map> cart=[];

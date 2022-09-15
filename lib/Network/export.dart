@@ -51,3 +51,5 @@ export 'package:meals/screens/Menu/bevager/bevagers_details.dart';
 export 'package:meals/screens/Menu/desserts/desserts_details.dart';
 export 'package:meals/screens/Menu/foods/food_details.dart';
 export  'package:meals/screens/Offer/offer_details.dart';
+export 'package:meals/screens/Menu/desserts/desserts.dart';
+export 'package:meals/screens/Menu/promotion/promotion.dart';
