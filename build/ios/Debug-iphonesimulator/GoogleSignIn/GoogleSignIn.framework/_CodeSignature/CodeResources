@@ -6,7 +6,7 @@
 	<dict>
 		<key>GoogleSignIn.bundle/Info.plist</key>
 		<data>
-		+7OxXzfazXELf8fDb8XfPwp4fes=
+		nKWLEfQpNDpmRO0gk5+BgEzDQI8=
 		</data>
 		<key>GoogleSignIn.bundle/Roboto-Bold.ttf</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>GoogleSignIn.bundle/_CodeSignature/CodeDirectory</key>
 		<data>
-		tXssMaLEkUXFnYSjXRqvr/NlbvA=
+		UIb+A6zFZVHJg+JgIrPg/sfFWW0=
 		</data>
 		<key>GoogleSignIn.bundle/_CodeSignature/CodeRequirements</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>GoogleSignIn.bundle/_CodeSignature/CodeRequirements-1</key>
 		<data>
-		iR2vtXRxww9/1lpSr2GZvIoZy3k=
+		c2h8aV2HAOfx5WKBf0X2kr53/AQ=
 		</data>
 		<key>GoogleSignIn.bundle/_CodeSignature/CodeResources</key>
 		<data>
@@ -388,7 +388,7 @@
 		</dict>
 		<key>Headers/GIDAuthentication.h</key>
 		<data>
-		JxIsShr7CxWlLsxOP1n+H7D/lTM=
+		brnfPO7s16eKt4DxnGsZxcBx904=
 		</data>
 		<key>Headers/GIDConfiguration.h</key>
 		<data>
@@ -420,7 +420,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mTfMB15OhnGzvEKKZKr8wJGxqVU=
+		XAfy33Le8MYvmlXyoYxvMWiyKg0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -433,11 +433,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+7OxXzfazXELf8fDb8XfPwp4fes=
+			nKWLEfQpNDpmRO0gk5+BgEzDQI8=
 			</data>
 			<key>hash2</key>
 			<data>
-			0sZisOxrs83GuQXKJWLmoAjRQjJ+42IVp7RgigSX4cU=
+			UC8GID0lPGLS+w2NRnH8uKpKrIQsP1PPINHFP4e4poU=
 			</data>
 		</dict>
 		<key>GoogleSignIn.bundle/Roboto-Bold.ttf</key>
@@ -455,11 +455,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tXssMaLEkUXFnYSjXRqvr/NlbvA=
+			UIb+A6zFZVHJg+JgIrPg/sfFWW0=
 			</data>
 			<key>hash2</key>
 			<data>
-			guNnyPLGAPf1f5ujKH71hWY242xXsxRd9Zv0FN5caIc=
+			mVnkXOm4463KIAwc47HjjMaf7NEsE5VSwgz5Lzy64ZM=
 			</data>
 		</dict>
 		<key>GoogleSignIn.bundle/_CodeSignature/CodeRequirements</key>
@@ -477,11 +477,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iR2vtXRxww9/1lpSr2GZvIoZy3k=
+			c2h8aV2HAOfx5WKBf0X2kr53/AQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			bcDl4F27WQsPCvUv2fFzoW3fQEcnI95/YXd23gelXmE=
+			YtzyHL6wZhetRdM8eJMJXV1uiuhWgFp4gzgmirgMrGE=
 			</data>
 		</dict>
 		<key>GoogleSignIn.bundle/_CodeSignature/CodeResources</key>
@@ -1037,11 +1037,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JxIsShr7CxWlLsxOP1n+H7D/lTM=
+			brnfPO7s16eKt4DxnGsZxcBx904=
 			</data>
 			<key>hash2</key>
 			<data>
-			M55Th2RHn+gTsJxMXofD8q01+m6QK+kQPVcQCUplSFw=
+			9HxLPDaUBHAJzK2AuEng7dABwlCNkpbWTNWrUybq8Zo=
 			</data>
 		</dict>
 		<key>Headers/GIDConfiguration.h</key>

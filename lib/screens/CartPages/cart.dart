@@ -14,27 +14,45 @@ class _CartState extends State<Cart> {
     return Scaffold(
       body: ListView.builder(
         itemCount: cart.length,
-        itemBuilder: (context, index) => Container(
-          child: Row(
-            children: [
-              Container(
-                height: 100,
-                width: 100,
-                decoration: BoxDecoration(
-                    image: DecorationImage(
-                        image: NetworkImage(cart[index]['image']))),
+        physics: const NeverScrollableScrollPhysics(),
+        itemBuilder: (context, index) => Dismissible(
+          key: Key(cart[index]['name']),
+          direction: DismissDirection.endToStart,
+          onDismissed: (direction) {
+            cart.removeAt(index);
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text('Item Delete'),
               ),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(cart[index]['name']),
-                    Text(cart[index]['rate'].toString()),
-                    Text(cart[index]['description'],overflow: TextOverflow.visible),
-                  ],
+            );
+          },
+          child: Container(
+            child: Row(
+              children: [
+                Container(
+                  height: 100,
+                  width: 100,
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: NetworkImage(cart[index]['image']))),
                 ),
-              )
-            ],
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        cart[index]['name'],
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600, fontSize: 40),
+                      ),
+                      Text(cart[index]['rate'].toString()),
+                      Text(cart[index]['description'],
+                          overflow: TextOverflow.ellipsis),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
