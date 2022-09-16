@@ -38,7 +38,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		E/R2Bpt6ewp44RSk11a4tgE6onw=
+		h+mD6fR5uVDmI5Vn/2SMZDXwmPM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -49,10 +49,6 @@
 	<dict>
 		<key>Headers/FLTImagePickerImageUtil.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			SMlyFZj2SvJBjywLwVFhKKpLQ78=
-			</data>
 			<key>hash2</key>
 			<data>
 			yykcI3M6t8zMn7Ass3OakoUbw6aHcboaEAOWLO+EZbM=
@@ -60,10 +56,6 @@
 		</dict>
 		<key>Headers/FLTImagePickerMetaDataUtil.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zSOS6f5yY1LLDVrnjr2TmDCspYU=
-			</data>
 			<key>hash2</key>
 			<data>
 			cO9lumGQK7vjRX2TSDwnmMWJZZINVs2zFdvpul+QC2M=
@@ -71,10 +63,6 @@
 		</dict>
 		<key>Headers/FLTImagePickerPhotoAssetUtil.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			m1+hnaDML8QTN58Ul1U19kQsgm8=
-			</data>
 			<key>hash2</key>
 			<data>
 			Ne2NeyR/GgW/ieixcr5Zpm0UonON8854oAr7FAgrb8g=
@@ -82,10 +70,6 @@
 		</dict>
 		<key>Headers/FLTImagePickerPlugin.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AvB6kMpiN90y2x+jj+S990ze4FA=
-			</data>
 			<key>hash2</key>
 			<data>
 			SgTAdTrlsOQ5YI6rajFnm68iQy/p9yBexdLMVw6Y6C4=
@@ -93,10 +77,6 @@
 		</dict>
 		<key>Headers/FLTImagePickerPlugin_Test.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6nwmQ/LFcCNxZVthpFZ+pmNmsuw=
-			</data>
 			<key>hash2</key>
 			<data>
 			UxUwTI31CqQD7lNwLOgDPCtoXHv0+3lpA3aImatT4AU=
@@ -104,10 +84,6 @@
 		</dict>
 		<key>Headers/FLTPHPickerSaveImageToPathOperation.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			1sd/FHWcSiTannMFB3MjV0Es3hI=
-			</data>
 			<key>hash2</key>
 			<data>
 			nqtpiLyh1wKHvWbIjntEKPHM+g/sT1+2TnTA7Njo0mg=
@@ -115,10 +91,6 @@
 		</dict>
 		<key>Headers/image_picker_ios-umbrella.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			OFQwp7YGozQ7u1wPdwSWhKjXAsM=
-			</data>
 			<key>hash2</key>
 			<data>
 			5jWAnSSqwjVc4s95RG4YGKdGYJ330Z37y8fZM2ly8IQ=
@@ -126,10 +98,6 @@
 		</dict>
 		<key>Headers/messages.g.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			LITY/QcJJtah9+AMfEotxHuM29k=
-			</data>
 			<key>hash2</key>
 			<data>
 			UCtwJjjdgUdhI39Y/LutNC0EjpFjw7cqXrihnJQMhtI=
@@ -137,10 +105,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			utEeFhanjdWjDLCc4TFqNbjeY6g=
-			</data>
 			<key>hash2</key>
 			<data>
 			jZbtVbbZP4wOZUE32eqGhwZOTha7/2e0oBoYLDnekhc=
