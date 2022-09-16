@@ -53,27 +53,29 @@ class _FoodState extends State<Food> {
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
                     QueryDocumentSnapshot documents = document[index];
-                    return Column(
-                      children: [
-                        Container(
-                          height: 100,
-                          width: 100,
-                          margin: const EdgeInsets.all(5),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
-                            image: DecorationImage(
-                                image: NetworkImage(
-                                  documents['food image'],
-                                ),
-                                fit: BoxFit.cover),
+                    return GestureDetector(
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 100,
+                            width: 100,
+                            margin: const EdgeInsets.all(5),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                              image: DecorationImage(
+                                  image: NetworkImage(
+                                    documents['food image'],
+                                  ),
+                                  fit: BoxFit.cover),
+                            ),
                           ),
-                        ),
-                        Text(
-                          documents['food name'],
-                          style: const TextStyle(
-                              fontWeight: FontWeight.w500, fontSize: 20),
-                        )
-                      ],
+                          Text(
+                            documents['food name'],
+                            style: const TextStyle(
+                                fontWeight: FontWeight.w500, fontSize: 20),
+                          )
+                        ],
+                      ),
                     );
                   },
                 ),
