@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 Widget authButton({
   required Widget icon,
   required Widget label,
-
   double heights = 50,
   ButtonStyle? style,
   double minWidths = 0,

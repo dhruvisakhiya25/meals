@@ -90,7 +90,7 @@ class _PaymentDetailsState extends State<PaymentDetails> {
               ),
               Center(
                 child: GooglePayButton(
-                    width: 350,
+                  width: 350,
                   paymentConfigurationAsset: 'gpay.json',
                   paymentItems: _paymentItems,
                   type: GooglePayButtonType.order,
@@ -161,36 +161,36 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                                             expiryDate: expiryDate,
                                             themeColor: Colors.blue,
                                             cardNumberDecoration:
-                                            const InputDecoration(
+                                                const InputDecoration(
                                               border: OutlineInputBorder(),
                                               labelText: 'card holder',
                                               hintText: 'XXXX XXXX XXXX XXXX',
                                             ),
                                             expiryDateDecoration:
-                                            const InputDecoration(
+                                                const InputDecoration(
                                               border: OutlineInputBorder(),
                                               labelText: 'Validade',
                                               hintText: 'XX/XX',
                                             ),
                                             cvvCodeDecoration:
-                                            const InputDecoration(
+                                                const InputDecoration(
                                               border: OutlineInputBorder(),
                                               labelText: 'CVV',
                                               hintText: 'XXX',
                                             ),
                                             cardHolderDecoration:
-                                            const InputDecoration(
+                                                const InputDecoration(
                                               border: OutlineInputBorder(),
                                               labelText: 'card holder',
                                             ),
                                             onCreditCardModelChange:
-                                            onCreditCardModelChange,
+                                                onCreditCardModelChange,
                                           ),
                                           ElevatedButton(
                                             style: ElevatedButton.styleFrom(
                                               shape: RoundedRectangleBorder(
                                                 borderRadius:
-                                                BorderRadius.circular(8.0),
+                                                    BorderRadius.circular(8.0),
                                               ),
                                               primary: const Color(0xff1b447b),
                                             ),
@@ -203,7 +203,7 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                                                   fontFamily: 'halter',
                                                   fontSize: 14,
                                                   package:
-                                                  'flutter_credit_card',
+                                                      'flutter_credit_card',
                                                 ),
                                               ),
                                             ),

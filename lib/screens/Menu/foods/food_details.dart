@@ -227,12 +227,20 @@ class _FoodDetailsState extends State<FoodDetails> {
                                                       minWidth: 200,
                                                       onPressed: () {
                                                         cart.add({
-                                                         'image': document[widget.index]['image'],
-                                                          'name':document[widget.index]['txt'],
-                                                          'rate':document[widget.index]['rate'],
-                                                         'description': document[widget.index]['description'],
+                                                          'image': document[
+                                                                  widget.index]
+                                                              ['image'],
+                                                          'name': document[
+                                                                  widget.index]
+                                                              ['txt'],
+                                                          'rate': document[
+                                                                  widget.index]
+                                                              ['rate'],
+                                                          'description':
+                                                              document[widget
+                                                                      .index][
+                                                                  'description'],
                                                         });
-
                                                       },
                                                       color: orange,
                                                       shape: OutlineInputBorder(
@@ -317,5 +325,4 @@ class _FoodDetailsState extends State<FoodDetails> {
   }
 }
 
-
-List<Map> cart=[];
+List<Map> cart = [];

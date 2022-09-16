@@ -226,10 +226,19 @@ class _DessertDetailsState extends State<DessertDetails> {
                                                       minWidth: 200,
                                                       onPressed: () {
                                                         cart.add({
-                                                          'image': document[widget.index]['image'],
-                                                          'name':document[widget.index]['txt'],
-                                                          'rate':document[widget.index]['rate'],
-                                                          'description': document[widget.index]['description'],
+                                                          'image': document[
+                                                                  widget.index]
+                                                              ['image'],
+                                                          'name': document[
+                                                                  widget.index]
+                                                              ['txt'],
+                                                          'rate': document[
+                                                                  widget.index]
+                                                              ['rate'],
+                                                          'description':
+                                                              document[widget
+                                                                      .index][
+                                                                  'description'],
                                                         });
                                                       },
                                                       color: orange,

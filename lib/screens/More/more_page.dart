@@ -31,7 +31,7 @@ class _MorePageState extends State<MorePage> {
                           fontSize: 25),
                     ),
                   ),
-                goToCart()
+                  goToCart()
                 ],
               ),
               SizedBox(

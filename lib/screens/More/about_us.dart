@@ -35,7 +35,7 @@ class _AboutUsPageState extends State<AboutUsPage> {
                       inbox,
                       style: const TextStyle(color: black, fontSize: 30),
                     ),
-                   goToCart()
+                    goToCart()
                   ],
                 ),
               ),

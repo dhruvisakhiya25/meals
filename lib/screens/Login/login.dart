@@ -99,7 +99,7 @@ class _LoginPageState extends State<LoginPage> {
                         onPressed: () {
                           passwords = !passwords;
                           setState(
-                                () {},
+                            () {},
                           );
                         },
                         icon: Icon(
@@ -177,7 +177,7 @@ class _LoginPageState extends State<LoginPage> {
                     height: 20,
                   ),
                   authButton(
-                    // color: Colors.blue.shade700,
+                      // color: Colors.blue.shade700,
 
                       icon: const Icon(
                         Icons.facebook,
@@ -193,11 +193,11 @@ class _LoginPageState extends State<LoginPage> {
                       onPress: () async {
                         await authController.signInWithFacebook(context);
                         SharedPref.setFbLoginName =
-                        authController.userData!['name'];
+                            authController.userData!['name'];
                         SharedPref.setFbLoginEmail =
-                        authController.userData!['email'];
+                            authController.userData!['email'];
                         SharedPref.setFbLoginPhoto =
-                        authController.userData!['picture']['data']['url'];
+                            authController.userData!['picture']['data']['url'];
                       }),
                   const SizedBox(
                     height: 20,
@@ -219,9 +219,9 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       style: ButtonStyle(
                           backgroundColor:
-                          MaterialStateProperty.resolveWith<Color?>(
-                                (states) => const Color(0xFFFFFFFF),
-                          )),
+                              MaterialStateProperty.resolveWith<Color?>(
+                        (states) => const Color(0xFFFFFFFF),
+                      )),
                       onPress: () async {
                         await authController.signInWithGoogle(context);
                         SharedPref.setGoogleName = authController.displayName;

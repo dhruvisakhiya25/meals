@@ -91,13 +91,15 @@ class _MostPopularState extends State<MostPopular> {
                                   ),
                                   Text(
                                     documents['most rate'].toString(),
-                                    style: const TextStyle(color: orange,fontSize: 20),
+                                    style: const TextStyle(
+                                        color: orange, fontSize: 20),
                                   ),
                                   const SizedBox(
                                     width: 3,
                                   ),
                                   Text(
-                                    documents['most type'],style: const TextStyle(fontSize: 20),
+                                    documents['most type'],
+                                    style: const TextStyle(fontSize: 20),
                                   )
                                 ],
                               )

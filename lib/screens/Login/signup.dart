@@ -185,7 +185,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         onPressed: () {
                           passwords = !passwords;
                           setState(
-                                () {},
+                            () {},
                           );
                         },
                         icon: Icon(
@@ -239,7 +239,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         onPressed: () {
                           passwords = !passwords;
                           setState(
-                                () {},
+                            () {},
                           );
                         },
                         icon: Icon(
@@ -290,7 +290,7 @@ class _SignUpPageState extends State<SignUpPage> {
                           Get.offAllNamed('/mainPage');
                         }
                         setState(
-                              () {},
+                          () {},
                         );
                       },
                       child: Text(
@@ -340,7 +340,7 @@ class Service {
     await auth
         .createUserWithEmailAndPassword(email: email, password: password)
         .then(
-          (value) {
+      (value) {
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
@@ -355,7 +355,7 @@ class Service {
     await auth
         .signInWithEmailAndPassword(email: email, password: password)
         .then(
-          (value) {
+      (value) {
         Navigator.push(
           context,
           MaterialPageRoute(

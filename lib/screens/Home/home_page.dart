@@ -113,7 +113,9 @@ class _HomePageState extends State<HomePage> {
                     Text(
                       viewAll,
                       style: const TextStyle(
-                          color: orange, fontWeight: FontWeight.w500,fontSize: 20),
+                          color: orange,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 20),
                     )
                   ],
                 ),
@@ -214,7 +216,9 @@ class _HomePageState extends State<HomePage> {
                     Text(
                       viewAll,
                       style: const TextStyle(
-                          color: orange, fontWeight: FontWeight.w500,fontSize: 20),
+                          color: orange,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 20),
                     )
                   ],
                 ),
@@ -235,7 +239,9 @@ class _HomePageState extends State<HomePage> {
                     Text(
                       viewAll,
                       style: const TextStyle(
-                          color: orange, fontWeight: FontWeight.w500,fontSize: 20),
+                          color: orange,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 20),
                     )
                   ],
                 ),
@@ -293,7 +299,8 @@ class _HomePageState extends State<HomePage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                documents['recent type'],style: const TextStyle(fontSize: 18),
+                                documents['recent type'],
+                                style: const TextStyle(fontSize: 18),
                               ),
                               const SizedBox(
                                 height: 5,

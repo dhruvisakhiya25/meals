@@ -228,11 +228,21 @@ class _OfferDetailsState extends State<OfferDetails> {
                                                     minWidth: 200,
                                                     onPressed: () {
                                                       cart.add({
-                                                        'image': document[widget.index]['item image'],
-                                                        'name':document[widget.index]['item name'],
-                                                        'rate':document[widget.index]['item rate'],
-                                                        'type':document[widget.index]['item type'],
-                                                        'description': document[widget.index]['description'],
+                                                        'image': document[
+                                                                widget.index]
+                                                            ['item image'],
+                                                        'name': document[
+                                                                widget.index]
+                                                            ['item name'],
+                                                        'rate': document[
+                                                                widget.index]
+                                                            ['item rate'],
+                                                        'type': document[
+                                                                widget.index]
+                                                            ['item type'],
+                                                        'description': document[
+                                                                widget.index]
+                                                            ['description'],
                                                       });
                                                     },
                                                     color: orange,

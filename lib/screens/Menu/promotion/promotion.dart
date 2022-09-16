@@ -35,7 +35,7 @@ class _PromotionsState extends State<Promotions> {
                       promotion,
                       style: const TextStyle(color: black, fontSize: 30),
                     ),
-                   goToCart()
+                    goToCart()
                   ],
                 ),
               ),

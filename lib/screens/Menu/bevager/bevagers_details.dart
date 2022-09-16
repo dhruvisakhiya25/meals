@@ -227,10 +227,19 @@ class _BevagersDetailsState extends State<BevagersDetails> {
                                                       minWidth: 200,
                                                       onPressed: () {
                                                         cart.add({
-                                                          'image': document[widget.index]['image'],
-                                                          'name':document[widget.index]['txt'],
-                                                          'rate':document[widget.index]['rate'],
-                                                          'description': document[widget.index]['description'],
+                                                          'image': document[
+                                                                  widget.index]
+                                                              ['image'],
+                                                          'name': document[
+                                                                  widget.index]
+                                                              ['txt'],
+                                                          'rate': document[
+                                                                  widget.index]
+                                                              ['rate'],
+                                                          'description':
+                                                              document[widget
+                                                                      .index][
+                                                                  'description'],
                                                         });
                                                       },
                                                       color: orange,

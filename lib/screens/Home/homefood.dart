@@ -70,7 +70,8 @@ class _FoodState extends State<Food> {
                         ),
                         Text(
                           documents['food name'],
-                          style: const TextStyle(fontWeight: FontWeight.w500,fontSize: 20),
+                          style: const TextStyle(
+                              fontWeight: FontWeight.w500, fontSize: 20),
                         )
                       ],
                     );

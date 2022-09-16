@@ -287,18 +287,21 @@ class _CheckOutPageState extends State<CheckOutPage> {
                     width: 350,
                     paymentConfigurationAsset: 'apple.json',
                     paymentItems: _paymentItems,
-                   style: ApplePayButtonStyle.white,
+                    style: ApplePayButtonStyle.white,
                     onPaymentResult: onApplePayResult,
                     loadingIndicator: const Center(
                       child: CircularProgressIndicator(),
                     ),
                   ),
                 ),
-                SizedBox(height: 15,),
+                SizedBox(
+                  height: 15,
+                ),
                 Center(
                   child: GooglePayButton(
                     width: 350,
-                    paymentConfigurationAsset: 'default_payment_profile_google_pay.json',
+                    paymentConfigurationAsset:
+                        'default_payment_profile_google_pay.json',
                     paymentItems: _paymentItems,
                     type: GooglePayButtonType.order,
                     onPaymentResult: onGooglePayResult,

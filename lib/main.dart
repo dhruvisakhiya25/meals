@@ -1,4 +1,5 @@
 import 'dart:io';
+
 import 'Network/export.dart';
 
 Future<void> main() async {
@@ -51,7 +52,7 @@ class MyApp extends StatelessWidget {
             }
           },
         ),
-        GetPage(name: '/', page: ()=>const SplashScreen()),
+        GetPage(name: '/', page: () => const SplashScreen()),
         GetPage(
           name: '/loginPage',
           page: () => const LoginPage(),

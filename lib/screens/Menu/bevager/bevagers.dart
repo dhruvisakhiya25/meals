@@ -35,7 +35,7 @@ class _BevagersState extends State<Bevagers> {
                       bevagers,
                       style: const TextStyle(color: black, fontSize: 30),
                     ),
-                  goToCart()
+                    goToCart()
                   ],
                 ),
               ),

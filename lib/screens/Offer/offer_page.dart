@@ -1,8 +1,6 @@
 import 'package:meals/Network/export.dart';
 import 'package:meals/Widgets/addtoCart.dart';
 
-
-
 class OfferPage extends StatefulWidget {
   const OfferPage({Key? key}) : super(key: key);
 
@@ -40,7 +38,7 @@ class _OfferPageState extends State<OfferPage> {
                         latestOffers,
                         style: const TextStyle(color: black, fontSize: 30),
                       ),
-                     goToCart()
+                      goToCart()
                     ],
                   ),
                 ),
@@ -90,8 +88,8 @@ class _OfferPageState extends State<OfferPage> {
                       itemBuilder: (context, index) {
                         QueryDocumentSnapshot documents = document[index];
                         return GestureDetector(
-                          onTap: (){
-                          Get.to(OfferDetails(index: index));
+                          onTap: () {
+                            Get.to(OfferDetails(index: index));
                           },
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -122,14 +120,16 @@ class _OfferPageState extends State<OfferPage> {
                                   ),
                                   Text(
                                     documents['item rate'].toString(),
-                                    style: const TextStyle(color: orange,fontSize: 20),
+                                    style: const TextStyle(
+                                        color: orange, fontSize: 20),
                                   ),
                                   const SizedBox(
                                     width: 5,
                                   ),
                                   Text(
                                     documents['item type'],
-                                    style: const TextStyle(color: grey,fontSize: 20),
+                                    style: const TextStyle(
+                                        color: grey, fontSize: 20),
                                   )
                                 ],
                               )
