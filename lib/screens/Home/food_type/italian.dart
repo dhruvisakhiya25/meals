@@ -1,5 +1,6 @@
-import '../../../Network/export.dart';
+import 'package:meals/screens/Home/food_type/italian_details.dart';
 
+import '../../../Network/export.dart';
 class Italian extends StatefulWidget {
   const Italian({Key? key}) : super(key: key);
 
@@ -9,7 +10,7 @@ class Italian extends StatefulWidget {
 
 class _ItalianState extends State<Italian> {
   final CollectionReference _products =
-      FirebaseFirestore.instance.collection('italian');
+  FirebaseFirestore.instance.collection('italian');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -17,7 +18,6 @@ class _ItalianState extends State<Italian> {
     super.initState();
     _streams = _products.snapshots();
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,22 +47,27 @@ class _ItalianState extends State<Italian> {
                 child: ListView.builder(
                   itemCount: document.length,
                   shrinkWrap: true,
-                  scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
-                    QueryDocumentSnapshot documents = document[index];
                     return Column(
                       children: [
-                        Container(
-                          height: 100,
-                          width: 100,
-                          margin: const EdgeInsets.all(5),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            image: DecorationImage(
-                                image: NetworkImage(
-                                  documents['italian image'],
-                                ),
-                                fit: BoxFit.cover),
+                        GestureDetector(
+                          onTap: () {
+                            Get.to(
+                                  () => ItalianDetails(index: index),
+                            );
+                          },
+                          child: Container(
+                            height: 350,
+                            width: 400,
+                            margin: const EdgeInsets.all(5),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              image: DecorationImage(
+                                  image: NetworkImage(
+                                    document[index]['italian image'],
+                                  ),
+                                  fit: BoxFit.cover),
+                            ),
                           ),
                         ),
                       ],
