@@ -90,7 +90,7 @@ class _PaymentDetailsState extends State<PaymentDetails> {
               ),
               Center(
                 child: GooglePayButton(
-                  width: 310,
+                    width: 350,
                   paymentConfigurationAsset: 'gpay.json',
                   paymentItems: _paymentItems,
                   type: GooglePayButtonType.order,
