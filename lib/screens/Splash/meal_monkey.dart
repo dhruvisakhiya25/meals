@@ -79,7 +79,9 @@ class _MealMonkeyState extends State<MealMonkey> {
                       ),
                       onPressed: () {
                         Get.offAllNamed('/loginPage');
-                        setState(() {});
+                        setState(
+                          () {},
+                        );
                       },
                       child: Text(
                         login,

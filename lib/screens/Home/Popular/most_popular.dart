@@ -52,7 +52,9 @@ class _MostPopularState extends State<MostPopular> {
                     QueryDocumentSnapshot documents = document[index];
                     return GestureDetector(
                       onTap: () {
-                        Get.to(MostPopularDetails(index: index));
+                        Get.to(
+                          MostPopularDetails(index: index),
+                        );
                       },
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,

@@ -159,8 +159,9 @@ class _MyOrderPageState extends State<MyOrderPage> {
                   minWidth: 350,
                   height: 50,
                   shape: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(25),
-                      borderSide: const BorderSide(color: orange)),
+                    borderRadius: BorderRadius.circular(25),
+                    borderSide: const BorderSide(color: orange),
+                  ),
                   onPressed: () {
                     Get.toNamed('/checkOutPage');
                   },

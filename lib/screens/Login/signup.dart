@@ -21,7 +21,9 @@ class _SignUpPageState extends State<SignUpPage> {
 
   @override
   Widget build(BuildContext context) {
-    final authInstance = Get.put(RegisterController());
+    final authInstance = Get.put(
+      RegisterController(),
+    );
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(

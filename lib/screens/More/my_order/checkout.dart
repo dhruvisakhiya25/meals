@@ -279,7 +279,7 @@ class _CheckOutPageState extends State<CheckOutPage> {
                         fontSize: 20),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 Center(
@@ -294,7 +294,7 @@ class _CheckOutPageState extends State<CheckOutPage> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 Center(

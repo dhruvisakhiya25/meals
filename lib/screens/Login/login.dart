@@ -143,7 +143,9 @@ class _LoginPageState extends State<LoginPage> {
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
                         authController.login(
-                            txtEmail.text.trim(), txtPassword.text.trim());
+                          txtEmail.text.trim(),
+                          txtPassword.text.trim(),
+                        );
                         Get.offAllNamed('/mainPage');
                       }
                     },
@@ -207,8 +209,10 @@ class _LoginPageState extends State<LoginPage> {
                         height: 20,
                         width: 20,
                         decoration: const BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage('assets/image/google.png'))),
+                          image: DecorationImage(
+                            image: AssetImage('assets/image/google.png'),
+                          ),
+                        ),
                       ),
                       label: const Text(
                         'Sign in with Google',

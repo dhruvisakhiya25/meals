@@ -89,7 +89,9 @@ class _OfferPageState extends State<OfferPage> {
                         QueryDocumentSnapshot documents = document[index];
                         return GestureDetector(
                           onTap: () {
-                            Get.to(OfferDetails(index: index));
+                            Get.to(
+                              OfferDetails(index: index),
+                            );
                           },
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,

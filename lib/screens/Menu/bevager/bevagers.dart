@@ -67,7 +67,9 @@ class _BevagersState extends State<Bevagers> {
                       QueryDocumentSnapshot documents = document[index];
                       return GestureDetector(
                         onTap: () {
-                          Get.to(() => BevagersDetails(index: index));
+                          Get.to(
+                            () => BevagersDetails(index: index),
+                          );
                         },
                         child: SingleChildScrollView(
                           child: Container(

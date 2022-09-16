@@ -34,8 +34,12 @@ class _CartState extends State<Cart> {
                   height: 100,
                   width: 100,
                   decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: NetworkImage(cart[index]['image']))),
+                    image: DecorationImage(
+                      image: NetworkImage(
+                        cart[index]['image'],
+                      ),
+                    ),
+                  ),
                 ),
                 Expanded(
                   child: Column(
@@ -47,7 +51,9 @@ class _CartState extends State<Cart> {
                         style: TextStyle(
                             fontWeight: FontWeight.w600, fontSize: 40),
                       ),
-                      Text(cart[index]['rate'].toString()),
+                      Text(
+                        cart[index]['rate'].toString(),
+                      ),
                       Text(cart[index]['description'],
                           overflow: TextOverflow.ellipsis),
                     ],

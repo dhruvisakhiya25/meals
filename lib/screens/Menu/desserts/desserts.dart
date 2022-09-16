@@ -67,9 +67,11 @@ class _DessertsState extends State<Desserts> {
                       QueryDocumentSnapshot documents = document[index];
                       return GestureDetector(
                         onTap: () {
-                          Get.to(() => DessertDetails(
-                                index: index,
-                              ));
+                          Get.to(
+                            () => DessertDetails(
+                              index: index,
+                            ),
+                          );
                         },
                         child: SingleChildScrollView(
                           child: Container(

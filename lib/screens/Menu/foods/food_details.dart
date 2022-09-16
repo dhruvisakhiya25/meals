@@ -120,10 +120,12 @@ class _FoodDetailsState extends State<FoodDetails> {
                               const Divider(thickness: 2),
                               Row(
                                 children: [
-                                  Text(numberOfPortion,
-                                      style: const TextStyle(
-                                        fontSize: 15.5,
-                                      )),
+                                  Text(
+                                    numberOfPortion,
+                                    style: const TextStyle(
+                                      fontSize: 15.5,
+                                    ),
+                                  ),
                                   const SizedBox(
                                     width: 20,
                                   ),
@@ -138,10 +140,12 @@ class _FoodDetailsState extends State<FoodDetails> {
                                   const SizedBox(
                                     width: 10,
                                   ),
-                                  Text('$counter',
-                                      style: const TextStyle(
-                                        fontSize: 25,
-                                      )),
+                                  Text(
+                                    '$counter',
+                                    style: const TextStyle(
+                                      fontSize: 25,
+                                    ),
+                                  ),
                                   const SizedBox(
                                     width: 10,
                                   ),
@@ -226,21 +230,26 @@ class _FoodDetailsState extends State<FoodDetails> {
                                                     child: MaterialButton(
                                                       minWidth: 200,
                                                       onPressed: () {
-                                                        cart.add({
-                                                          'image': document[
-                                                                  widget.index]
-                                                              ['image'],
-                                                          'name': document[
-                                                                  widget.index]
-                                                              ['txt'],
-                                                          'rate': document[
-                                                                  widget.index]
-                                                              ['rate'],
-                                                          'description':
-                                                              document[widget
-                                                                      .index][
-                                                                  'description'],
-                                                        });
+                                                        cart.add(
+                                                          {
+                                                            'image': document[
+                                                                    widget
+                                                                        .index]
+                                                                ['image'],
+                                                            'name': document[
+                                                                    widget
+                                                                        .index]
+                                                                ['txt'],
+                                                            'rate': document[
+                                                                    widget
+                                                                        .index]
+                                                                ['rate'],
+                                                            'description':
+                                                                document[widget
+                                                                        .index][
+                                                                    'description'],
+                                                          },
+                                                        );
                                                       },
                                                       color: orange,
                                                       shape: OutlineInputBorder(

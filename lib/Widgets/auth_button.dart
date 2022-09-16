@@ -13,13 +13,6 @@ Widget authButton({
   return ElevatedButton.icon(
     onPressed: onPress,
     style: style,
-    // height: heights,
-    // minWidth: 50,
-    // style: ,
-    // shape: OutlineInputBorder(
-    //     borderRadius: BorderRadius.circular(10),
-    //     borderSide: const BorderSide(width: 0)),
-    // color: color,
     icon: icon,
     label: label,
   );

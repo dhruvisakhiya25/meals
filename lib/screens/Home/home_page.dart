@@ -273,7 +273,9 @@ class _HomePageState extends State<HomePage> {
                         QueryDocumentSnapshot documents = document[index];
                         return ListTile(
                           onTap: () {
-                            Get.to(() => RecentItemDetails(index: index));
+                            Get.to(
+                              () => RecentItemDetails(index: index),
+                            );
                           },
                           leading: Container(
                             // margin: const EdgeInsets.all(15),
