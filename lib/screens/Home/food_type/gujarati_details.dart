@@ -3,7 +3,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:meals/Network/export.dart';
 
-
 class GujaratiDetails extends StatefulWidget {
   int index;
 
@@ -14,12 +13,11 @@ class GujaratiDetails extends StatefulWidget {
 }
 
 class _GujaratiDetailsState extends State<GujaratiDetails> {
-
   int counter = 0;
 
   void increment() {
     setState(
-          () {
+      () {
         counter++;
       },
     );
@@ -27,17 +25,14 @@ class _GujaratiDetailsState extends State<GujaratiDetails> {
 
   void decrement() {
     setState(
-          () {
+      () {
         counter--;
       },
     );
   }
 
-
-
-
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('gujarati');
+      FirebaseFirestore.instance.collection('gujarati');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -100,7 +95,8 @@ class _GujaratiDetailsState extends State<GujaratiDetails> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                document[widget.index]['gujarati name'].toString(),
+                                document[widget.index]['gujarati name']
+                                    .toString(),
                                 style: const TextStyle(
                                     fontWeight: FontWeight.bold, fontSize: 30),
                               ),
@@ -108,7 +104,8 @@ class _GujaratiDetailsState extends State<GujaratiDetails> {
                                 height: 30,
                               ),
                               Text(
-                                document[widget.index]['gujarati rate'].toString(),
+                                document[widget.index]['gujarati rate']
+                                    .toString(),
                                 style: const TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               ),
@@ -198,16 +195,16 @@ class _GujaratiDetailsState extends State<GujaratiDetails> {
                                         ),
                                         child: Row(
                                           mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
+                                              MainAxisAlignment.spaceBetween,
                                           children: [
                                             Padding(
                                               padding: const EdgeInsets.only(
                                                   left: 10),
                                               child: Column(
                                                 crossAxisAlignment:
-                                                CrossAxisAlignment.center,
+                                                    CrossAxisAlignment.center,
                                                 mainAxisAlignment:
-                                                MainAxisAlignment.center,
+                                                    MainAxisAlignment.center,
                                                 children: [
                                                   Text(
                                                     totalPrice,
@@ -219,47 +216,47 @@ class _GujaratiDetailsState extends State<GujaratiDetails> {
                                                     style: const TextStyle(
                                                         fontSize: 27,
                                                         fontWeight:
-                                                        FontWeight.bold),
+                                                            FontWeight.bold),
                                                   ),
                                                   const SizedBox(
                                                     height: 5,
                                                   ),
                                                   Padding(
                                                     padding:
-                                                    const EdgeInsets.only(
-                                                        left: 20, top: 3),
+                                                        const EdgeInsets.only(
+                                                            left: 20, top: 3),
                                                     child: MaterialButton(
                                                       minWidth: 200,
                                                       onPressed: () {
                                                         cart.add(
                                                           {
                                                             'image': document[
-                                                            widget
-                                                                .index]
-                                                            ['gujarati image'],
+                                                                    widget
+                                                                        .index][
+                                                                'gujarati image'],
                                                             'name': document[
-                                                            widget
-                                                                .index]
-                                                            ['gujarati name'],
+                                                                    widget
+                                                                        .index][
+                                                                'gujarati name'],
                                                             'rate': document[
-                                                            widget
-                                                                .index]
-                                                            ['gujarati rate'],
-                                                            'description':
-                                                            document[widget
-                                                                .index][
-                                                            'gujarati description'],
+                                                                    widget
+                                                                        .index][
+                                                                'gujarati rate'],
+                                                            'description': document[
+                                                                    widget
+                                                                        .index][
+                                                                'gujarati description'],
                                                           },
                                                         );
                                                       },
                                                       color: orange,
                                                       shape: OutlineInputBorder(
                                                         borderRadius:
-                                                        BorderRadius
-                                                            .circular(20),
+                                                            BorderRadius
+                                                                .circular(20),
                                                         borderSide:
-                                                        const BorderSide(
-                                                            color: orange),
+                                                            const BorderSide(
+                                                                color: orange),
                                                       ),
                                                       child: Row(
                                                         children: [
@@ -274,11 +271,11 @@ class _GujaratiDetailsState extends State<GujaratiDetails> {
                                                           Text(
                                                             addToCart,
                                                             style:
-                                                            const TextStyle(
-                                                                fontSize:
-                                                                19,
-                                                                color:
-                                                                white),
+                                                                const TextStyle(
+                                                                    fontSize:
+                                                                        19,
+                                                                    color:
+                                                                        white),
                                                           ),
                                                         ],
                                                       ),
@@ -295,7 +292,7 @@ class _GujaratiDetailsState extends State<GujaratiDetails> {
                                                 height: 40,
                                                 width: 40,
                                                 decoration:
-                                                const ShapeDecoration(
+                                                    const ShapeDecoration(
                                                   shape: CircleBorder(),
                                                   color: white,
                                                   shadows: [

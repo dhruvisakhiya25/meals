@@ -95,7 +95,8 @@ class _IndianDetailsState extends State<IndianDetails> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                document[widget.index]['indian name'].toString(),
+                                document[widget.index]['indian name']
+                                    .toString(),
                                 style: const TextStyle(
                                     fontWeight: FontWeight.bold, fontSize: 30),
                               ),
@@ -103,7 +104,8 @@ class _IndianDetailsState extends State<IndianDetails> {
                                 height: 30,
                               ),
                               Text(
-                                document[widget.index]['indian rate'].toString(),
+                                document[widget.index]['indian rate']
+                                    .toString(),
                                 style: const TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               ),
@@ -193,16 +195,16 @@ class _IndianDetailsState extends State<IndianDetails> {
                                         ),
                                         child: Row(
                                           mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
+                                              MainAxisAlignment.spaceBetween,
                                           children: [
                                             Padding(
                                               padding: const EdgeInsets.only(
                                                   left: 10),
                                               child: Column(
                                                 crossAxisAlignment:
-                                                CrossAxisAlignment.center,
+                                                    CrossAxisAlignment.center,
                                                 mainAxisAlignment:
-                                                MainAxisAlignment.center,
+                                                    MainAxisAlignment.center,
                                                 children: [
                                                   Text(
                                                     totalPrice,
@@ -214,47 +216,47 @@ class _IndianDetailsState extends State<IndianDetails> {
                                                     style: const TextStyle(
                                                         fontSize: 27,
                                                         fontWeight:
-                                                        FontWeight.bold),
+                                                            FontWeight.bold),
                                                   ),
                                                   const SizedBox(
                                                     height: 5,
                                                   ),
                                                   Padding(
                                                     padding:
-                                                    const EdgeInsets.only(
-                                                        left: 20, top: 3),
+                                                        const EdgeInsets.only(
+                                                            left: 20, top: 3),
                                                     child: MaterialButton(
                                                       minWidth: 200,
                                                       onPressed: () {
                                                         cart.add(
                                                           {
                                                             'image': document[
-                                                            widget
-                                                                .index]
-                                                            ['indian image'],
+                                                                    widget
+                                                                        .index][
+                                                                'indian image'],
                                                             'name': document[
-                                                            widget
-                                                                .index]
-                                                            ['indian name'],
+                                                                    widget
+                                                                        .index]
+                                                                ['indian name'],
                                                             'rate': document[
-                                                            widget
-                                                                .index]
-                                                            ['indian rate'],
-                                                            'description':
-                                                            document[widget
-                                                                .index][
-                                                            'indian description'],
+                                                                    widget
+                                                                        .index]
+                                                                ['indian rate'],
+                                                            'description': document[
+                                                                    widget
+                                                                        .index][
+                                                                'indian description'],
                                                           },
                                                         );
                                                       },
                                                       color: orange,
                                                       shape: OutlineInputBorder(
                                                         borderRadius:
-                                                        BorderRadius
-                                                            .circular(20),
+                                                            BorderRadius
+                                                                .circular(20),
                                                         borderSide:
-                                                        const BorderSide(
-                                                            color: orange),
+                                                            const BorderSide(
+                                                                color: orange),
                                                       ),
                                                       child: Row(
                                                         children: [
@@ -269,11 +271,11 @@ class _IndianDetailsState extends State<IndianDetails> {
                                                           Text(
                                                             addToCart,
                                                             style:
-                                                            const TextStyle(
-                                                                fontSize:
-                                                                19,
-                                                                color:
-                                                                white),
+                                                                const TextStyle(
+                                                                    fontSize:
+                                                                        19,
+                                                                    color:
+                                                                        white),
                                                           ),
                                                         ],
                                                       ),
@@ -290,7 +292,7 @@ class _IndianDetailsState extends State<IndianDetails> {
                                                 height: 40,
                                                 width: 40,
                                                 decoration:
-                                                const ShapeDecoration(
+                                                    const ShapeDecoration(
                                                   shape: CircleBorder(),
                                                   color: white,
                                                   shadows: [

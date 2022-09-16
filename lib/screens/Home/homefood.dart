@@ -64,7 +64,9 @@ class _FoodState extends State<Food> {
                               () => Gujarati(),
                         );}
 if(index==2){Get.to(
-                              () => Indian(),
+                              () => Indian(
+
+                              ),
                         );}
 
                       },

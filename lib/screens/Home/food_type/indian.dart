@@ -50,24 +50,23 @@ class _IndianState extends State<Indian> {
                   itemCount: document.length,
                   shrinkWrap: true,
                   itemBuilder: (context, index) {
-                    QueryDocumentSnapshot documents = document[index];
                     return Column(
                       children: [
                         GestureDetector(
                           onTap: () {
                             Get.to(
-                                  () => IndianDetails(index: index),
+                              () => IndianDetails(index: index),
                             );
                           },
                           child: Container(
-                            height: 100,
-                            width: 100,
+                            height: 350,
+                            width: 400,
                             margin: const EdgeInsets.all(5),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
                               image: DecorationImage(
                                   image: NetworkImage(
-                                    documents['indian image'],
+                                    document[index]['indian image'],
                                   ),
                                   fit: BoxFit.cover),
                             ),
