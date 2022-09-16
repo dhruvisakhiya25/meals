@@ -227,13 +227,25 @@ class _MostPopularDetailsState extends State<MostPopularDetails> {
                                                           left: 20, top: 3),
                                                   child: MaterialButton(
                                                     minWidth: 200,
-                                                    onPressed: () {     cart.add({
-                                                      'image': document[widget.index]['most image'],
-                                                      'name':document[widget.index]['most name'],
-                                                      'rate':document[widget.index]['most rate'],
-                                                      'type':document[widget.index]['most type'],
-                                                      'description': document[widget.index]['description'],
-                                                    });},
+                                                    onPressed: () {
+                                                      cart.add({
+                                                        'image': document[
+                                                                widget.index]
+                                                            ['most image'],
+                                                        'name': document[
+                                                                widget.index]
+                                                            ['most name'],
+                                                        'rate': document[
+                                                                widget.index]
+                                                            ['most rate'],
+                                                        'type': document[
+                                                                widget.index]
+                                                            ['most type'],
+                                                        'description': document[
+                                                                widget.index]
+                                                            ['description'],
+                                                      });
+                                                    },
                                                     color: orange,
                                                     shape: OutlineInputBorder(
                                                       borderRadius:
