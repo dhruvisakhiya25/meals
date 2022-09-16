@@ -293,7 +293,7 @@ class _HomePageState extends State<HomePage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                documents['recent type'],style: TextStyle(fontSize: 18),
+                                documents['recent type'],style: const TextStyle(fontSize: 18),
                               ),
                               const SizedBox(
                                 height: 5,

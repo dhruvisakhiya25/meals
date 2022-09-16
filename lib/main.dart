@@ -51,7 +51,7 @@ class MyApp extends StatelessWidget {
             }
           },
         ),
-        GetPage(name: '/', page: ()=>SplashScreen()),
+        GetPage(name: '/', page: ()=>const SplashScreen()),
         GetPage(
           name: '/loginPage',
           page: () => const LoginPage(),
@@ -78,7 +78,7 @@ class MyApp extends StatelessWidget {
         ),
         GetPage(
           name: '/paymentDetails',
-          page: () => PaymentDetails(),
+          page: () => const PaymentDetails(),
         ),
         GetPage(
           name: '/myOrderPage',

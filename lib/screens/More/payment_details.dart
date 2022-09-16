@@ -122,7 +122,7 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                   minWidth: 150,
                   shape: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
-                      borderSide: BorderSide(color: orange)),
+                      borderSide: const BorderSide(color: orange)),
                   onPressed: () {
                     showModalBottomSheet(
                       context: context,
@@ -131,6 +131,7 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                           children: [
                             CreditCardWidget(
                               cardName: (String value) {
+                                // ignore: avoid_print
                                 print(value);
                               },
                               cardNumber: cardNumber,
@@ -145,6 +146,7 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                               child: SingleChildScrollView(
                                 child: Column(
                                   children: <Widget>[
+                                    // ignore: sized_box_for_whitespace
                                     Container(
                                       height: 500,
                                       child: Column(
@@ -208,8 +210,10 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                                             onPressed: () {
                                               if (formKey.currentState!
                                                   .validate()) {
+                                                // ignore: avoid_print
                                                 print('valid!');
                                               } else {
+                                                // ignore: avoid_print
                                                 print('invalid!');
                                               }
                                             },
@@ -226,7 +230,7 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                       },
                     );
                   },
-                  child: Text(
+                  child: const Text(
                     '+  Add Another Credit/Debit Card',
                     style: TextStyle(
                         fontSize: 20,

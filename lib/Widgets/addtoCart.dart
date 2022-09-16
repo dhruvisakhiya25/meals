@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:meals/Network/export.dart';
 import 'package:meals/screens/CartPages/cart.dart';
 

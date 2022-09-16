@@ -160,6 +160,7 @@ int? value;
                           children: [
                             CreditCardWidget(
                               cardName: (String value) {
+                                // ignore: avoid_print
                                 print(value);
                               },
                               cardNumber: cardNumber,
@@ -174,6 +175,7 @@ int? value;
                               child: SingleChildScrollView(
                                 child: Column(
                                   children: <Widget>[
+                                    // ignore: sized_box_for_whitespace
                                     Container(
                                       height: 500,
                                       child: Column(
@@ -237,8 +239,10 @@ int? value;
                                             onPressed: () {
                                               if (formKey.currentState!
                                                   .validate()) {
+                                                // ignore: avoid_print
                                                 print('valid!');
                                               } else {
+                                                // ignore: avoid_print
                                                 print('invalid!');
                                               }
                                             },

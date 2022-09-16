@@ -1,6 +1,5 @@
 import 'package:meals/Network/export.dart';
 import 'package:meals/Widgets/addtoCart.dart';
-import 'package:meals/screens/CartPages/cart.dart';
 
 class Foods extends StatefulWidget {
   const Foods({Key? key}) : super(key: key);

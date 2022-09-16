@@ -97,7 +97,7 @@ class _MostPopularState extends State<MostPopular> {
                                     width: 3,
                                   ),
                                   Text(
-                                    documents['most type'],style: TextStyle(fontSize: 20),
+                                    documents['most type'],style: const TextStyle(fontSize: 20),
                                   )
                                 ],
                               )

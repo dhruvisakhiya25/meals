@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:meals/Network/export.dart';
 
 class Cart extends StatefulWidget {
@@ -27,6 +26,7 @@ class _CartState extends State<Cart> {
               ),
             );
           },
+          // ignore: avoid_unnecessary_containers
           child: Container(
             child: Row(
               children: [
@@ -43,6 +43,7 @@ class _CartState extends State<Cart> {
                     children: [
                       Text(
                         cart[index]['name'],
+                        // ignore: prefer_const_constructors
                         style: TextStyle(
                             fontWeight: FontWeight.w600, fontSize: 40),
                       ),
