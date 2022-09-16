@@ -227,9 +227,10 @@ class _RecentItemDetailsState extends State<RecentItemDetails> {
                                                   child: MaterialButton(
                                                     minWidth: 200,
                                                     onPressed: () {     cart.add({
-                                                      'image': document[widget.index]['image'],
-                                                      'name':document[widget.index]['txt'],
-                                                      'rate':document[widget.index]['rate'],
+                                                      'image': document[widget.index]['recent image'],
+                                                      'name':document[widget.index]['recent name'],
+                                                      'rate':document[widget.index]['recent rate'],
+                                                      'type':document[widget.index]['recent type'],
                                                       'description': document[widget.index]['description'],
                                                     });},
                                                     color: orange,

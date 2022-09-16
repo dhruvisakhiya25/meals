@@ -229,9 +229,10 @@ class _PopularDetailsState extends State<PopularDetails> {
                                                     minWidth: 200,
                                                     onPressed: () {
                                                       cart.add({
-                                                        'image': document[widget.index]['image'],
-                                                        'name':document[widget.index]['txt'],
-                                                        'rate':document[widget.index]['rate'],
+                                                        'image': document[widget.index]['popular image'],
+                                                        'name':document[widget.index]['popular name'],
+                                                        'rate':document[widget.index]['popular rate'],
+                                                        'type':document[widget.index]['popular type'],
                                                         'description': document[widget.index]['description'],
                                                       });
                                                     },
