@@ -11,6 +11,18 @@ class CheckOutPage extends StatefulWidget {
 }
 
 class _CheckOutPageState extends State<CheckOutPage> {
+  final _paymentItems = [
+    const PaymentItem(
+      label: 'Total',
+      amount: '0',
+      status: PaymentItemStatus.final_price,
+    )
+  ];
+
+  void onApplePayResult(paymentResult) {}
+
+  void onGooglePayResult(paymentResult) {}
+
   void onCreditCardModelChange(CreditCardModel? creditCardModel) {
     setState(() {
       cardNumber = creditCardModel!.cardNumber;
@@ -27,7 +39,7 @@ class _CheckOutPageState extends State<CheckOutPage> {
   String cvvCode = '';
   bool isCvvFocused = false;
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
-int? value;
+  int? value;
 
   @override
   Widget build(BuildContext context) {
@@ -190,36 +202,36 @@ int? value;
                                             expiryDate: expiryDate,
                                             themeColor: Colors.blue,
                                             cardNumberDecoration:
-                                            const InputDecoration(
+                                                const InputDecoration(
                                               border: OutlineInputBorder(),
                                               labelText: 'card holder',
                                               hintText: 'XXXX XXXX XXXX XXXX',
                                             ),
                                             expiryDateDecoration:
-                                            const InputDecoration(
+                                                const InputDecoration(
                                               border: OutlineInputBorder(),
                                               labelText: 'Validade',
                                               hintText: 'XX/XX',
                                             ),
                                             cvvCodeDecoration:
-                                            const InputDecoration(
+                                                const InputDecoration(
                                               border: OutlineInputBorder(),
                                               labelText: 'CVV',
                                               hintText: 'XXX',
                                             ),
                                             cardHolderDecoration:
-                                            const InputDecoration(
+                                                const InputDecoration(
                                               border: OutlineInputBorder(),
                                               labelText: 'card holder',
                                             ),
                                             onCreditCardModelChange:
-                                            onCreditCardModelChange,
+                                                onCreditCardModelChange,
                                           ),
                                           ElevatedButton(
                                             style: ElevatedButton.styleFrom(
                                               shape: RoundedRectangleBorder(
                                                 borderRadius:
-                                                BorderRadius.circular(8.0),
+                                                    BorderRadius.circular(8.0),
                                               ),
                                               primary: const Color(0xff1b447b),
                                             ),
@@ -232,7 +244,7 @@ int? value;
                                                   fontFamily: 'halter',
                                                   fontSize: 14,
                                                   package:
-                                                  'flutter_credit_card',
+                                                      'flutter_credit_card',
                                                 ),
                                               ),
                                             ),
@@ -266,7 +278,35 @@ int? value;
                         fontWeight: FontWeight.w500,
                         fontSize: 20),
                   ),
-                )
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                Center(
+                  child: ApplePayButton(
+                    width: 350,
+                    paymentConfigurationAsset: 'apple.json',
+                    paymentItems: _paymentItems,
+                    style: ApplePayButtonStyle.white,
+                    onPaymentResult: onApplePayResult,
+                    loadingIndicator: const Center(
+                      child: CircularProgressIndicator(),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 15,),
+                Center(
+                  child: GooglePayButton(
+                    width: 310,
+                    paymentConfigurationAsset: 'gpay.json',
+                    paymentItems: _paymentItems,
+                    type: GooglePayButtonType.order,
+                    onPaymentResult: onGooglePayResult,
+                    loadingIndicator: const Center(
+                      child: CircularProgressIndicator(),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
