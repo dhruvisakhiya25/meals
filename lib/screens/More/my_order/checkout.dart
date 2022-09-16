@@ -1,3 +1,6 @@
+import 'package:flutter_credit_card_brazilian/credit_card_form.dart';
+import 'package:flutter_credit_card_brazilian/credit_card_model.dart';
+import 'package:flutter_credit_card_brazilian/credit_card_widget.dart';
 import 'package:meals/Network/export.dart';
 
 class CheckOutPage extends StatefulWidget {
@@ -8,14 +11,23 @@ class CheckOutPage extends StatefulWidget {
 }
 
 class _CheckOutPageState extends State<CheckOutPage> {
-  int? value;
-  TextEditingController txtCardNumber = TextEditingController();
-  TextEditingController txtMM = TextEditingController();
-  TextEditingController txtYY = TextEditingController();
-  TextEditingController txtSecurityCode = TextEditingController();
-  TextEditingController txtFirstName = TextEditingController();
-  TextEditingController txtLastName = TextEditingController();
-  bool _switchValue = true;
+  void onCreditCardModelChange(CreditCardModel? creditCardModel) {
+    setState(() {
+      cardNumber = creditCardModel!.cardNumber;
+      expiryDate = creditCardModel.expiryDate;
+      cardHolderName = creditCardModel.cardHolderName;
+      cvvCode = creditCardModel.cvvCode;
+      isCvvFocused = creditCardModel.isCvvFocused;
+    });
+  }
+
+  String cardNumber = '';
+  String expiryDate = '';
+  String cardHolderName = '';
+  String cvvCode = '';
+  bool isCvvFocused = false;
+  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
+int? value;
 
   @override
   Widget build(BuildContext context) {
@@ -142,235 +154,105 @@ class _CheckOutPageState extends State<CheckOutPage> {
                   ),
                   onPressed: () {
                     showModalBottomSheet(
-                      shape: const OutlineInputBorder(
-                        borderRadius: BorderRadius.only(
-                          topRight: Radius.circular(20),
-                          topLeft: Radius.circular(20),
-                        ),
-                        borderSide: BorderSide(color: white),
-                      ),
-                      isScrollControlled: true,
                       context: context,
-                      builder: (context) => Container(
-                        margin: const EdgeInsets.all(10),
-                        height: 590,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                      builder: (context) {
+                        return Column(
                           children: [
-                            Align(
-                              alignment: Alignment.topRight,
-                              child: IconButton(
-                                onPressed: () {
-                                  Get.back();
-                                },
-                                icon: const Icon(icClose),
-                              ),
+                            CreditCardWidget(
+                              cardName: (String value) {
+                                print(value);
+                              },
+                              cardNumber: cardNumber,
+                              expiryDate: expiryDate,
+                              cardHolderName: cardHolderName,
+                              cvvCode: cvvCode,
+                              showBackView: isCvvFocused,
+                              obscureCardNumber: true,
+                              obscureCardCvv: true,
                             ),
-                            Text(
-                              addCreditCard,
-                              style:
-                                  const TextStyle(color: black, fontSize: 20),
-                            ),
-                            const SizedBox(
-                              height: 10,
-                            ),
-                            const Divider(
-                              color: grey,
-                              thickness: .4,
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(10.0),
-                              child: TextField(
-                                keyboardType: TextInputType.phone,
-                                textInputAction: TextInputAction.next,
-                                controller: txtCardNumber,
-                                decoration: InputDecoration(
-                                  focusedBorder: OutlineInputBorder(
-                                    borderSide: const BorderSide(
-                                      color: grey,
-                                    ),
-                                    borderRadius: BorderRadius.circular(25),
-                                  ),
-                                  focusColor: grey,
-                                  hintText: cardNumber,
-                                  enabledBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(25),
-                                    borderSide: const BorderSide(color: grey),
-                                  ),
-                                  border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(25),
-                                    borderSide: const BorderSide(color: grey),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Row(
-                              children: [
-                                Text(
-                                  expiry,
-                                  style: const TextStyle(
-                                      color: black,
-                                      fontSize: 20,
-                                      fontWeight: FontWeight.w400),
-                                ),
-                                const SizedBox(
-                                  width: 30,
-                                ),
-                                Expanded(
-                                  child: TextField(
-                                    keyboardType: TextInputType.phone,
-                                    textInputAction: TextInputAction.next,
-                                    controller: txtMM,
-                                    decoration: InputDecoration(
-                                      hintText: mM,
-                                      border: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(30),
+                            Expanded(
+                              child: SingleChildScrollView(
+                                child: Column(
+                                  children: <Widget>[
+                                    Container(
+                                      height: 500,
+                                      child: Column(
+                                        children: [
+                                          CreditCardForm(
+                                            formKey: formKey,
+                                            obscureCvv: true,
+                                            obscureNumber: true,
+                                            cardNumber: cardNumber,
+                                            cvvCode: cvvCode,
+                                            cardHolderName: cardHolderName,
+                                            expiryDate: expiryDate,
+                                            themeColor: Colors.blue,
+                                            cardNumberDecoration:
+                                            const InputDecoration(
+                                              border: OutlineInputBorder(),
+                                              labelText: 'card holder',
+                                              hintText: 'XXXX XXXX XXXX XXXX',
+                                            ),
+                                            expiryDateDecoration:
+                                            const InputDecoration(
+                                              border: OutlineInputBorder(),
+                                              labelText: 'Validade',
+                                              hintText: 'XX/XX',
+                                            ),
+                                            cvvCodeDecoration:
+                                            const InputDecoration(
+                                              border: OutlineInputBorder(),
+                                              labelText: 'CVV',
+                                              hintText: 'XXX',
+                                            ),
+                                            cardHolderDecoration:
+                                            const InputDecoration(
+                                              border: OutlineInputBorder(),
+                                              labelText: 'card holder',
+                                            ),
+                                            onCreditCardModelChange:
+                                            onCreditCardModelChange,
+                                          ),
+                                          ElevatedButton(
+                                            style: ElevatedButton.styleFrom(
+                                              shape: RoundedRectangleBorder(
+                                                borderRadius:
+                                                BorderRadius.circular(8.0),
+                                              ),
+                                              primary: const Color(0xff1b447b),
+                                            ),
+                                            child: Container(
+                                              margin: const EdgeInsets.all(8),
+                                              child: const Text(
+                                                'Validate',
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontFamily: 'halter',
+                                                  fontSize: 14,
+                                                  package:
+                                                  'flutter_credit_card',
+                                                ),
+                                              ),
+                                            ),
+                                            onPressed: () {
+                                              if (formKey.currentState!
+                                                  .validate()) {
+                                                print('valid!');
+                                              } else {
+                                                print('invalid!');
+                                              }
+                                            },
+                                          ),
+                                        ],
                                       ),
-                                    ),
-                                  ),
-                                ),
-                                const SizedBox(
-                                  width: 50,
-                                ),
-                                Expanded(
-                                  child: TextField(
-                                    keyboardType: TextInputType.phone,
-                                    textInputAction: TextInputAction.next,
-                                    controller: txtYY,
-                                    decoration: InputDecoration(
-                                      hintText: yY,
-                                      border: OutlineInputBorder(
-                                        borderRadius: BorderRadius.circular(30),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(10.0),
-                              child: TextField(
-                                textInputAction: TextInputAction.next,
-                                controller: txtSecurityCode,
-                                decoration: InputDecoration(
-                                  focusedBorder: OutlineInputBorder(
-                                    borderSide: const BorderSide(
-                                      color: grey,
-                                    ),
-                                    borderRadius: BorderRadius.circular(25),
-                                  ),
-                                  focusColor: grey,
-                                  hintText: securityCode,
-                                  enabledBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(25),
-                                    borderSide: const BorderSide(color: grey),
-                                  ),
-                                  border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(25),
-                                    borderSide: const BorderSide(color: grey),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(10.0),
-                              child: TextField(
-                                textInputAction: TextInputAction.next,
-                                controller: txtFirstName,
-                                decoration: InputDecoration(
-                                  focusedBorder: OutlineInputBorder(
-                                      borderSide: const BorderSide(
-                                        color: grey,
-                                      ),
-                                      borderRadius: BorderRadius.circular(25)),
-                                  focusColor: grey,
-                                  hintText: firstName,
-                                  enabledBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(25),
-                                    borderSide: const BorderSide(color: grey),
-                                  ),
-                                  border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(25),
-                                    borderSide: const BorderSide(color: grey),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(10.0),
-                              child: TextField(
-                                textInputAction: TextInputAction.next,
-                                controller: txtLastName,
-                                decoration: InputDecoration(
-                                  focusedBorder: OutlineInputBorder(
-                                    borderSide: const BorderSide(
-                                      color: grey,
-                                    ),
-                                    borderRadius: BorderRadius.circular(25),
-                                  ),
-                                  focusColor: grey,
-                                  hintText: lastName,
-                                  enabledBorder: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(25),
-                                    borderSide: const BorderSide(color: grey),
-                                  ),
-                                  border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(25),
-                                    borderSide: const BorderSide(color: grey),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(youCanRemoveCard),
-                                    Text(atAnyTime)
+                                    )
                                   ],
-                                ),
-                                StatefulBuilder(
-                                  builder: (context, setState) {
-                                    return Switch(
-                                      value: _switchValue,
-                                      onChanged: (value) {
-                                        _switchValue = value;
-                                        setState(
-                                          () {},
-                                        );
-                                      },
-                                    );
-                                  },
-                                ),
-                              ],
-                            ),
-                            const SizedBox(
-                              height: 15,
-                            ),
-                            Center(
-                              child: MaterialButton(
-                                minWidth: 350,
-                                height: 50,
-                                color: orange,
-                                shape: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(25),
-                                  borderSide: const BorderSide(color: orange),
-                                ),
-                                onPressed: () {},
-                                child: Text(
-                                  addCards,
-                                  style: const TextStyle(
-                                      color: white,
-                                      fontWeight: FontWeight.w500,
-                                      fontSize: 25),
                                 ),
                               ),
                             )
                           ],
-                        ),
-                      ),
+                        );
+                      },
                     );
                   },
                   child: Text(
