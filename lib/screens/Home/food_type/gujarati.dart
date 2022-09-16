@@ -1,7 +1,11 @@
+import 'package:meals/screens/Home/food_type/gujarati_details.dart';
+
 import '../../../Network/export.dart';
 
 class Gujarati extends StatefulWidget {
-  const Gujarati({Key? key}) : super(key: key);
+  const Gujarati({
+    Key? key,
+  }) : super(key: key);
 
   @override
   State<Gujarati> createState() => _GujaratiState();
@@ -47,22 +51,27 @@ class _GujaratiState extends State<Gujarati> {
                 child: ListView.builder(
                   itemCount: document.length,
                   shrinkWrap: true,
-                  scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
-                    QueryDocumentSnapshot documents = document[index];
                     return Column(
                       children: [
-                        Container(
-                          height: 100,
-                          width: 100,
-                          margin: const EdgeInsets.all(5),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            image: DecorationImage(
-                                image: NetworkImage(
-                                  documents['gujarati image'],
-                                ),
-                                fit: BoxFit.cover),
+                        GestureDetector(
+                          onTap: () {
+                            Get.to(
+                              () => GujaratiDetails(index: index),
+                            );
+                          },
+                          child: Container(
+                            height: 350,
+                            width: 400,
+                            margin: const EdgeInsets.all(5),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              image: DecorationImage(
+                                  image: NetworkImage(
+                                    document[index]['gujarati image'],
+                                  ),
+                                  fit: BoxFit.cover),
+                            ),
                           ),
                         ),
                       ],

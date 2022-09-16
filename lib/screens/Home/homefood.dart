@@ -1,4 +1,7 @@
 import 'package:meals/Network/export.dart';
+import 'package:meals/screens/Home/food_type/chinese.dart';
+import 'package:meals/screens/Home/food_type/gujarati.dart';
+import 'package:meals/screens/Home/food_type/indian.dart';
 
 class Food extends StatefulWidget {
   const Food({Key? key}) : super(key: key);
@@ -54,6 +57,17 @@ class _FoodState extends State<Food> {
                   itemBuilder: (context, index) {
                     QueryDocumentSnapshot documents = document[index];
                     return GestureDetector(
+                      onTap: () {
+                        if(index==4){Get.to(
+                              () => Chinese(),
+                        );}if(index==6){Get.to(
+                              () => Gujarati(),
+                        );}
+if(index==2){Get.to(
+                              () => Indian(),
+                        );}
+
+                      },
                       child: Column(
                         children: [
                           Container(
