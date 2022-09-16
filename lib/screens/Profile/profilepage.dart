@@ -1,7 +1,7 @@
 // ignore_for_file: use_build_context_synchronously, avoid_print
-import 'package:meals/Network/export.dart';
 import 'dart:io';
 
+import 'package:meals/Network/export.dart';
 import 'package:meals/Widgets/addtoCart.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -62,7 +62,9 @@ class _ProfilePageState extends State<ProfilePage> {
         width: 150,
         height: 50,
         decoration: BoxDecoration(
-            color: white, borderRadius: BorderRadius.circular(20)),
+          color: white,
+          borderRadius: BorderRadius.circular(20),
+        ),
         child: ListTile(
           leading: const Icon(icImage),
           title: const Text('Gallery'),
@@ -70,7 +72,9 @@ class _ProfilePageState extends State<ProfilePage> {
             await pickImage();
             SharedPref.setProfileImage = file!.path.toString();
 
-            setState(() {});
+            setState(
+              () {},
+            );
           },
         ),
       ),
@@ -126,10 +130,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         width: 100,
                         decoration: BoxDecoration(
                             image: DecorationImage(
-                                image:
-                                    // SharedPref.getProfileImage == null
-                                    // ?
-                                    NetworkImage(
+                                image: NetworkImage(
                                   SharedPref.getFbLoginPhoto.toString(),
                                 ),
                                 fit: BoxFit.fill),

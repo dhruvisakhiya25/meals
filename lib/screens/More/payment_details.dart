@@ -121,8 +121,9 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                   color: orange,
                   minWidth: 150,
                   shape: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(30),
-                      borderSide: const BorderSide(color: orange)),
+                    borderRadius: BorderRadius.circular(30),
+                    borderSide: const BorderSide(color: orange),
+                  ),
                   onPressed: () {
                     showModalBottomSheet(
                       context: context,
