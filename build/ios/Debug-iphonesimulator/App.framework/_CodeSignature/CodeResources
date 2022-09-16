@@ -94,7 +94,11 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
+<<<<<<< HEAD
 		M1IJ7tIHWpjAylbRGmoKBzwix+A=
+=======
+		2Ouv0zivRdktQm62PF8OC7EhJsY=
+>>>>>>> 842e02887637dd6cd70f2038819a825efce61272
 		</data>
 		<key>flutter_assets/packages/auth_buttons/images/default/apple.svg</key>
 		<data>
@@ -2774,9 +2778,19 @@
 		</dict>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<dict>
+<<<<<<< HEAD
 			<key>hash2</key>
 			<data>
 			A7S5g06B5MNcOoNIBcph0VA9vaf/jzGqb75T3r1juI0=
+=======
+			<key>hash</key>
+			<data>
+			2Ouv0zivRdktQm62PF8OC7EhJsY=
+			</data>
+			<key>hash2</key>
+			<data>
+			4Z2qVJRPVAPZSSMlXCWytRPLQ0rBMJao3d9NTg1xLUI=
+>>>>>>> 842e02887637dd6cd70f2038819a825efce61272
 			</data>
 		</dict>
 		<key>flutter_assets/packages/auth_buttons/images/default/apple.svg</key>

@@ -1,3 +1,5 @@
+import 'package:meals/screens/Home/food_type/indian_details.dart';
+
 import '../../../Network/export.dart';
 
 class Indian extends StatefulWidget {
@@ -47,22 +49,27 @@ class _IndianState extends State<Indian> {
                 child: ListView.builder(
                   itemCount: document.length,
                   shrinkWrap: true,
-                  scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
-                    QueryDocumentSnapshot documents = document[index];
                     return Column(
                       children: [
-                        Container(
-                          height: 100,
-                          width: 100,
-                          margin: const EdgeInsets.all(5),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            image: DecorationImage(
-                                image: NetworkImage(
-                                  documents['indian image'],
-                                ),
-                                fit: BoxFit.cover),
+                        GestureDetector(
+                          onTap: () {
+                            Get.to(
+                              () => IndianDetails(index: index),
+                            );
+                          },
+                          child: Container(
+                            height: 350,
+                            width: 400,
+                            margin: const EdgeInsets.all(5),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              image: DecorationImage(
+                                  image: NetworkImage(
+                                    document[index]['indian image'],
+                                  ),
+                                  fit: BoxFit.cover),
+                            ),
                           ),
                         ),
                       ],

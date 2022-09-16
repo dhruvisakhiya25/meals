@@ -1,7 +1,10 @@
+import 'package:meals/screens/Home/food_type/chinese_details.dart';
+
 import '../../../Network/export.dart';
 
 class Chinese extends StatefulWidget {
-  const Chinese({Key? key}) : super(key: key);
+
+   Chinese({Key? key}) : super(key: key);
 
   @override
   State<Chinese> createState() => _ChineseState();
@@ -47,22 +50,32 @@ class _ChineseState extends State<Chinese> {
                 child: ListView.builder(
                   itemCount: document.length,
                   shrinkWrap: true,
-                  scrollDirection: Axis.horizontal,
+
                   itemBuilder: (context, index) {
                     QueryDocumentSnapshot documents = document[index];
                     return Column(
                       children: [
-                        Container(
-                          height: 100,
-                          width: 100,
-                          margin: const EdgeInsets.all(5),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            image: DecorationImage(
-                                image: NetworkImage(
-                                  documents['chinese image'],
-                                ),
-                                fit: BoxFit.cover),
+                        GestureDetector(
+                          onTap:(){
+                            Get.to(
+                                  () => ChineseDetails(index: index),
+                            );
+                            setState(() {
+
+                            });
+                          },
+                          child: Container(
+                            height: 350,
+                            width: 400,
+                            margin: const EdgeInsets.all(5),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              image: DecorationImage(
+                                  image: NetworkImage(
+                                    documents['chinese image'],
+                                  ),
+                                  fit: BoxFit.cover),
+                            ),
                           ),
                         ),
                       ],
