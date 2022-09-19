@@ -1,7 +1,6 @@
-import 'package:meals/screens/Home/food_type/indian_details.dart';
 import 'package:meals/screens/Home/food_type/italian_details.dart';
-import '../../../Network/export.dart';
 
+import '../../../Network/export.dart';
 
 class Italian extends StatefulWidget {
   const Italian({super.key});
