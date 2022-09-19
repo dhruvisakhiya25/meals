@@ -87,19 +87,20 @@ class _SignUpPageState extends State<SignUpPage> {
                     controller: txtEmail,
                     textInputAction: TextInputAction.next,
                     decoration: InputDecoration(
-                        errorBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(30),
-                          borderSide: const BorderSide(color: red),
-                        ),
-                        hintText: email,
-                        focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(color: grey),
-                          borderRadius: BorderRadius.circular(30),
-                        ),
-                        border: OutlineInputBorder(
-                          borderSide: const BorderSide(color: grey),
-                          borderRadius: BorderRadius.circular(30),
-                        )),
+                      errorBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(30),
+                        borderSide: const BorderSide(color: red),
+                      ),
+                      hintText: email,
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(color: grey),
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      border: OutlineInputBorder(
+                        borderSide: const BorderSide(color: grey),
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                    ),
                     validator: (value) {
                       if (value!.isEmpty) {
                         return (pleaseEnterYourEmail);
@@ -121,19 +122,20 @@ class _SignUpPageState extends State<SignUpPage> {
                     textInputAction: TextInputAction.next,
                     maxLength: 10,
                     decoration: InputDecoration(
-                        errorBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(30),
-                          borderSide: const BorderSide(color: red),
-                        ),
-                        hintText: mobile,
-                        focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(color: grey),
-                          borderRadius: BorderRadius.circular(30),
-                        ),
-                        border: OutlineInputBorder(
-                          borderSide: const BorderSide(color: grey),
-                          borderRadius: BorderRadius.circular(30),
-                        )),
+                      errorBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(30),
+                        borderSide: const BorderSide(color: red),
+                      ),
+                      hintText: mobile,
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: const BorderSide(color: grey),
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      border: OutlineInputBorder(
+                        borderSide: const BorderSide(color: grey),
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                    ),
                     validator: (value) {
                       RegExp regex = RegExp(r'^.{10,}$');
                       if (value!.isEmpty) {
@@ -288,7 +290,6 @@ class _SignUpPageState extends State<SignUpPage> {
                             txtEmail.text.trim(),
                             txtConfirmPassword.text.trim(),
                           );
-
                           Get.offAllNamed('/mainPage');
                         }
                         setState(
