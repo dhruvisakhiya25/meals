@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/pay_ios.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		inMT/bxgD6h5zlFnIzRFO+Hemnk=
+		XBDKCuE+iHssd6H4b5ZaKHlw5VI=
 		</data>
 		<key>Modules/pay_ios.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		inMT/bxgD6h5zlFnIzRFO+Hemnk=
+		XBDKCuE+iHssd6H4b5ZaKHlw5VI=
 		</data>
 		<key>Modules/pay_ios.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		nOMqjm3wpKcr4GS/2/jdtPKhlZA=
+		GbVWALH/2aqjUGrf84UN98KBnUs=
 		</data>
 		<key>Modules/pay_ios.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		nOMqjm3wpKcr4GS/2/jdtPKhlZA=
+		GbVWALH/2aqjUGrf84UN98KBnUs=
 		</data>
 		<key>Modules/pay_ios.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/pay_ios.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dxiIyDwM2I2bqGxUs5IvGl7U3Q8=
+		rQF+XdFZRnxEh1mZwJLP4x5nfIo=
 		</data>
 		<key>Modules/pay_ios.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/pay_ios.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		dxiIyDwM2I2bqGxUs5IvGl7U3Q8=
+		rQF+XdFZRnxEh1mZwJLP4x5nfIo=
 		</data>
 		<key>Modules/pay_ios.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/pay_ios.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		SmxD9G50AazCU83rCtZn7DlQ0hg=
+		MHFp/P1EwXJLiwVSBU6FsDCWJpw=
 		</data>
 		<key>Modules/pay_ios.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/pay_ios.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		SmxD9G50AazCU83rCtZn7DlQ0hg=
+		MHFp/P1EwXJLiwVSBU6FsDCWJpw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -96,28 +96,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v08onbWU4p7rIqKlDtaSGdBh1qwXHAdIUtPalF8g+Ew=
+			5f2/a+rAzDIUVxnUFLNd+fyY2qK0ni55WSxbpbr/17Y=
 			</data>
 		</dict>
 		<key>Modules/pay_ios.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v08onbWU4p7rIqKlDtaSGdBh1qwXHAdIUtPalF8g+Ew=
+			5f2/a+rAzDIUVxnUFLNd+fyY2qK0ni55WSxbpbr/17Y=
 			</data>
 		</dict>
 		<key>Modules/pay_ios.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Lpzzw9kpwDUsApTHj7dvAx6heF0eEtUBU3dNH77VR8=
+			cpsVc2lIEbJA6D/Yxh/IfAQFzrpy29qMiIaidXI+Nts=
 			</data>
 		</dict>
 		<key>Modules/pay_ios.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Lpzzw9kpwDUsApTHj7dvAx6heF0eEtUBU3dNH77VR8=
+			cpsVc2lIEbJA6D/Yxh/IfAQFzrpy29qMiIaidXI+Nts=
 			</data>
 		</dict>
 		<key>Modules/pay_ios.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -131,7 +131,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Szw2r0zH9ZnLZw2DzzczAwppL0CsKH93fG5kX2XoDGA=
+			q7diy5OqDg3XjWJF+P1Ex7+Nf9qno+uM8Bmb6AHwfbk=
 			</data>
 		</dict>
 		<key>Modules/pay_ios.swiftmodule/arm64.swiftdoc</key>
@@ -145,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Szw2r0zH9ZnLZw2DzzczAwppL0CsKH93fG5kX2XoDGA=
+			q7diy5OqDg3XjWJF+P1Ex7+Nf9qno+uM8Bmb6AHwfbk=
 			</data>
 		</dict>
 		<key>Modules/pay_ios.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -159,7 +159,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lm6uxDAJCy8Lt4FIpSqwIjopjF7gQz0sXFEuwgHeV30=
+			80zrnr0ioVB/B08nqxJEagmwklX4qazx6p/Hb235s/8=
 			</data>
 		</dict>
 		<key>Modules/pay_ios.swiftmodule/x86_64.swiftdoc</key>
@@ -173,7 +173,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lm6uxDAJCy8Lt4FIpSqwIjopjF7gQz0sXFEuwgHeV30=
+			80zrnr0ioVB/B08nqxJEagmwklX4qazx6p/Hb235s/8=
 			</data>
 		</dict>
 	</dict>
