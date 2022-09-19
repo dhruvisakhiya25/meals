@@ -1,3 +1,5 @@
+import 'package:meals/screens/Home/food_type/punjabi_details.dart';
+
 import '../../../Network/export.dart';
 
 class Punjabi extends StatefulWidget {
@@ -52,17 +54,24 @@ class _PunjabiState extends State<Punjabi> {
                     QueryDocumentSnapshot documents = document[index];
                     return Column(
                       children: [
-                        Container(
-                          height: 350,
-                          width: 400,
-                          margin: const EdgeInsets.all(5),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            image: DecorationImage(
-                                image: NetworkImage(
-                                  documents['punjabi image'],
-                                ),
-                                fit: BoxFit.cover),
+                        GestureDetector(
+                          onTap:(){
+                            Get.to(
+                                  () => PunjabiDetails(index: index),
+                            );
+                          },
+                          child: Container(
+                            height: 350,
+                            width: 400,
+                            margin: const EdgeInsets.all(5),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              image: DecorationImage(
+                                  image: NetworkImage(
+                                    documents['punjabi image'],
+                                  ),
+                                  fit: BoxFit.cover),
+                            ),
                           ),
                         ),
                       ],

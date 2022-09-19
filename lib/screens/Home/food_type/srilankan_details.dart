@@ -100,7 +100,7 @@ class _SriLankanDetailsState extends State<SriLankanDetails> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                document[widget.index]['srilankan name']
+                                document[widget.index]['name']
                                     .toString(),
                                 style: const TextStyle(
                                     fontWeight: FontWeight.bold, fontSize: 30),
@@ -242,7 +242,7 @@ class _SriLankanDetailsState extends State<SriLankanDetails> {
                                                             'name': document[
                                                             widget
                                                                 .index]
-                                                            ['srilankan name'],
+                                                            ['name'],
                                                             'rate': document[
                                                             widget
                                                                 .index]

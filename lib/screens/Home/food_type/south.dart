@@ -1,3 +1,5 @@
+import 'package:meals/screens/Home/food_type/south_details.dart';
+
 import '../../../Network/export.dart';
 
 class South extends StatefulWidget {
@@ -52,17 +54,23 @@ class _SouthState extends State<South> {
                     QueryDocumentSnapshot documents = document[index];
                     return Column(
                       children: [
-                        Container(
-                          height: 350,
-                          width: 400,
-                          margin: const EdgeInsets.all(5),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            image: DecorationImage(
-                                image: NetworkImage(
-                                  documents['south image'],
-                                ),
-                                fit: BoxFit.cover),
+                        GestureDetector(onTap:(){
+                          Get.to(
+                                () => SouthDetails(index: index),
+                          );
+                        },
+                          child: Container(
+                            height: 350,
+                            width: 400,
+                            margin: const EdgeInsets.all(5),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              image: DecorationImage(
+                                  image: NetworkImage(
+                                    documents['south image'],
+                                  ),
+                                  fit: BoxFit.cover),
+                            ),
                           ),
                         ),
                       ],

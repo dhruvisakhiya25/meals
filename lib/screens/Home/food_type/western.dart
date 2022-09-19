@@ -1,3 +1,5 @@
+import 'package:meals/screens/Home/food_type/western_details.dart';
+
 import '../../../Network/export.dart';
 
 class Western extends StatefulWidget {
@@ -51,17 +53,23 @@ class _WesternState extends State<Western> {
                     QueryDocumentSnapshot documents = document[index];
                     return Column(
                       children: [
-                        Container(
-                          height: 350,
-                          width: 400,
-                          margin: const EdgeInsets.all(5),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            image: DecorationImage(
-                                image: NetworkImage(
-                                  documents['western image'],
-                                ),
-                                fit: BoxFit.cover),
+                        GestureDetector(onTap:(){
+                          Get.to(
+                                () => WesternDetails(index: index),
+                          );
+                        },
+                          child: Container(
+                            height: 350,
+                            width: 400,
+                            margin: const EdgeInsets.all(5),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              image: DecorationImage(
+                                  image: NetworkImage(
+                                    documents['western image'],
+                                  ),
+                                  fit: BoxFit.cover),
+                            ),
                           ),
                         ),
                       ],

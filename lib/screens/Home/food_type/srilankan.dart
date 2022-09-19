@@ -1,3 +1,5 @@
+import 'package:meals/screens/Home/food_type/srilankan_details.dart';
+
 import '../../../Network/export.dart';
 
 class SriLankan extends StatefulWidget {
@@ -51,17 +53,24 @@ class _SriLankanState extends State<SriLankan> {
                     QueryDocumentSnapshot documents = document[index];
                     return Column(
                       children: [
-                        Container(
-                          height: 350,
-                          width: 400,
-                          margin: const EdgeInsets.all(5),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            image: DecorationImage(
-                                image: NetworkImage(
-                                  documents['srilankan image'],
-                                ),
-                                fit: BoxFit.cover),
+                        GestureDetector(
+                          onTap:(){
+                            Get.to(
+                                  () => SriLankanDetails(index: index),
+                            );
+                          },
+                          child: Container(
+                            height: 350,
+                            width: 400,
+                            margin: const EdgeInsets.all(5),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              image: DecorationImage(
+                                  image: NetworkImage(
+                                    documents['srilankan image'],
+                                  ),
+                                  fit: BoxFit.cover),
+                            ),
                           ),
                         ),
                       ],
