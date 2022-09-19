@@ -3,7 +3,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:meals/Network/export.dart';
 
-
 class SouthDetails extends StatefulWidget {
   int index;
 
@@ -14,12 +13,11 @@ class SouthDetails extends StatefulWidget {
 }
 
 class _SouthDetailsState extends State<SouthDetails> {
-
   int counter = 0;
 
   void increment() {
     setState(
-          () {
+      () {
         counter++;
       },
     );
@@ -27,17 +25,14 @@ class _SouthDetailsState extends State<SouthDetails> {
 
   void decrement() {
     setState(
-          () {
+      () {
         counter--;
       },
     );
   }
 
-
-
-
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('south');
+      FirebaseFirestore.instance.collection('south');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -100,8 +95,7 @@ class _SouthDetailsState extends State<SouthDetails> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                document[widget.index]['south name']
-                                    .toString(),
+                                document[widget.index]['south name'].toString(),
                                 style: const TextStyle(
                                     fontWeight: FontWeight.bold, fontSize: 30),
                               ),
@@ -109,8 +103,7 @@ class _SouthDetailsState extends State<SouthDetails> {
                                 height: 30,
                               ),
                               Text(
-                                document[widget.index]['south rate']
-                                    .toString(),
+                                document[widget.index]['south rate'].toString(),
                                 style: const TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               ),
@@ -200,16 +193,16 @@ class _SouthDetailsState extends State<SouthDetails> {
                                         ),
                                         child: Row(
                                           mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
+                                              MainAxisAlignment.spaceBetween,
                                           children: [
                                             Padding(
                                               padding: const EdgeInsets.only(
                                                   left: 10),
                                               child: Column(
                                                 crossAxisAlignment:
-                                                CrossAxisAlignment.center,
+                                                    CrossAxisAlignment.center,
                                                 mainAxisAlignment:
-                                                MainAxisAlignment.center,
+                                                    MainAxisAlignment.center,
                                                 children: [
                                                   Text(
                                                     totalPrice,
@@ -221,47 +214,47 @@ class _SouthDetailsState extends State<SouthDetails> {
                                                     style: const TextStyle(
                                                         fontSize: 27,
                                                         fontWeight:
-                                                        FontWeight.bold),
+                                                            FontWeight.bold),
                                                   ),
                                                   const SizedBox(
                                                     height: 5,
                                                   ),
                                                   Padding(
                                                     padding:
-                                                    const EdgeInsets.only(
-                                                        left: 20, top: 3),
+                                                        const EdgeInsets.only(
+                                                            left: 20, top: 3),
                                                     child: MaterialButton(
                                                       minWidth: 200,
                                                       onPressed: () {
                                                         cart.add(
                                                           {
                                                             'image': document[
-                                                            widget
-                                                                .index][
-                                                            'south image'],
+                                                                    widget
+                                                                        .index]
+                                                                ['south image'],
                                                             'name': document[
-                                                            widget
-                                                                .index]
-                                                            ['south name'],
+                                                                    widget
+                                                                        .index]
+                                                                ['south name'],
                                                             'rate': document[
-                                                            widget
-                                                                .index]
-                                                            ['south rate'],
+                                                                    widget
+                                                                        .index]
+                                                                ['south rate'],
                                                             'description': document[
-                                                            widget
-                                                                .index][
-                                                            'south description'],
+                                                                    widget
+                                                                        .index][
+                                                                'south description'],
                                                           },
                                                         );
                                                       },
                                                       color: orange,
                                                       shape: OutlineInputBorder(
                                                         borderRadius:
-                                                        BorderRadius
-                                                            .circular(20),
+                                                            BorderRadius
+                                                                .circular(20),
                                                         borderSide:
-                                                        const BorderSide(
-                                                            color: orange),
+                                                            const BorderSide(
+                                                                color: orange),
                                                       ),
                                                       child: Row(
                                                         children: [
@@ -276,11 +269,11 @@ class _SouthDetailsState extends State<SouthDetails> {
                                                           Text(
                                                             addToCart,
                                                             style:
-                                                            const TextStyle(
-                                                                fontSize:
-                                                                19,
-                                                                color:
-                                                                white),
+                                                                const TextStyle(
+                                                                    fontSize:
+                                                                        19,
+                                                                    color:
+                                                                        white),
                                                           ),
                                                         ],
                                                       ),
@@ -297,7 +290,7 @@ class _SouthDetailsState extends State<SouthDetails> {
                                                 height: 40,
                                                 width: 40,
                                                 decoration:
-                                                const ShapeDecoration(
+                                                    const ShapeDecoration(
                                                   shape: CircleBorder(),
                                                   color: white,
                                                   shadows: [
