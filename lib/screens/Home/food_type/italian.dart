@@ -1,4 +1,5 @@
 import 'package:meals/screens/Home/food_type/indian_details.dart';
+import 'package:meals/screens/Home/food_type/italian_details.dart';
 import '../../../Network/export.dart';
 
 
@@ -56,7 +57,7 @@ class _ItalianState extends State<Italian> {
                         GestureDetector(
                           onTap: () {
                             Get.to(
-                              () => IndianDetails(index: index),
+                              () => ItalianDetails(index: index),
                             );
                           },
                           child: Container(
