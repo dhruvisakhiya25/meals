@@ -51,7 +51,7 @@ class _SouthState extends State<South> {
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
-                    QueryDocumentSnapshot documents = document[index];
+
                     return Column(
                       children: [
                         GestureDetector(onTap:(){
@@ -67,7 +67,7 @@ class _SouthState extends State<South> {
                               borderRadius: BorderRadius.circular(20),
                               image: DecorationImage(
                                   image: NetworkImage(
-                                    documents['south image'],
+                                    document[index]['south image'],
                                   ),
                                   fit: BoxFit.cover),
                             ),

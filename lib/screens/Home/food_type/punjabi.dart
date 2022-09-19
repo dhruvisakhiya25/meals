@@ -49,9 +49,8 @@ class _PunjabiState extends State<Punjabi> {
                 child: ListView.builder(
                   itemCount: document.length,
                   shrinkWrap: true,
-
                   itemBuilder: (context, index) {
-                    QueryDocumentSnapshot documents = document[index];
+
                     return Column(
                       children: [
                         GestureDetector(
@@ -68,7 +67,7 @@ class _PunjabiState extends State<Punjabi> {
                               borderRadius: BorderRadius.circular(20),
                               image: DecorationImage(
                                   image: NetworkImage(
-                                    documents['punjabi image'],
+                                    document[index]['punjabi image'],
                                   ),
                                   fit: BoxFit.cover),
                             ),

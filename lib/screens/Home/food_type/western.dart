@@ -50,7 +50,6 @@ class _WesternState extends State<Western> {
                   itemCount: document.length,
                   shrinkWrap: true,
                   itemBuilder: (context, index) {
-                    QueryDocumentSnapshot documents = document[index];
                     return Column(
                       children: [
                         GestureDetector(onTap:(){
@@ -66,7 +65,7 @@ class _WesternState extends State<Western> {
                               borderRadius: BorderRadius.circular(20),
                               image: DecorationImage(
                                   image: NetworkImage(
-                                    documents['western image'],
+                                    document[index]['western image'],
                                   ),
                                   fit: BoxFit.cover),
                             ),
