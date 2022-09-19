@@ -231,15 +231,12 @@ class _ItalianDetailsState extends State<ItalianDetails> {
                                                         cart.add(
                                                           {
                                                             'image': document[
-<<<<<<< HEAD
-                                                            widget
-                                                                .index][
-                                                            'italian name'],
-=======
+                                                                        widget
+                                                                            .index]
+                                                                    [
                                                                     widget
                                                                         .index][
                                                                 'italian image'],
->>>>>>> fecbf7ec3cd2704e240d8093e6c107e01d77fdf8
                                                             'name': document[
                                                                     widget
                                                                         .index][
