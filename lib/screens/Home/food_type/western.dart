@@ -47,14 +47,13 @@ class _WesternState extends State<Western> {
                 child: ListView.builder(
                   itemCount: document.length,
                   shrinkWrap: true,
-                  scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
                     QueryDocumentSnapshot documents = document[index];
                     return Column(
                       children: [
                         Container(
-                          height: 100,
-                          width: 100,
+                          height: 350,
+                          width: 400,
                           margin: const EdgeInsets.all(5),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(20),
