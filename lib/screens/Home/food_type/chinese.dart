@@ -3,8 +3,7 @@ import 'package:meals/screens/Home/food_type/chinese_details.dart';
 import '../../../Network/export.dart';
 
 class Chinese extends StatefulWidget {
-
-   Chinese({Key? key}) : super(key: key);
+  const Chinese({Key? key}) : super(key: key);
 
   @override
   State<Chinese> createState() => _ChineseState();
@@ -50,19 +49,16 @@ class _ChineseState extends State<Chinese> {
                 child: ListView.builder(
                   itemCount: document.length,
                   shrinkWrap: true,
-
                   itemBuilder: (context, index) {
                     QueryDocumentSnapshot documents = document[index];
                     return Column(
                       children: [
                         GestureDetector(
-                          onTap:(){
+                          onTap: () {
                             Get.to(
-                                  () => ChineseDetails(index: index),
+                              () => ChineseDetails(index: index),
                             );
-                            setState(() {
-
-                            });
+                            setState(() {});
                           },
                           child: Container(
                             height: 350,

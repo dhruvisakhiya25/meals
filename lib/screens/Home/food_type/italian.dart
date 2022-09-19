@@ -1,6 +1,7 @@
 import 'package:meals/screens/Home/food_type/italian_details.dart';
 
 import '../../../Network/export.dart';
+
 class Italian extends StatefulWidget {
   const Italian({Key? key}) : super(key: key);
 
@@ -10,7 +11,7 @@ class Italian extends StatefulWidget {
 
 class _ItalianState extends State<Italian> {
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('italian');
+      FirebaseFirestore.instance.collection('italian');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -18,6 +19,7 @@ class _ItalianState extends State<Italian> {
     super.initState();
     _streams = _products.snapshots();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,7 +55,7 @@ class _ItalianState extends State<Italian> {
                         GestureDetector(
                           onTap: () {
                             Get.to(
-                                  () => ItalianDetails(index: index),
+                              () => ItalianDetails(index: index),
                             );
                           },
                           child: Container(

@@ -64,28 +64,28 @@ class _FoodState extends State<Food> {
                     return GestureDetector(
                       onTap: () {
                         if (index == 0) {
-                          Get.to(() => Italian());
+                          Get.to(() => const Italian());
                         }
                         if (index == 1) {
-                          Get.to(() => Western());
+                          Get.to(() => const Western());
                         }
-                        if(index == 2 ){
-                          Get.to(()=> Indian());
+                        if (index == 2) {
+                          Get.to(() => const Indian());
                         }
-                        if(index == 3){
-                          Get.to(()=>Punjabi());
+                        if (index == 3) {
+                          Get.to(() => const Punjabi());
                         }
-                        if(index == 4){
-                          Get.to(()=>Chinese());
+                        if (index == 4) {
+                          Get.to(() => const Chinese());
                         }
-                        if(index == 5){
-                          Get.to(()=>SriLankan());
+                        if (index == 5) {
+                          Get.to(() => const SriLankan());
                         }
-                        if(index == 6){
-                          Get.to(()=>Gujarati());
+                        if (index == 6) {
+                          Get.to(() => const Gujarati());
                         }
-                        if(index ==7){
-                          Get.to(()=>South());
+                        if (index == 7) {
+                          Get.to(() => const South());
                         }
                       },
                       child: Column(
