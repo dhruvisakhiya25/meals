@@ -1,4 +1,4 @@
-import 'package:meals/screens/Home/food_type/srilankan_details.dart';
+
 
 import '../../../Network/export.dart';
 

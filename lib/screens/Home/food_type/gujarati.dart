@@ -1,4 +1,4 @@
-import 'package:meals/screens/Home/food_type/gujarati_details.dart';
+
 
 import '../../../Network/export.dart';
 
