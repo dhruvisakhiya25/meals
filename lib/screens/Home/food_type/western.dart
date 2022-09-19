@@ -52,11 +52,12 @@ class _WesternState extends State<Western> {
                   itemBuilder: (context, index) {
                     return Column(
                       children: [
-                        GestureDetector(onTap:(){
-                          Get.to(
-                                () => WesternDetails(index: index),
-                          );
-                        },
+                        GestureDetector(
+                          onTap: () {
+                            Get.to(
+                              () => WesternDetails(index: index),
+                            );
+                          },
                           child: Container(
                             height: 350,
                             width: 400,

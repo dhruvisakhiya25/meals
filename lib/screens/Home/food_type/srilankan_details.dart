@@ -3,7 +3,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:meals/Network/export.dart';
 
-
 class SriLankanDetails extends StatefulWidget {
   int index;
 
@@ -14,12 +13,11 @@ class SriLankanDetails extends StatefulWidget {
 }
 
 class _SriLankanDetailsState extends State<SriLankanDetails> {
-
   int counter = 0;
 
   void increment() {
     setState(
-          () {
+      () {
         counter++;
       },
     );
@@ -27,17 +25,14 @@ class _SriLankanDetailsState extends State<SriLankanDetails> {
 
   void decrement() {
     setState(
-          () {
+      () {
         counter--;
       },
     );
   }
 
-
-
-
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('srilankan');
+      FirebaseFirestore.instance.collection('srilankan');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -100,8 +95,7 @@ class _SriLankanDetailsState extends State<SriLankanDetails> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                document[widget.index]['name']
-                                    .toString(),
+                                document[widget.index]['name'].toString(),
                                 style: const TextStyle(
                                     fontWeight: FontWeight.bold, fontSize: 30),
                               ),
@@ -200,16 +194,16 @@ class _SriLankanDetailsState extends State<SriLankanDetails> {
                                         ),
                                         child: Row(
                                           mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
+                                              MainAxisAlignment.spaceBetween,
                                           children: [
                                             Padding(
                                               padding: const EdgeInsets.only(
                                                   left: 10),
                                               child: Column(
                                                 crossAxisAlignment:
-                                                CrossAxisAlignment.center,
+                                                    CrossAxisAlignment.center,
                                                 mainAxisAlignment:
-                                                MainAxisAlignment.center,
+                                                    MainAxisAlignment.center,
                                                 children: [
                                                   Text(
                                                     totalPrice,
@@ -221,47 +215,47 @@ class _SriLankanDetailsState extends State<SriLankanDetails> {
                                                     style: const TextStyle(
                                                         fontSize: 27,
                                                         fontWeight:
-                                                        FontWeight.bold),
+                                                            FontWeight.bold),
                                                   ),
                                                   const SizedBox(
                                                     height: 5,
                                                   ),
                                                   Padding(
                                                     padding:
-                                                    const EdgeInsets.only(
-                                                        left: 20, top: 3),
+                                                        const EdgeInsets.only(
+                                                            left: 20, top: 3),
                                                     child: MaterialButton(
                                                       minWidth: 200,
                                                       onPressed: () {
                                                         cart.add(
                                                           {
                                                             'image': document[
-                                                            widget
-                                                                .index][
-                                                            'srilankan image'],
+                                                                    widget
+                                                                        .index][
+                                                                'srilankan image'],
                                                             'name': document[
-                                                            widget
-                                                                .index]
-                                                            ['name'],
+                                                                    widget
+                                                                        .index]
+                                                                ['name'],
                                                             'rate': document[
-                                                            widget
-                                                                .index]
-                                                            ['srilankan rate'],
-                                                            'description': document[
-                                                            widget
-                                                                .index][
-                                                            'description'],
+                                                                    widget
+                                                                        .index][
+                                                                'srilankan rate'],
+                                                            'description':
+                                                                document[widget
+                                                                        .index][
+                                                                    'description'],
                                                           },
                                                         );
                                                       },
                                                       color: orange,
                                                       shape: OutlineInputBorder(
                                                         borderRadius:
-                                                        BorderRadius
-                                                            .circular(20),
+                                                            BorderRadius
+                                                                .circular(20),
                                                         borderSide:
-                                                        const BorderSide(
-                                                            color: orange),
+                                                            const BorderSide(
+                                                                color: orange),
                                                       ),
                                                       child: Row(
                                                         children: [
@@ -276,11 +270,11 @@ class _SriLankanDetailsState extends State<SriLankanDetails> {
                                                           Text(
                                                             addToCart,
                                                             style:
-                                                            const TextStyle(
-                                                                fontSize:
-                                                                19,
-                                                                color:
-                                                                white),
+                                                                const TextStyle(
+                                                                    fontSize:
+                                                                        19,
+                                                                    color:
+                                                                        white),
                                                           ),
                                                         ],
                                                       ),
@@ -297,7 +291,7 @@ class _SriLankanDetailsState extends State<SriLankanDetails> {
                                                 height: 40,
                                                 width: 40,
                                                 decoration:
-                                                const ShapeDecoration(
+                                                    const ShapeDecoration(
                                                   shape: CircleBorder(),
                                                   color: white,
                                                   shadows: [
