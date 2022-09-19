@@ -50,7 +50,6 @@ class _PunjabiState extends State<Punjabi> {
                   itemCount: document.length,
                   shrinkWrap: true,
                   itemBuilder: (context, index) {
-
                     return Column(
                       children: [
                         GestureDetector(
