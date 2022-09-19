@@ -17,7 +17,7 @@ class _ItalianDetailsState extends State<ItalianDetails> {
 
   void increment() {
     setState(
-      () {
+          () {
         counter++;
       },
     );
@@ -25,14 +25,14 @@ class _ItalianDetailsState extends State<ItalianDetails> {
 
   void decrement() {
     setState(
-      () {
+          () {
         counter--;
       },
     );
   }
 
   final CollectionReference _products =
-      FirebaseFirestore.instance.collection('italian');
+  FirebaseFirestore.instance.collection('italian');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -195,16 +195,16 @@ class _ItalianDetailsState extends State<ItalianDetails> {
                                         ),
                                         child: Row(
                                           mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
+                                          MainAxisAlignment.spaceBetween,
                                           children: [
                                             Padding(
                                               padding: const EdgeInsets.only(
                                                   left: 10),
                                               child: Column(
                                                 crossAxisAlignment:
-                                                    CrossAxisAlignment.center,
+                                                CrossAxisAlignment.center,
                                                 mainAxisAlignment:
-                                                    MainAxisAlignment.center,
+                                                MainAxisAlignment.center,
                                                 children: [
                                                   Text(
                                                     totalPrice,
@@ -216,53 +216,47 @@ class _ItalianDetailsState extends State<ItalianDetails> {
                                                     style: const TextStyle(
                                                         fontSize: 27,
                                                         fontWeight:
-                                                            FontWeight.bold),
+                                                        FontWeight.bold),
                                                   ),
                                                   const SizedBox(
                                                     height: 5,
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        const EdgeInsets.only(
-                                                            left: 20, top: 3),
+                                                    const EdgeInsets.only(
+                                                        left: 20, top: 3),
                                                     child: MaterialButton(
                                                       minWidth: 200,
                                                       onPressed: () {
                                                         cart.add(
                                                           {
                                                             'image': document[
-<<<<<<< HEAD
                                                             widget
                                                                 .index][
-                                                            'italian name'],
-=======
-                                                                    widget
-                                                                        .index][
-                                                                'italian image'],
->>>>>>> fecbf7ec3cd2704e240d8093e6c107e01d77fdf8
+                                                            'italian image'],
                                                             'name': document[
-                                                                    widget
-                                                                        .index][
-                                                                'italian name'],
+                                                            widget
+                                                                .index]
+                                                            ['italian name'],
                                                             'rate': document[
-                                                                    widget
-                                                                        .index][
-                                                                'italian rate'],
+                                                            widget
+                                                                .index]
+                                                            ['italian rate'],
                                                             'description': document[
-                                                                    widget
-                                                                        .index][
-                                                                'italian description'],
+                                                            widget
+                                                                .index][
+                                                            'italian description'],
                                                           },
                                                         );
                                                       },
                                                       color: orange,
                                                       shape: OutlineInputBorder(
                                                         borderRadius:
-                                                            BorderRadius
-                                                                .circular(20),
+                                                        BorderRadius
+                                                            .circular(20),
                                                         borderSide:
-                                                            const BorderSide(
-                                                                color: orange),
+                                                        const BorderSide(
+                                                            color: orange),
                                                       ),
                                                       child: Row(
                                                         children: [
@@ -277,11 +271,11 @@ class _ItalianDetailsState extends State<ItalianDetails> {
                                                           Text(
                                                             addToCart,
                                                             style:
-                                                                const TextStyle(
-                                                                    fontSize:
-                                                                        19,
-                                                                    color:
-                                                                        white),
+                                                            const TextStyle(
+                                                                fontSize:
+                                                                19,
+                                                                color:
+                                                                white),
                                                           ),
                                                         ],
                                                       ),
@@ -298,7 +292,7 @@ class _ItalianDetailsState extends State<ItalianDetails> {
                                                 height: 40,
                                                 width: 40,
                                                 decoration:
-                                                    const ShapeDecoration(
+                                                const ShapeDecoration(
                                                   shape: CircleBorder(),
                                                   color: white,
                                                   shadows: [

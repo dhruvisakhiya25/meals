@@ -55,11 +55,11 @@ class _ItalianState extends State<Italian> {
                         GestureDetector(
                           onTap: () {
                             Get.to(
-<<<<<<< HEAD
+
                                   () => IndianDetails(index: index),
-=======
-                              () => ItalianDetails(index: index),
->>>>>>> fecbf7ec3cd2704e240d8093e6c107e01d77fdf8
+
+
+
                             );
                           },
                           child: Container(
