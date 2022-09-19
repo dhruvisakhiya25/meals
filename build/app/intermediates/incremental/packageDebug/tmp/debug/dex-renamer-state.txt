@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-#Mon Sep 19 14:34:54 IST 2022
-=======
-#Mon Sep 19 14:49:55 IST 2022
->>>>>>> Stashed changes
+#Mon Sep 19 15:29:50 IST 2022
 path.4=7/classes.dex
 path.3=1/classes.dex
 path.2=0/classes.dex

@@ -11,7 +11,7 @@ class _CartState extends State<Cart> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView.builder(
+      body:cart.isEmpty?const Center(child: Text('Your cart is empty')): ListView.builder(
         itemCount: cart.length,
         physics: const NeverScrollableScrollPhysics(),
         itemBuilder: (context, index) => Dismissible(

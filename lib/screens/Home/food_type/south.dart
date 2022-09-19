@@ -49,7 +49,6 @@ class _SouthState extends State<South> {
                 child: ListView.builder(
                   itemCount: document.length,
                   shrinkWrap: true,
-                  scrollDirection: Axis.horizontal,
                   itemBuilder: (context, index) {
 
                     return Column(
