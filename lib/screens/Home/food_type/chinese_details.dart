@@ -236,19 +236,19 @@ class _ChineseDetailsState extends State<ChineseDetails> {
                                                             'image': document[
                                                             widget
                                                                 .index]
-                                                            ['image'],
+                                                            ['chinese image'],
                                                             'name': document[
                                                             widget
                                                                 .index]
-                                                            ['txt'],
+                                                            ['chinese name'],
                                                             'rate': document[
                                                             widget
                                                                 .index]
-                                                            ['rate'],
+                                                            ['chinese rate'],
                                                             'description':
                                                             document[widget
                                                                 .index][
-                                                            'description'],
+                                                            'chinese description'],
                                                           },
                                                         );
                                                       },

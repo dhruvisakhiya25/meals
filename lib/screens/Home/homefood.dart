@@ -3,6 +3,10 @@ import 'package:meals/screens/Home/food_type/chinese.dart';
 import 'package:meals/screens/Home/food_type/gujarati.dart';
 import 'package:meals/screens/Home/food_type/indian.dart';
 import 'package:meals/screens/Home/food_type/italian.dart';
+import 'package:meals/screens/Home/food_type/punjabi.dart';
+import 'package:meals/screens/Home/food_type/south.dart';
+import 'package:meals/screens/Home/food_type/srilankan.dart';
+import 'package:meals/screens/Home/food_type/western.dart';
 
 class Food extends StatefulWidget {
   const Food({Key? key}) : super(key: key);
@@ -60,24 +64,28 @@ class _FoodState extends State<Food> {
                     return GestureDetector(
                       onTap: () {
                         if (index == 0) {
-                          Get.to(
-                            () => Italian(),
-                          );
-                        } if (index == 4) {
-                          Get.to(
-                            () => Chinese(),
-                          );
+                          Get.to(() => Italian());
                         }
-                        if (index == 6) {
-                          Get.to(
-                            () => Gujarati(),
-                          );
+                        if (index == 1) {
+                          Get.to(() => Western());
                         }
-                          if (index == 2) {
-                            Get.to(
-                                  () => Indian(),
-                            );
-
+                        if(index == 2 ){
+                          Get.to(()=> Indian());
+                        }
+                        if(index == 3){
+                          Get.to(()=>Punjabi());
+                        }
+                        if(index == 4){
+                          Get.to(()=>Chinese());
+                        }
+                        if(index == 5){
+                          Get.to(()=>SriLankan());
+                        }
+                        if(index == 6){
+                          Get.to(()=>Gujarati());
+                        }
+                        if(index ==7){
+                          Get.to(()=>South());
                         }
                       },
                       child: Column(
