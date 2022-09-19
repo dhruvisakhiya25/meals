@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< Updated upstream
             "outputFile": "/Users/imac/VSCODE/meals/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v25/values-v25.xml",
+=======
+            "outputFile": "/Users/imac/Documents/Yash/meals/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v25/values-v25.xml",
+>>>>>>> Stashed changes
             "map": [
                 {
                     "source": "/Users/imac/.gradle/caches/transforms-3/9346a27f47264b8c166f01f4004f0589/transformed/appcompat-1.1.0/res/values-v25/values-v25.xml",

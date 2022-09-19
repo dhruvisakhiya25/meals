@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< Updated upstream
             "outputFile": "/Users/imac/VSCODE/meals/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ta/values-ta.xml",
+=======
+            "outputFile": "/Users/imac/Documents/Yash/meals/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ta/values-ta.xml",
+>>>>>>> Stashed changes
             "map": [
                 {
                     "source": "/Users/imac/.gradle/caches/transforms-3/19a0dfd4021b70333b258b23187eb758/transformed/jetified-play-services-basement-18.0.0/res/values-ta/values.xml",

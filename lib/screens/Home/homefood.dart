@@ -64,7 +64,7 @@ class _FoodState extends State<Food> {
                     return GestureDetector(
                       onTap: () {
                         if (index == 0) {
-                          Get.to(() => const MyWidget());
+                          Get.to(() => const Italian());
                         }
                         if (index == 1) {
                           Get.to(() => const Western());

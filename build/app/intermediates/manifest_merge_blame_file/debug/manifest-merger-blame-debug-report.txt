@@ -13,8 +13,13 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
+<<<<<<< Updated upstream
 15-->/Users/imac/VSCODE/meals/android/app/src/main/AndroidManifest.xml:4:5-66
 15-->/Users/imac/VSCODE/meals/android/app/src/main/AndroidManifest.xml:4:22-64
+=======
+15-->/Users/imac/Documents/Yash/meals/android/app/src/main/AndroidManifest.xml:4:5-66
+15-->/Users/imac/Documents/Yash/meals/android/app/src/main/AndroidManifest.xml:4:22-64
+>>>>>>> Stashed changes
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 16-->[com.google.firebase:firebase-auth:21.0.7] /Users/imac/.gradle/caches/transforms-3/6b415a3bc2b441250bf51af87084b635/transformed/jetified-firebase-auth-21.0.7/AndroidManifest.xml:24:5-79
 16-->[com.google.firebase:firebase-auth:21.0.7] /Users/imac/.gradle/caches/transforms-3/6b415a3bc2b441250bf51af87084b635/transformed/jetified-firebase-auth-21.0.7/AndroidManifest.xml:24:22-76
@@ -138,14 +143,21 @@
 101            android:value="@string/facebook_client_token" />
 102
 103        <service
+<<<<<<< Updated upstream
 103-->[:firebase_auth] /Users/imac/VSCODE/meals/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
 104            android:name="com.google.firebase.components.ComponentDiscoveryService"
 104-->[:firebase_auth] /Users/imac/VSCODE/meals/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
+=======
+103-->[:firebase_auth] /Users/imac/Documents/Yash/meals/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+104            android:name="com.google.firebase.components.ComponentDiscoveryService"
+104-->[:firebase_auth] /Users/imac/Documents/Yash/meals/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
+>>>>>>> Stashed changes
 105            android:directBootAware="true"
 105-->[com.google.firebase:firebase-common:20.1.1] /Users/imac/.gradle/caches/transforms-3/fccaa6a289edc53f66333a729d5bb147/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:35:13-43
 106            android:exported="false" >
 106-->[com.google.firebase:firebase-auth:21.0.7] /Users/imac/.gradle/caches/transforms-3/6b415a3bc2b441250bf51af87084b635/transformed/jetified-firebase-auth-21.0.7/AndroidManifest.xml:66:13-37
 107            <meta-data
+<<<<<<< Updated upstream
 107-->[:firebase_auth] /Users/imac/VSCODE/meals/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
 108                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
 108-->[:firebase_auth] /Users/imac/VSCODE/meals/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
@@ -163,6 +175,25 @@
 114-->[:firebase_core] /Users/imac/VSCODE/meals/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
 115                android:value="com.google.firebase.components.ComponentRegistrar" />
 115-->[:firebase_core] /Users/imac/VSCODE/meals/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+=======
+107-->[:firebase_auth] /Users/imac/Documents/Yash/meals/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+108                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+108-->[:firebase_auth] /Users/imac/Documents/Yash/meals/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[:firebase_auth] /Users/imac/Documents/Yash/meals/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+110            <meta-data
+110-->[:cloud_firestore] /Users/imac/Documents/Yash/meals/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+111                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+111-->[:cloud_firestore] /Users/imac/Documents/Yash/meals/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-134
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[:cloud_firestore] /Users/imac/Documents/Yash/meals/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+113            <meta-data
+113-->[:firebase_core] /Users/imac/Documents/Yash/meals/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+114                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+114-->[:firebase_core] /Users/imac/Documents/Yash/meals/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[:firebase_core] /Users/imac/Documents/Yash/meals/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+>>>>>>> Stashed changes
 116            <meta-data
 116-->[com.google.firebase:firebase-auth:21.0.7] /Users/imac/.gradle/caches/transforms-3/6b415a3bc2b441250bf51af87084b635/transformed/jetified-firebase-auth-21.0.7/AndroidManifest.xml:67:13-69:85
 117                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
@@ -190,6 +221,7 @@
 128        </service>
 129
 130        <provider
+<<<<<<< Updated upstream
 130-->[:image_picker_android] /Users/imac/VSCODE/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
 131            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
 131-->[:image_picker_android] /Users/imac/VSCODE/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
@@ -213,6 +245,31 @@
 141-->[:pay_android] /Users/imac/VSCODE/meals/build/pay_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-69
 142            android:value="true" />
 142-->[:pay_android] /Users/imac/VSCODE/meals/build/pay_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-33
+=======
+130-->[:image_picker_android] /Users/imac/Documents/Yash/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+131            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+131-->[:image_picker_android] /Users/imac/Documents/Yash/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
+132            android:authorities="com.example.meals.flutter.image_provider"
+132-->[:image_picker_android] /Users/imac/Documents/Yash/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
+133            android:exported="false"
+133-->[:image_picker_android] /Users/imac/Documents/Yash/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+134            android:grantUriPermissions="true" >
+134-->[:image_picker_android] /Users/imac/Documents/Yash/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+135            <meta-data
+135-->[:image_picker_android] /Users/imac/Documents/Yash/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
+136                android:name="android.support.FILE_PROVIDER_PATHS"
+136-->[:image_picker_android] /Users/imac/Documents/Yash/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+137                android:resource="@xml/flutter_image_picker_file_paths" />
+137-->[:image_picker_android] /Users/imac/Documents/Yash/meals/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
+138        </provider>
+139
+140        <meta-data
+140-->[:pay_android] /Users/imac/Documents/Yash/meals/build/pay_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-16:36
+141            android:name="com.google.android.gms.wallet.api.enabled"
+141-->[:pay_android] /Users/imac/Documents/Yash/meals/build/pay_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-69
+142            android:value="true" />
+142-->[:pay_android] /Users/imac/Documents/Yash/meals/build/pay_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-33
+>>>>>>> Stashed changes
 143
 144        <uses-library
 144-->[androidx.window:window:1.0.0-beta04] /Users/imac/.gradle/caches/transforms-3/542a859793ec57d6a4d40865c7efc6d9/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40

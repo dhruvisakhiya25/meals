@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< Updated upstream
             "outputFile": "/Users/imac/VSCODE/meals/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "/Users/imac/VSCODE/meals/android/app/src/main/res/values-night/styles.xml",
+=======
+            "outputFile": "/Users/imac/Documents/Yash/meals/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "/Users/imac/Documents/Yash/meals/android/app/src/main/res/values-night/styles.xml",
+>>>>>>> Stashed changes
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
