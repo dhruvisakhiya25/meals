@@ -11,7 +11,7 @@ class Italian extends StatefulWidget {
 
 class _ItalianState extends State<Italian> {
   final CollectionReference _products =
-  FirebaseFirestore.instance.collection('italian');
+      FirebaseFirestore.instance.collection('italian');
   late Stream<QuerySnapshot> _streams;
 
   @override
@@ -55,7 +55,11 @@ class _ItalianState extends State<Italian> {
                         GestureDetector(
                           onTap: () {
                             Get.to(
+<<<<<<< HEAD
                                   () => IndianDetails(index: index),
+=======
+                              () => ItalianDetails(index: index),
+>>>>>>> fecbf7ec3cd2704e240d8093e6c107e01d77fdf8
                             );
                           },
                           child: Container(

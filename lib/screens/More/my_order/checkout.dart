@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter_credit_card_brazilian/credit_card_form.dart';
 import 'package:flutter_credit_card_brazilian/credit_card_model.dart';
 import 'package:flutter_credit_card_brazilian/credit_card_widget.dart';

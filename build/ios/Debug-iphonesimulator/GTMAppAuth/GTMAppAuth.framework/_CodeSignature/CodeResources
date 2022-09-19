@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/GTMAppAuthFetcherAuthorization.h</key>
 		<data>
-		HcWt1JmtTkii5ulJ5DtnP2nTtB8=
+		fPwgNpXhujqvCP1pDLj0RbYCsIw=
 		</data>
 		<key>Headers/GTMKeychain.h</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NuZhuEC8RB4LWjIes4t+/pNwjq8=
+		2hIDmobVSMBsSZcN0J09JtrjboA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -76,11 +76,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HcWt1JmtTkii5ulJ5DtnP2nTtB8=
+			fPwgNpXhujqvCP1pDLj0RbYCsIw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Q5Odjaiculx7athQp358b7+1cZQ9N7rHKwVJoW40FIo=
+			uaLq/2LfbWq4TgabCk5378h8wzfD3njbm7DT1bensPc=
 			</data>
 		</dict>
 		<key>Headers/GTMKeychain.h</key>
