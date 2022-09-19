@@ -3,7 +3,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:meals/Network/export.dart';
 
-
 class ItalianDetails extends StatefulWidget {
   int index;
 
@@ -14,7 +13,6 @@ class ItalianDetails extends StatefulWidget {
 }
 
 class _ItalianDetailsState extends State<ItalianDetails> {
-
   int counter = 0;
 
   void increment() {
@@ -32,9 +30,6 @@ class _ItalianDetailsState extends State<ItalianDetails> {
       },
     );
   }
-
-
-
 
   final CollectionReference _products =
   FirebaseFirestore.instance.collection('italian');
@@ -238,7 +233,7 @@ class _ItalianDetailsState extends State<ItalianDetails> {
                                                             'image': document[
                                                             widget
                                                                 .index][
-                                                            'italian image'],
+                                                            'italian name'],
                                                             'name': document[
                                                             widget
                                                                 .index]
