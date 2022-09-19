@@ -121,12 +121,10 @@ class _DessertDetailsState extends State<DessertDetails> {
                                 children: [
                                   Text(
                                     numberOfPortion,
-                                    style: const TextStyle(
-                                      fontSize: 15.5,
-                                    ),
+                                    style: const TextStyle(fontSize: 14),
                                   ),
                                   const SizedBox(
-                                    width: 20,
+                                    width: 15,
                                   ),
                                   CupertinoButton(
                                     borderRadius: BorderRadius.circular(30),
@@ -137,16 +135,14 @@ class _DessertDetailsState extends State<DessertDetails> {
                                     child: const Icon(icRemove),
                                   ),
                                   const SizedBox(
-                                    width: 10,
+                                    width: 5,
                                   ),
                                   Text(
                                     '$counter',
-                                    style: const TextStyle(
-                                      fontSize: 25,
-                                    ),
+                                    style: const TextStyle(fontSize: 25),
                                   ),
                                   const SizedBox(
-                                    width: 10,
+                                    width: 5,
                                   ),
                                   CupertinoButton(
                                     borderRadius: BorderRadius.circular(30),
