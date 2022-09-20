@@ -12,7 +12,7 @@ class _CartState extends State<Cart> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: cart.isEmpty
-          ? const Center(child: Text('Your cart is empty'))
+          ?  Center(child: Text(yourCartIsEmpty))
           : ListView.builder(
               itemCount: cart.length,
               itemBuilder: (context, index) => Dismissible(
@@ -22,8 +22,8 @@ class _CartState extends State<Cart> {
                 onDismissed: (direction) {
                   cart.removeAt(index);
                   ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('Item Delete'),
+                     SnackBar(
+                      content: Text(itemDelete),
                     ),
                   );
                 },
