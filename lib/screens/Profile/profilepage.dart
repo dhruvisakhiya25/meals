@@ -186,7 +186,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   },
                   child:  Text(
                   signOut,
-                    style: TextStyle(color: grey),
+                    style: const TextStyle(color: grey),
                   )),
               if (SharedPref.getFbLoginName != '' &&
                   SharedPref.getFbLoginName != null)
