@@ -94,7 +94,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 children: [
                   Text(
                     profile,
-                    style:  TextStyle(
+                    style:  const TextStyle(
                         color: black,
                         fontWeight: FontWeight.bold,
                         fontSize: 30),
@@ -106,7 +106,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 height: 90,
               ),
               if (SharedPref.getFbLoginPhoto != '' &&
-                  SharedPref.getFbLoginPhoto != null)
+                    SharedPref.getFbLoginPhoto != null)
                 Center(
                   child: Badge(
                     position: BadgePosition.bottomEnd(),
