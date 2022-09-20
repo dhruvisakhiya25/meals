@@ -119,5 +119,8 @@ List more = [
     'circleAvatar': icAbout,
     'title': aboutUs,
   },
-  {'circleAvatar': icLogOut, 'title': logOut}
+  {
+    'circleAvatar': icLogOut,
+    'title': logOut,
+  },
 ];
