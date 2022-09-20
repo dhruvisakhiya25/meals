@@ -59,8 +59,8 @@ class RegisterController extends GetxController {
       Get.offAllNamed('/mealsHome');
       Get.snackbar('Successful LogIn', '',
           snackPosition: SnackPosition.BOTTOM,
-          backgroundColor: Colors.orange,
-          colorText: Colors.black);
+          backgroundColor: orange,
+          colorText: black);
       update();
     } catch (e) {
       Get.snackbar('Login Failed', 'Please Try Again',
@@ -78,8 +78,8 @@ class RegisterController extends GetxController {
       Get.offAllNamed('/mealsHome');
       Get.snackbar('Successful LogIN', '',
           snackPosition: SnackPosition.BOTTOM,
-          backgroundColor: Colors.orange,
-          colorText: Colors.black);
+          backgroundColor: orange,
+          colorText: black);
     } catch (e) {
       Get.snackbar('Login Failed', 'Please Try Again',
           snackPosition: SnackPosition.BOTTOM,
@@ -94,8 +94,8 @@ class RegisterController extends GetxController {
       Get.back();
       Get.snackbar('Successful Reset Password Email Sent', '',
           snackPosition: SnackPosition.BOTTOM,
-          backgroundColor: Colors.orange,
-          colorText: Colors.black);
+          backgroundColor: orange,
+          colorText: black);
     } on FirebaseAuthException catch (e) {
       String title = e.code.replaceAll(RegExp('-'), ' ').capitalize!;
 
@@ -135,8 +135,8 @@ class RegisterController extends GetxController {
       Get.offAll(() => const LoginPage());
       Get.snackbar('Successful Logout', '',
           snackPosition: SnackPosition.BOTTOM,
-          backgroundColor: Colors.orange,
-          colorText: Colors.black);
+          backgroundColor: orange,
+          colorText: black);
     } catch (e) {
       Get.snackbar('Error occurred!', e.toString(),
           snackPosition: SnackPosition.BOTTOM,
