@@ -118,9 +118,11 @@ String addAnotherCreditCard = '+ Add Another Credit/Debit Card';
 ///profile page
 
 String profile = 'Profile';
-
+String camera = 'Camera';
+String gallery = 'Gallery';
 String name = 'Name';
 String email = 'Email';
+String signOut =   'Sign Out';
 
 ///reset password page
 String send = 'Send';

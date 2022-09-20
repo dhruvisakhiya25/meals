@@ -11,7 +11,7 @@ Widget slideLeftBackground() {
         mainAxisAlignment: MainAxisAlignment.end,
         children:  <Widget>[
           Icon(
-            Icons.delete,
+           icDelete,
             color: white,
           ),
           Text(
