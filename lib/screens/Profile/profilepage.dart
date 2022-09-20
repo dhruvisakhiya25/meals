@@ -46,7 +46,7 @@ class _ProfilePageState extends State<ProfilePage> {
         ),
         child: ListTile(
           leading: const Icon(icCamera),
-          title: const Text('Camera'),
+          title: Text(camera),
           onTap: () async {
             await pickCamera();
             setState(
@@ -67,11 +67,10 @@ class _ProfilePageState extends State<ProfilePage> {
         ),
         child: ListTile(
           leading: const Icon(icImage),
-          title: const Text('Gallery'),
+          title: Text(gallery),
           onTap: () async {
             await pickImage();
             SharedPref.setProfileImage = file!.path.toString();
-
             setState(
               () {},
             );
@@ -185,28 +184,29 @@ class _ProfilePageState extends State<ProfilePage> {
                     SharedPref.setGooglePhoto = '';
                     setState(() {});
                   },
-                  child: const Text(
-                    'Sign Out',
-                    style: TextStyle(color: grey),
+                  child: Text(
+                    signOut,
+                    style: const TextStyle(color: grey),
                   )),
               if (SharedPref.getFbLoginName != '' &&
                   SharedPref.getFbLoginName != null)
                 Container(
-                    height: 40,
-                    width: Screens.width(context) * 0.9,
-                    decoration: BoxDecoration(
-                      color: grey.withOpacity(0.2),
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    padding: const EdgeInsets.only(left: 20),
-                    margin: const EdgeInsets.all(10),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(SharedPref.getFbLoginName.toString()),
-                      ],
-                    ),)
+                  height: 40,
+                  width: Screens.width(context) * 0.9,
+                  decoration: BoxDecoration(
+                    color: grey.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  padding: const EdgeInsets.only(left: 20),
+                  margin: const EdgeInsets.all(10),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(SharedPref.getFbLoginName.toString()),
+                    ],
+                  ),
+                )
               else if (SharedPref.getGoogleName != '' &&
                   SharedPref.getGoogleName != null)
                 Container(

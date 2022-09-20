@@ -10,19 +10,19 @@ Widget slideLeftBackground() {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children:  <Widget>[
-          Icon(
-            Icons.delete,
+          const Icon(
+           icDelete,
             color: white,
           ),
           Text(
           delete ,
-            style: TextStyle(
+            style: const TextStyle(
               color: white,
               fontWeight: FontWeight.w700,
             ),
             textAlign: TextAlign.right,
           ),
-          SizedBox(width: 20),
+          const SizedBox(width: 20),
         ],
       ),
     ),

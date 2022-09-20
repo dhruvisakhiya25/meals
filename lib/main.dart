@@ -33,7 +33,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      // home: SplashScreen(),
       initialRoute: '/',
       defaultTransition: Transition.circularReveal,
       getPages: [
@@ -53,7 +52,7 @@ class MyApp extends StatelessWidget {
             }
           },
         ),
-        GetPage(name: '/', page: () => const SplashScreen()),
+        GetPage(name: '/splashScreen', page: () => const SplashScreen()),
         GetPage(
           name: '/loginPage',
           page: () => const LoginPage(),

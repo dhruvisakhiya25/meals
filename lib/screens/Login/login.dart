@@ -185,7 +185,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       label: Text(
                         signWithFaceBook,
-                        style: TextStyle(
+                        style: const TextStyle(
                             color: white,
                             fontWeight: FontWeight.w700,
                             fontSize: 20),
@@ -214,7 +214,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       label: Text(
                         signWithGoogle,
-                        style: TextStyle(
+                        style: const TextStyle(
                             color: black,
                             fontSize: 20,
                             fontWeight: FontWeight.w700),

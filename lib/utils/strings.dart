@@ -118,9 +118,11 @@ String addAnotherCreditCard = '+ Add Another Credit/Debit Card';
 ///profile page
 
 String profile = 'Profile';
-
+String camera = 'Camera';
+String gallery = 'Gallery';
 String name = 'Name';
 String email = 'Email';
+String signOut =   'Sign Out';
 
 ///reset password page
 String send = 'Send';
@@ -160,3 +162,14 @@ String inValid = 'invalid!';
 String yourCartIsEmpty = 'Your cart is empty';
 String itemDelete = 'Item Delete';
 String delete =  " Delete";
+
+
+/// auth controller
+String error = "Error";
+String successfulLogIn = 'Successful LogIn';
+String loginFailed = 'Login Failed';
+String pleaseTryAgain =  'Please Try Again';
+String successfulResetPasswordEmailSent= 'Successful Reset Password Email Sent';
+String userNotFound = 'user-not-found';
+String errorOccurred = 'Error occurred!';
+String successfulLogOut = 'Successful Logout';

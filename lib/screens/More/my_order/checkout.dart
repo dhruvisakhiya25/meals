@@ -202,7 +202,7 @@ class _CheckOutPageState extends State<CheckOutPage> {
                                             cvvCode: cvvCode,
                                             cardHolderName: cardHolderName,
                                             expiryDate: expiryDate,
-                                            themeColor: Colors.blue,
+                                            themeColor: blue,
                                             cardNumberDecoration:
                                                 const InputDecoration(
                                               border: OutlineInputBorder(),
@@ -235,14 +235,14 @@ class _CheckOutPageState extends State<CheckOutPage> {
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
                                               ),
-                                              primary: const Color(0xff1b447b),
+                                              primary: navyBlue,
                                             ),
                                             child: Container(
                                               margin: const EdgeInsets.all(8),
                                               child: const Text(
                                                 'Validate',
                                                 style: TextStyle(
-                                                  color: Colors.white,
+                                                  color: white,
                                                   fontFamily: 'halter',
                                                   fontSize: 14,
                                                   package:
