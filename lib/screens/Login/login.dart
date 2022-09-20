@@ -183,8 +183,8 @@ class _LoginPageState extends State<LoginPage> {
                         icFaceBook,
                         color: white,
                       ),
-                      label: const Text(
-                        'Sign in With Facebook',
+                      label: Text(
+                        signWithFaceBook,
                         style: TextStyle(
                             color: white,
                             fontWeight: FontWeight.w700,
@@ -212,18 +212,19 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                         ),
                       ),
-                      label: const Text(
-                        'Sign in with Google',
+                      label: Text(
+                        signWithGoogle,
                         style: TextStyle(
                             color: black,
                             fontSize: 20,
                             fontWeight: FontWeight.w700),
                       ),
                       style: ButtonStyle(
-                          backgroundColor:
-                              MaterialStateProperty.resolveWith<Color?>(
-                        (states) => const Color(0xFFFFFFFF),
-                      )),
+                        backgroundColor:
+                            MaterialStateProperty.resolveWith<Color?>(
+                          (states) => white,
+                        ),
+                      ),
                       onPress: () async {
                         await authController.signInWithGoogle(context);
                         SharedPref.setGoogleName = authController.displayName;

@@ -66,6 +66,8 @@ String forgetYourPassword = 'Forget Your Password?';
 String orLogin = 'or Login with';
 String dontHaveAccount = "Don't have an account?";
 String signUp = 'Sign Up';
+String signWithFaceBook =  'Sign in With Facebook';
+String signWithGoogle = 'Sign in with Google';
 
 ///main page
 String offer = 'Offer';
