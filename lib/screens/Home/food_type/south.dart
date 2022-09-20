@@ -1,4 +1,4 @@
-import 'package:meals/screens/Home/food_type/south_details.dart';
+
 
 import '../../../Network/export.dart';
 
@@ -50,14 +50,14 @@ class _SouthState extends State<South> {
                   itemCount: document.length,
                   shrinkWrap: true,
                   itemBuilder: (context, index) {
-
                     return Column(
                       children: [
-                        GestureDetector(onTap:(){
-                          Get.to(
-                                () => SouthDetails(index: index),
-                          );
-                        },
+                        GestureDetector(
+                          onTap: () {
+                            Get.to(
+                              () => SouthDetails(index: index),
+                            );
+                          },
                           child: Container(
                             height: 350,
                             width: 400,

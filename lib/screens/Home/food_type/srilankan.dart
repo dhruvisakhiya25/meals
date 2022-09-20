@@ -1,4 +1,4 @@
-import 'package:meals/screens/Home/food_type/srilankan_details.dart';
+
 
 import '../../../Network/export.dart';
 
@@ -54,9 +54,9 @@ class _SriLankanState extends State<SriLankan> {
                     return Column(
                       children: [
                         GestureDetector(
-                          onTap:(){
+                          onTap: () {
                             Get.to(
-                                  () => SriLankanDetails(index: index),
+                              () => SriLankanDetails(index: index),
                             );
                           },
                           child: Container(

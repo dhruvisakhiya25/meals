@@ -179,8 +179,6 @@ class _LoginPageState extends State<LoginPage> {
                     height: 20,
                   ),
                   authButton(
-                      // color: Colors.blue.shade700,
-
                       icon: const Icon(
                         Icons.facebook,
                         color: white,

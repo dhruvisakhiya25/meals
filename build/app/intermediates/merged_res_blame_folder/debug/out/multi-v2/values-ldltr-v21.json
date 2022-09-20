@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/imac/Documents/Yash/meals/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
+            "outputFile": "/Users/imac/VSCODE/meals/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
                     "source": "/Users/imac/.gradle/caches/transforms-3/9346a27f47264b8c166f01f4004f0589/transformed/appcompat-1.1.0/res/values-ldltr-v21/values-ldltr-v21.xml",

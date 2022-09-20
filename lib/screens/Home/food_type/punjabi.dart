@@ -1,4 +1,4 @@
-import 'package:meals/screens/Home/food_type/punjabi_details.dart';
+
 
 import '../../../Network/export.dart';
 
@@ -53,9 +53,9 @@ class _PunjabiState extends State<Punjabi> {
                     return Column(
                       children: [
                         GestureDetector(
-                          onTap:(){
+                          onTap: () {
                             Get.to(
-                                  () => PunjabiDetails(index: index),
+                              () => PunjabiDetails(index: index),
                             );
                           },
                           child: Container(

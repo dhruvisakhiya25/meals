@@ -13,7 +13,6 @@ class _CartState extends State<Cart> {
     return Scaffold(
       body:cart.isEmpty?const Center(child: Text('Your cart is empty')): ListView.builder(
         itemCount: cart.length,
-        physics: const NeverScrollableScrollPhysics(),
         itemBuilder: (context, index) => Dismissible(
           key: Key(cart[index]['name']),
           direction: DismissDirection.endToStart,
