@@ -155,3 +155,7 @@ String cardHolder = 'Card Holder';
 String validate = 'Validate';
 String valid = 'valid!';
 String inValid = 'invalid!';
+
+/// cart page
+String yourCartIsEmpty = 'Your cart is empty';
+String itemDelete = 'Item Delete';
