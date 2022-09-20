@@ -151,5 +151,5 @@ String cvv = 'CVV';
 String xxx = 'XXX';
 String cardHolder = 'Card Holder';
 String validate = 'Validate';
-String valid ='valid!';
+String valid = 'valid!';
 String inValid = 'invalid!';

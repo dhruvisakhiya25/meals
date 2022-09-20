@@ -93,8 +93,6 @@ import 'package:meals/Network/export.dart';
 //   }
 // }
 
-
-
 class RegisterController extends GetxController {
   late Rx<User?> firebaseUser;
   FirebaseAuth auth = FirebaseAuth.instance;
@@ -197,15 +195,13 @@ class RegisterController extends GetxController {
           backgroundColor: Colors.orange,
           colorText: Colors.black);
     } on FirebaseAuthException catch (e) {
-      String title = e.code
-          .replaceAll(RegExp('-'), ' ')
-          .capitalize!;
+      String title = e.code.replaceAll(RegExp('-'), ' ').capitalize!;
 
       String message = '';
 
       if (e.code == 'user-not-found') {
         message =
-        ('The account does not exists for $email. Create your account by signing up.');
+            ('The account does not exists for $email. Create your account by signing up.');
       } else {
         message = e.message.toString();
       }
@@ -222,7 +218,6 @@ class RegisterController extends GetxController {
           colorText: black);
     }
   }
-
 
   // void signOut() {
   //   try {

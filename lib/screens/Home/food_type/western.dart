@@ -1,5 +1,3 @@
-
-
 import '../../../Network/export.dart';
 
 class Western extends StatefulWidget {

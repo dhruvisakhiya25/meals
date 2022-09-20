@@ -11,58 +11,60 @@ class _CartState extends State<Cart> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:cart.isEmpty?const Center(child: Text('Your cart is empty')): ListView.builder(
-        itemCount: cart.length,
-        itemBuilder: (context, index) => Dismissible(
-          key: Key(cart[index]['name']),
-          direction: DismissDirection.endToStart,
-          background: slideLeftBackground(),
-          onDismissed: (direction) {
-            cart.removeAt(index);
-            ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                content: Text('Item Delete'),
-              ),
-            );
-          },
-          // ignore: avoid_unnecessary_containers
-          child: Container(
-            child: Row(
-              children: [
-                Container(
-                  height: 100,
-                  width: 100,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: NetworkImage(
-                        cart[index]['image'],
-                      ),
+      body: cart.isEmpty
+          ? const Center(child: Text('Your cart is empty'))
+          : ListView.builder(
+              itemCount: cart.length,
+              itemBuilder: (context, index) => Dismissible(
+                key: Key(cart[index]['name']),
+                direction: DismissDirection.endToStart,
+                background: slideLeftBackground(),
+                onDismissed: (direction) {
+                  cart.removeAt(index);
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text('Item Delete'),
                     ),
-                  ),
-                ),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  );
+                },
+                // ignore: avoid_unnecessary_containers
+                child: Container(
+                  child: Row(
                     children: [
-                      Text(
-                        cart[index]['name'],
-                        // ignore: prefer_const_constructors
-                        style: TextStyle(
-                            fontWeight: FontWeight.w600, fontSize: 40),
+                      Container(
+                        height: 100,
+                        width: 100,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: NetworkImage(
+                              cart[index]['image'],
+                            ),
+                          ),
+                        ),
                       ),
-                      Text(
-                        cart[index]['rate'].toString(),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              cart[index]['name'],
+                              // ignore: prefer_const_constructors
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w600, fontSize: 40),
+                            ),
+                            Text(
+                              cart[index]['rate'].toString(),
+                            ),
+                            Text(cart[index]['description'],
+                                overflow: TextOverflow.ellipsis),
+                          ],
+                        ),
                       ),
-                      Text(cart[index]['description'],
-                          overflow: TextOverflow.ellipsis),
                     ],
                   ),
                 ),
-              ],
+              ),
             ),
-          ),
-        ),
-      ),
     );
   }
 }
