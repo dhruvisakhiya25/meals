@@ -28,3 +28,4 @@ const IconData icVisibilityOff = Icons.visibility_off;
 const IconData icVisibility = Icons.visibility;
 const IconData icImage = Icons.image;
 const IconData icCarts = Icons.add_shopping_cart_sharp;
+const IconData icFaceBook = Icons.facebook;
