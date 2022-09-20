@@ -98,7 +98,9 @@ class _PunjabiDetailsState extends State<PunjabiDetails> {
                                 document[widget.index]['punjabi name']
                                     .toString(),
                                 style: const TextStyle(
-                                    fontWeight: FontWeight.bold, fontSize: 30),
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 30,
+                                ),
                               ),
                               const SizedBox(
                                 height: 30,

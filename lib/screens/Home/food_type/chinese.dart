@@ -56,7 +56,9 @@ class _ChineseState extends State<Chinese> {
                             Get.to(
                               () => ChineseDetails(index: index),
                             );
-                            setState(() {});
+                            setState(
+                              () {},
+                            );
                           },
                           child: Container(
                             height: 350,
