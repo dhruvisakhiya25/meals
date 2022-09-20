@@ -184,8 +184,8 @@ class _ProfilePageState extends State<ProfilePage> {
                     SharedPref.setGooglePhoto = '';
                     setState(() {});
                   },
-                  child:  Text(
-                  signOut,
+                  child: Text(
+                    signOut,
                     style: const TextStyle(color: grey),
                   )),
               if (SharedPref.getFbLoginName != '' &&
