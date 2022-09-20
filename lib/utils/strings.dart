@@ -66,6 +66,8 @@ String forgetYourPassword = 'Forget Your Password?';
 String orLogin = 'or Login with';
 String dontHaveAccount = "Don't have an account?";
 String signUp = 'Sign Up';
+String signWithFaceBook =  'Sign in With Facebook';
+String signWithGoogle = 'Sign in with Google';
 
 ///main page
 String offer = 'Offer';
@@ -151,5 +153,10 @@ String cvv = 'CVV';
 String xxx = 'XXX';
 String cardHolder = 'Card Holder';
 String validate = 'Validate';
-String valid ='valid!';
+String valid = 'valid!';
 String inValid = 'invalid!';
+
+/// cart page
+String yourCartIsEmpty = 'Your cart is empty';
+String itemDelete = 'Item Delete';
+String delete =  " Delete";

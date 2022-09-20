@@ -187,7 +187,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   },
                   child: const Text(
                     'Sign Out',
-                    style: TextStyle(color: Colors.grey),
+                    style: TextStyle(color: grey),
                   )),
               if (SharedPref.getFbLoginName != '' &&
                   SharedPref.getFbLoginName != null)
@@ -195,7 +195,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     height: 40,
                     width: Screens.width(context) * 0.9,
                     decoration: BoxDecoration(
-                      color: Colors.grey.withOpacity(0.2),
+                      color: grey.withOpacity(0.2),
                       borderRadius: BorderRadius.circular(30),
                     ),
                     padding: const EdgeInsets.only(left: 20),
@@ -206,14 +206,14 @@ class _ProfilePageState extends State<ProfilePage> {
                       children: [
                         Text(SharedPref.getFbLoginName.toString()),
                       ],
-                    ))
+                    ),)
               else if (SharedPref.getGoogleName != '' &&
                   SharedPref.getGoogleName != null)
                 Container(
                     height: 40,
                     width: Screens.width(context) * 0.9,
                     decoration: BoxDecoration(
-                      color: Colors.grey.withOpacity(0.2),
+                      color: grey.withOpacity(0.2),
                       borderRadius: BorderRadius.circular(30),
                     ),
                     padding: const EdgeInsets.only(left: 20),
@@ -230,7 +230,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   height: 40,
                   width: Screens.width(context) * 0.9,
                   decoration: BoxDecoration(
-                    color: Colors.grey.withOpacity(0.2),
+                    color: grey.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(30),
                   ),
                   padding: const EdgeInsets.only(left: 20),
@@ -251,7 +251,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     height: 40,
                     width: Screens.width(context) * 0.9,
                     decoration: BoxDecoration(
-                      color: Colors.grey.withOpacity(0.2),
+                      color: grey.withOpacity(0.2),
                       borderRadius: BorderRadius.circular(30),
                     ),
                     padding: const EdgeInsets.only(left: 20),
@@ -271,7 +271,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   height: 40,
                   width: Screens.width(context) * 0.9,
                   decoration: BoxDecoration(
-                    color: Colors.grey.withOpacity(0.2),
+                    color: grey.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(30),
                   ),
                   padding: const EdgeInsets.only(left: 20),
@@ -291,7 +291,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   height: 40,
                   width: Screens.width(context) * 0.9,
                   decoration: BoxDecoration(
-                    color: Colors.grey.withOpacity(0.2),
+                    color: grey.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(30),
                   ),
                   padding: const EdgeInsets.only(left: 20),

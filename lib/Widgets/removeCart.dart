@@ -9,13 +9,13 @@ Widget slideLeftBackground() {
       alignment: Alignment.centerRight,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
-        children: const <Widget>[
+        children:  <Widget>[
           Icon(
             Icons.delete,
             color: white,
           ),
           Text(
-            " Delete",
+          delete ,
             style: TextStyle(
               color: white,
               fontWeight: FontWeight.w700,
