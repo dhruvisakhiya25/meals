@@ -135,25 +135,34 @@ class _PunjabiDetailsState extends State<PunjabiDetails> {
                                     padding: const EdgeInsets.symmetric(
                                         horizontal: 20),
                                     onPressed: decrement,
-                                    child: const Icon(icRemove),
+                                    child: const Icon(
+                                      icRemove,
+                                    ),
                                   ),
                                   const SizedBox(
                                     width: 5,
                                   ),
                                   Text(
                                     '$counter',
-                                    style: const TextStyle(fontSize: 25),
+                                    style: const TextStyle(
+                                      fontSize: 25,
+                                    ),
                                   ),
                                   const SizedBox(
                                     width: 5,
                                   ),
                                   CupertinoButton(
-                                    borderRadius: BorderRadius.circular(30),
+                                    borderRadius: BorderRadius.circular(
+                                      30,
+                                    ),
                                     color: orange,
                                     padding: const EdgeInsets.symmetric(
-                                        horizontal: 20),
+                                      horizontal: 20,
+                                    ),
                                     onPressed: increment,
-                                    child: const Icon(icAdd),
+                                    child: const Icon(
+                                      icAdd,
+                                    ),
                                   ),
                                 ],
                               ),
@@ -179,12 +188,16 @@ class _PunjabiDetailsState extends State<PunjabiDetails> {
                                         height: 120,
                                         width: 300,
                                         margin: const EdgeInsets.only(
-                                            top: 30, left: 40),
+                                          top: 30,
+                                          left: 40,
+                                        ),
                                         decoration: const BoxDecoration(
                                           color: white,
                                           boxShadow: [
                                             BoxShadow(
-                                                color: grey, blurRadius: 10)
+                                              color: grey,
+                                              blurRadius: 10,
+                                            )
                                           ],
                                           borderRadius: BorderRadius.only(
                                             topLeft: Radius.circular(45),
@@ -209,14 +222,16 @@ class _PunjabiDetailsState extends State<PunjabiDetails> {
                                                   Text(
                                                     totalPrice,
                                                     style: const TextStyle(
-                                                        fontSize: 15),
+                                                      fontSize: 15,
+                                                    ),
                                                   ),
                                                   Text(
                                                     lkr,
                                                     style: const TextStyle(
-                                                        fontSize: 27,
-                                                        fontWeight:
-                                                            FontWeight.bold),
+                                                      fontSize: 27,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                    ),
                                                   ),
                                                   const SizedBox(
                                                     height: 5,
@@ -256,7 +271,8 @@ class _PunjabiDetailsState extends State<PunjabiDetails> {
                                                                 .circular(20),
                                                         borderSide:
                                                             const BorderSide(
-                                                                color: orange),
+                                                          color: orange,
+                                                        ),
                                                       ),
                                                       child: Row(
                                                         children: [
@@ -272,10 +288,9 @@ class _PunjabiDetailsState extends State<PunjabiDetails> {
                                                             addToCart,
                                                             style:
                                                                 const TextStyle(
-                                                                    fontSize:
-                                                                        19,
-                                                                    color:
-                                                                        white),
+                                                              fontSize: 19,
+                                                              color: white,
+                                                            ),
                                                           ),
                                                         ],
                                                       ),
