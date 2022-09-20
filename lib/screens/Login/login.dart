@@ -180,7 +180,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   authButton(
                       icon: const Icon(
-                        Icons.facebook,
+                        icFaceBook,
                         color: white,
                       ),
                       label: const Text(
