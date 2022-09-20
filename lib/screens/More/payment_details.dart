@@ -160,7 +160,7 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                                             cvvCode: cvvCode,
                                             cardHolderName: cardHolderName,
                                             expiryDate: expiryDate,
-                                            themeColor: Colors.blue,
+                                            themeColor: blue,
                                             cardNumberDecoration:
                                                 const InputDecoration(
                                               border: OutlineInputBorder(),
@@ -193,14 +193,14 @@ class _PaymentDetailsState extends State<PaymentDetails> {
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
                                               ),
-                                              primary: const Color(0xff1b447b),
+                                              primary:navyBlue,
                                             ),
                                             child: Container(
                                               margin: const EdgeInsets.all(8),
                                               child: const Text(
                                                 'Validate',
                                                 style: TextStyle(
-                                                  color: Colors.white,
+                                                  color: white,
                                                   fontFamily: 'halter',
                                                   fontSize: 14,
                                                   package:

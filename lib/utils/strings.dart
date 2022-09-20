@@ -159,3 +159,4 @@ String inValid = 'invalid!';
 /// cart page
 String yourCartIsEmpty = 'Your cart is empty';
 String itemDelete = 'Item Delete';
+String delete =  " Delete";
