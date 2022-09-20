@@ -94,7 +94,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 children: [
                   Text(
                     profile,
-                    style: const TextStyle(
+                    style:  TextStyle(
                         color: black,
                         fontWeight: FontWeight.bold,
                         fontSize: 30),
