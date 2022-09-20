@@ -162,3 +162,14 @@ String inValid = 'invalid!';
 String yourCartIsEmpty = 'Your cart is empty';
 String itemDelete = 'Item Delete';
 String delete =  " Delete";
+
+
+/// auth controller
+String error = "Error";
+String successfulLogIn = 'Successful LogIn';
+String loginFailed = 'Login Failed';
+String pleaseTryAgain =  'Please Try Again';
+String successfulResetPasswordEmailSent= 'Successful Reset Password Email Sent';
+String userNotFound = 'user-not-found';
+String errorOccurred = 'Error occurred!';
+String successfulLogOut = 'Successful Logout';

@@ -29,13 +29,13 @@ class RegisterController extends GetxController {
     } on FirebaseAuthException catch (e) {
       print(e.message);
       Get.snackbar(
-        "Error",
+        error,
         e.message!,
         snackPosition: SnackPosition.BOTTOM,
       );
     } catch (e) {
       print(e.toString());
-      Get.snackbar('Error', e.toString(), snackPosition: SnackPosition.BOTTOM);
+      Get.snackbar(error, e.toString(), snackPosition: SnackPosition.BOTTOM);
     }
   }
 
@@ -57,13 +57,13 @@ class RegisterController extends GetxController {
       gmailPhoto = googleAcc.value!.photoUrl!;
       isSignedIn.value = true;
       Get.offAllNamed('/mealsHome');
-      Get.snackbar('Successful LogIn', '',
+      Get.snackbar(successfulLogIn, '',
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: orange,
           colorText: black);
       update();
     } catch (e) {
-      Get.snackbar('Login Failed', 'Please Try Again',
+      Get.snackbar(loginFailed,pleaseTryAgain,
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: orange,
           colorText: black);
@@ -76,12 +76,12 @@ class RegisterController extends GetxController {
       final user = await FacebookAuth.instance.getUserData();
       userData = user;
       Get.offAllNamed('/mealsHome');
-      Get.snackbar('Successful LogIN', '',
+      Get.snackbar(successfulLogIn, '',
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: orange,
           colorText: black);
     } catch (e) {
-      Get.snackbar('Login Failed', 'Please Try Again',
+      Get.snackbar(loginFailed, pleaseTryAgain,
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: orange,
           colorText: black);
@@ -92,7 +92,7 @@ class RegisterController extends GetxController {
     try {
       await auth.sendPasswordResetEmail(email: email);
       Get.back();
-      Get.snackbar('Successful Reset Password Email Sent', '',
+      Get.snackbar(successfulResetPasswordEmailSent, '',
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: orange,
           colorText: black);
@@ -101,7 +101,7 @@ class RegisterController extends GetxController {
 
       String message = '';
 
-      if (e.code == 'user-not-found') {
+      if (e.code == userNotFound) {
         message =
             ('The account does not exists for $email. Create your account by signing up.');
       } else {
@@ -113,7 +113,7 @@ class RegisterController extends GetxController {
           backgroundColor: white,
           colorText: black);
     } catch (e) {
-      Get.snackbar('Error occurred!', e.toString(),
+      Get.snackbar(errorOccurred, e.toString(),
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: orange,
           colorText: black);
@@ -133,12 +133,12 @@ class RegisterController extends GetxController {
       isSignedIn.value = false;
       update();
       Get.offAll(() => const LoginPage());
-      Get.snackbar('Successful Logout', '',
+      Get.snackbar(successfulLogOut, '',
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: orange,
           colorText: black);
     } catch (e) {
-      Get.snackbar('Error occurred!', e.toString(),
+      Get.snackbar(errorOccurred, e.toString(),
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: orange,
           colorText: black);
