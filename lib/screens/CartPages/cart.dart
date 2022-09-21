@@ -12,17 +12,21 @@ class _CartState extends State<Cart> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: cart.isEmpty
-          ?  Center(child: Text(yourCartIsEmpty))
+          ? Center(
+              child: Text(yourCartIsEmpty),
+            )
           : ListView.builder(
               itemCount: cart.length,
               itemBuilder: (context, index) => Dismissible(
-                key: Key(cart[index]['name']),
+                key: Key(
+                  cart[index]['name'],
+                ),
                 direction: DismissDirection.endToStart,
                 background: slideLeftBackground(),
                 onDismissed: (direction) {
                   cart.removeAt(index);
                   ScaffoldMessenger.of(context).showSnackBar(
-                     SnackBar(
+                    SnackBar(
                       content: Text(itemDelete),
                     ),
                   );
@@ -42,6 +46,9 @@ class _CartState extends State<Cart> {
                           ),
                         ),
                       ),
+                      SizedBox(
+                        width: 10,
+                      ),
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -50,13 +57,17 @@ class _CartState extends State<Cart> {
                               cart[index]['name'],
                               // ignore: prefer_const_constructors
                               style: TextStyle(
-                                  fontWeight: FontWeight.w600, fontSize: 40),
+                                fontWeight: FontWeight.w600,
+                                fontSize: 40,
+                              ),
                             ),
                             Text(
                               cart[index]['rate'].toString(),
                             ),
-                            Text(cart[index]['description'],
-                                overflow: TextOverflow.ellipsis),
+                            Text(
+                              cart[index]['description'],
+                              overflow: TextOverflow.ellipsis,
+                            ),
                           ],
                         ),
                       ),

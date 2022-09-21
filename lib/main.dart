@@ -51,7 +51,10 @@ class MyApp extends StatelessWidget {
             }
           },
         ),
-        GetPage(name: '/splashScreen', page: () => const SplashScreen()),
+        GetPage(
+          name: '/splashScreen',
+          page: () => const SplashScreen(),
+        ),
         GetPage(
           name: '/loginPage',
           page: () => const LoginPage(),
