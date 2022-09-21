@@ -34,7 +34,9 @@ class RegisterController extends GetxController {
         snackPosition: SnackPosition.BOTTOM,
       );
     } catch (e) {
-      print(e.toString());
+      print(
+        e.toString(),
+      );
       Get.snackbar(error, e.toString(), snackPosition: SnackPosition.BOTTOM);
     }
   }
@@ -45,7 +47,9 @@ class RegisterController extends GetxController {
     } on FirebaseAuthException catch (e) {
       print(e.message);
     } catch (e) {
-      print(e.toString());
+      print(
+        e.toString(),
+      );
     }
   }
 
@@ -63,7 +67,7 @@ class RegisterController extends GetxController {
           colorText: black);
       update();
     } catch (e) {
-      Get.snackbar(loginFailed,pleaseTryAgain,
+      Get.snackbar(loginFailed, pleaseTryAgain,
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: orange,
           colorText: black);
@@ -132,7 +136,9 @@ class RegisterController extends GetxController {
       userData = null;
       isSignedIn.value = false;
       update();
-      Get.offAll(() => const LoginPage());
+      Get.offAll(
+        () => const LoginPage(),
+      );
       Get.snackbar(successfulLogOut, '',
           snackPosition: SnackPosition.BOTTOM,
           backgroundColor: orange,
